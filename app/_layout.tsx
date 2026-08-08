@@ -27,7 +27,7 @@ function RootLayoutNav() {
   if (loading) {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <ActivityIndicator size="large" color="#58CC02" />
+        <ActivityIndicator size="large" color="#5E5CE6" />
       </View>
     );
   }
@@ -35,16 +35,16 @@ function RootLayoutNav() {
   return (
     <Stack
       screenOptions={{
-        headerStyle: { backgroundColor: '#FFFFFF' },
-        headerTintColor: '#3C3C3C',
+        headerStyle: { backgroundColor: '#0A0A12' },
+        headerTintColor: '#A78BFA',
         headerShadowVisible: false,
       }}
     >
       <Stack.Screen name="index" options={{ headerShown: false }} />
       <Stack.Screen name="study" options={{ headerShown: false }} />
-      <Stack.Screen name="profile" options={{ title: 'My Profile', headerBackTitleVisible: false, headerTitleStyle: { fontWeight: '800' } }} />
+      <Stack.Screen name="profile" options={{ title: 'My Profile', headerBackTitleVisible: false, headerTitleStyle: { fontWeight: '700', color: '#F1F5F9' } }} />
       <Stack.Screen name="login" options={{ headerShown: false }} />
-      <Stack.Screen name="signup" options={{ title: 'Create Account', headerBackTitleVisible: false }} />
+      <Stack.Screen name="signup" options={{ headerShown: false }} />
     </Stack>
   );
 }

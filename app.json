@@ -12,7 +12,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0D0D1A",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -27,13 +27,13 @@
     ],
     "extra": {
       "firebase": {
-        "apiKey": "AIzaSyDAZ7nZp2BRLXwqMA1UhtUYFCV4JxVJ6PY",
-        "authDomain": "my-test-app-d6bf1.firebaseapp.com",
-        "projectId": "my-test-app-d6bf1",
-        "storageBucket": "my-test-app-d6bf1.firebasestorage.app",
-        "messagingSenderId": "929172190792",
-        "appId": "1:929172190792:web:31f347c3761214ee96ca7d",
-        "measurementId": "G-BMR390PZ3Q"
+        "apiKey": "AIzaSyAUt_7c0qU30oUUuX_hmxB_lKObKWip6ro",
+        "authDomain": "lingo-flow-abb60.firebaseapp.com",
+        "projectId": "lingo-flow-abb60",
+        "storageBucket": "lingo-flow-abb60.firebasestorage.app",
+        "messagingSenderId": "985224108151",
+        "appId": "1:985224108151:web:0458ce99e164173b4dce72",
+        "measurementId": "G-B42R2REKL7"
       }
     }
   }

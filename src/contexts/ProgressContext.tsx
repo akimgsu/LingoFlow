@@ -24,7 +24,13 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   };
 
   const loseHeart = () => {
-    setHearts((prev) => Math.max(0, prev - 1));
+    setHearts((prev) => {
+      if (prev <= 1) {
+        // Auto-replenish back to 5 so study is never stuck
+        return 5;
+      }
+      return prev - 1;
+    });
   };
 
   const resetHearts = () => {

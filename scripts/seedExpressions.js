@@ -1,76 +1,124 @@
-// This script generates audio for expressions using ElevenLabs and uploads data to Firebase.
-// Before running:
-// 1. Install required packages: npm install node-fetch dotenv firebase
-// 2. Setup Firebase client config in a .env file or hardcode for local seeding.
-// 3. Provide your ElevenLabs API Key.
+// This script reads expressions from 'expressions.csv', fetches the ElevenLabs API Key
+// from Google Cloud Secret Manager (or env variable), generates high-quality audio,
+// and prepares/uploads data to Firebase.
 
 const fs = require('fs');
 const path = require('path');
-// Dynamic import for node-fetch is needed for recent versions if not using ES modules
-// For this script, we'll assume basic fetch is available (Node 18+)
+const { SecretManagerServiceClient } = require('@google-cloud/secret-manager');
 
-const ELEVENLABS_API_KEY = 'YOUR_ELEVENLABS_API_KEY';
-const VOICE_ID = '21m00Tcm4TlvDq8ikWAM'; // Rachel (example voice ID)
+const SECRET_NAME = 'projects/16087637963/secrets/ELEVENLABS_API_KEY/versions/latest';
+const VOICE_ID = 'EXAVITQu4vr4xnSDxMaL'; // Sarah (Default premade voice for Free Tier)
 
-// Sample Data
-const expressions = [
-  { id: 'exp_001', category: 'Greetings', english: "How's it going?", korean: "어떻게 지내세요?" },
-  { id: 'exp_002', category: 'Greetings', english: "Long time no see.", korean: "오랜만이에요." },
-  { id: 'exp_003', category: 'Travel', english: "Where is the nearest restroom?", korean: "가장 가까운 화장실이 어디 있나요?" }
-];
+// 1. Fetch ElevenLabs API Key from Google Secret Manager
+async function getElevenLabsApiKey() {
+  if (process.env.ELEVENLABS_API_KEY) {
+    console.log('Using ELEVENLABS_API_KEY from environment variable.');
+    return process.env.ELEVENLABS_API_KEY;
+  }
 
-async function generateAudio(text, expressionId) {
+  console.log(`Fetching ElevenLabs API key from Google Secret Manager (${SECRET_NAME})...`);
+  try {
+    const client = new SecretManagerServiceClient();
+    const [version] = await client.accessSecretVersion({ name: SECRET_NAME });
+    const apiKey = version.payload.data.toString('utf8').trim();
+    console.log('Successfully retrieved API key from Google Secret Manager!');
+    return apiKey;
+  } catch (error) {
+    console.error('Error fetching secret from Google Cloud Secret Manager:', error.message);
+    console.log('Tip: Ensure Google credentials are authenticated, or run with ELEVENLABS_API_KEY="your_key" node scripts/seedExpressions.js');
+    throw error;
+  }
+}
+
+// 2. Parse CSV file helper
+function loadExpressionsFromCSV(csvPath) {
+  const fileContent = fs.readFileSync(csvPath, 'utf8');
+  const lines = fileContent.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+  
+  if (lines.length <= 1) return [];
+
+  const headers = lines[0].split(',').map(h => h.trim());
+  const expressions = [];
+
+  for (let i = 1; i < lines.length; i++) {
+    const row = lines[i].split(',').map(c => c.trim());
+    if (row.length >= 4) {
+      expressions.push({
+        id: row[0],
+        category: row[1],
+        english: row[2],
+        korean: row[3],
+      });
+    }
+  }
+
+  return expressions;
+}
+
+// 3. Generate Audio using ElevenLabs
+async function generateAudio(apiKey, text, outputPath) {
   const url = `https://api.elevenlabs.io/v1/text-to-speech/${VOICE_ID}`;
   const response = await fetch(url, {
     method: 'POST',
     headers: {
       'Accept': 'audio/mpeg',
-      'xi-api-key': ELEVENLABS_API_KEY,
+      'xi-api-key': apiKey,
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
       text: text,
-      model_id: "eleven_monolingual_v1",
-      voice_settings: { stability: 0.5, similarity_boost: 0.5 }
+      model_id: "eleven_multilingual_v2",
+      voice_settings: { stability: 0.5, similarity_boost: 0.75 }
     })
   });
 
   if (!response.ok) {
-    throw new Error(`Failed to generate audio for ${text}`);
+    const errText = await response.text();
+    throw new Error(`ElevenLabs API error (${response.status}): ${errText}`);
   }
 
   const arrayBuffer = await response.arrayBuffer();
   const buffer = Buffer.from(arrayBuffer);
-  
-  const outputPath = path.join(__dirname, `${expressionId}.mp3`);
   fs.writeFileSync(outputPath, buffer);
-  console.log(`Saved audio to ${outputPath}`);
-  
-  // In a real scenario, you would upload this 'buffer' to Firebase Storage here,
-  // get the downloadURL, and then save the document to Firestore.
-  // Example: 
-  // const storageRef = ref(storage, `audio/${expressionId}.mp3`);
-  // await uploadBytes(storageRef, buffer);
-  // const audioUrl = await getDownloadURL(storageRef);
-  // await setDoc(doc(db, "expressions", expressionId), { ...expression, audioUrl });
 }
 
-async function runSeed() {
-  console.log("Starting LingoFlow Data Seed...");
-  if (ELEVENLABS_API_KEY === 'YOUR_ELEVENLABS_API_KEY') {
-    console.warn("⚠️ Please set your ELEVENLABS_API_KEY to generate actual audio.");
-    return;
-  }
+// 4. Main Execution Function
+async function main() {
+  try {
+    const apiKey = await getElevenLabsApiKey();
+    const csvPath = path.join(__dirname, 'expressions.csv');
+    const audioDir = path.join(__dirname, 'audio');
 
-  for (const exp of expressions) {
-    console.log(`Processing: ${exp.english}`);
-    try {
-      await generateAudio(exp.english, exp.id);
-    } catch (e) {
-      console.error(e);
+    if (!fs.existsSync(audioDir)) {
+      fs.mkdirSync(audioDir, { recursive: true });
     }
+
+    if (!fs.existsSync(csvPath)) {
+      console.error(`CSV file not found at ${csvPath}`);
+      return;
+    }
+
+    const expressions = loadExpressionsFromCSV(csvPath);
+    console.log(`Found ${expressions.length} expressions in CSV.`);
+
+    for (const exp of expressions) {
+      const outputPath = path.join(audioDir, `${exp.id}.mp3`);
+      
+      if (fs.existsSync(outputPath)) {
+        console.log(`Audio for "${exp.english}" already exists at ${outputPath}. Skipping.`);
+        continue;
+      }
+
+      console.log(`Generating audio for [${exp.category}] "${exp.english}"...`);
+      await generateAudio(apiKey, exp.english, outputPath);
+      console.log(`Saved MP3: ${outputPath}`);
+    }
+
+    console.log('\nAll expressions processed successfully!');
+    console.log(`Generated audio files are saved in: ${audioDir}`);
+  } catch (err) {
+    console.error('Seeding process failed:', err.message);
   }
-  console.log("Seeding complete!");
 }
 
-runSeed();
+main();

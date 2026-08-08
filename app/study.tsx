@@ -1,277 +1,237 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Animated, Dimensions, SafeAreaView, Alert } from 'react-native';
-import * as Speech from 'expo-speech';
+import React from 'react';
+import {
+  View, Text, StyleSheet, TouchableOpacity,
+  SafeAreaView, StatusBar, Platform,
+} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
-import { useProgress } from '../src/contexts/ProgressContext';
-
-const { width } = Dimensions.get('window');
-
-const sampleExpressions = [
-  { id: 'exp_001', english: "How's it going?", korean: "어떻게 지내세요?" },
-  { id: 'exp_002', english: "Long time no see!", korean: "오랜만이에요!" },
-  { id: 'exp_003', english: "Could you do me a favor?", korean: "부탁 하나만 들어주실 수 있나요?" },
-  { id: 'exp_004', english: "That sounds like a great plan.", korean: "정말 좋은 계획이네요." },
-];
+import { useRouter, useLocalSearchParams } from 'expo-router';
+import { useStudyCard } from '../src/hooks/useStudyCard';
+import FlashCard from '../src/components/FlashCard';
+import { COLORS, RADIUS, SHADOW } from '../src/constants/theme';
+import allExpressions from '../src/data/expressions.json';
 
 export default function StudyScreen() {
   const router = useRouter();
-  const { addXp, loseHeart, hearts } = useProgress();
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isFlipped, setIsFlipped] = useState(false);
-  const [flipAnim] = useState(new Animated.Value(0));
+  const { categoryId } = useLocalSearchParams<{ categoryId?: string }>();
 
-  const currentExpression = sampleExpressions[currentIndex];
-  const progressPercentage = ((currentIndex + 1) / sampleExpressions.length) * 100;
+  // Filter expressions by category (or use all)
+  const expressions = categoryId
+    ? allExpressions.filter(e => e.category === categoryId)
+    : allExpressions;
+  const list = expressions.length > 0 ? expressions : allExpressions;
 
-  const playAudio = () => {
-    Speech.speak(currentExpression.english, {
-      language: 'en-US',
-      pitch: 1.0,
-      rate: 0.9,
-    });
-  };
-
-  const flipCard = () => {
-    Animated.spring(flipAnim, {
-      toValue: isFlipped ? 0 : 180,
-      friction: 8,
-      tension: 10,
-      useNativeDriver: true,
-    }).start();
-    setIsFlipped(!isFlipped);
-  };
+  const {
+    currentExpression,
+    currentIndex,
+    progressPercentage,
+    isFlipped,
+    isQuizMode,
+    isFirst,
+    isLast,
+    frontAnimStyle,
+    backAnimStyle,
+    flipCard,
+    toggleQuizMode,
+    goNext,
+    goPrev,
+    goForward,
+    playAudio,
+  } = useStudyCard(list);
 
   const handleNext = (mastered: boolean) => {
-    if (mastered) {
-      addXp(10);
-    } else {
-      loseHeart();
-      if (hearts <= 1) { // They are losing their last heart
-        Alert.alert('Out of Hearts!', 'Take a break and try again later.', [
-          { text: 'OK', onPress: () => router.back() }
-        ]);
-        return;
-      }
-    }
-
-    if (isFlipped) {
-      // Instantly reset flip for next card without animation delay
-      flipAnim.setValue(0);
-      setIsFlipped(false);
-    }
-    
-    if (currentIndex < sampleExpressions.length - 1) {
-      setCurrentIndex(prev => prev + 1);
-    } else {
-      // Completed lesson
-      router.back();
-    }
+    const result = goNext(mastered);
+    if (result === 'done') router.back();
   };
 
-  const frontInterpolate = flipAnim.interpolate({
-    inputRange: [0, 180],
-    outputRange: ['0deg', '180deg'],
-  });
-  const backInterpolate = flipAnim.interpolate({
-    inputRange: [0, 180],
-    outputRange: ['180deg', '360deg'],
-  });
-
-  const frontAnimatedStyle = { transform: [{ rotateY: frontInterpolate }] };
-  const backAnimatedStyle = { transform: [{ rotateY: backInterpolate }], position: 'absolute' as 'absolute', top: 0, opacity: isFlipped ? 1 : 0 };
-
   return (
-    <SafeAreaView style={styles.safeArea}>
+    <SafeAreaView style={styles.safe}>
+      <StatusBar barStyle="light-content" />
       <View style={styles.container}>
-        {/* Top Progress Bar */}
+
+        {/* ── Header: close + progress ──────────── */}
         <View style={styles.header}>
-          <TouchableOpacity onPress={() => router.back()} style={styles.closeBtn}>
-            <Ionicons name="close" size={28} color="#AFAFAF" />
+          <TouchableOpacity onPress={() => router.back()} style={styles.closeBtn} activeOpacity={0.7}>
+            <Ionicons name="close" size={22} color={COLORS.textMuted} />
           </TouchableOpacity>
-          <View style={styles.progressBarBg}>
-            <View style={[styles.progressBarFill, { width: `${progressPercentage}%` }]} />
-            {/* Glossy reflection on progress bar for 3D feel */}
-            <View style={styles.progressBarHighlight} />
+          <View style={styles.progressBg}>
+            <View style={[styles.progressFill, { width: `${progressPercentage}%` as any }]} />
           </View>
+          <Text style={styles.progressText}>{currentIndex + 1}/{list.length}</Text>
         </View>
 
-        <View style={styles.cardContainer}>
-          {/* Front of Card (English) */}
-          <Animated.View style={[styles.card, frontAnimatedStyle, { opacity: isFlipped ? 0 : 1, zIndex: isFlipped ? 0 : 1 }]}>
-            <TouchableOpacity style={styles.textContainer} onPress={flipCard} activeOpacity={0.8}>
-              <Text style={styles.cardTextEnglish}>{currentExpression.english}</Text>
-              <Text style={styles.hintText}>Tap to translate</Text>
-            </TouchableOpacity>
-            
-            <TouchableOpacity style={styles.audioButton} onPress={playAudio} activeOpacity={0.7}>
-              <Ionicons name="volume-high" size={32} color="#1CB0F6" />
-            </TouchableOpacity>
-          </Animated.View>
+        {/* ── Quiz mode toggle ──────────────────── */}
+        <TouchableOpacity
+          style={[styles.quizToggle, isQuizMode && styles.quizToggleActive]}
+          onPress={toggleQuizMode}
+          activeOpacity={0.8}
+        >
+          <Ionicons
+            name="bulb-outline"
+            size={14}
+            color={isQuizMode ? COLORS.purple : COLORS.textMuted}
+            style={{ marginRight: 6 }}
+          />
+          <Text style={[styles.quizToggleText, isQuizMode && styles.quizToggleTextActive]}>
+            {isQuizMode ? 'Quiz ON · 한국어 먼저' : 'Quiz Mode · 한국어 먼저'}
+          </Text>
+        </TouchableOpacity>
 
-          {/* Back of Card (Korean) */}
-          <Animated.View style={[styles.card, styles.cardBack, backAnimatedStyle, { zIndex: isFlipped ? 1 : 0 }]}>
-            <TouchableOpacity style={styles.textContainer} onPress={flipCard} activeOpacity={0.8}>
-              <Text style={styles.cardTextKorean}>{currentExpression.korean}</Text>
-              <Text style={styles.hintTextWhite}>Tap to flip back</Text>
-            </TouchableOpacity>
-          </Animated.View>
-        </View>
+        {/* ── Flashcard ─────────────────────────── */}
+        <FlashCard
+          frontText={isQuizMode ? currentExpression.korean : currentExpression.english}
+          backText={isQuizMode ? currentExpression.english : currentExpression.korean}
+          frontLabel={isQuizMode ? 'KO' : 'EN'}
+          backLabel={isQuizMode ? 'EN' : 'KO'}
+          isFlipped={isFlipped}
+          showAudioOnFront={!isQuizMode}
+          showAudioOnBack={isQuizMode}
+          frontAnimStyle={frontAnimStyle}
+          backAnimStyle={backAnimStyle}
+          onFlip={flipCard}
+          onAudio={playAudio}
+        />
 
-        {/* Gamified 3D Buttons */}
-        <View style={styles.actionContainer}>
-          <TouchableOpacity style={[styles.actionBtn, styles.reviewBtn]} onPress={() => handleNext(false)} activeOpacity={0.7}>
-            <Text style={[styles.actionBtnText, styles.reviewBtnText]}>Needs Review</Text>
+        {/* ── Navigation row ─────────────────────── */}
+        <View style={styles.navRow}>
+          {/* ← Prev */}
+          <TouchableOpacity
+            style={[styles.navBtn, isFirst && styles.navBtnDisabled]}
+            onPress={goPrev}
+            activeOpacity={isFirst ? 1 : 0.7}
+            disabled={isFirst}
+          >
+            <Ionicons name="chevron-back" size={20} color={isFirst ? '#2D2D44' : COLORS.indigo} />
           </TouchableOpacity>
-          <TouchableOpacity style={[styles.actionBtn, styles.masteredBtn]} onPress={() => handleNext(true)} activeOpacity={0.7}>
-            <Text style={styles.actionBtnText}>Mastered</Text>
+
+          {/* Review / Mastered */}
+          <View style={styles.actions}>
+            <TouchableOpacity style={styles.reviewBtn} onPress={() => handleNext(false)} activeOpacity={0.7}>
+              <Ionicons name="refresh-outline" size={16} color={COLORS.pink} style={{ marginRight: 4 }} />
+              <Text style={styles.reviewBtnText}>Review</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.masteredBtn} onPress={() => handleNext(true)} activeOpacity={0.7}>
+              <Ionicons name="checkmark" size={16} color={COLORS.white} style={{ marginRight: 4 }} />
+              <Text style={styles.masteredBtnText}>Mastered</Text>
+            </TouchableOpacity>
+          </View>
+
+          {/* → Next */}
+          <TouchableOpacity
+            style={[styles.navBtn, isLast && styles.navBtnDisabled]}
+            onPress={goForward}
+            activeOpacity={isLast ? 1 : 0.7}
+            disabled={isLast}
+          >
+            <Ionicons name="chevron-forward" size={20} color={isLast ? '#2D2D44' : COLORS.indigo} />
           </TouchableOpacity>
         </View>
+
       </View>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  safeArea: {
-    flex: 1,
-    backgroundColor: '#FFFFFF',
-  },
-  container: {
-    flex: 1,
-    paddingHorizontal: 20,
-    backgroundColor: '#FFFFFF',
-    alignItems: 'center',
-  },
+  safe: { flex: 1, backgroundColor: COLORS.bgDeep },
+  container: { flex: 1, paddingHorizontal: 20, alignItems: 'center', backgroundColor: COLORS.bgDeep },
+
+  /* Header */
   header: {
     flexDirection: 'row',
     alignItems: 'center',
     width: '100%',
-    paddingVertical: 20,
+    paddingVertical: 14,
+    gap: 12,
   },
-  closeBtn: {
-    marginRight: 15,
-  },
-  progressBarBg: {
+  closeBtn: { padding: 2 },
+  progressBg: {
     flex: 1,
-    height: 18,
-    backgroundColor: '#E5E5E5',
-    borderRadius: 10,
+    height: 6,
+    backgroundColor: '#1E1E30',
+    borderRadius: 3,
     overflow: 'hidden',
-    position: 'relative',
   },
-  progressBarFill: {
+  progressFill: {
     height: '100%',
-    backgroundColor: '#58CC02',
-    borderRadius: 10,
+    backgroundColor: COLORS.violet,
+    borderRadius: 3,
   },
-  progressBarHighlight: {
-    position: 'absolute',
-    top: 3,
-    left: 10,
-    right: 10,
-    height: 4,
-    backgroundColor: 'rgba(255,255,255,0.3)',
-    borderRadius: 5,
+  progressText: {
+    fontSize: 12,
+    color: COLORS.textMuted,
+    fontWeight: '600',
+    minWidth: 36,
+    textAlign: 'right',
   },
-  cardContainer: {
-    width: width * 0.85,
-    height: 420,
+
+  /* Quiz toggle */
+  quizToggle: {
+    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 20,
-    marginBottom: 40,
-  },
-  card: {
-    width: '100%',
-    height: '100%',
-    backgroundColor: '#FFFFFF',
-    borderRadius: 24,
-    padding: 30,
-    borderWidth: 2,
-    borderColor: '#E5E5E5',
-    borderBottomWidth: 8, // Chunky depth
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  cardBack: {
-    backgroundColor: '#1CB0F6',
-    borderColor: '#1899D6',
-  },
-  textContainer: {
-    flex: 1,
-    width: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  cardTextEnglish: {
-    fontSize: 28,
-    fontWeight: '800',
-    color: '#3C3C3C',
-    textAlign: 'center',
+    backgroundColor: COLORS.bgCard,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+    paddingVertical: 7,
+    paddingHorizontal: 14,
+    borderRadius: RADIUS.full,
     marginBottom: 20,
   },
-  cardTextKorean: {
-    fontSize: 26,
-    fontWeight: '800',
-    color: '#FFFFFF',
-    textAlign: 'center',
+  quizToggleActive: {
+    borderColor: COLORS.violet,
+    backgroundColor: '#1A1130',
   },
-  audioButton: {
-    width: 60,
-    height: 60,
-    borderRadius: 30,
-    backgroundColor: '#DDF4FF',
+  quizToggleText: {
+    fontSize: 13,
+    fontWeight: '600',
+    color: COLORS.textMuted,
+  },
+  quizToggleTextActive: { color: COLORS.purple },
+
+  /* Navigation row */
+  navRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: '100%',
+    gap: 8,
+  },
+  navBtn: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    backgroundColor: COLORS.bgCard,
+    borderWidth: 1,
+    borderColor: COLORS.border,
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 2,
-    borderColor: '#1CB0F6',
-    borderBottomWidth: 4, // 3D button effect inside card
-    marginTop: 20,
   },
-  hintText: {
-    position: 'absolute',
-    bottom: 0,
-    color: '#AFAFAF',
-    fontSize: 14,
-    fontWeight: 'bold',
+  navBtnDisabled: {
+    borderColor: '#1A1A28',
+    backgroundColor: '#0D0D18',
   },
-  hintTextWhite: {
-    position: 'absolute',
-    bottom: 0,
-    color: 'rgba(255,255,255,0.7)',
-    fontSize: 14,
-    fontWeight: 'bold',
-  },
-  actionContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: width * 0.9,
-  },
-  actionBtn: {
-    flex: 1,
-    paddingVertical: 18,
-    borderRadius: 16,
-    alignItems: 'center',
-    marginHorizontal: 8,
-    borderWidth: 2,
-    borderBottomWidth: 6, // Thick bottom border for tactile feel
-  },
+
+  /* Actions */
+  actions: { flex: 1, flexDirection: 'row', gap: 8 },
   reviewBtn: {
-    backgroundColor: '#FFFFFF',
-    borderColor: '#E5E5E5',
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: COLORS.bgCard,
+    borderWidth: 1,
+    borderColor: COLORS.pink + '55',
+    paddingVertical: 14,
+    borderRadius: RADIUS.md,
   },
-  reviewBtnText: {
-    color: '#FF4B4B', // Red text on white button
-  },
+  reviewBtnText: { color: COLORS.pink, fontSize: 14, fontWeight: '600' },
   masteredBtn: {
-    backgroundColor: '#58CC02',
-    borderColor: '#46A302',
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: COLORS.violet,
+    paddingVertical: 14,
+    borderRadius: RADIUS.md,
+    ...Platform.select(SHADOW.button),
   },
-  actionBtnText: {
-    color: '#FFFFFF',
-    fontSize: 16,
-    fontWeight: '900',
-    letterSpacing: 0.5,
-  },
+  masteredBtnText: { color: COLORS.white, fontSize: 14, fontWeight: '600' },
 });
