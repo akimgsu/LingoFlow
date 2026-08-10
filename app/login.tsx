@@ -1,34 +1,59 @@
 import React, { useState } from 'react';
 import {
   View, Text, TextInput, StyleSheet, Alert,
-  TouchableOpacity, SafeAreaView, StatusBar, KeyboardAvoidingView, Platform,
+  TouchableOpacity, SafeAreaView, StatusBar, KeyboardAvoidingView,
+  Platform, ActivityIndicator,
 } from 'react-native';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebaseConfig';
-import { useRouter } from 'expo-router';
+import { Redirect, useRouter } from 'expo-router';
+import { useAuth } from '../src/contexts/AuthContext';
 import { Ionicons } from '@expo/vector-icons';
+import { COLORS, RADIUS, SHADOW } from '../src/constants/theme';
 
 export default function LoginScreen() {
+  const { user } = useAuth();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPass, setShowPass] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const router = useRouter();
 
+  // If already authenticated, redirect to Home
+  if (user) {
+    return <Redirect href="/" />;
+  }
+
   const handleLogin = async () => {
+    if (!email.trim() || !password) {
+      Alert.alert('Required Fields', 'Please enter both email and password.');
+      return;
+    }
+
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      setIsSubmitting(true);
+      await signInWithEmailAndPassword(auth, email.trim(), password);
     } catch (error: any) {
-      Alert.alert('Login Error', error.message);
+      const code = error.code || '';
+      let message = 'Unable to log in. Please try again.';
+      if (code === 'auth/invalid-credential' || code === 'auth/wrong-password' || code === 'auth/user-not-found') {
+        message = 'Invalid email or password. Please check and try again.';
+      } else if (code === 'auth/invalid-email') {
+        message = 'Please enter a valid email address.';
+      }
+      Alert.alert('Login Failed', message);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   return (
     <SafeAreaView style={styles.safe}>
-      <StatusBar barStyle="light-content" />
+      <StatusBar barStyle="light-content" backgroundColor={COLORS.bgDeep} />
       <KeyboardAvoidingView style={styles.kav} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
         <View style={styles.container}>
 
-          {/* Logo */}
+          {/* ── Brand Logo Header ─────────────────────── */}
           <View style={styles.logoRow}>
             <View style={styles.logoMark}>
               <Text style={styles.logoText}>LF</Text>
@@ -37,46 +62,72 @@ export default function LoginScreen() {
           </View>
 
           <Text style={styles.heading}>Welcome back.</Text>
-          <Text style={styles.sub}>Sign in to continue learning.</Text>
+          <Text style={styles.sub}>Sign in to continue mastering English.</Text>
 
-          {/* Inputs */}
+          {/* ── Form Inputs ───────────────────────────── */}
           <View style={styles.form}>
             <View style={styles.inputWrap}>
-              <Ionicons name="mail-outline" size={18} color="#4B5563" style={styles.inputIcon} />
+              <Ionicons name="mail-outline" size={20} color={COLORS.textMuted} style={styles.inputIcon} />
               <TextInput
                 style={styles.input}
                 placeholder="Email address"
-                placeholderTextColor="#374151"
+                placeholderTextColor={COLORS.textDim}
                 value={email}
                 onChangeText={setEmail}
                 autoCapitalize="none"
                 keyboardType="email-address"
+                editable={!isSubmitting}
               />
             </View>
 
             <View style={styles.inputWrap}>
-              <Ionicons name="lock-closed-outline" size={18} color="#4B5563" style={styles.inputIcon} />
+              <Ionicons name="lock-closed-outline" size={20} color={COLORS.textMuted} style={styles.inputIcon} />
               <TextInput
                 style={styles.input}
                 placeholder="Password"
-                placeholderTextColor="#374151"
+                placeholderTextColor={COLORS.textDim}
                 value={password}
                 onChangeText={setPassword}
                 secureTextEntry={!showPass}
+                editable={!isSubmitting}
               />
-              <TouchableOpacity onPress={() => setShowPass(p => !p)} style={styles.eyeBtn}>
-                <Ionicons name={showPass ? 'eye-outline' : 'eye-off-outline'} size={18} color="#4B5563" />
+              <TouchableOpacity
+                onPress={() => setShowPass((p) => !p)}
+                style={styles.eyeBtn}
+                accessibilityLabel="Toggle password visibility"
+              >
+                <Ionicons
+                  name={showPass ? 'eye-outline' : 'eye-off-outline'}
+                  size={20}
+                  color={COLORS.textMuted}
+                />
               </TouchableOpacity>
             </View>
           </View>
 
-          {/* Primary CTA */}
-          <TouchableOpacity style={styles.primaryBtn} onPress={handleLogin} activeOpacity={0.85}>
-            <Text style={styles.primaryBtnText}>Log In</Text>
-            <Ionicons name="arrow-forward" size={18} color="#fff" style={{ marginLeft: 6 }} />
+          {/* ── Primary Action Button ─────────────────── */}
+          <TouchableOpacity
+            style={[styles.primaryBtn, isSubmitting && styles.btnDisabled]}
+            onPress={handleLogin}
+            activeOpacity={0.85}
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? (
+              <ActivityIndicator size="small" color={COLORS.white} />
+            ) : (
+              <>
+                <Text style={styles.primaryBtnText}>Log In</Text>
+                <Ionicons name="arrow-forward" size={18} color={COLORS.white} style={{ marginLeft: 6 }} />
+              </>
+            )}
           </TouchableOpacity>
 
-          <TouchableOpacity onPress={() => router.push('/signup')} style={styles.switchRow}>
+          {/* ── Switch to Sign Up ──────────────────────── */}
+          <TouchableOpacity
+            onPress={() => router.push('/signup')}
+            style={styles.switchRow}
+            disabled={isSubmitting}
+          >
             <Text style={styles.switchText}>Don't have an account? </Text>
             <Text style={styles.switchLink}>Sign Up</Text>
           </TouchableOpacity>
@@ -88,107 +139,115 @@ export default function LoginScreen() {
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: '#0A0A12' },
-  kav: { flex: 1 },
+  safe: {
+    flex: 1,
+    backgroundColor: COLORS.bgDeep,
+  },
+  kav: {
+    flex: 1,
+  },
   container: {
     flex: 1,
     paddingHorizontal: 28,
-    paddingTop: 40,
-    paddingBottom: 40,
     justifyContent: 'center',
+    paddingBottom: 24,
   },
-
   logoRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 48,
+    marginBottom: 36,
   },
   logoMark: {
-    width: 36,
-    height: 36,
-    borderRadius: 11,
-    backgroundColor: '#6D28D9',
+    width: 42,
+    height: 42,
+    borderRadius: RADIUS.md,
+    backgroundColor: COLORS.primaryDark,
     justifyContent: 'center',
     alignItems: 'center',
-    marginRight: 10,
+    marginRight: 12,
   },
   logoText: {
-    color: '#fff',
-    fontSize: 14,
+    color: COLORS.white,
+    fontSize: 16,
     fontWeight: '800',
     letterSpacing: 0.5,
   },
   logoName: {
-    color: '#fff',
-    fontSize: 20,
-    fontWeight: '700',
+    color: COLORS.textPrimary,
+    fontSize: 22,
+    fontWeight: '800',
     letterSpacing: -0.5,
   },
-
   heading: {
-    fontSize: 34,
+    fontSize: 32,
     fontWeight: '800',
-    color: '#FFFFFF',
-    letterSpacing: -1,
-    marginBottom: 8,
+    color: COLORS.textPrimary,
+    letterSpacing: -0.8,
+    marginBottom: 6,
   },
   sub: {
-    fontSize: 16,
-    color: '#4B5563',
-    marginBottom: 40,
-    fontWeight: '400',
+    fontSize: 15,
+    color: COLORS.textSecondary,
+    marginBottom: 32,
   },
-
-  form: { gap: 12, marginBottom: 24 },
+  form: {
+    gap: 14,
+    marginBottom: 24,
+  },
   inputWrap: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#13131F',
+    backgroundColor: COLORS.bgCard,
     borderWidth: 1,
-    borderColor: '#1E1E30',
-    borderRadius: 14,
-    paddingHorizontal: 14,
-    paddingVertical: 4,
+    borderColor: COLORS.border,
+    borderRadius: RADIUS.md,
+    paddingHorizontal: 16,
+    paddingVertical: 2,
   },
-  inputIcon: { marginRight: 10 },
+  inputIcon: {
+    marginRight: 12,
+  },
   input: {
     flex: 1,
-    paddingVertical: 16,
-    fontSize: 16,
-    color: '#F1F5F9',
+    paddingVertical: 14,
+    fontSize: 15,
+    color: COLORS.textPrimary,
   },
-  eyeBtn: { padding: 4 },
-
+  eyeBtn: {
+    padding: 6,
+  },
   primaryBtn: {
     flexDirection: 'row',
-    backgroundColor: '#6D28D9',
-    paddingVertical: 17,
-    borderRadius: 14,
+    backgroundColor: COLORS.primary,
+    paddingVertical: 16,
+    borderRadius: RADIUS.md,
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 20,
-    ...Platform.select({
-      ios: {
-        shadowColor: '#6D28D9',
-        shadowOffset: { width: 0, height: 6 },
-        shadowOpacity: 0.45,
-        shadowRadius: 12,
-      },
-      android: { elevation: 8 },
-    }),
+    marginBottom: 24,
+    ...Platform.select(SHADOW.button),
+  },
+  btnDisabled: {
+    opacity: 0.7,
   },
   primaryBtnText: {
-    color: '#FFFFFF',
+    color: COLORS.white,
     fontWeight: '700',
     fontSize: 16,
     letterSpacing: -0.2,
   },
-
   switchRow: {
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
   },
-  switchText: { color: '#4B5563', fontSize: 14, fontWeight: '500' },
-  switchLink: { color: '#A78BFA', fontSize: 14, fontWeight: '700' },
+  switchText: {
+    color: COLORS.textSecondary,
+    fontSize: 14,
+    fontWeight: '500',
+  },
+  switchLink: {
+    color: COLORS.accentPurple,
+    fontSize: 14,
+    fontWeight: '700',
+  },
 });

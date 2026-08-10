@@ -12,5 +12,21 @@ export interface Category {
   title: string;
   icon: string;   // FontAwesome5 icon name
   count: number;
-  accent: string; // hex color
+  accent: string; // Hex color for theme accent
+}
+
+export interface Achievement {
+  id: string | number;
+  title: string;
+  description: string;
+  icon: string;
+  color: string;
+  unlocked: boolean;
+}
+
+export interface StudySessionStats {
+  totalStudied: number;
+  masteredCount: number;
+  reviewCount: number;
+  xpEarned: number;
 }

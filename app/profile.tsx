@@ -1,78 +1,170 @@
 import React from 'react';
 import {
   View, Text, StyleSheet, TouchableOpacity,
-  ScrollView, SafeAreaView, Platform, StatusBar,
+  ScrollView, SafeAreaView, Platform, StatusBar, Alert,
 } from 'react-native';
 import { Ionicons, FontAwesome5 } from '@expo/vector-icons';
-import { auth } from '../firebaseConfig';
 import { useAuth } from '../src/contexts/AuthContext';
-import { useRouter } from 'expo-router';
 import { useProgress } from '../src/contexts/ProgressContext';
+import { COLORS, RADIUS, SHADOW } from '../src/constants/theme';
+import { Achievement } from '../src/types';
 
 export default function ProfileScreen() {
-  const { user } = useAuth();
-  const { streak, xp } = useProgress();
-  const router = useRouter();
+  const { user, logout, displayName } = useAuth();
+  const { streak, xp, level, levelProgress, nextLevelXp, masteredIds } = useProgress();
 
-  const handleLogout = async () => {
-    if (user?.email) {
-      await auth.signOut();
-    } else {
-      router.replace('/login');
-    }
+  const handleLogout = () => {
+    Alert.alert(
+      'Log Out',
+      'Are you sure you want to log out of LingoFlow?',
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Log Out',
+          style: 'destructive',
+          onPress: async () => {
+            await logout();
+          },
+        },
+      ]
+    );
   };
 
-  const achievements = [
-    { id: 1, title: 'Early Bird',   icon: 'sun',      color: '#FB923C', bg: '#FB923C20' },
-    { id: 2, title: '7 Day Streak', icon: 'fire',     color: '#F472B6', bg: '#F472B620' },
-    { id: 3, title: 'Fast Learner', icon: 'bolt',     color: '#818CF8', bg: '#818CF820' },
+  const achievements: Achievement[] = [
+    {
+      id: 1,
+      title: 'First Step',
+      description: 'Completed your first expression',
+      icon: 'walking',
+      color: COLORS.accentIndigo,
+      unlocked: xp >= 15,
+    },
+    {
+      id: 2,
+      title: 'Streak Starter',
+      description: 'Maintained a consecutive study streak',
+      icon: 'fire',
+      color: COLORS.flame,
+      unlocked: streak >= 1,
+    },
+    {
+      id: 3,
+      title: 'Vocabulary Builder',
+      description: 'Mastered 10 or more expressions',
+      icon: 'brain',
+      color: COLORS.accentIdioms,
+      unlocked: masteredIds.length >= 10,
+    },
+    {
+      id: 4,
+      title: 'Centurion Learner',
+      description: 'Earned over 200 Total XP',
+      icon: 'crown',
+      color: '#F59E0B',
+      unlocked: xp >= 200,
+    },
   ];
-
-  const displayName = user?.email ? user.email.split('@')[0] : 'Learner';
 
   return (
     <SafeAreaView style={styles.safe}>
-      <StatusBar barStyle="light-content" />
+      <StatusBar barStyle="light-content" backgroundColor={COLORS.bgDeep} />
       <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
 
-        {/* Profile hero */}
+        {/* ── User Avatar Hero ──────────────────────── */}
         <View style={styles.hero}>
           <View style={styles.avatar}>
-            <Text style={styles.avatarInitial}>{displayName.charAt(0).toUpperCase()}</Text>
+            <Text style={styles.avatarInitial}>
+              {displayName.charAt(0).toUpperCase()}
+            </Text>
           </View>
-          <Text style={styles.name}>{displayName}</Text>
-          <Text style={styles.email}>{user?.email || 'Guest'}</Text>
+
+          <View style={styles.nameRow}>
+            <Text style={styles.name}>{displayName}</Text>
+            <View style={styles.levelBadge}>
+              <Text style={styles.levelBadgeText}>Lv. {level}</Text>
+            </View>
+          </View>
+          <Text style={styles.email}>{user?.email || 'Guest User'}</Text>
+
+          {/* ── Level Progress Bar ───────────────────── */}
+          <View style={styles.levelProgressCard}>
+            <View style={styles.levelProgressHeader}>
+              <Text style={styles.levelProgressLabel}>Level {level} Progress</Text>
+              <Text style={styles.levelProgressValue}>{xp} / {nextLevelXp} XP</Text>
+            </View>
+            <View style={styles.levelTrack}>
+              <View style={[styles.levelFill, { width: `${levelProgress}%` as any }]} />
+            </View>
+          </View>
         </View>
 
-        {/* Stats row */}
+        {/* ── Core Statistics Grid ───────────────────── */}
+        <Text style={styles.sectionHeader}>STUDY STATISTICS</Text>
         <View style={styles.statsRow}>
           <View style={styles.statCard}>
-            <Ionicons name="flame" size={26} color="#FB923C" style={styles.statIcon} />
+            <Ionicons name="flame" size={24} color={COLORS.flame} style={styles.statIcon} />
             <Text style={styles.statVal}>{streak}</Text>
             <Text style={styles.statLbl}>Day Streak</Text>
           </View>
-          <View style={[styles.statCard, styles.statCardMid]}>
-            <Ionicons name="flash" size={26} color="#818CF8" style={styles.statIcon} />
+
+          <View style={styles.statCard}>
+            <Ionicons name="flash" size={24} color={COLORS.accentIndigo} style={styles.statIcon} />
             <Text style={styles.statVal}>{xp.toLocaleString()}</Text>
             <Text style={styles.statLbl}>Total XP</Text>
           </View>
+
+          <View style={styles.statCard}>
+            <Ionicons name="checkmark-done-circle" size={24} color={COLORS.success} style={styles.statIcon} />
+            <Text style={styles.statVal}>{masteredIds.length}</Text>
+            <Text style={styles.statLbl}>Mastered</Text>
+          </View>
         </View>
 
-        {/* Achievements */}
-        <Text style={styles.sectionTitle}>ACHIEVEMENTS</Text>
-        {achievements.map(item => (
-          <View key={item.id} style={styles.achieveCard}>
-            <View style={[styles.achieveIcon, { backgroundColor: item.bg }]}>
-              <FontAwesome5 name={item.icon} size={18} color={item.color} />
+        {/* ── Achievements List ──────────────────────── */}
+        <Text style={styles.sectionHeader}>ACHIEVEMENTS</Text>
+        <View style={styles.achievementsList}>
+          {achievements.map((item) => (
+            <View
+              key={item.id}
+              style={[styles.achieveCard, !item.unlocked && styles.achieveCardLocked]}
+            >
+              <View
+                style={[
+                  styles.achieveIcon,
+                  {
+                    backgroundColor: item.unlocked ? item.color + '20' : COLORS.border,
+                  },
+                ]}
+              >
+                <FontAwesome5
+                  name={item.icon}
+                  size={16}
+                  color={item.unlocked ? item.color : COLORS.textDim}
+                />
+              </View>
+              <View style={styles.achieveTextGroup}>
+                <Text
+                  style={[
+                    styles.achieveTitle,
+                    !item.unlocked && styles.achieveTitleLocked,
+                  ]}
+                >
+                  {item.title}
+                </Text>
+                <Text style={styles.achieveDesc}>{item.description}</Text>
+              </View>
+              <Ionicons
+                name={item.unlocked ? 'checkmark-circle' : 'lock-closed'}
+                size={20}
+                color={item.unlocked ? item.color : COLORS.textDim}
+              />
             </View>
-            <Text style={styles.achieveTitle}>{item.title}</Text>
-            <Ionicons name="checkmark-circle" size={20} color={item.color} />
-          </View>
-        ))}
+          ))}
+        </View>
 
-        {/* Logout */}
-        <TouchableOpacity style={styles.logoutBtn} onPress={handleLogout} activeOpacity={0.7}>
-          <Ionicons name="log-out-outline" size={18} color="#F472B6" style={{ marginRight: 8 }} />
+        {/* ── Sign Out Action ────────────────────────── */}
+        <TouchableOpacity style={styles.logoutBtn} onPress={handleLogout} activeOpacity={0.75}>
+          <Ionicons name="log-out-outline" size={18} color={COLORS.pink} style={{ marginRight: 8 }} />
           <Text style={styles.logoutText}>Log Out</Text>
         </TouchableOpacity>
 
@@ -82,69 +174,190 @@ export default function ProfileScreen() {
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: '#0A0A12' },
-  scroll: { paddingHorizontal: 22, paddingBottom: 48, paddingTop: 24 },
-
-  hero: { alignItems: 'center', marginBottom: 32 },
-  avatar: {
-    width: 80, height: 80, borderRadius: 40,
-    backgroundColor: '#6D28D9',
-    justifyContent: 'center', alignItems: 'center',
-    marginBottom: 14,
-    ...Platform.select({
-      ios: { shadowColor: '#6D28D9', shadowOffset: { width: 0, height: 8 }, shadowOpacity: 0.4, shadowRadius: 16 },
-      android: { elevation: 8 },
-    }),
+  safe: {
+    flex: 1,
+    backgroundColor: COLORS.bgDeep,
   },
-  avatarInitial: { color: '#fff', fontSize: 32, fontWeight: '800' },
-  name: { fontSize: 22, fontWeight: '700', color: '#F1F5F9', marginBottom: 4, letterSpacing: -0.5 },
-  email: { fontSize: 14, color: '#4B5563', fontWeight: '500' },
-
-  statsRow: { flexDirection: 'row', gap: 12, marginBottom: 36 },
+  scroll: {
+    paddingHorizontal: 20,
+    paddingBottom: 48,
+    paddingTop: 16,
+  },
+  hero: {
+    alignItems: 'center',
+    marginBottom: 28,
+  },
+  avatar: {
+    width: 76,
+    height: 76,
+    borderRadius: RADIUS.full,
+    backgroundColor: COLORS.primary,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 12,
+    ...Platform.select(SHADOW.avatar),
+  },
+  avatarInitial: {
+    color: COLORS.white,
+    fontSize: 30,
+    fontWeight: '800',
+  },
+  nameRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginBottom: 4,
+  },
+  name: {
+    fontSize: 22,
+    fontWeight: '800',
+    color: COLORS.textPrimary,
+    letterSpacing: -0.4,
+  },
+  levelBadge: {
+    backgroundColor: COLORS.primaryDark,
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    borderRadius: RADIUS.full,
+    borderWidth: 1,
+    borderColor: COLORS.borderAccent,
+  },
+  levelBadgeText: {
+    fontSize: 11,
+    fontWeight: '800',
+    color: COLORS.white,
+  },
+  email: {
+    fontSize: 13,
+    color: COLORS.textSecondary,
+    marginBottom: 18,
+  },
+  levelProgressCard: {
+    width: '100%',
+    backgroundColor: COLORS.bgCard,
+    borderRadius: RADIUS.lg,
+    padding: 16,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+  },
+  levelProgressHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 8,
+  },
+  levelProgressLabel: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: COLORS.textPrimary,
+  },
+  levelProgressValue: {
+    fontSize: 12,
+    fontWeight: '600',
+    color: COLORS.accentPurple,
+  },
+  levelTrack: {
+    height: 6,
+    backgroundColor: COLORS.bgDeep,
+    borderRadius: RADIUS.full,
+    overflow: 'hidden',
+    borderWidth: 1,
+    borderColor: COLORS.border,
+  },
+  levelFill: {
+    height: '100%',
+    backgroundColor: COLORS.primary,
+    borderRadius: RADIUS.full,
+  },
+  sectionHeader: {
+    fontSize: 11,
+    fontWeight: '800',
+    color: COLORS.textMuted,
+    letterSpacing: 1.5,
+    marginBottom: 12,
+    marginTop: 4,
+  },
+  statsRow: {
+    flexDirection: 'row',
+    gap: 10,
+    marginBottom: 28,
+  },
   statCard: {
     flex: 1,
-    backgroundColor: '#13131F',
-    borderRadius: 18,
-    padding: 20,
+    backgroundColor: COLORS.bgCard,
+    borderRadius: RADIUS.md,
+    paddingVertical: 16,
+    paddingHorizontal: 10,
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: '#1E1E30',
+    borderColor: COLORS.border,
   },
-  statCardMid: {},
-  statIcon: { marginBottom: 8 },
-  statVal: { fontSize: 24, fontWeight: '800', color: '#F1F5F9', marginBottom: 4 },
-  statLbl: { fontSize: 12, color: '#4B5563', fontWeight: '600', letterSpacing: 0.5 },
-
-  sectionTitle: {
-    fontSize: 11, fontWeight: '700', color: '#4B5563',
-    letterSpacing: 1.5, marginBottom: 14,
+  statIcon: {
+    marginBottom: 6,
+  },
+  statVal: {
+    fontSize: 18,
+    fontWeight: '800',
+    color: COLORS.textPrimary,
+    marginBottom: 2,
+  },
+  statLbl: {
+    fontSize: 11,
+    color: COLORS.textMuted,
+    fontWeight: '600',
+  },
+  achievementsList: {
+    gap: 8,
+    marginBottom: 28,
   },
   achieveCard: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#13131F',
-    borderRadius: 14,
-    padding: 16,
-    marginBottom: 10,
+    backgroundColor: COLORS.bgCard,
+    borderRadius: RADIUS.md,
+    padding: 14,
     borderWidth: 1,
-    borderColor: '#1E1E30',
+    borderColor: COLORS.border,
+  },
+  achieveCardLocked: {
+    opacity: 0.6,
   },
   achieveIcon: {
-    width: 40, height: 40, borderRadius: 12,
-    justifyContent: 'center', alignItems: 'center', marginRight: 14,
+    width: 38,
+    height: 38,
+    borderRadius: RADIUS.md,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 12,
   },
-  achieveTitle: { flex: 1, fontSize: 15, fontWeight: '600', color: '#E2E8F0' },
-
+  achieveTextGroup: {
+    flex: 1,
+  },
+  achieveTitle: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: COLORS.textPrimary,
+    marginBottom: 2,
+  },
+  achieveTitleLocked: {
+    color: COLORS.textSecondary,
+  },
+  achieveDesc: {
+    fontSize: 12,
+    color: COLORS.textSecondary,
+  },
   logoutBtn: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 28,
-    backgroundColor: '#13131F',
-    borderRadius: 14,
-    paddingVertical: 16,
+    backgroundColor: COLORS.bgCard,
+    borderRadius: RADIUS.md,
+    paddingVertical: 15,
     borderWidth: 1,
-    borderColor: '#F472B640',
+    borderColor: COLORS.pink + '40',
   },
-  logoutText: { color: '#F472B6', fontSize: 15, fontWeight: '600' },
+  logoutText: {
+    color: COLORS.pink,
+    fontSize: 15,
+    fontWeight: '700',
+  },
 });

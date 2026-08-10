@@ -1,70 +1,124 @@
 import React from 'react';
 import {
   View, Text, StyleSheet, FlatList,
-  TouchableOpacity, SafeAreaView, StatusBar, Platform,
+  TouchableOpacity, ActivityIndicator, SafeAreaView, Platform,
 } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
+import { Ionicons, FontAwesome5 } from '@expo/vector-icons';
+import { Redirect, useRouter } from 'expo-router';
+import { useAuth } from '../src/contexts/AuthContext';
 import { useProgress } from '../src/contexts/ProgressContext';
 import { CATEGORIES } from '../src/constants/categories';
 import CategoryCard from '../src/components/CategoryCard';
-import { COLORS, RADIUS } from '../src/constants/theme';
+import { COLORS, RADIUS, SHADOW } from '../src/constants/theme';
 
 export default function HomeScreen() {
+  const { user, loading, displayName } = useAuth();
   const router = useRouter();
-  const { streak, hearts } = useProgress();
+  const { streak, hearts, xp, level } = useProgress();
+
+  // Auth Guard
+  if (loading) {
+    return (
+      <View style={styles.loadingContainer}>
+        <ActivityIndicator size="large" color={COLORS.primary} />
+      </View>
+    );
+  }
+
+  if (!user) {
+    return <Redirect href="/login" />;
+  }
 
   const ListHeader = () => (
-    <>
-      {/* ── Dark header panel ─────────────────────── */}
-      <View style={styles.headerArea}>
-        {/* Top row: logo + stats + avatar */}
-        <View style={styles.topRow}>
-          <View style={styles.logoMark}>
+    <View style={styles.headerContainer}>
+      {/* ── Top Bar ──────────────────────────────────────── */}
+      <View style={styles.topBar}>
+        <View style={styles.branding}>
+          <View style={styles.logoBadge}>
             <Text style={styles.logoText}>LF</Text>
           </View>
-          <Text style={styles.appName}>LingoFlow</Text>
-
-          <View style={styles.topRight}>
-            <View style={styles.statPill}>
-              <Ionicons name="flame" size={14} color={COLORS.orange} />
-              <Text style={styles.statPillText}>{streak}</Text>
-            </View>
-            <View style={[styles.statPill, { marginLeft: 8 }]}>
-              <Ionicons name="heart" size={14} color={COLORS.pink} />
-              <Text style={styles.statPillText}>{hearts}</Text>
-            </View>
-            <TouchableOpacity
-              onPress={() => router.push('/profile')}
-              activeOpacity={0.8}
-              style={styles.avatarBtn}
-            >
-              <Ionicons name="person" size={15} color={COLORS.white} />
-            </TouchableOpacity>
+          <View>
+            <Text style={styles.welcomeText}>Hi, {displayName} 👋</Text>
+            <Text style={styles.subtitleText}>Ready to master English today?</Text>
           </View>
         </View>
 
-        {/* Hero */}
-        <Text style={styles.heroTitle}>Lingo Expressions</Text>
-        <Text style={styles.heroSub}>Pick a category and start speaking like a native.</Text>
+        <TouchableOpacity
+          style={styles.profileBtn}
+          onPress={() => router.push('/profile')}
+          activeOpacity={0.7}
+          accessibilityLabel="Open Profile"
+        >
+          <Ionicons name="person-circle-outline" size={28} color={COLORS.accentPurple} />
+        </TouchableOpacity>
       </View>
 
-      {/* ── Section label ───────────────────────── */}
-      <View style={styles.sectionRow}>
-        <Text style={styles.sectionLabel}>CATEGORIES</Text>
-        <Text style={styles.sectionCount}>{CATEGORIES.length} topics</Text>
+      {/* ── Stats Strip ──────────────────────────────────── */}
+      <View style={styles.statsStrip}>
+        <View style={styles.statBox}>
+          <Ionicons name="flame" size={20} color={COLORS.flame} />
+          <View>
+            <Text style={styles.statVal}>{streak}</Text>
+            <Text style={styles.statLabel}>Day Streak</Text>
+          </View>
+        </View>
+
+        <View style={styles.statBox}>
+          <Ionicons name="heart" size={20} color={COLORS.heart} />
+          <View>
+            <Text style={styles.statVal}>{hearts}</Text>
+            <Text style={styles.statLabel}>Hearts</Text>
+          </View>
+        </View>
+
+        <View style={styles.statBox}>
+          <Ionicons name="flash" size={20} color={COLORS.accentIndigo} />
+          <View>
+            <Text style={styles.statVal}>{xp}</Text>
+            <Text style={styles.statLabel}>XP (Lv.{level})</Text>
+          </View>
+        </View>
       </View>
-    </>
+
+      {/* ── Daily Challenge / Quick Start Banner ─────────── */}
+      <TouchableOpacity
+        style={styles.quickStartBanner}
+        onPress={() => router.push({ pathname: '/study', params: { categoryId: 'Daily & Casual' } })}
+        activeOpacity={0.85}
+      >
+        <View style={styles.bannerIconWrap}>
+          <FontAwesome5 name="fire" size={20} color={COLORS.orange} />
+        </View>
+        <View style={styles.bannerTextWrap}>
+          <Text style={styles.bannerTitle}>Daily Express Practice</Text>
+          <Text style={styles.bannerSub}>88 real-life conversational phrases</Text>
+        </View>
+        <View style={styles.bannerAction}>
+          <Text style={styles.bannerActionText}>Start</Text>
+          <Ionicons name="play" size={12} color={COLORS.white} />
+        </View>
+      </TouchableOpacity>
+
+      {/* ── Section Title ─────────────────────────────────── */}
+      <View style={styles.sectionHeader}>
+        <Text style={styles.sectionTitle}>Topics & Categories</Text>
+        <Text style={styles.sectionSub}>Select a category to practice flashcards</Text>
+      </View>
+    </View>
   );
 
   return (
-    <SafeAreaView style={styles.safe}>
-      <StatusBar barStyle="light-content" />
+    <SafeAreaView style={styles.safeArea}>
       <FlatList
         data={CATEGORIES}
-        keyExtractor={item => item.id}
-        renderItem={({ item }) => <CategoryCard item={item} />}
+        keyExtractor={(item) => item.id}
         ListHeaderComponent={ListHeader}
+        renderItem={({ item }) => (
+          <CategoryCard
+            item={item}
+            onPress={() => router.push({ pathname: '/study', params: { categoryId: item.id } })}
+          />
+        )}
         contentContainerStyle={styles.listContent}
         showsVerticalScrollIndicator={false}
       />
@@ -73,106 +127,164 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: COLORS.bgDeep },
-
-  /* Header */
-  headerArea: {
-    paddingHorizontal: 22,
-    paddingTop: 16,
-    paddingBottom: 32,
-    backgroundColor: COLORS.bgHeader,
-    borderBottomLeftRadius: 32,
-    borderBottomRightRadius: 32,
-    marginBottom: 24,
-  },
-  topRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 32,
-  },
-  logoMark: {
-    width: 30,
-    height: 30,
-    borderRadius: RADIUS.sm,
-    backgroundColor: COLORS.violet,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginRight: 8,
-  },
-  logoText: {
-    color: COLORS.white,
-    fontSize: 12,
-    fontWeight: '800',
-    letterSpacing: 0.5,
-  },
-  appName: {
-    color: COLORS.white,
-    fontSize: 16,
-    fontWeight: '700',
+  safeArea: {
     flex: 1,
-    letterSpacing: -0.3,
+    backgroundColor: COLORS.bgDeep,
   },
-  topRight: { flexDirection: 'row', alignItems: 'center' },
-  statPill: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#1E1E30',
-    paddingVertical: 5,
-    paddingHorizontal: 10,
-    borderRadius: RADIUS.full,
-    borderWidth: 1,
-    borderColor: '#2A2A40',
-  },
-  statPillText: {
-    color: '#E2E8F0',
-    fontSize: 13,
-    fontWeight: '600',
-    marginLeft: 4,
-  },
-  avatarBtn: {
-    marginLeft: 10,
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    backgroundColor: COLORS.violet,
+  loadingContainer: {
+    flex: 1,
+    backgroundColor: COLORS.bgDeep,
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 2,
-    borderColor: COLORS.violetLight,
   },
-  heroTitle: {
-    fontSize: 36,
-    fontWeight: '800',
-    color: COLORS.white,
-    letterSpacing: -1.2,
-    lineHeight: 44,
-    marginBottom: 10,
+  listContent: {
+    paddingBottom: 40,
   },
-  heroSub: {
-    fontSize: 15,
-    color: COLORS.textMuted,
-    fontWeight: '400',
-    lineHeight: 22,
+  headerContainer: {
+    paddingBottom: 8,
   },
-
-  /* Section */
-  sectionRow: {
+  topBar: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 20,
-    marginBottom: 12,
+    paddingTop: Platform.OS === 'android' ? 24 : 12,
+    paddingBottom: 16,
+    backgroundColor: COLORS.bgHeader,
+    borderBottomWidth: 1,
+    borderBottomColor: COLORS.border,
   },
-  sectionLabel: {
-    fontSize: 11,
+  branding: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+  },
+  logoBadge: {
+    width: 40,
+    height: 40,
+    borderRadius: RADIUS.md,
+    backgroundColor: COLORS.primaryDark,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  logoText: {
+    color: COLORS.white,
+    fontWeight: '800',
+    fontSize: 16,
+    letterSpacing: 0.5,
+  },
+  welcomeText: {
+    fontSize: 18,
     fontWeight: '700',
-    color: '#4B5563',
-    letterSpacing: 1.5,
+    color: COLORS.textPrimary,
+    letterSpacing: -0.3,
   },
-  sectionCount: {
+  subtitleText: {
+    fontSize: 12,
+    color: COLORS.textSecondary,
+    marginTop: 2,
+  },
+  profileBtn: {
+    width: 40,
+    height: 40,
+    borderRadius: RADIUS.full,
+    backgroundColor: COLORS.bgCard,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  statsStrip: {
+    flexDirection: 'row',
+    paddingHorizontal: 18,
+    paddingVertical: 14,
+    gap: 10,
+  },
+  statBox: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: COLORS.bgCard,
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    borderRadius: RADIUS.md,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+    gap: 8,
+  },
+  statVal: {
+    fontSize: 15,
+    fontWeight: '800',
+    color: COLORS.textPrimary,
+  },
+  statLabel: {
+    fontSize: 10,
+    color: COLORS.textMuted,
+    fontWeight: '600',
+  },
+  quickStartBanner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#1E1238',
+    marginHorizontal: 18,
+    marginTop: 4,
+    marginBottom: 16,
+    padding: 16,
+    borderRadius: RADIUS.lg,
+    borderWidth: 1,
+    borderColor: COLORS.borderAccent,
+    ...Platform.select(SHADOW.card),
+  },
+  bannerIconWrap: {
+    width: 42,
+    height: 42,
+    borderRadius: RADIUS.md,
+    backgroundColor: COLORS.orange + '20',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 14,
+  },
+  bannerTextWrap: {
+    flex: 1,
+  },
+  bannerTitle: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: COLORS.textPrimary,
+    marginBottom: 2,
+  },
+  bannerSub: {
+    fontSize: 12,
+    color: COLORS.textSecondary,
+  },
+  bannerAction: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: COLORS.primary,
+    paddingVertical: 6,
+    paddingHorizontal: 12,
+    borderRadius: RADIUS.full,
+    gap: 4,
+  },
+  bannerActionText: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: COLORS.white,
+  },
+  sectionHeader: {
+    paddingHorizontal: 20,
+    paddingTop: 8,
+    paddingBottom: 10,
+  },
+  sectionTitle: {
+    fontSize: 20,
+    fontWeight: '800',
+    color: COLORS.textPrimary,
+    letterSpacing: -0.3,
+  },
+  sectionSub: {
     fontSize: 13,
-    color: '#374151',
-    fontWeight: '500',
+    color: COLORS.textSecondary,
+    marginTop: 2,
   },
-  listContent: { paddingBottom: 40 },
 });

@@ -2,25 +2,21 @@ import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
-import Constants from 'expo-constants';
 
-// Load Firebase configuration from app.json (extra) like weather-todo
-const firebaseExtra = Constants.expoConfig?.extra?.firebase || Constants.manifest?.extra?.firebase || {};
-
+// ─── Hardcoded fallback config (prevents crash when Constants.expoConfig is unavailable) ───
 const firebaseConfig = {
-  apiKey: firebaseExtra.apiKey || process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
-  authDomain: firebaseExtra.authDomain || process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: firebaseExtra.projectId || process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: firebaseExtra.storageBucket || process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: firebaseExtra.messagingSenderId || process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: firebaseExtra.appId || process.env.EXPO_PUBLIC_FIREBASE_APP_ID,
-  measurementId: firebaseExtra.measurementId || process.env.EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID,
+  apiKey: "AIzaSyAUt_7c0qU30oUUuX_hmxB_lKObKWip6ro",
+  authDomain: "lingo-flow-abb60.firebaseapp.com",
+  projectId: "lingo-flow-abb60",
+  storageBucket: "lingo-flow-abb60.firebasestorage.app",
+  messagingSenderId: "985224108151",
+  appId: "1:985224108151:web:0458ce99e164173b4dce72",
+  measurementId: "G-B42R2REKL7",
 };
 
-// Initialize Firebase App safely (prevent duplicate app error during hot reloading)
+// ─── Initialize Firebase safely (idempotent) ───
 const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
 
-// Initialize Firebase services
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const storage = getStorage(app);

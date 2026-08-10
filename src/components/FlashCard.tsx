@@ -7,14 +7,14 @@ import { Ionicons } from '@expo/vector-icons';
 import { COLORS, RADIUS, SHADOW } from '../constants/theme';
 
 const { width } = Dimensions.get('window');
-const CARD_WIDTH  = width - 40;
-const CARD_HEIGHT = 400;
+const CARD_WIDTH = Math.min(width - 36, 400);
+const CARD_HEIGHT = 380;
 
 interface Props {
   frontText: string;
   backText: string;
-  frontLabel: string;    // 'EN' or 'KO'
-  backLabel: string;
+  frontLabel: string; // 'EN' | 'KO'
+  backLabel: string;  // 'KO' | 'EN'
   isFlipped: boolean;
   showAudioOnFront: boolean;
   showAudioOnBack: boolean;
@@ -25,43 +25,81 @@ interface Props {
 }
 
 export default function FlashCard({
-  frontText, backText,
-  frontLabel, backLabel,
+  frontText,
+  backText,
+  frontLabel,
+  backLabel,
   isFlipped,
-  showAudioOnFront, showAudioOnBack,
-  frontAnimStyle, backAnimStyle,
-  onFlip, onAudio,
+  showAudioOnFront,
+  showAudioOnBack,
+  frontAnimStyle,
+  backAnimStyle,
+  onFlip,
+  onAudio,
 }: Props) {
   return (
     <View style={styles.container}>
-      {/* Front */}
+      {/* ── Front Side ─────────────────────────── */}
       <Animated.View
-        style={[styles.card, frontAnimStyle, { opacity: isFlipped ? 0 : 1, zIndex: isFlipped ? 0 : 1 }]}
+        style={[
+          styles.card,
+          frontAnimStyle,
+          { opacity: isFlipped ? 0 : 1, zIndex: isFlipped ? 0 : 1 },
+        ]}
       >
-        <TouchableOpacity style={styles.inner} onPress={onFlip} activeOpacity={0.9}>
-          <Text style={styles.label}>{frontLabel}</Text>
+        <TouchableOpacity style={styles.cardInner} onPress={onFlip} activeOpacity={0.9}>
+          <View style={styles.badge}>
+            <Text style={styles.badgeText}>{frontLabel}</Text>
+          </View>
           <Text style={styles.mainText}>{frontText}</Text>
-          <Text style={styles.hint}>Tap to {frontLabel === 'EN' ? 'translate' : 'reveal answer'}</Text>
+          <View style={styles.hintRow}>
+            <Ionicons name="swap-horizontal" size={14} color={COLORS.textDim} style={{ marginRight: 4 }} />
+            <Text style={styles.hintText}>
+              Tap to {frontLabel === 'EN' ? 'see Korean translation' : 'reveal English'}
+            </Text>
+          </View>
         </TouchableOpacity>
+
         {showAudioOnFront && (
-          <TouchableOpacity style={styles.audioBtn} onPress={onAudio} activeOpacity={0.7}>
-            <Ionicons name="volume-high-outline" size={22} color={COLORS.indigo} />
+          <TouchableOpacity
+            style={styles.audioBtn}
+            onPress={onAudio}
+            activeOpacity={0.7}
+            accessibilityLabel="Listen to pronunciation"
+          >
+            <Ionicons name="volume-high" size={20} color={COLORS.accentPurple} />
           </TouchableOpacity>
         )}
       </Animated.View>
 
-      {/* Back */}
+      {/* ── Back Side ──────────────────────────── */}
       <Animated.View
-        style={[styles.card, styles.cardBack, backAnimStyle, { zIndex: isFlipped ? 1 : 0 }]}
+        style={[
+          styles.card,
+          styles.cardBack,
+          backAnimStyle,
+          { zIndex: isFlipped ? 1 : 0 },
+        ]}
       >
-        <TouchableOpacity style={styles.inner} onPress={onFlip} activeOpacity={0.9}>
-          <Text style={[styles.label, { color: COLORS.purple }]}>{backLabel}</Text>
-          <Text style={styles.backText}>{backText}</Text>
-          <Text style={[styles.hint, { color: COLORS.textMuted }]}>Tap to flip back</Text>
+        <TouchableOpacity style={styles.cardInner} onPress={onFlip} activeOpacity={0.9}>
+          <View style={[styles.badge, styles.badgeBack]}>
+            <Text style={[styles.badgeText, { color: COLORS.accentPurple }]}>{backLabel}</Text>
+          </View>
+          <Text style={[styles.mainText, styles.backText]}>{backText}</Text>
+          <View style={styles.hintRow}>
+            <Ionicons name="swap-horizontal" size={14} color={COLORS.textDim} style={{ marginRight: 4 }} />
+            <Text style={styles.hintText}>Tap to flip back</Text>
+          </View>
         </TouchableOpacity>
+
         {showAudioOnBack && (
-          <TouchableOpacity style={styles.audioBtn} onPress={onAudio} activeOpacity={0.7}>
-            <Ionicons name="volume-high-outline" size={22} color={COLORS.indigo} />
+          <TouchableOpacity
+            style={styles.audioBtn}
+            onPress={onAudio}
+            activeOpacity={0.7}
+            accessibilityLabel="Listen to pronunciation"
+          >
+            <Ionicons name="volume-high" size={20} color={COLORS.accentPurple} />
           </TouchableOpacity>
         )}
       </Animated.View>
@@ -75,7 +113,7 @@ const styles = StyleSheet.create({
     height: CARD_HEIGHT,
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 28,
+    marginBottom: 24,
   },
   card: {
     width: '100%',
@@ -92,55 +130,66 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.bgCardBack,
     borderColor: COLORS.borderAccent,
   },
-  inner: {
+  cardInner: {
     flex: 1,
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 28,
+    paddingHorizontal: 24,
+    paddingVertical: 28,
   },
-  label: {
-    fontSize: 11,
-    fontWeight: '700',
-    letterSpacing: 2,
-    color: COLORS.indigo,
+  badge: {
+    paddingHorizontal: 12,
+    paddingVertical: 4,
+    borderRadius: RADIUS.full,
+    backgroundColor: COLORS.accentIndigo + '20',
+    borderWidth: 1,
+    borderColor: COLORS.accentIndigo + '40',
     marginBottom: 20,
   },
+  badgeBack: {
+    backgroundColor: COLORS.accentPurple + '20',
+    borderColor: COLORS.accentPurple + '40',
+  },
+  badgeText: {
+    fontSize: 11,
+    fontWeight: '800',
+    letterSpacing: 1.5,
+    color: COLORS.accentIndigo,
+  },
   mainText: {
-    fontSize: 26,
-    fontWeight: '600',
+    fontSize: 24,
+    fontWeight: '700',
     color: COLORS.textPrimary,
     textAlign: 'center',
-    lineHeight: 36,
-    letterSpacing: -0.5,
-    marginBottom: 12,
+    lineHeight: 34,
+    letterSpacing: -0.4,
+    marginBottom: 16,
   },
   backText: {
-    fontSize: 26,
-    fontWeight: '600',
-    color: '#C4B5FD',
-    textAlign: 'center',
-    lineHeight: 36,
-    letterSpacing: -0.5,
-    marginBottom: 12,
+    color: COLORS.accentLavender,
   },
-  hint: {
+  hintRow: {
     position: 'absolute',
     bottom: 20,
-    fontSize: 13,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  hintText: {
+    fontSize: 12,
     color: COLORS.textDim,
     fontWeight: '500',
   },
   audioBtn: {
     position: 'absolute',
-    bottom: 18,
-    right: 20,
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    backgroundColor: '#1A1130',
+    bottom: 16,
+    right: 18,
+    width: 42,
+    height: 42,
+    borderRadius: RADIUS.full,
+    backgroundColor: '#1E1438',
     borderWidth: 1,
-    borderColor: '#4C1D95',
+    borderColor: COLORS.borderAccent,
     justifyContent: 'center',
     alignItems: 'center',
   },

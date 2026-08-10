@@ -1,40 +1,44 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Platform } from 'react-native';
 import { FontAwesome5, Ionicons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
 import { Category } from '../types';
-import { COLORS, RADIUS } from '../constants/theme';
+import { COLORS, RADIUS, SHADOW } from '../constants/theme';
 
 interface Props {
   item: Category;
+  onPress: () => void;
 }
 
-export default function CategoryCard({ item }: Props) {
-  const router = useRouter();
-
+export default function CategoryCard({ item, onPress }: Props) {
   return (
     <TouchableOpacity
       style={styles.card}
-      onPress={() => router.push({ pathname: '/study', params: { categoryId: item.id } })}
+      onPress={onPress}
       activeOpacity={0.75}
+      accessibilityRole="button"
+      accessibilityLabel={`Study ${item.title}, ${item.count} expressions`}
     >
-      {/* Left accent bar */}
+      {/* Left Accent Bar */}
       <View style={[styles.accentBar, { backgroundColor: item.accent }]} />
 
-      {/* Icon */}
+      {/* Icon Capsule */}
       <View style={[styles.iconWrap, { backgroundColor: item.accent + '20' }]}>
-        <FontAwesome5 name={item.icon} size={20} color={item.accent} />
+        <FontAwesome5 name={item.icon} size={18} color={item.accent} />
       </View>
 
-      {/* Text */}
+      {/* Title & Expressions count */}
       <View style={styles.textGroup}>
-        <Text style={styles.title}>{item.title}</Text>
-        <Text style={styles.count}>{item.count} expressions</Text>
+        <Text style={styles.title} numberOfLines={1}>
+          {item.title}
+        </Text>
+        <Text style={styles.count}>
+          {item.count} expressions
+        </Text>
       </View>
 
-      {/* Arrow */}
-      <View style={[styles.arrowWrap, { borderColor: item.accent + '55' }]}>
-        <Ionicons name="arrow-forward" size={16} color={item.accent} />
+      {/* Action Arrow */}
+      <View style={[styles.arrowWrap, { borderColor: item.accent + '40', backgroundColor: item.accent + '10' }]}>
+        <Ionicons name="chevron-forward" size={16} color={item.accent} />
       </View>
     </TouchableOpacity>
   );
@@ -45,56 +49,50 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: COLORS.bgCard,
-    marginHorizontal: 16,
-    marginBottom: 10,
+    marginHorizontal: 18,
+    marginBottom: 12,
     borderRadius: RADIUS.lg,
-    paddingVertical: 16,
-    paddingRight: 14,
-    overflow: 'hidden',
+    paddingVertical: 14,
+    paddingRight: 16,
     borderWidth: 1,
     borderColor: COLORS.border,
-    ...Platform.select({
-      ios: {
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 4 },
-        shadowOpacity: 0.25,
-        shadowRadius: 8,
-      },
-      android: { elevation: 4 },
-    }),
+    ...Platform.select(SHADOW.card),
   },
   accentBar: {
     width: 4,
-    height: 36,
-    borderRadius: 4,
-    marginLeft: 14,
+    height: 38,
+    borderRadius: RADIUS.xs,
+    marginLeft: 12,
     marginRight: 14,
   },
   iconWrap: {
     width: 44,
     height: 44,
-    borderRadius: 13,
+    borderRadius: RADIUS.md,
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: 14,
   },
-  textGroup: { flex: 1 },
+  textGroup: {
+    flex: 1,
+    justifyContent: 'center',
+  },
   title: {
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: '700',
     color: COLORS.textPrimary,
     letterSpacing: -0.3,
     marginBottom: 3,
   },
   count: {
     fontSize: 13,
-    color: COLORS.textMuted,
+    color: COLORS.textSecondary,
     fontWeight: '500',
   },
   arrowWrap: {
-    width: 34,
-    height: 34,
-    borderRadius: 17,
+    width: 32,
+    height: 32,
+    borderRadius: RADIUS.full,
     borderWidth: 1,
     justifyContent: 'center',
     alignItems: 'center',

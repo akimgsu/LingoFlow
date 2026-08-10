@@ -1,24 +1,38 @@
 import * as Speech from 'expo-speech';
 
 /**
- * Plays the English expression with clear, natural pronunciation matching the exact card text.
+ * Natural English Text-to-Speech audio player for flashcards.
+ * Formats multiple options cleanly (e.g. "Option A / Option B" -> "Option A, or Option B").
  */
-export async function playExpressionAudio(id: string, text: string) {
+export async function playExpressionAudio(id: string, text: string): Promise<void> {
   try {
-    // Stop any ongoing speech playback
+    // Stop any existing speech playback immediately
     await Speech.stop();
 
     if (!text || text.trim().length === 0) return;
 
-    // Clean up slashes like "Are you down? / Are you up for it?" -> "Are you down? ... Are you up for it?"
-    const naturalText = text.replace(/\s*\/\s*/g, ', ... ');
+    // Format slashes or parentheticals for natural English spoken rhythm
+    const naturalText = text
+      .replace(/\s*\/\s*/g, ', or ')
+      .replace(/\((.*?)\)/g, ', $1, ');
 
     Speech.speak(naturalText, {
       language: 'en-US',
       pitch: 1.0,
-      rate: 0.88, // Natural conversational speed
+      rate: 0.88, // Conversational pacing
     });
   } catch (err) {
-    console.warn('Speech playback error:', err);
+    console.warn('[audioPlayer] Speech playback error:', err);
+  }
+}
+
+/**
+ * Stops any ongoing speech playback.
+ */
+export async function stopExpressionAudio(): Promise<void> {
+  try {
+    await Speech.stop();
+  } catch (err) {
+    console.warn('[audioPlayer] Error stopping speech:', err);
   }
 }

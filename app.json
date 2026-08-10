@@ -2,7 +2,8 @@
   "expo": {
     "name": "LingoFlow",
     "slug": "LingoFlow",
-    "version": "1.0.0",
+    "owner": "boowoo",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "scheme": "lingoflow",
@@ -17,7 +18,8 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.wits73.LingoFlow"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -34,6 +36,10 @@
         "messagingSenderId": "985224108151",
         "appId": "1:985224108151:web:0458ce99e164173b4dce72",
         "measurementId": "G-B42R2REKL7"
+      },
+      "router": {},
+      "eas": {
+        "projectId": "d40f857a-c932-45ab-9fb7-10ba9e7da06c"
       }
     }
   }
