@@ -19,7 +19,7 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "com.wits73.LingoFlow"
+      "package": "com.wits73.LingoFlowApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
