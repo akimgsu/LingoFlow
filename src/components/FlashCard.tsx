@@ -1,14 +1,10 @@
 import React from 'react';
 import {
   View, Text, TouchableOpacity, Animated,
-  StyleSheet, Platform, Dimensions,
+  StyleSheet, Platform, useWindowDimensions,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { COLORS, RADIUS, SHADOW } from '../constants/theme';
-
-const { width } = Dimensions.get('window');
-const CARD_WIDTH = Math.min(width - 36, 400);
-const CARD_HEIGHT = 380;
 
 interface Props {
   frontText: string;
@@ -37,8 +33,13 @@ export default function FlashCard({
   onFlip,
   onAudio,
 }: Props) {
+  const { width, height } = useWindowDimensions();
+  const isLandscape = width > height;
+  const cardWidth = Math.min(width - 36, 500);
+  const cardHeight = isLandscape ? Math.min(height - 120, 380) : 380;
+
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { width: cardWidth, height: cardHeight }]}>
       {/* ── Front Side ─────────────────────────── */}
       <Animated.View
         style={[
@@ -109,8 +110,6 @@ export default function FlashCard({
 
 const styles = StyleSheet.create({
   container: {
-    width: CARD_WIDTH,
-    height: CARD_HEIGHT,
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: 24,

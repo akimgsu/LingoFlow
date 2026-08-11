@@ -1,8 +1,9 @@
 import React from 'react';
 import {
   View, Text, StyleSheet, FlatList,
-  TouchableOpacity, ActivityIndicator, SafeAreaView, Platform,
+  TouchableOpacity, ActivityIndicator, Platform,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons, FontAwesome5 } from '@expo/vector-icons';
 import { Redirect, useRouter } from 'expo-router';
 import { useAuth } from '../src/contexts/AuthContext';
