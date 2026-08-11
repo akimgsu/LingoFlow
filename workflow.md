@@ -38,52 +38,19 @@ LingoFlow는 **실전 영어 회화 표현을 3D 플래시카드와 음성(TTS)�
 
 ```mermaid
 graph TD
-  subgraph Presentation ["1. 프레젠테이션 계층 (app/)"]
-    Layout["_layout.tsx (Root Provider & Nav)"]
-    Home["index.tsx (대시보드)"]
-    Study["study.tsx (플래시카드 학습)"]
-    Profile["profile.tsx (프로필 & 업적)"]
-    AuthScreens["login.tsx / signup.tsx (인증)"]
-  end
+  UI["🖥️ UI 계층 (app/, components/)<br/>화면 라우팅 및 렌더링"]
+  Logic["⚙️ 비즈니스 로직 (hooks/)<br/>카드 제어 및 애니메이션"]
+  State["🧠 전역 상태 (contexts/)<br/>인증 세션 및 학습 진도"]
+  Data["📦 데이터 & 유틸 (data/, utils/)<br/>정적 데이터, 테마, 오디오"]
+  Infra["☁️ 인프라 서비스<br/>Firebase Auth/DB, TTS 엔진"]
 
-  subgraph UIComponents ["2. 재사용 UI 컴포넌트 (src/components/)"]
-    FlashCard["FlashCard.tsx (3D Flip Animation)"]
-    CategoryCard["CategoryCard.tsx (주제별 카드)"]
-  end
-
-  subgraph BusinessLogic ["3. 비즈니스 로직 & 훅 (src/hooks/)"]
-    useStudyCard["useStudyCard.ts (학습 세션 제어)"]
-  end
-
-  subgraph StateManagement ["4. 전역 상태 관리 (src/contexts/)"]
-    AuthContext["AuthContext.tsx (사용자 세션)"]
-    ProgressContext["ProgressContext.tsx (스트릭/하트/XP 레벨)"]
-  end
-
-  subgraph DataAndUtils ["5. 데이터 & 유틸리티 (src/utils/, src/data/)"]
-    AudioPlayer["audioPlayer.ts (TTS 음성 엔진)"]
-    Dataset["expressions.json (246개 표현 데이터)"]
-    Theme["theme.ts (디자인 토큰)"]
-    Types["types/index.ts (도메인 인터페이스)"]
-  end
-
-  subgraph Infra ["6. 외부 인프라"]
-    Firebase["firebaseConfig.ts (Firebase Auth / DB)"]
-    NativeTTS["Android / iOS Native Speech Engine"]
-  end
-
-  Layout --> AuthContext
-  Layout --> ProgressContext
-  Home --> CategoryCard
-  Study --> FlashCard
-  Study --> useStudyCard
-  useStudyCard --> AudioPlayer
-  useStudyCard --> ProgressContext
-  AudioPlayer --> NativeTTS
-  AuthContext --> Firebase
-  AuthScreens --> Firebase
-  CategoryCard --> Theme
-  FlashCard --> Theme
+  UI --> State
+  UI --> Logic
+  UI --> Data
+  Logic --> Data
+  Logic --> State
+  State --> Infra
+  Data --> Infra
 ```
 
 ---
