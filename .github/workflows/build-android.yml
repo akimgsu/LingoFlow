@@ -11,6 +11,9 @@ jobs:
     name: Build Android AAB
     runs-on: ubuntu-latest
 
+    env:
+      EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -27,17 +30,16 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Setup Expo & EAS CLI
-        uses: expo/expo-github-action@v8
-        with:
-          eas-version: latest
-          token: ${{ secrets.EXPO_TOKEN }}
+      - name: Install EAS CLI
+        run: npm install -g eas-cli
 
       - name: Install Dependencies
         run: npm install
 
       - name: Build Android AAB Locally
         run: eas build --local --non-interactive --platform android --profile production --output app-release.aab
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
 
       - name: Upload Android App Bundle (AAB)
         uses: actions/upload-artifact@v4
