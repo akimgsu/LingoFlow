@@ -2,12 +2,15 @@
 
 > **작성자**: Principal React Native / Expo Lead Engineer  
 > **대상**: LingoFlow 프로젝트에 새로 합류한 개발자, 협업자 및 AI 에이전트  
-> **버전**: v1.0.1 (SDK 54 / Expo Router v6)
+> **버전**: v1.0.2 (SDK 54 / Expo Router v6)
 
 ---
 
 ## 📑 목차 (Table of Contents)
 1. [아키텍처 및 기술 스택 개요 (Architecture Overview)](#1-아키텍처-및-기술-스택-개요)
+   - [관심사의 분리란?](#관심사의-분리란)
+   - [계층별 역할](#계층별-역할)
+   - [화살표(의존 방향)의 의미](#화살표의존-방향의-의미)
 2. [디렉터리 및 주요 파일별 상세 역할 (Directory Breakdown)](#2-디렉터리-및-주요-파일별-상세-역할)
    - [app/ 디렉터리 (Expo Router 라우팅)](#app-디렉터리-화면-및-라우팅)
    - [src/ 디렉터리 (코어 비즈니스 로직)](#src-디렉터리-비즈니스-로직-및-모듈)
@@ -20,8 +23,73 @@
 
 ## 1. 아키텍처 및 기술 스택 개요
 
-LingoFlow는 **실전 영어 회화 표현을 3D 플래시카드와 음성(TTS)으로 마스터하는 모바일 학습 애플리케이션**입니다.  
-본 프로젝트는 **관심사의 분리(Separation of Concerns)** 원칙에 따라 UI 계층, 비즈니스 로직 계층, 상태 관리 계층, 인프라(Firebase) 계층이 명확히 격리되어 설계되었습니다.
+LingoFlow는 **실전 영어 회화 표현을 3D 플래시카드와 음성(TTS)으로 마스터하는 모바일 학습 애플리케이션**입니다.
+
+### 관심사의 분리란?
+
+**관심사의 분리(Separation of Concerns)** 는 **"한 파일·폴더가 한 가지 역할만 맡도록 나눈다"**는 설계 원칙입니다.
+
+화면 그리기, 학습 규칙 처리, 앱 전역 상태, 외부 서비스(Firebase·TTS)를 한곳에 섞지 않고, 각각 다른 **계층(Layer)** 에 두었습니다. 한 계층을 수정할 때 다른 계층이 덜 흔들리도록 만드는 것이 목표입니다.
+
+> **한 줄 요약**: UI는 **그리기만**, 훅은 **규칙만**, Context는 **저장만**, data/utils는 **자원만**, Firebase·TTS는 **외부 연결만**.
+
+### 계층별 역할
+
+| 계층 | 위치 | 하는 일 | 대표 파일 |
+|:---|:---|:---|:---|
+| **UI** | `app/`, `src/components/` | 화면 라우팅, 레이아웃, 버튼·카드 렌더링 | `app/study.tsx`, `FlashCard.tsx` |
+| **비즈니스 로직** | `src/hooks/` | 학습 세션 규칙·흐름 (뒤집기, XP, 하트, 다음 카드) | `useStudyCard.ts` |
+| **상태 관리** | `src/contexts/` | 앱 전역 상태 저장소 (인증, XP, 레벨, 마스터 ID) | `AuthContext.tsx`, `ProgressContext.tsx` |
+| **데이터 & 유틸** | `src/data/`, `src/utils/`, `src/constants/`, `src/types/` | 정적 콘텐츠, 디자인 토큰, 타입, TTS 래퍼 | `expressions.json`, `theme.ts`, `audioPlayer.ts` |
+| **인프라** | `firebaseConfig.ts`, 외부 SDK | Firebase Auth/DB, Expo Speech TTS | `firebaseConfig.ts`, `expo-speech` |
+
+#### 1️⃣ UI 계층 — `app/`, `src/components/`
+
+사용자에게 **보이는 것**만 담당합니다. Expo Router 화면(`app/`)과 재사용 컴포넌트(`components/`)로 구성됩니다.
+
+- **원칙**: "어떻게 그릴지"만 알고, XP 계산이나 카드 뒤집기 규칙은 직접 구현하지 않습니다.
+- **예시**: `app/study.tsx`는 `useStudyCard` 훅에서 값·함수를 받아 화면에 배치합니다. `FlashCard.tsx`는 props(텍스트, 애니메이션 스타일)만 받아 카드를 그립니다.
+
+#### 2️⃣ 비즈니스 로직 계층 — `src/hooks/`
+
+**"학습 세션에서 일어나는 일"** 의 규칙과 흐름을 처리합니다.
+
+- 카드 3D 뒤집기 애니메이션, 퀴즈 모드 전환
+- **Mastered** → XP +15 + 마스터 ID 기록 / **Review** → 하트 -1
+- 다음·이전 카드 이동, TTS 재생/정지, 세션 통계 집계
+- **예시**: 화면은 "Mastered 버튼 눌림"만 알리고, `useStudyCard.goNext()` 가 점수·하트·다음 카드 로직을 처리합니다.
+
+#### 3️⃣ 상태 관리 계층 — `src/contexts/`
+
+앱 전체에서 공유하는 **상태 저장소**입니다. React Context로 어디서든 같은 데이터를 읽고 갱신합니다.
+
+| Context | 관리하는 상태 |
+|:---|:---|
+| `AuthContext` | 로그인 사용자, 로딩 여부, 로그아웃, displayName |
+| `ProgressContext` | Streak, Hearts, XP, Level, 마스터한 표현 ID |
+
+- `app/_layout.tsx`에서 `AuthProvider` → `ProgressProvider` 순으로 앱 전체를 감쌉니다.
+- 훅(`useStudyCard`)은 Context의 **변경 함수**(`addXp`, `markMastered`)를 호출하고, 화면(`index`, `profile`)은 Context **값**을 읽어 표시만 합니다.
+
+#### 4️⃣ 데이터 & 유틸 계층 — `src/data/`, `src/utils/`, `src/constants/`, `src/types/`
+
+비즈니스·UI와 분리된 **정적·순수 자원**입니다.
+
+- `expressions.json` — 246개 영어 표현 콘텐츠
+- `theme.ts` — 색상·간격·그림자 디자인 토큰
+- `audioPlayer.ts` — Expo Speech TTS 재생/정지 래퍼
+- `types/index.ts` — `Expression`, `StudySessionStats` 등 도메인 타입
+
+#### 5️⃣ 인프라 계층 — Firebase, TTS
+
+앱 **바깥**의 외부 서비스·네이티브 기능입니다.
+
+- `firebaseConfig.ts` — Firebase Auth, Firestore, Storage 초기화 (멱등 패턴)
+- Firebase Auth — 로그인/회원가입, 세션 구독 (`AuthContext`)
+- Expo Speech — 영어 발음 TTS (`audioPlayer.ts`)
+
+> **접근 규칙**: UI·훅·Context는 가능한 한 Firebase SDK를 직접 호출하지 않고, Context나 유틸을 통해 접근합니다.  
+> (예외: `login.tsx` / `signup.tsx`는 로그인 화면에서만 쓰는 일회성 액션이므로 `signInWithEmailAndPassword` 등을 직접 호출합니다.)
 
 ### 🛠️ 핵심 기술 스택
 | 영역 | 기술 | 버전 / 비고 |
@@ -53,9 +121,40 @@ graph TD
   Data --> Infra
 ```
 
+### 화살표(의존 방향)의 의미
+
+다이어그램의 화살표는 **"위 계층이 아래 계층을 사용한다"**는 의존 방향을 나타냅니다.
+
+```
+UI      → State   : 화면이 XP·로그인 상태를 읽음 (useAuth, useProgress)
+UI      → Logic   : study 화면이 useStudyCard 호출
+UI      → Data     : theme, expressions.json import
+Logic   → State   : goNext()가 addXp(), markMastered() 호출
+Logic   → Data    : audioPlayer, types 사용
+State   → Infra   : AuthContext가 Firebase onAuthStateChanged 구독
+Data    → Infra   : audioPlayer가 expo-speech 호출
+```
+
+**역방향은 없습니다.** Firebase가 화면을 직접 그리지 않고, Context가 훅을 호출하지 않습니다. 이것이 "격리"의 핵심입니다.
+
+### 이렇게 나누면 얻는 것
+
+| 이점 | LingoFlow에서의 예 |
+|:---|:---|
+| **변경 영향 최소화** | Cyberpunk 테마 변경 → `theme.ts`만 수정 |
+| **기능 추가 용이** | [5단계 개발 파이프라인](#4-신규-기능-추가-표준-워크플로우) 준수 |
+| **협업·AI 페어 프로그래밍** | "훅만 수정", "Context만 수정"처럼 작업 범위를 좁힐 수 있음 |
+| **재사용** | `FlashCard`를 다른 학습 모드에서도 그대로 사용 가능 |
+
+### 현재 구현 상태 (주의)
+
+문서와 다이어그램은 Firestore 동기화를 염두에 두고 설계되어 있으나, **현재 `ProgressContext`는 메모리(in-memory) 상태**입니다. 앱을 재시작하면 XP·마스터 목록이 초기화됩니다. Firestore 연동 시에는 `src/services/`에 서비스를 추가하고 Context가 해당 서비스를 호출하는 방식으로 [4장 Step 2](#4-신규-기능-추가-표준-워크플로우) 패턴을 따릅니다.
+
 ---
 
 ## 2. 디렉터리 및 주요 파일별 상세 역할
+
+> 아래 디렉터리 구조는 [1장 계층별 역할](#계층별-역할)과 1:1로 대응됩니다. `app/`·`components/` = UI, `hooks/` = 로직, `contexts/` = 상태, 나머지 `src/` = 데이터·유틸, `firebaseConfig.ts` = 인프라.
 
 ### `app/` 디렉터리 (화면 및 라우팅)
 Expo Router의 파일 시스템 규칙에 따라 `app/` 내부의 파일들은 자동으로 고유 URL 경로에 매핑됩니다.
@@ -129,25 +228,33 @@ src/
 
 ### 데이터 및 제어 흐름 (Data Flow)
 
-컴포넌트 간 상호작용과 데이터 흐름은 아래 파이프라인을 따릅니다:
+**"Mastered" 버튼 클릭** 하나가 5개 계층을 순서대로 거치는 전형적인 흐름입니다:
 
 ```
-[사용자 터치: 'Mastered' 버튼 클릭]
-       │
-       ▼
-app/study.tsx ──> goNext(true) 호출
-       │
-       ▼
-src/hooks/useStudyCard.ts
-  ├─ 1. stopExpressionAudio() ──> src/utils/audioPlayer.ts (재생 중지)
-  ├─ 2. addXp(15) ─────────────> src/contexts/ProgressContext.tsx (XP 및 레벨 증가)
-  ├─ 3. markMastered(exp_id) ──> src/contexts/ProgressContext.tsx (마스터 ID 저장)
-  ├─ 4. Animated.spring() ─────> 카드 각도 0도로 부드럽게 리셋
-  └─ 5. setCurrentIndex(+1) ───> 다음 표현 데이터 로드
-       │
-       ▼
-src/components/FlashCard.tsx ──> 새 단어 텍스트 및 EN/KO 뱃지 재렌더링
+[사용자] Mastered 탭
+    │
+    ▼
+[UI] app/study.tsx
+    handleNextAction(true) → goNext(true)
+    │
+    ▼
+[Logic] src/hooks/useStudyCard.ts
+    ├─ stopExpressionAudio()  → [Data/Util] audioPlayer.ts → [Infra] Speech.stop()
+    ├─ addXp(15)              → [State] ProgressContext.tsx
+    ├─ markMastered(id)       → [State] ProgressContext.tsx
+    ├─ Animated.spring()      → 카드 애니메이션 리셋 (훅 로컬 상태)
+    └─ setCurrentIndex(+1)    → 다음 표현으로 이동
+    │
+    ▼
+[UI] src/components/FlashCard.tsx
+    새 영어/한국어 텍스트 및 EN/KO 뱃지 재렌더링
+    │
+    ▼
+[UI] app/index.tsx, app/profile.tsx
+    Context의 xp, level 변경이 대시보드·프로필에 반영
 ```
+
+각 단계의 책임이 분명합니다. UI는 이벤트만 전달하고, 훅이 규칙을 실행하며, Context가 상태를 저장하고, 유틸·인프라가 TTS를 처리합니다.
 
 ---
 
