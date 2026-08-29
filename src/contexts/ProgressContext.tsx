@@ -1,6 +1,22 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+  ReactNode,
+} from 'react';
+import { useAuth } from './AuthContext';
+import {
+  DEFAULT_PROGRESS,
+  saveUserProgress,
+  subscribeUserProgress,
+} from '../services/progressService';
+import { UserProgress } from '../types';
 
 interface ProgressContextType {
+  loading: boolean;
   streak: number;
   hearts: number;
   xp: number;
@@ -17,53 +33,110 @@ interface ProgressContextType {
 
 const ProgressContext = createContext<ProgressContextType | undefined>(undefined);
 
-export function ProgressProvider({ children }: { children: ReactNode }) {
-  const [streak, setStreak] = useState<number>(1);
-  const [hearts, setHearts] = useState<number>(5);
-  const [xp, setXp] = useState<number>(120);
-  const [masteredIds, setMasteredIds] = useState<string[]>([]);
-
-  // Level calculations: every 100 XP is 1 Level
+function calcLevelFields(xp: number) {
   const level = Math.floor(xp / 100) + 1;
   const currentLevelBaseXp = (level - 1) * 100;
   const nextLevelXp = level * 100;
   const levelProgress = Math.min(100, Math.max(0, ((xp - currentLevelBaseXp) / 100) * 100));
+  return { level, nextLevelXp, levelProgress };
+}
 
-  const addXp = (amount: number) => {
-    setXp((prev) => prev + amount);
-    if (streak === 0) setStreak(1);
-  };
+export function ProgressProvider({ children }: { children: ReactNode }) {
+  const { user } = useAuth();
+  const [progress, setProgress] = useState<UserProgress>(DEFAULT_PROGRESS);
+  const [loading, setLoading] = useState(true);
+  const userIdRef = useRef<string | null>(null);
+  const skipPersistRef = useRef(false);
 
-  const loseHeart = () => {
-    setHearts((prev) => {
-      if (prev <= 1) {
-        // Auto-replenish so study sessions never get permanently blocked
-        return 5;
+  useEffect(() => {
+    if (!user) {
+      userIdRef.current = null;
+      skipPersistRef.current = true;
+      setProgress({ ...DEFAULT_PROGRESS });
+      setLoading(false);
+      return;
+    }
+
+    userIdRef.current = user.uid;
+    setLoading(true);
+
+    const unsubscribe = subscribeUserProgress(
+      user.uid,
+      (remoteProgress) => {
+        skipPersistRef.current = true;
+        setProgress(remoteProgress);
+        setLoading(false);
+      },
+      (error) => {
+        console.warn('[ProgressContext] Firestore sync error:', error);
+        setLoading(false);
+      },
+    );
+
+    return () => unsubscribe();
+  }, [user?.uid]);
+
+  const updateProgress = useCallback((updater: (prev: UserProgress) => UserProgress) => {
+    setProgress((prev) => {
+      const next = updater(prev);
+      const uid = userIdRef.current;
+
+      if (uid && !skipPersistRef.current) {
+        void saveUserProgress(uid, next).catch((err) => {
+          console.warn('[ProgressContext] Failed to save progress:', err);
+        });
       }
-      return prev - 1;
+
+      skipPersistRef.current = false;
+      return next;
     });
-  };
+  }, []);
 
-  const resetHearts = () => {
-    setHearts(5);
-  };
+  const addXp = useCallback((amount: number) => {
+    updateProgress((prev) => ({
+      ...prev,
+      xp: prev.xp + amount,
+      streak: prev.streak === 0 ? 1 : prev.streak,
+    }));
+  }, [updateProgress]);
 
-  const markMastered = (id: string) => {
-    setMasteredIds((prev) => (prev.includes(id) ? prev : [...prev, id]));
-  };
+  const loseHeart = useCallback(() => {
+    updateProgress((prev) => ({
+      ...prev,
+      hearts: prev.hearts <= 1 ? 5 : prev.hearts - 1,
+    }));
+  }, [updateProgress]);
 
-  const isMastered = (id: string) => masteredIds.includes(id);
+  const resetHearts = useCallback(() => {
+    updateProgress((prev) => ({ ...prev, hearts: 5 }));
+  }, [updateProgress]);
+
+  const markMastered = useCallback((id: string) => {
+    updateProgress((prev) =>
+      prev.masteredIds.includes(id)
+        ? prev
+        : { ...prev, masteredIds: [...prev.masteredIds, id] },
+    );
+  }, [updateProgress]);
+
+  const isMastered = useCallback(
+    (id: string) => progress.masteredIds.includes(id),
+    [progress.masteredIds],
+  );
+
+  const { level, nextLevelXp, levelProgress } = calcLevelFields(progress.xp);
 
   return (
     <ProgressContext.Provider
       value={{
-        streak,
-        hearts,
-        xp,
+        loading,
+        streak: progress.streak,
+        hearts: progress.hearts,
+        xp: progress.xp,
         level,
         levelProgress,
         nextLevelXp,
-        masteredIds,
+        masteredIds: progress.masteredIds,
         addXp,
         loseHeart,
         resetHearts,

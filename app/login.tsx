@@ -5,19 +5,20 @@ import {
   Platform, ActivityIndicator,
 } from 'react-native';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebaseConfig';
 import { Redirect, useRouter } from 'expo-router';
-import { useAuth } from '../src/contexts/AuthContext';
 import { Ionicons } from '@expo/vector-icons';
+
+import { auth } from '../firebaseConfig';
+import { useAuth } from '../src/contexts/AuthContext';
 import { COLORS, RADIUS, SHADOW } from '../src/constants/theme';
 
 export default function LoginScreen() {
   const { user } = useAuth();
+  const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPass, setShowPass] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const router = useRouter();
 
   // If already authenticated, redirect to Home
   if (user) {

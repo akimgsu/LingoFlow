@@ -30,3 +30,10 @@ export interface StudySessionStats {
   reviewCount: number;
   xpEarned: number;
 }
+
+export interface UserProgress {
+  streak: number;
+  hearts: number;
+  xp: number;
+  masteredIds: string[];
+}

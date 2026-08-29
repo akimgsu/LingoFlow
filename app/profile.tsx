@@ -1,33 +1,47 @@
 import React from 'react';
 import {
   View, Text, StyleSheet, TouchableOpacity,
-  ScrollView, SafeAreaView, Platform, StatusBar, Alert,
+  ScrollView, SafeAreaView, Platform, StatusBar, ActivityIndicator,
 } from 'react-native';
 import { Ionicons, FontAwesome5 } from '@expo/vector-icons';
+import { Redirect, useRouter } from 'expo-router';
 import { useAuth } from '../src/contexts/AuthContext';
 import { useProgress } from '../src/contexts/ProgressContext';
 import { COLORS, RADIUS, SHADOW } from '../src/constants/theme';
 import { Achievement } from '../src/types';
+import { confirmAction, showMessage } from '../src/utils/dialog';
 
 export default function ProfileScreen() {
-  const { user, logout, displayName } = useAuth();
-  const { streak, xp, level, levelProgress, nextLevelXp, masteredIds } = useProgress();
+  const router = useRouter();
+  const { user, logout, displayName, loading: authLoading } = useAuth();
+  const { streak, xp, level, levelProgress, nextLevelXp, masteredIds, loading: progressLoading } = useProgress();
+
+  if (authLoading || progressLoading) {
+    return (
+      <View style={styles.loadingContainer}>
+        <ActivityIndicator size="large" color={COLORS.primary} />
+      </View>
+    );
+  }
+
+  if (!user) {
+    return <Redirect href="/login" />;
+  }
 
   const handleLogout = () => {
-    Alert.alert(
-      'Log Out',
-      'Are you sure you want to log out of LingoFlow?',
-      [
-        { text: 'Cancel', style: 'cancel' },
-        {
-          text: 'Log Out',
-          style: 'destructive',
-          onPress: async () => {
-            await logout();
-          },
-        },
-      ]
-    );
+    confirmAction({
+      title: 'Log Out',
+      message: 'Are you sure you want to log out of LingoFlow?',
+      confirmLabel: 'Log Out',
+      onConfirm: async () => {
+        try {
+          await logout();
+          router.replace('/login');
+        } catch {
+          showMessage('Log Out Failed', 'Please try again.');
+        }
+      },
+    });
   };
 
   const achievements: Achievement[] = [
@@ -174,6 +188,12 @@ export default function ProfileScreen() {
 }
 
 const styles = StyleSheet.create({
+  loadingContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: COLORS.bgDeep,
+  },
   safe: {
     flex: 1,
     backgroundColor: COLORS.bgDeep,

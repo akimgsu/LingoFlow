@@ -1,14 +1,17 @@
-import { useState, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 import { Animated } from 'react-native';
 import { Expression, StudySessionStats } from '../types';
-import { playExpressionAudio, stopExpressionAudio } from '../utils/audioPlayer';
+import { playExpressionAudio, stopExpressionAudio, delay } from '../utils/audioPlayer';
 import { useProgress } from '../contexts/ProgressContext';
 
+const AUTO_REVIEW_PAUSE_MS = 2000;
+
 export function useStudyCard(expressions: Expression[]) {
-  const { addXp, loseHeart, markMastered } = useProgress();
+  const { addXp, markMastered } = useProgress();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [isQuizMode, setIsQuizMode] = useState(false);
+  const [isAutoReviewing, setIsAutoReviewing] = useState(false);
   const [sessionStats, setSessionStats] = useState<StudySessionStats>({
     totalStudied: 0,
     masteredCount: 0,
@@ -17,6 +20,7 @@ export function useStudyCard(expressions: Expression[]) {
   });
 
   const flipAnim = useRef(new Animated.Value(0)).current;
+  const autoReviewActiveRef = useRef(false);
 
   const currentExpression = expressions[currentIndex] || expressions[0];
   const totalCount = expressions.length;
@@ -24,7 +28,6 @@ export function useStudyCard(expressions: Expression[]) {
   const isFirst = currentIndex === 0;
   const isLast = currentIndex === totalCount - 1;
 
-  // ── Card 3D Flip Interpolation ─────────────────────────────────────────
   const frontInterpolate = flipAnim.interpolate({
     inputRange: [0, 180],
     outputRange: ['0deg', '180deg'],
@@ -42,13 +45,37 @@ export function useStudyCard(expressions: Expression[]) {
     opacity: isFlipped ? 1 : 0,
   };
 
-  // ── Card Actions ──────────────────────────────────────────────────────
   const resetCardAnimation = () => {
     flipAnim.setValue(0);
     setIsFlipped(false);
   };
 
+  const flipToBack = () =>
+    new Promise<void>((resolve) => {
+      setIsFlipped(true);
+      Animated.spring(flipAnim, {
+        toValue: 180,
+        friction: 8,
+        tension: 10,
+        useNativeDriver: true,
+      }).start(() => resolve());
+    });
+
+  const stopAutoReview = useCallback(() => {
+    autoReviewActiveRef.current = false;
+    setIsAutoReviewing(false);
+    void stopExpressionAudio();
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      autoReviewActiveRef.current = false;
+      void stopExpressionAudio();
+    };
+  }, []);
+
   const flipCard = () => {
+    if (autoReviewActiveRef.current) return;
     Animated.spring(flipAnim, {
       toValue: isFlipped ? 0 : 180,
       friction: 8,
@@ -59,12 +86,14 @@ export function useStudyCard(expressions: Expression[]) {
   };
 
   const toggleQuizMode = () => {
+    if (autoReviewActiveRef.current) return;
     stopExpressionAudio();
     resetCardAnimation();
     setIsQuizMode((prev) => !prev);
   };
 
   const goNext = (mastered: boolean): 'next' | 'done' => {
+    if (autoReviewActiveRef.current) return 'next';
     stopExpressionAudio();
 
     if (currentExpression) {
@@ -76,13 +105,6 @@ export function useStudyCard(expressions: Expression[]) {
           totalStudied: prev.totalStudied + 1,
           masteredCount: prev.masteredCount + 1,
           xpEarned: prev.xpEarned + 15,
-        }));
-      } else {
-        loseHeart();
-        setSessionStats((prev) => ({
-          ...prev,
-          totalStudied: prev.totalStudied + 1,
-          reviewCount: prev.reviewCount + 1,
         }));
       }
     }
@@ -98,29 +120,89 @@ export function useStudyCard(expressions: Expression[]) {
   };
 
   const goPrev = () => {
-    if (!isFirst) {
-      stopExpressionAudio();
-      resetCardAnimation();
-      setCurrentIndex((prev) => prev - 1);
-    }
+    if (autoReviewActiveRef.current || isFirst) return;
+    stopExpressionAudio();
+    resetCardAnimation();
+    setCurrentIndex((prev) => prev - 1);
   };
 
   const goForward = () => {
-    if (!isLast) {
-      stopExpressionAudio();
-      resetCardAnimation();
-      setCurrentIndex((prev) => prev + 1);
-    }
+    if (autoReviewActiveRef.current || isLast) return;
+    stopExpressionAudio();
+    resetCardAnimation();
+    setCurrentIndex((prev) => prev + 1);
   };
 
   const playAudio = useCallback(() => {
+    if (autoReviewActiveRef.current) return;
     if (currentExpression) {
-      playExpressionAudio(currentExpression.id, currentExpression.english);
+      void playExpressionAudio(currentExpression.id, currentExpression.english);
     }
   }, [currentExpression]);
 
+  const startAutoReview = useCallback(async (): Promise<'done' | 'stopped'> => {
+    if (autoReviewActiveRef.current) {
+      stopAutoReview();
+      return 'stopped';
+    }
+
+    if (expressions.length === 0) return 'stopped';
+
+    autoReviewActiveRef.current = true;
+    setIsAutoReviewing(true);
+    setIsQuizMode(false);
+    resetCardAnimation();
+
+    for (let i = 0; i < expressions.length; i++) {
+      if (!autoReviewActiveRef.current) {
+        return 'stopped';
+      }
+
+      setCurrentIndex(i);
+      resetCardAnimation();
+
+      // Let FlashCard re-render before speaking
+      await delay(80);
+      if (!autoReviewActiveRef.current) {
+        return 'stopped';
+      }
+
+      const expression = expressions[i];
+      // 1) Show English + speak
+      await playExpressionAudio(expression.id, expression.english);
+
+      if (!autoReviewActiveRef.current) {
+        return 'stopped';
+      }
+
+      // 2) Flip to show Korean
+      await flipToBack();
+
+      if (!autoReviewActiveRef.current) {
+        return 'stopped';
+      }
+
+      // 3) Pause so learner can read Korean, then next card
+      await delay(AUTO_REVIEW_PAUSE_MS);
+    }
+
+    if (!autoReviewActiveRef.current) {
+      return 'stopped';
+    }
+
+    autoReviewActiveRef.current = false;
+    setIsAutoReviewing(false);
+    setSessionStats((prev) => ({
+      ...prev,
+      totalStudied: prev.totalStudied + expressions.length,
+      reviewCount: prev.reviewCount + expressions.length,
+    }));
+
+    return 'done';
+  }, [expressions, stopAutoReview]);
+
   const resetSession = () => {
-    stopExpressionAudio();
+    stopAutoReview();
     resetCardAnimation();
     setCurrentIndex(0);
     setSessionStats({
@@ -138,6 +220,7 @@ export function useStudyCard(expressions: Expression[]) {
     progressPercentage,
     isFlipped,
     isQuizMode,
+    isAutoReviewing,
     isFirst,
     isLast,
     sessionStats,
@@ -149,6 +232,8 @@ export function useStudyCard(expressions: Expression[]) {
     goPrev,
     goForward,
     playAudio,
+    startAutoReview,
+    stopAutoReview,
     resetSession,
   };
 }

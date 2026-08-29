@@ -28,6 +28,7 @@ export default function StudyScreen() {
     progressPercentage,
     isFlipped,
     isQuizMode,
+    isAutoReviewing,
     isFirst,
     isLast,
     sessionStats,
@@ -39,14 +40,33 @@ export default function StudyScreen() {
     goPrev,
     goForward,
     playAudio,
+    startAutoReview,
+    stopAutoReview,
     resetSession,
   } = useStudyCard(list);
 
   const handleNextAction = (mastered: boolean) => {
+    if (isAutoReviewing) return;
     const result = goNext(mastered);
     if (result === 'done') {
       setShowCompletionModal(true);
     }
+  };
+
+  const handleReview = async () => {
+    if (isAutoReviewing) {
+      stopAutoReview();
+      return;
+    }
+    const result = await startAutoReview();
+    if (result === 'done') {
+      setShowCompletionModal(true);
+    }
+  };
+
+  const handleClose = () => {
+    stopAutoReview();
+    router.back();
   };
 
   const handleRestart = () => {
@@ -67,7 +87,7 @@ export default function StudyScreen() {
         {/* ── Top Header: Close & Progress ──────────────── */}
         <View style={styles.header}>
           <TouchableOpacity
-            onPress={() => router.back()}
+            onPress={handleClose}
             style={styles.closeBtn}
             activeOpacity={0.7}
             accessibilityLabel="Close study session"
@@ -87,18 +107,39 @@ export default function StudyScreen() {
         {/* ── Category & Mode Pill ─────────────────────── */}
         <View style={styles.modeRow}>
           <TouchableOpacity
-            style={[styles.quizToggle, isQuizMode && styles.quizToggleActive]}
+            style={[
+              styles.quizToggle,
+              isQuizMode && styles.quizToggleActive,
+              isAutoReviewing && styles.quizToggleDisabled,
+            ]}
             onPress={toggleQuizMode}
             activeOpacity={0.8}
+            disabled={isAutoReviewing}
           >
             <Ionicons
-              name={isQuizMode ? 'sparkles' : 'bulb-outline'}
+              name={isAutoReviewing ? 'play-circle' : isQuizMode ? 'sparkles' : 'bulb-outline'}
               size={14}
-              color={isQuizMode ? COLORS.accentPurple : COLORS.textSecondary}
+              color={
+                isAutoReviewing
+                  ? COLORS.pink
+                  : isQuizMode
+                    ? COLORS.accentPurple
+                    : COLORS.textSecondary
+              }
               style={{ marginRight: 6 }}
             />
-            <Text style={[styles.quizToggleText, isQuizMode && styles.quizToggleTextActive]}>
-              {isQuizMode ? 'Quiz Mode · 한국어 먼저' : 'Standard · English First'}
+            <Text
+              style={[
+                styles.quizToggleText,
+                isQuizMode && styles.quizToggleTextActive,
+                isAutoReviewing && styles.quizToggleTextAuto,
+              ]}
+            >
+              {isAutoReviewing
+                ? 'Auto Review · EN → KO'
+                : isQuizMode
+                  ? 'Quiz Mode · 한국어 먼저'
+                  : 'Standard · English First'}
             </Text>
           </TouchableOpacity>
         </View>
@@ -122,29 +163,41 @@ export default function StudyScreen() {
         <View style={styles.navRow}>
           {/* Previous Card */}
           <TouchableOpacity
-            style={[styles.navBtn, isFirst && styles.navBtnDisabled]}
+            style={[styles.navBtn, (isFirst || isAutoReviewing) && styles.navBtnDisabled]}
             onPress={goPrev}
-            activeOpacity={isFirst ? 1 : 0.7}
-            disabled={isFirst}
+            activeOpacity={isFirst || isAutoReviewing ? 1 : 0.7}
+            disabled={isFirst || isAutoReviewing}
           >
-            <Ionicons name="chevron-back" size={20} color={isFirst ? COLORS.border : COLORS.accentIndigo} />
+            <Ionicons
+              name="chevron-back"
+              size={20}
+              color={isFirst || isAutoReviewing ? COLORS.border : COLORS.accentIndigo}
+            />
           </TouchableOpacity>
 
           {/* Decision Buttons */}
           <View style={styles.actionsGroup}>
             <TouchableOpacity
-              style={styles.reviewBtn}
-              onPress={() => handleNextAction(false)}
+              style={[styles.reviewBtn, isAutoReviewing && styles.reviewBtnActive]}
+              onPress={handleReview}
               activeOpacity={0.8}
             >
-              <Ionicons name="refresh" size={16} color={COLORS.pink} style={{ marginRight: 6 }} />
-              <Text style={styles.reviewBtnText}>Review</Text>
+              <Ionicons
+                name={isAutoReviewing ? 'stop' : 'play'}
+                size={16}
+                color={COLORS.pink}
+                style={{ marginRight: 6 }}
+              />
+              <Text style={styles.reviewBtnText}>
+                {isAutoReviewing ? 'Stop' : 'Review'}
+              </Text>
             </TouchableOpacity>
 
             <TouchableOpacity
-              style={styles.masteredBtn}
+              style={[styles.masteredBtn, isAutoReviewing && styles.masteredBtnDisabled]}
               onPress={() => handleNextAction(true)}
               activeOpacity={0.8}
+              disabled={isAutoReviewing}
             >
               <Ionicons name="checkmark-sharp" size={18} color={COLORS.white} style={{ marginRight: 6 }} />
               <Text style={styles.masteredBtnText}>Mastered</Text>
@@ -153,12 +206,16 @@ export default function StudyScreen() {
 
           {/* Forward Card */}
           <TouchableOpacity
-            style={[styles.navBtn, isLast && styles.navBtnDisabled]}
+            style={[styles.navBtn, (isLast || isAutoReviewing) && styles.navBtnDisabled]}
             onPress={goForward}
-            activeOpacity={isLast ? 1 : 0.7}
-            disabled={isLast}
+            activeOpacity={isLast || isAutoReviewing ? 1 : 0.7}
+            disabled={isLast || isAutoReviewing}
           >
-            <Ionicons name="chevron-forward" size={20} color={isLast ? COLORS.border : COLORS.accentIndigo} />
+            <Ionicons
+              name="chevron-forward"
+              size={20}
+              color={isLast || isAutoReviewing ? COLORS.border : COLORS.accentIndigo}
+            />
           </TouchableOpacity>
         </View>
 
@@ -299,6 +356,14 @@ const styles = StyleSheet.create({
     color: COLORS.accentPurple,
     fontWeight: '700',
   },
+  quizToggleDisabled: {
+    borderColor: COLORS.pink + '50',
+    backgroundColor: COLORS.bgCard,
+  },
+  quizToggleTextAuto: {
+    color: COLORS.pink,
+    fontWeight: '700',
+  },
 
   /* Navigation & Action buttons */
   navRow: {
@@ -338,6 +403,10 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     borderRadius: RADIUS.md,
   },
+  reviewBtnActive: {
+    backgroundColor: COLORS.pink + '18',
+    borderColor: COLORS.pink,
+  },
   reviewBtnText: {
     color: COLORS.pink,
     fontSize: 14,
@@ -352,6 +421,9 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     borderRadius: RADIUS.md,
     ...Platform.select(SHADOW.button),
+  },
+  masteredBtnDisabled: {
+    opacity: 0.4,
   },
   masteredBtnText: {
     color: COLORS.white,

@@ -13,12 +13,12 @@ import CategoryCard from '../src/components/CategoryCard';
 import { COLORS, RADIUS, SHADOW } from '../src/constants/theme';
 
 export default function HomeScreen() {
-  const { user, loading, displayName } = useAuth();
+  const { user, loading: authLoading, displayName } = useAuth();
   const router = useRouter();
-  const { streak, hearts, xp, level } = useProgress();
+  const { streak, hearts, xp, level, loading: progressLoading } = useProgress();
 
   // Auth Guard
-  if (loading) {
+  if (authLoading || (user && progressLoading)) {
     return (
       <View style={styles.loadingContainer}>
         <ActivityIndicator size="large" color={COLORS.primary} />
@@ -39,7 +39,7 @@ export default function HomeScreen() {
             <Text style={styles.logoText}>LF</Text>
           </View>
           <View>
-            <Text style={styles.welcomeText}>Hi, {displayName} 👋</Text>
+            <Text style={styles.welcomeText}>Hi, {displayName}</Text>
             <Text style={styles.subtitleText}>Ready to master English today?</Text>
           </View>
         </View>
