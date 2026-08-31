@@ -179,7 +179,7 @@ app/
    - **인증 가드(Auth Guard)**: 미인증 사용자의 경우 `<Redirect href="/login" />` 컴포넌트를 통해 안전하게 로그인 화면으로 보냅니다.
    - **실시간 통계 스트립**: 연속 학습일(Streak), 에너지(Hearts), 총 경험치(XP) 및 현재 레벨(Lv.)을 한눈에 표시합니다.
    - **퀵 스타트 배너**: 클릭 한 번으로 메인 회화 표현 학습 세션을 즉시 시작합니다.
-   - **카테고리 그리드**: 6개 핵심 주제별 카테고리(`Daily & Casual`, `Idioms & Slang` 등)를 렌더링하고 클릭 시 `study.tsx`로 네비게이션합니다.
+   - **카테고리 그리드**: 12개 주제별 카테고리(`Daily Conversation`, `Actions & Habits`, `Feelings & Mindset` 등)를 렌더링하고 클릭 시 `study.tsx`로 네비게이션합니다.
 
 3. **`study.tsx` (학습 화면)**
    - URL 파라미터(`categoryId`)를 수신하여 `expressions.json` 데이터셋 중 해당하는 표현을 필터링합니다.
@@ -209,7 +209,7 @@ src/
 │   ├── CategoryCard.tsx  # 대시보드의 주제별 카드 컴포넌트
 │   └── FlashCard.tsx     # 3D Y축 회전 애니메이션 플래시카드
 ├── constants/            # 전역 상수 및 디자인 토큰
-│   ├── categories.ts     # 6개 카테고리 메타데이터 (아이콘, 카운트, 색상)
+│   ├── categories.ts     # 12개 카테고리 메타데이터 (아이콘, 카운트, 색상)
 │   └── theme.ts          # 색상(COLORS), 반경(RADIUS), 간격(SPACING), 그림자(SHADOW)
 ├── contexts/             # React Context 전역 상태
 │   ├── AuthContext.tsx   # Firebase Auth 사용자 인증 세션 상태

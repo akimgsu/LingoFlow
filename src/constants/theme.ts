@@ -31,6 +31,11 @@ export const COLORS = {
   accentTravel: '#60A5FA',
   accentFeelings: '#A78BFA',
   accentSocial: '#F59E0B',
+  accentOpinions: '#22D3EE',
+  accentRequests: '#A3E635',
+  accentTime: '#E879F9',
+  accentActions: '#38BDF8',
+  accentCommunication: '#FB7185',
   accentBusiness: '#10B981',
 
   // Functional Status Colors

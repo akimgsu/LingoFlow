@@ -232,7 +232,7 @@ export default function StudyScreen() {
                 <FontAwesome5 name="trophy" size={36} color="#F59E0B" />
               </View>
 
-              <Text style={styles.modalHeading}>Session Completed! 🎉</Text>
+              <Text style={styles.modalHeading}>Session Completed! </Text>
               <Text style={styles.modalSub}>
                 Great job practicing {totalCount} expressions!
               </Text>

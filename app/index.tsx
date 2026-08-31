@@ -84,7 +84,7 @@ export default function HomeScreen() {
       {/* ── Daily Challenge / Quick Start Banner ─────────── */}
       <TouchableOpacity
         style={styles.quickStartBanner}
-        onPress={() => router.push({ pathname: '/study', params: { categoryId: 'Daily & Casual' } })}
+        onPress={() => router.push({ pathname: '/study', params: { categoryId: 'Daily Conversation' } })}
         activeOpacity={0.85}
       >
         <View style={styles.bannerIconWrap}>
@@ -92,7 +92,9 @@ export default function HomeScreen() {
         </View>
         <View style={styles.bannerTextWrap}>
           <Text style={styles.bannerTitle}>Daily Express Practice</Text>
-          <Text style={styles.bannerSub}>88 real-life conversational phrases</Text>
+          <Text style={styles.bannerSub}>
+            {CATEGORIES.find((c) => c.id === 'Daily Conversation')?.count ?? 0} everyday conversation phrases
+          </Text>
         </View>
         <View style={styles.bannerAction}>
           <Text style={styles.bannerActionText}>Start</Text>

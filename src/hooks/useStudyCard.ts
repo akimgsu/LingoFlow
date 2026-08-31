@@ -4,7 +4,7 @@ import { Expression, StudySessionStats } from '../types';
 import { playExpressionAudio, stopExpressionAudio, delay } from '../utils/audioPlayer';
 import { useProgress } from '../contexts/ProgressContext';
 
-const AUTO_REVIEW_PAUSE_MS = 2000;
+const AUTO_REVIEW_PAUSE_MS = 4000;
 
 export function useStudyCard(expressions: Expression[]) {
   const { addXp, markMastered } = useProgress();
@@ -148,12 +148,13 @@ export function useStudyCard(expressions: Expression[]) {
 
     if (expressions.length === 0) return 'stopped';
 
+    const startIndex = currentIndex;
     autoReviewActiveRef.current = true;
     setIsAutoReviewing(true);
     setIsQuizMode(false);
     resetCardAnimation();
 
-    for (let i = 0; i < expressions.length; i++) {
+    for (let i = startIndex; i < expressions.length; i++) {
       if (!autoReviewActiveRef.current) {
         return 'stopped';
       }
@@ -190,16 +191,17 @@ export function useStudyCard(expressions: Expression[]) {
       return 'stopped';
     }
 
+    const reviewedCount = expressions.length - startIndex;
     autoReviewActiveRef.current = false;
     setIsAutoReviewing(false);
     setSessionStats((prev) => ({
       ...prev,
-      totalStudied: prev.totalStudied + expressions.length,
-      reviewCount: prev.reviewCount + expressions.length,
+      totalStudied: prev.totalStudied + reviewedCount,
+      reviewCount: prev.reviewCount + reviewedCount,
     }));
 
     return 'done';
-  }, [expressions, stopAutoReview]);
+  }, [expressions, currentIndex, stopAutoReview]);
 
   const resetSession = () => {
     stopAutoReview();
