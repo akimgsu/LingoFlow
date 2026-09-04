@@ -6790,5 +6790,1169 @@
     "category": "Daily Conversation",
     "english": "Do I need to pay in cash?",
     "korean": "현금으로 결제해야 하나요?"
+  },
+  {
+    "id": "exp_1133",
+    "category": "Actions & Habits",
+    "english": "I study English harder than you.",
+    "korean": "나는 너보다 더 열심히 공부해."
+  },
+  {
+    "id": "exp_1134",
+    "category": "Daily Conversation",
+    "english": "Have you ever studied English in America?",
+    "korean": "너 미국에서 영어 공부 해본 적 있어?"
+  },
+  {
+    "id": "exp_1135",
+    "category": "Feelings & Mindset",
+    "english": "It's difficult to study English.",
+    "korean": "영어 공부하는 것은 어려워요."
+  },
+  {
+    "id": "exp_1136",
+    "category": "Daily Conversation",
+    "english": "Do you know who studies English?",
+    "korean": "누가 영어 공부하는지 아세요?"
+  },
+  {
+    "id": "exp_1137",
+    "category": "Daily Conversation",
+    "english": "I saw him study English.",
+    "korean": "나는 그가 영어 공부하는 거 봤어."
+  },
+  {
+    "id": "exp_1138",
+    "category": "Opinions & Reactions",
+    "english": "It seems that he lives in Seoul.",
+    "korean": "그는 서울에 사는 것처럼 보여요."
+  },
+  {
+    "id": "exp_1139",
+    "category": "Time & Plans",
+    "english": "How long have you lived in Seoul?",
+    "korean": "당신은 얼마나 오랫동안 서울에 살아왔나요?"
+  },
+  {
+    "id": "exp_1140",
+    "category": "Daily Conversation",
+    "english": "They are supposed to live in Seoul.",
+    "korean": "그들은 서울에 살기로 되어 있어요."
+  },
+  {
+    "id": "exp_1141",
+    "category": "Feelings & Mindset",
+    "english": "I should have lived in Seoul.",
+    "korean": "나는 서울에 살았어야만 했어."
+  },
+  {
+    "id": "exp_1142",
+    "category": "Feelings & Mindset",
+    "english": "I wish I lived in Seoul.",
+    "korean": "내가 서울에 살면 좋을 텐데."
+  },
+  {
+    "id": "exp_1143",
+    "category": "Dining & Cafe",
+    "english": "I'm dying to drink coffee.",
+    "korean": "커피 마시고 싶어 죽겠어."
+  },
+  {
+    "id": "exp_1144",
+    "category": "Dining & Cafe",
+    "english": "I want you to drink coffee.",
+    "korean": "난 네가 커피 마시길 원해."
+  },
+  {
+    "id": "exp_1145",
+    "category": "Dining & Cafe",
+    "english": "You'd better drink coffee.",
+    "korean": "넌 커피 마시는 게 좋겠어."
+  },
+  {
+    "id": "exp_1146",
+    "category": "Dining & Cafe",
+    "english": "There's no way he drinks coffee.",
+    "korean": "그가 커피를 마실 리가 없어."
+  },
+  {
+    "id": "exp_1147",
+    "category": "Dining & Cafe",
+    "english": "This is the first time I've drunk coffee.",
+    "korean": "커피 마시는 게 처음이에요."
+  },
+  {
+    "id": "exp_1148",
+    "category": "Feelings & Mindset",
+    "english": "I'm not in the mood for cleaning my room.",
+    "korean": "방 청소할 기분이 아니야."
+  },
+  {
+    "id": "exp_1149",
+    "category": "Actions & Habits",
+    "english": "I was just about to clean my room.",
+    "korean": "제 방을 막 청소하려던 참이었어요."
+  },
+  {
+    "id": "exp_1150",
+    "category": "Opinions & Reactions",
+    "english": "I knew you'd clean my room.",
+    "korean": "네가 내 방을 청소할 줄 알았어."
+  },
+  {
+    "id": "exp_1151",
+    "category": "Opinions & Reactions",
+    "english": "He must have cleaned my room.",
+    "korean": "그는 분명히 내 방을 청소했을 거야."
+  },
+  {
+    "id": "exp_1152",
+    "category": "Communication",
+    "english": "I told you to clean my room.",
+    "korean": "너에게 내 방 청소하라고 말했잖아."
+  },
+  {
+    "id": "exp_1153",
+    "category": "Actions & Habits",
+    "english": "I was busy doing my homework.",
+    "korean": "나는 숙제하느라 바빴어."
+  },
+  {
+    "id": "exp_1154",
+    "category": "Actions & Habits",
+    "english": "Make sure you do your homework.",
+    "korean": "꼭 숙제하도록 해."
+  },
+  {
+    "id": "exp_1155",
+    "category": "Feelings & Mindset",
+    "english": "I'm sick of doing my homework.",
+    "korean": "나는 숙제하는 게 지겨워."
+  },
+  {
+    "id": "exp_1156",
+    "category": "Opinions & Reactions",
+    "english": "What's the point of doing my homework?",
+    "korean": "숙제하는 게 무슨 소용이야?"
+  },
+  {
+    "id": "exp_1157",
+    "category": "Actions & Habits",
+    "english": "I was told to do my homework.",
+    "korean": "나는 숙제하라는 말을 들었어."
+  },
+  {
+    "id": "exp_1158",
+    "category": "Travel & Commute",
+    "english": "I can't wait to go there.",
+    "korean": "빨리 거기에 가고 싶어."
+  },
+  {
+    "id": "exp_1159",
+    "category": "Travel & Commute",
+    "english": "I didn't mean to go there.",
+    "korean": "거기에 가려던 의도는 아니었어."
+  },
+  {
+    "id": "exp_1160",
+    "category": "Travel & Commute",
+    "english": "It's no use going there.",
+    "korean": "거기에 가봤자 소용없어."
+  },
+  {
+    "id": "exp_1161",
+    "category": "Travel & Commute",
+    "english": "When was the last time you went there?",
+    "korean": "마지막으로 거기에 간 게 언제야?"
+  },
+  {
+    "id": "exp_1162",
+    "category": "Travel & Commute",
+    "english": "I have trouble going there.",
+    "korean": "나는 거기에 가는 데 어려움을 겪고 있어."
+  },
+  {
+    "id": "exp_1163",
+    "category": "Travel & Commute",
+    "english": "I've always wanted to visit there.",
+    "korean": "나는 항상 거기에 가보고 싶었어."
+  },
+  {
+    "id": "exp_1164",
+    "category": "Travel & Commute",
+    "english": "What's it like to live in New York?",
+    "korean": "뉴욕에 사는 건 어때?"
+  },
+  {
+    "id": "exp_1165",
+    "category": "Requests & Politeness",
+    "english": "Don't hesitate to ask me questions.",
+    "korean": "주저하지 말고 내게 질문해 줘."
+  },
+  {
+    "id": "exp_1166",
+    "category": "Feelings & Mindset",
+    "english": "I have no choice but to do it.",
+    "korean": "나는 그것을 할 수밖에 없어."
+  },
+  {
+    "id": "exp_1167",
+    "category": "Actions & Habits",
+    "english": "I used to live in Seoul.",
+    "korean": "나는 예전에 서울에 살았었어."
+  },
+  {
+    "id": "exp_1168",
+    "category": "Feelings & Mindset",
+    "english": "It's not worth worrying about.",
+    "korean": "그것은 걱정할 가치가 없어."
+  },
+  {
+    "id": "exp_1169",
+    "category": "Actions & Habits",
+    "english": "I'm in the middle of doing my homework.",
+    "korean": "나는 한창 숙제하는 중이야."
+  },
+  {
+    "id": "exp_1170",
+    "category": "Idioms & Slang",
+    "english": "It doesn't hurt to try.",
+    "korean": "시도해봐서 나쁠 건 없지."
+  },
+  {
+    "id": "exp_1171",
+    "category": "Feelings & Mindset",
+    "english": "I love it when you smile.",
+    "korean": "네가 웃을 때 너무 좋아."
+  },
+  {
+    "id": "exp_1172",
+    "category": "Feelings & Mindset",
+    "english": "I can't help laughing.",
+    "korean": "나는 웃지 않을 수가 없어."
+  },
+  {
+    "id": "exp_1173",
+    "category": "Feelings & Mindset",
+    "english": "I wish I were a bird.",
+    "korean": "내가 새라면 좋을 텐데."
+  },
+  {
+    "id": "exp_1174",
+    "category": "Travel & Commute",
+    "english": "You're not allowed to park here.",
+    "korean": "여기에 주차하시면 안 됩니다."
+  },
+  {
+    "id": "exp_1175",
+    "category": "Requests & Politeness",
+    "english": "Is it okay if I sit here?",
+    "korean": "여기 앉아도 괜찮을까요?"
+  },
+  {
+    "id": "exp_1176",
+    "category": "Social & Relationships",
+    "english": "I never thought I'd see you here.",
+    "korean": "여기서 널 보게 될 줄은 꿈에도 몰랐어."
+  },
+  {
+    "id": "exp_1177",
+    "category": "Opinions & Reactions",
+    "english": "It turns out that he was right.",
+    "korean": "알고 보니 그가 옳았어."
+  },
+  {
+    "id": "exp_1178",
+    "category": "Opinions & Reactions",
+    "english": "I know better than to do that.",
+    "korean": "나는 그런 바보 같은 짓은 안 해 (그런 짓을 할 만큼 어리석지 않아)."
+  },
+  {
+    "id": "exp_1179",
+    "category": "Feelings & Mindset",
+    "english": "I hate it when you lie to me.",
+    "korean": "네가 나한테 거짓말할 때 정말 싫어."
+  },
+  {
+    "id": "exp_1180",
+    "category": "Actions & Habits",
+    "english": "I'm used to waking up early.",
+    "korean": "나는 일찍 일어나는 데 익숙해."
+  },
+  {
+    "id": "exp_1181",
+    "category": "Social & Relationships",
+    "english": "Is there any chance we can meet tomorrow?",
+    "korean": "우리가 내일 만날 가능성이 있을까?"
+  },
+  {
+    "id": "exp_1182",
+    "category": "Feelings & Mindset",
+    "english": "At first I thought you were angry.",
+    "korean": "처음에는 네가 화난 줄 알았어."
+  },
+  {
+    "id": "exp_1183",
+    "category": "Travel & Commute",
+    "english": "Taking the subway is the way to go.",
+    "korean": "지하철을 타는 것이 최고의 방법이야."
+  },
+  {
+    "id": "exp_1184",
+    "category": "Work & Business",
+    "english": "Can you make time for a quick meeting?",
+    "korean": "잠깐 회의할 시간 낼 수 있어?"
+  },
+  {
+    "id": "exp_1185",
+    "category": "Opinions & Reactions",
+    "english": "No offense, but I don't agree with you.",
+    "korean": "기분 나쁘게 듣지 마, 하지만 난 네 의견에 동의하지 않아."
+  },
+  {
+    "id": "exp_1186",
+    "category": "Social & Relationships",
+    "english": "I'm willing to help you.",
+    "korean": "나는 기꺼이 널 도와줄 의향이 있어."
+  },
+  {
+    "id": "exp_1187",
+    "category": "Social & Relationships",
+    "english": "I asked if he was coming.",
+    "korean": "나는 그가 오는지 물어봤어."
+  },
+  {
+    "id": "exp_1188",
+    "category": "Opinions & Reactions",
+    "english": "It doesn't matter that it's raining.",
+    "korean": "비가 오는 것은 상관없어."
+  },
+  {
+    "id": "exp_1189",
+    "category": "Feelings & Mindset",
+    "english": "I'm willing to take the risk.",
+    "korean": "나는 기꺼이 그 위험을 감수할 의향이 있어."
+  },
+  {
+    "id": "exp_1190",
+    "category": "Idioms & Slang",
+    "english": "I take it for granted that you'll be there.",
+    "korean": "나는 네가 거기에 있을 거라고 당연하게 생각해."
+  },
+  {
+    "id": "exp_1191",
+    "category": "Feelings & Mindset",
+    "english": "I feel better knowing that you are safe.",
+    "korean": "네가 안전하다는 걸 알게 되니 마음이 놓여."
+  },
+  {
+    "id": "exp_1192",
+    "category": "Requests & Politeness",
+    "english": "Could you possibly help me with this?",
+    "korean": "혹시 이것 좀 도와주실 수 있나요?"
+  },
+  {
+    "id": "exp_1193",
+    "category": "Social & Relationships",
+    "english": "The last thing I want to do is hurt your feelings.",
+    "korean": "네 감정을 상하게 하는 건 내가 절대 하고 싶지 않은 일이야."
+  },
+  {
+    "id": "exp_1194",
+    "category": "Social & Relationships",
+    "english": "Don't bother waiting for me.",
+    "korean": "굳이 날 기다리지 않아도 돼."
+  },
+  {
+    "id": "exp_1195",
+    "category": "Feelings & Mindset",
+    "english": "It's clear to me you need some rest.",
+    "korean": "네가 휴식이 필요하다는 건 분명해 보여."
+  },
+  {
+    "id": "exp_1196",
+    "category": "Opinions & Reactions",
+    "english": "As far as I know, he is not coming.",
+    "korean": "내가 아는 한, 그는 오지 않아."
+  },
+  {
+    "id": "exp_1197",
+    "category": "Communication",
+    "english": "Speaking of movies, did you see that new one?",
+    "korean": "영화 얘기가 나와서 말인데, 그 신작 봤어?"
+  },
+  {
+    "id": "exp_1198",
+    "category": "Work & Business",
+    "english": "I would be able to finish it by tomorrow.",
+    "korean": "내일까지는 그것을 끝낼 수 있을 것 같아."
+  },
+  {
+    "id": "exp_1199",
+    "category": "Work & Business",
+    "english": "I put my best efforts to solve the problem.",
+    "korean": "나는 그 문제를 해결하기 위해 최선의 노력을 다했어."
+  },
+  {
+    "id": "exp_1200",
+    "category": "Travel & Commute",
+    "english": "How long does it take to get there?",
+    "korean": "거기에 도착하는 데 얼마나 걸리나요?"
+  },
+  {
+    "id": "exp_1201",
+    "category": "Work & Business",
+    "english": "This work is too much for you.",
+    "korean": "이 일은 네게 너무 벅차."
+  },
+  {
+    "id": "exp_1202",
+    "category": "Work & Business",
+    "english": "I was thinking about changing my job.",
+    "korean": "나 이직하는 것에 대해 생각 중이었어."
+  },
+  {
+    "id": "exp_1203",
+    "category": "Work & Business",
+    "english": "I managed to finish the project on time.",
+    "korean": "나는 간신히 제시간에 프로젝트를 끝냈어."
+  },
+  {
+    "id": "exp_1204",
+    "category": "Actions & Habits",
+    "english": "I ended up staying home.",
+    "korean": "나는 결국 집에 머물게 되었어."
+  },
+  {
+    "id": "exp_1205",
+    "category": "Requests & Politeness",
+    "english": "I can't thank you enough for your help.",
+    "korean": "네 도움에 아무리 감사해도 모자라."
+  },
+  {
+    "id": "exp_1206",
+    "category": "Opinions & Reactions",
+    "english": "You didn't even try.",
+    "korean": "넌 시도조차 하지 않았잖아."
+  },
+  {
+    "id": "exp_1207",
+    "category": "Daily Conversation",
+    "english": "It has something to do with the weather.",
+    "korean": "그건 날씨와 관련이 있어."
+  },
+  {
+    "id": "exp_1208",
+    "category": "Opinions & Reactions",
+    "english": "Are you expecting me to pay for this?",
+    "korean": "내가 이것을 지불하길 바라는 거야?"
+  },
+  {
+    "id": "exp_1209",
+    "category": "Opinions & Reactions",
+    "english": "How come you are so late?",
+    "korean": "너 왜 이렇게 늦었어?"
+  },
+  {
+    "id": "exp_1210",
+    "category": "Feelings & Mindset",
+    "english": "I'm sure that everything will be fine.",
+    "korean": "모든 게 잘 될 거라고 확신해."
+  },
+  {
+    "id": "exp_1211",
+    "category": "Daily Conversation",
+    "english": "Don't forget to lock the door.",
+    "korean": "문 잠그는 거 잊지 마."
+  },
+  {
+    "id": "exp_1212",
+    "category": "Travel & Commute",
+    "english": "Take an umbrella just in case.",
+    "korean": "혹시 모르니 우산 챙겨."
+  },
+  {
+    "id": "exp_1213",
+    "category": "Social & Relationships",
+    "english": "It's been a long time since we met.",
+    "korean": "우리가 만난 지 오래됐네."
+  },
+  {
+    "id": "exp_1214",
+    "category": "Communication",
+    "english": "I should have told you in the first place.",
+    "korean": "애초에 너에게 말했어야 했어."
+  },
+  {
+    "id": "exp_1215",
+    "category": "Time & Plans",
+    "english": "There's a good chance it will rain tomorrow.",
+    "korean": "내일 비가 올 가능성이 높아."
+  },
+  {
+    "id": "exp_1216",
+    "category": "Feelings & Mindset",
+    "english": "Am I the only one who likes this?",
+    "korean": "이거 좋아하는 사람 나뿐이야?"
+  },
+  {
+    "id": "exp_1217",
+    "category": "Feelings & Mindset",
+    "english": "I have a feeling that something is wrong.",
+    "korean": "뭔가 잘못됐다는 느낌이 들어."
+  },
+  {
+    "id": "exp_1218",
+    "category": "Opinions & Reactions",
+    "english": "The thing is, I don't have enough time.",
+    "korean": "문제는, 내가 시간이 충분하지 않다는 거야."
+  },
+  {
+    "id": "exp_1219",
+    "category": "Feelings & Mindset",
+    "english": "It's a shame that you can't come.",
+    "korean": "네가 올 수 없다니 정말 아쉽다."
+  },
+  {
+    "id": "exp_1220",
+    "category": "Daily Conversation",
+    "english": "It just occurred to me that I forgot my keys.",
+    "korean": "내가 열쇠를 깜빡했다는 생각이 방금 떠올랐어."
+  },
+  {
+    "id": "exp_1221",
+    "category": "Opinions & Reactions",
+    "english": "There's no excuse for being late.",
+    "korean": "지각한 것에 대해서는 변명의 여지가 없어."
+  },
+  {
+    "id": "exp_1222",
+    "category": "Feelings & Mindset",
+    "english": "I'm embarrassed that I made a mistake.",
+    "korean": "내가 실수를 해서 창피해."
+  },
+  {
+    "id": "exp_1223",
+    "category": "Opinions & Reactions",
+    "english": "What's worse is that I lost my wallet.",
+    "korean": "더 최악인 것은 내가 지갑을 잃어버렸다는 거야."
+  },
+  {
+    "id": "exp_1224",
+    "category": "Opinions & Reactions",
+    "english": "All I know is that he left early.",
+    "korean": "내가 아는 건 그가 일찍 떠났다는 것뿐이야."
+  },
+  {
+    "id": "exp_1225",
+    "category": "Feelings & Mindset",
+    "english": "I have no doubt that you will succeed.",
+    "korean": "네가 성공할 거라는 걸 의심치 않아."
+  },
+  {
+    "id": "exp_1226",
+    "category": "Opinions & Reactions",
+    "english": "What makes you think so?",
+    "korean": "무엇이 널 그렇게 생각하게 만들어? (왜 그렇게 생각해?)"
+  },
+  {
+    "id": "exp_1227",
+    "category": "Dining & Cafe",
+    "english": "Not everyone likes coffee.",
+    "korean": "모든 사람이 커피를 좋아하는 건 아니야."
+  },
+  {
+    "id": "exp_1228",
+    "category": "Time & Plans",
+    "english": "I will stay here for the time being.",
+    "korean": "당분간은 여기에 머물 거야."
+  },
+  {
+    "id": "exp_1229",
+    "category": "Communication",
+    "english": "What I'm saying is that we need a plan.",
+    "korean": "내 말은 우리에게 계획이 필요하다는 거야."
+  },
+  {
+    "id": "exp_1230",
+    "category": "Travel & Commute",
+    "english": "The heavy rain kept me from going out.",
+    "korean": "폭우 때문에 나는 외출하지 못했어."
+  },
+  {
+    "id": "exp_1231",
+    "category": "Feelings & Mindset",
+    "english": "There's no need to worry about it.",
+    "korean": "그것에 대해 걱정할 필요 없어."
+  },
+  {
+    "id": "exp_1232",
+    "category": "Time & Plans",
+    "english": "How long has it been since you moved here?",
+    "korean": "여기로 이사 온 지 얼마나 됐어?"
+  },
+  {
+    "id": "exp_1233",
+    "category": "Opinions & Reactions",
+    "english": "Let's say you won the lottery.",
+    "korean": "네가 복권에 당첨됐다고 가정해 보자."
+  },
+  {
+    "id": "exp_1234",
+    "category": "Feelings & Mindset",
+    "english": "If only I could speak English fluently.",
+    "korean": "내가 영어를 유창하게 할 수만 있다면 좋을 텐데."
+  },
+  {
+    "id": "exp_1235",
+    "category": "Requests & Politeness",
+    "english": "Feel free to ask me any questions.",
+    "korean": "질문이 있으면 언제든 편하게 물어보세요."
+  },
+  {
+    "id": "exp_1236",
+    "category": "Social & Relationships",
+    "english": "I didn't expect to see you here.",
+    "korean": "여기서 너를 볼 거라고는 예상하지 못했어."
+  },
+  {
+    "id": "exp_1237",
+    "category": "Travel & Commute",
+    "english": "What if we miss the flight?",
+    "korean": "우리가 비행기를 놓치면 어쩌지?"
+  },
+  {
+    "id": "exp_1238",
+    "category": "Idioms & Slang",
+    "english": "What's the harm in trying?",
+    "korean": "시도해본다고 손해 볼 건 없잖아?"
+  },
+  {
+    "id": "exp_1239",
+    "category": "Time & Plans",
+    "english": "What do you say we go for a walk?",
+    "korean": "우리 산책하러 가는 거 어때?"
+  },
+  {
+    "id": "exp_1240",
+    "category": "Travel & Commute",
+    "english": "I'm on my way to the office.",
+    "korean": "나는 사무실 가는 길이야."
+  },
+  {
+    "id": "exp_1241",
+    "category": "Work & Business",
+    "english": "Can you help me with this project?",
+    "korean": "이 프로젝트 좀 도와줄 수 있어?"
+  },
+  {
+    "id": "exp_1242",
+    "category": "Communication",
+    "english": "I can tell by just looking at your face.",
+    "korean": "네 얼굴만 봐도 알 수 있어."
+  },
+  {
+    "id": "exp_1243",
+    "category": "Opinions & Reactions",
+    "english": "Don't take it personally, but I think you're wrong.",
+    "korean": "기분 나쁘게 듣지 마, 하지만 내 생각엔 네가 틀린 것 같아."
+  },
+  {
+    "id": "exp_1244",
+    "category": "Feelings & Mindset",
+    "english": "It bothers me that he is always late.",
+    "korean": "그가 항상 지각하는 게 신경 쓰여."
+  },
+  {
+    "id": "exp_1245",
+    "category": "Opinions & Reactions",
+    "english": "Given that it's raining, we should stay inside.",
+    "korean": "비가 오는 것을 고려하면, 우리는 안에 머무는 게 좋겠어."
+  },
+  {
+    "id": "exp_1246",
+    "category": "Opinions & Reactions",
+    "english": "It's not like I did it on purpose.",
+    "korean": "내가 일부러 그런 건 아니잖아."
+  },
+  {
+    "id": "exp_1247",
+    "category": "Opinions & Reactions",
+    "english": "How dare you speak to me like that?",
+    "korean": "네가 감히 어떻게 나한테 그런 식으로 말할 수 있어?"
+  },
+  {
+    "id": "exp_1248",
+    "category": "Feelings & Mindset",
+    "english": "It's just that I'm really tired today.",
+    "korean": "단지 오늘 너무 피곤해서 그래."
+  },
+  {
+    "id": "exp_1249",
+    "category": "Idioms & Slang",
+    "english": "I'm itching to tell you the secret.",
+    "korean": "너한테 그 비밀을 말해주고 싶어 근질근질해."
+  },
+  {
+    "id": "exp_1250",
+    "category": "Feelings & Mindset",
+    "english": "I'd be lying if I said I didn't care.",
+    "korean": "내가 신경 안 쓴다고 하면 거짓말이겠지."
+  },
+  {
+    "id": "exp_1251",
+    "category": "Idioms & Slang",
+    "english": "How the hell did you know that?",
+    "korean": "도대체 그걸 어떻게 알았어?"
+  },
+  {
+    "id": "exp_1252",
+    "category": "Communication",
+    "english": "I'm telling you, it's the truth.",
+    "korean": "정말이야, 그게 사실이라니까."
+  },
+  {
+    "id": "exp_1253",
+    "category": "Feelings & Mindset",
+    "english": "I know what it's like to be alone.",
+    "korean": "혼자 있는 게 어떤 건지 나도 알아."
+  },
+  {
+    "id": "exp_1254",
+    "category": "Feelings & Mindset",
+    "english": "I can't bring myself to tell him the truth.",
+    "korean": "차마 그에게 사실대로 말할 엄두가 안 나."
+  },
+  {
+    "id": "exp_1255",
+    "category": "Communication",
+    "english": "Remind me to call him later.",
+    "korean": "이따가 그에게 전화하라고 내게 상기시켜 줘."
+  },
+  {
+    "id": "exp_1256",
+    "category": "Feelings & Mindset",
+    "english": "I was wrong to judge you.",
+    "korean": "너를 섣불리 판단한 건 내가 잘못했어."
+  },
+  {
+    "id": "exp_1257",
+    "category": "Feelings & Mindset",
+    "english": "You have every reason to be angry.",
+    "korean": "네가 화낼 만한 충분한 이유가 있어."
+  },
+  {
+    "id": "exp_1258",
+    "category": "Feelings & Mindset",
+    "english": "You have every right to be mad.",
+    "korean": "너는 화낼 충분한 권리가 있어."
+  },
+  {
+    "id": "exp_1259",
+    "category": "Opinions & Reactions",
+    "english": "Why would I do such a thing?",
+    "korean": "내가 왜 그런 짓을 하겠어?"
+  },
+  {
+    "id": "exp_1260",
+    "category": "Work & Business",
+    "english": "I just found out that he quit his job.",
+    "korean": "그가 일을 그만뒀다는 걸 방금 알았어."
+  },
+  {
+    "id": "exp_1261",
+    "category": "Idioms & Slang",
+    "english": "I got to the point where I couldn't take it anymore.",
+    "korean": "나는 더 이상 참을 수 없는 지경에 이르렀어."
+  },
+  {
+    "id": "exp_1262",
+    "category": "Requests & Politeness",
+    "english": "I'd appreciate it if you could help me.",
+    "korean": "도와주시면 감사하겠습니다."
+  },
+  {
+    "id": "exp_1263",
+    "category": "Opinions & Reactions",
+    "english": "How can you let this happen?",
+    "korean": "어떻게 이런 일이 일어나게 내버려 둘 수 있어?"
+  },
+  {
+    "id": "exp_1264",
+    "category": "Opinions & Reactions",
+    "english": "The worst part is that I lost my phone.",
+    "korean": "가장 최악인 것은 내 휴대폰을 잃어버렸다는 거야."
+  },
+  {
+    "id": "exp_1265",
+    "category": "Social & Relationships",
+    "english": "Who would have thought we'd meet here?",
+    "korean": "우리가 여기서 만날 줄 누가 알았겠어?"
+  },
+  {
+    "id": "exp_1266",
+    "category": "Work & Business",
+    "english": "It's my job to protect you.",
+    "korean": "너를 보호하는 것이 내 일이야."
+  },
+  {
+    "id": "exp_1267",
+    "category": "Communication",
+    "english": "I want to make it clear that I'm not involved.",
+    "korean": "내가 관여하지 않았다는 것을 분명히 하고 싶어."
+  },
+  {
+    "id": "exp_1268",
+    "category": "Work & Business",
+    "english": "All you have to do is sign here.",
+    "korean": "여기에 서명하기만 하면 됩니다."
+  },
+  {
+    "id": "exp_1269",
+    "category": "Travel & Commute",
+    "english": "You'd better not go there.",
+    "korean": "거기에 가지 않는 게 좋을 거야."
+  },
+  {
+    "id": "exp_1270",
+    "category": "Travel & Commute",
+    "english": "Do you happen to know where the station is?",
+    "korean": "혹시 역이 어디 있는지 아시나요?"
+  },
+  {
+    "id": "exp_1271",
+    "category": "Opinions & Reactions",
+    "english": "I doubt if he will come.",
+    "korean": "그가 올지 의문이야."
+  },
+  {
+    "id": "exp_1272",
+    "category": "Feelings & Mindset",
+    "english": "There's no reason to be afraid.",
+    "korean": "두려워할 이유가 없어."
+  },
+  {
+    "id": "exp_1273",
+    "category": "Actions & Habits",
+    "english": "It's your turn to wash the dishes.",
+    "korean": "네가 설거지할 차례야."
+  },
+  {
+    "id": "exp_1274",
+    "category": "Feelings & Mindset",
+    "english": "I feel guilty for lying to him.",
+    "korean": "그에게 거짓말을 해서 죄책감이 들어."
+  },
+  {
+    "id": "exp_1275",
+    "category": "Feelings & Mindset",
+    "english": "It's bothersome to clean the room.",
+    "korean": "방을 청소하는 것은 성가신 일이야."
+  },
+  {
+    "id": "exp_1276",
+    "category": "Social & Relationships",
+    "english": "I am willing to help you.",
+    "korean": "나는 기꺼이 너를 도울 의향이 있어."
+  },
+  {
+    "id": "exp_1277",
+    "category": "Idioms & Slang",
+    "english": "I'd rather die than give up.",
+    "korean": "포기하느니 차라리 죽겠어."
+  },
+  {
+    "id": "exp_1278",
+    "category": "Work & Business",
+    "english": "I'm having a hard time finding a job.",
+    "korean": "나는 일자리를 구하느라 힘든 시간을 보내고 있어."
+  },
+  {
+    "id": "exp_1279",
+    "category": "Feelings & Mindset",
+    "english": "I have a hunch that something good will happen.",
+    "korean": "뭔가 좋은 일이 생길 것 같은 예감이 들어."
+  },
+  {
+    "id": "exp_1280",
+    "category": "Opinions & Reactions",
+    "english": "Are you for or against the new policy?",
+    "korean": "너는 그 새로운 정책에 찬성하니, 반대하니?"
+  },
+  {
+    "id": "exp_1281",
+    "category": "Feelings & Mindset",
+    "english": "I'm relieved that you are safe.",
+    "korean": "네가 안전하다니 마음이 놓여."
+  },
+  {
+    "id": "exp_1282",
+    "category": "Requests & Politeness",
+    "english": "You are more than welcome to join us.",
+    "korean": "우리와 함께하는 것을 얼마든지 대환영해."
+  },
+  {
+    "id": "exp_1283",
+    "category": "Feelings & Mindset",
+    "english": "I can't possibly do that.",
+    "korean": "나는 도저히 그것을 할 수 없어."
+  },
+  {
+    "id": "exp_1284",
+    "category": "Actions & Habits",
+    "english": "Make it a habit to read books.",
+    "korean": "책 읽는 것을 습관으로 만들어라."
+  },
+  {
+    "id": "exp_1285",
+    "category": "Time & Plans",
+    "english": "I'm thinking of moving to a new place.",
+    "korean": "나는 새로운 곳으로 이사할까 생각 중이야."
+  },
+  {
+    "id": "exp_1286",
+    "category": "Requests & Politeness",
+    "english": "You could at least say thank you.",
+    "korean": "적어도 고맙다고 말할 수는 있잖아."
+  },
+  {
+    "id": "exp_1287",
+    "category": "Daily Conversation",
+    "english": "Are you done with your homework?",
+    "korean": "숙제 다 끝냈어?"
+  },
+  {
+    "id": "exp_1288",
+    "category": "Travel & Commute",
+    "english": "What took you so long to get here?",
+    "korean": "여기 오는데 왜 이렇게 오래 걸렸어?"
+  },
+  {
+    "id": "exp_1289",
+    "category": "Opinions & Reactions",
+    "english": "How am I supposed to know that?",
+    "korean": "내가 그걸 어떻게 알아야 해? (내가 그걸 어떻게 알아?)"
+  },
+  {
+    "id": "exp_1290",
+    "category": "Opinions & Reactions",
+    "english": "He acts as if he knows everything.",
+    "korean": "그는 마치 자기가 모든 것을 아는 것처럼 행동해."
+  },
+  {
+    "id": "exp_1291",
+    "category": "Feelings & Mindset",
+    "english": "What bothers me most is his attitude.",
+    "korean": "나를 가장 신경 쓰게 하는 것은 그의 태도야."
+  },
+  {
+    "id": "exp_1292",
+    "category": "Work & Business",
+    "english": "Take your time finishing the work.",
+    "korean": "천천히 시간 내서 그 일을 끝내."
+  },
+  {
+    "id": "exp_1293",
+    "category": "Daily Conversation",
+    "english": "I'm gonna show you how to do it.",
+    "korean": "그것을 어떻게 하는지 너에게 보여줄게."
+  },
+  {
+    "id": "exp_1294",
+    "category": "Opinions & Reactions",
+    "english": "He is alleged to have stolen the money.",
+    "korean": "그는 그 돈을 훔쳤다고 추정돼(주장되고 있어)."
+  },
+  {
+    "id": "exp_1295",
+    "category": "Opinions & Reactions",
+    "english": "I'll do anything but that.",
+    "korean": "그것만 빼고 뭐든 다 할게."
+  },
+  {
+    "id": "exp_1296",
+    "category": "Actions & Habits",
+    "english": "It takes a while to get used to it.",
+    "korean": "그것에 익숙해지는 데는 시간이 좀 걸려."
+  },
+  {
+    "id": "exp_1297",
+    "category": "Travel & Commute",
+    "english": "You're better off taking a taxi.",
+    "korean": "택시를 타는 게 더 나을 거야."
+  },
+  {
+    "id": "exp_1298",
+    "category": "Opinions & Reactions",
+    "english": "Who are you to tell me what to do?",
+    "korean": "네가 뭔데 나한테 이래라저래라 하는 거야?"
+  },
+  {
+    "id": "exp_1299",
+    "category": "Idioms & Slang",
+    "english": "The bottom line is that we need more time.",
+    "korean": "핵심은 우리가 시간이 더 필요하다는 거야."
+  },
+  {
+    "id": "exp_1300",
+    "category": "Idioms & Slang",
+    "english": "It's as clear as day that he is lying.",
+    "korean": "그가 거짓말을 하고 있다는 것은 명백해."
+  },
+  {
+    "id": "exp_1301",
+    "category": "Work & Business",
+    "english": "I've always been opposed to working on weekends.",
+    "korean": "나는 항상 주말에 일하는 것을 반대해 왔어."
+  },
+  {
+    "id": "exp_1302",
+    "category": "Travel & Commute",
+    "english": "He must have missed the train.",
+    "korean": "그는 기차를 놓쳤음이 틀림없어."
+  },
+  {
+    "id": "exp_1303",
+    "category": "Social & Relationships",
+    "english": "I would have gone to the party.",
+    "korean": "나는 그 파티에 갔을 텐데 (안 갔어)."
+  },
+  {
+    "id": "exp_1304",
+    "category": "Opinions & Reactions",
+    "english": "You could have died.",
+    "korean": "너는 죽을 수도 있었어."
+  },
+  {
+    "id": "exp_1305",
+    "category": "Travel & Commute",
+    "english": "I might have left my keys in the car.",
+    "korean": "내가 차에 열쇠를 두고 내렸을지도 몰라."
+  },
+  {
+    "id": "exp_1306",
+    "category": "Feelings & Mindset",
+    "english": "I should have studied harder.",
+    "korean": "나는 공부를 더 열심히 했어야 했어."
+  },
+  {
+    "id": "exp_1307",
+    "category": "Feelings & Mindset",
+    "english": "I wish you were here.",
+    "korean": "네가 여기 있으면 좋을 텐데."
+  },
+  {
+    "id": "exp_1308",
+    "category": "Feelings & Mindset",
+    "english": "I hope you get well soon.",
+    "korean": "네가 빨리 낫기를 바라."
+  },
+  {
+    "id": "exp_1309",
+    "category": "Feelings & Mindset",
+    "english": "I wish I had bought that house.",
+    "korean": "내가 그 집을 샀더라면 좋았을 텐데."
+  },
+  {
+    "id": "exp_1310",
+    "category": "Feelings & Mindset",
+    "english": "I wish I could fly.",
+    "korean": "내가 날 수 있다면 좋을 텐데."
+  },
+  {
+    "id": "exp_1311",
+    "category": "Feelings & Mindset",
+    "english": "I wish you would stop smoking.",
+    "korean": "네가 담배를 끊었으면 좋겠어."
+  },
+  {
+    "id": "exp_1312",
+    "category": "Time & Plans",
+    "english": "It won't be long before he arrives.",
+    "korean": "머지않아 그가 도착할 거야."
+  },
+  {
+    "id": "exp_1313",
+    "category": "Social & Relationships",
+    "english": "When was the last time you saw him?",
+    "korean": "마지막으로 그를 본 게 언제야?"
+  },
+  {
+    "id": "exp_1314",
+    "category": "Feelings & Mindset",
+    "english": "What does it feel like to be a millionaire?",
+    "korean": "백만장자가 되는 건 어떤 기분이야?"
+  },
+  {
+    "id": "exp_1315",
+    "category": "Social & Relationships",
+    "english": "I happened to meet him on the street.",
+    "korean": "나는 우연히 길에서 그를 만났어."
+  },
+  {
+    "id": "exp_1316",
+    "category": "Work & Business",
+    "english": "I regret to inform you that you failed.",
+    "korean": "당신이 불합격했다는 것을 알려드리게 되어 유감입니다."
+  },
+  {
+    "id": "exp_1317",
+    "category": "Feelings & Mindset",
+    "english": "I'm so ashamed of myself.",
+    "korean": "나 자신이 너무 부끄러워."
+  },
+  {
+    "id": "exp_1318",
+    "category": "Feelings & Mindset",
+    "english": "I must admit that I was wrong.",
+    "korean": "내가 틀렸다는 것을 인정해야겠어."
+  },
+  {
+    "id": "exp_1319",
+    "category": "Work & Business",
+    "english": "Do you regret quitting your job?",
+    "korean": "직장을 그만둔 것을 후회하니?"
+  },
+  {
+    "id": "exp_1320",
+    "category": "Travel & Commute",
+    "english": "I warned you that you shouldn't go there.",
+    "korean": "거기에 가지 말라고 내가 경고했잖아."
+  },
+  {
+    "id": "exp_1321",
+    "category": "Social & Relationships",
+    "english": "What a surprise to see you here!",
+    "korean": "여기서 널 보다니 정말 놀라워!"
+  },
+  {
+    "id": "exp_1322",
+    "category": "Opinions & Reactions",
+    "english": "It is said that he is very rich.",
+    "korean": "그는 매우 부자라고들 해."
+  },
+  {
+    "id": "exp_1323",
+    "category": "Actions & Habits",
+    "english": "I stayed up all night watching a movie.",
+    "korean": "나는 밤새워 영화를 봤어."
+  },
+  {
+    "id": "exp_1324",
+    "category": "Communication",
+    "english": "I have no idea what you are talking about.",
+    "korean": "네가 무슨 말을 하는지 전혀 모르겠어."
+  },
+  {
+    "id": "exp_1325",
+    "category": "Dining & Cafe",
+    "english": "I don't feel like eating anything.",
+    "korean": "아무것도 먹고 싶은 기분이 아니야."
+  },
+  {
+    "id": "exp_1326",
+    "category": "Feelings & Mindset",
+    "english": "I have trouble sleeping at night.",
+    "korean": "나는 밤에 잠을 자는 데 어려움을 겪고 있어."
   }
 ]

@@ -136,7 +136,7 @@ export default function StudyScreen() {
               ]}
             >
               {isAutoReviewing
-                ? 'Auto Review · EN → KO'
+                ? 'Auto Review · EN ×2 → KO'
                 : isQuizMode
                   ? 'Quiz Mode · 한국어 먼저'
                   : 'Standard · English First'}

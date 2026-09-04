@@ -4,7 +4,8 @@ import { Expression, StudySessionStats } from '../types';
 import { playExpressionAudio, stopExpressionAudio, delay } from '../utils/audioPlayer';
 import { useProgress } from '../contexts/ProgressContext';
 
-const AUTO_REVIEW_PAUSE_MS = 4000;
+const AUTO_REVIEW_REPEAT_GAP_MS = 1000;
+const AUTO_REVIEW_KOREAN_PAUSE_MS = 4000;
 
 export function useStudyCard(expressions: Expression[]) {
   const { addXp, markMastered } = useProgress();
@@ -176,15 +177,28 @@ export function useStudyCard(expressions: Expression[]) {
         return 'stopped';
       }
 
-      // 2) Flip to show Korean
+      // 2) Brief pause, then speak English again
+      await delay(AUTO_REVIEW_REPEAT_GAP_MS);
+
+      if (!autoReviewActiveRef.current) {
+        return 'stopped';
+      }
+
+      await playExpressionAudio(expression.id, expression.english);
+
+      if (!autoReviewActiveRef.current) {
+        return 'stopped';
+      }
+
+      // 3) Flip to show Korean
       await flipToBack();
 
       if (!autoReviewActiveRef.current) {
         return 'stopped';
       }
 
-      // 3) Pause so learner can read Korean, then next card
-      await delay(AUTO_REVIEW_PAUSE_MS);
+      // 4) Pause so learner can read Korean, then next card
+      await delay(AUTO_REVIEW_KOREAN_PAUSE_MS);
     }
 
     if (!autoReviewActiveRef.current) {
