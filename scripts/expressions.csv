@@ -30,7 +30,7 @@ exp_028,Communication & Requests,Hear me out.,내 말 좀 끝까지 들어봐.
 exp_029,Social & Relationships,I'm looking forward to having you back in class.,네가 다시 수업에 오는 걸 기대하고 있어.
 exp_030,Social & Relationships,I was instructed to give you this ring.,이 반지를 너에게 전해주라는 지시를 받았어.
 exp_031,Social & Relationships,Save that for the wedding.,그건 결혼식 때를 위해 아껴둬.
-exp_032,Actions & Plans,"I usually get off work around seven, so let's meet after.",보통 7시쯤 퇴근하니까 그 이후에 만나자.
+exp_032,Actions & Plans,"I get off around seven, so let's meet after.",보통 7시쯤 퇴근하니까 그 이후에 만나자.
 exp_033,Feelings & Mindset,I'm dying to live in LA.,죽을 만큼 간절히 LA에서 살고 싶어.
 exp_034,Travel & Dining,Can I get a cup of coffee?,커피 한 잔 주시겠어요?
 exp_035,Travel & Dining,What can I get started for you?,무엇부터 준비해 드릴까요?
@@ -62,7 +62,7 @@ exp_060,Communication & Requests,I didn't catch your name.,이름을 잘 못 들
 exp_061,Travel & Dining,What can I get for you?,뭐 가져다 드릴까요?
 exp_062,Travel & Dining,Why don't you try a bite?,한입 먹어보는 게 어때?
 exp_063,Travel & Dining,Pull over to the left.,저기 왼쪽에 차 대.
-exp_064,Daily Conversation,I don't think this is the moment to hash out the details.,지금은 세부 사항을 따질 때가 아닌 것 같아.
+exp_064,Daily Conversation,Now isn't the time to hash out details.,지금은 세부 사항을 따질 때가 아닌 것 같아.
 exp_065,Communication & Requests,I gotta jump on a call.,전화 받아야 해.
 exp_066,Daily Conversation,We should put it to use.,우린 그걸 활용해야 해.
 exp_067,Communication & Requests,Can you turn on the heater?,히터 좀 켜줄 수 있어?
@@ -80,7 +80,7 @@ exp_078,Social & Relationships,I want us to be together.,나는 우리가 함께
 exp_079,Daily Conversation,What are you into these days?,요즘 뭐에 관심 있어?
 exp_080,Opinions & Reactions,That's not my thing.,그건 내 취향이 아니야.
 exp_081,Idioms & Slang,You won't get away with this.,너는 이 일을 하고도 무사히 넘어가진 못할 거야.
-exp_082,Daily Conversation,You can do anything if you put your mind to it.,마음만 먹는다면 넌 무엇이든 할 수 있어.
+exp_082,Daily Conversation,You can do anything if you set your mind.,마음만 먹는다면 넌 무엇이든 할 수 있어.
 exp_083,Daily Conversation,What's keeping you?,뭐 때문에 이렇게 오래 걸려?
 exp_084,Daily Conversation,What's keeping you up?,뭐 때문에 잠 못 자고 있는 거야?
 exp_085,Daily Conversation,You're not gonna believe this.,믿기 힘들 거야.
@@ -89,7 +89,7 @@ exp_087,Social & Relationships,Are you sure you don't want to be together?,확�
 exp_088,Daily Conversation,Does this come in a set?,이거 세트로 있나요?
 exp_089,Daily Conversation,Do you have this in a small?,이거 스몰 사이즈 있어요?
 exp_090,Daily Conversation,Do you have this in a medium?,이거 미디엄 사이즈 있어요?
-exp_091,Feelings & Mindset,I'm not feeling it; I'm just not in the mood right now.,지금은 그럴 기분이 아니야.
+exp_091,Feelings & Mindset,I'm just not really in the mood right now.,지금은 그럴 기분이 아니야.
 exp_092,Travel & Dining,Do you want to grab a bite?,뭐 좀 먹으러 갈래?
 exp_093,Opinions & Reactions,That's totally my thing / right up my alley.,"그거 완전 내 취향이야, 내 스타일이야."
 exp_094,Idioms & Slang,I'm in a bind.,내가 어려움에 처했어 (곤란해).
@@ -101,7 +101,7 @@ exp_099,Daily Conversation,I get that a lot.,그런 말 많이 들어요.
 exp_100,Daily Conversation,I don't follow / I'm not following you.,"무슨 말인지 잘 모르겠어, 이해가 안 돼."
 exp_101,Daily Conversation,It was a steal.,엄청 싸게 샀어 (완전 득템이야).
 exp_102,Daily Conversation,It's gonna rub off on you.,너도 그것에 물들게 될 거야 (전염될 거야).
-exp_103,Daily Conversation,You have to go along with it / abide by that.,그거 따라야 해.
+exp_103,Daily Conversation,You just have to go along with the decision.,그 결정을 그냥 따라야 해.
 exp_104,Daily Conversation,You shouldn't have agreed to that.,그거에 동의하면 안 됐었는데.
 exp_105,Communication & Requests,"It was uncomfortable, to say the least.",최소한으로 말해도 불편했다.
 exp_106,Communication & Requests,Take it back / Call it off / Cancel it.,취소해.
@@ -172,8 +172,8 @@ exp_170,Actions & Plans,I'm in the middle of something.,"지금 뭔가 하던 �
 exp_171,Communication & Requests,I can't thank you enough.,정말 뭐라고 말로 다 못할 만큼 고마워요.
 exp_172,Social & Relationships,I owe you big time.,정말 크게 신세 졌어.
 exp_173,Social & Relationships,I owe you an apology.,내가 너한테 사과해야 해.
-exp_174,Travel & Dining,We'd better hit the road early if we want to beat traffic.,교통체증을 피하려면 일찍 출발하는 게 좋겠어.
-exp_175,Actions & Plans,I have to hit the books all weekend for Monday's exam.,월요일 시험 때문에 주말 내내 열공해야 해.
+exp_174,Travel & Dining,We'd better hit the road early to beat traffic.,교통체증을 피하려면 일찍 출발하는 게 좋겠어.
+exp_175,Actions & Plans,I have to hit the books all weekend long.,주말 내내 열공해야 해.
 exp_176,Idioms & Slang,Not too shabby.,"그렇게 나쁘진 않아, 생각보다 괜찮아."
 exp_177,Daily Conversation,We'll figure it out.,우리가 어떻게든 해결책을 찾아낼게.
 exp_178,Social & Relationships,You matter to me.,넌 소중한 사람이야.
@@ -181,14 +181,14 @@ exp_179,Actions & Plans,"He goes for a run every morning, rain or shine.",그는
 exp_180,Work & Business,You need to be able to work well under pressure.,압박감 속에서도 일을 잘 해낼 수 있어야 해.
 exp_181,Actions & Plans,I'd rather stay home tonight.,차라리 오늘 밤엔 집에 있는 게 낫겠어.
 exp_182,Daily Conversation,"Since nobody else is applying, you might as well try.",지원자가 아무도 없으니 그냥 한번 해보는 게 낫겠다.
-exp_183,Work & Business,I need to whip up a simple script to automate this.,이걸 자동화할 간단한 스크립트를 뚝딱 짜야겠어.
-exp_184,Communication & Requests,"The new feature works well. That being said, we still need unit tests.",새 기능은 잘 돌아가. 그렇긴 하지만 단위 테스트는 여전히 필요해.
+exp_183,Work & Business,I'll whip up a quick script to automate this.,이걸 자동화할 간단한 스크립트를 뚝딱 짜야겠어.
+exp_184,Communication & Requests,"It works well; that being said, test it thoroughly.",잘 돌아가긴 해. 그렇긴 하지만 철저히 테스트해야 해.
 exp_185,Idioms & Slang,It runs like clockwork.,시계처럼 아주 규칙적으로 문제없이 진행된다.
 exp_186,Feelings & Mindset,I feel like I'm coming down with something.,감기 기운이 있는 것 같아.
 exp_187,Opinions & Reactions,That's totally beside the point.,그건 중요한 게 아니야 (본론에서 벗어났어).
 exp_188,Work & Business,There's something about late-night coding that helps me focus.,심야 코딩은 왠지 모르게 집중을 더 잘 되게 해주는 무언가가 있어.
-exp_189,Travel & Dining,I'd like to check in. I have a reservation under Kim.,체크인 부탁드립니다. 김 이름으로 예약되어 있습니다.
-exp_190,Travel & Dining,"To be honest, I don't know the first thing about cooking.",솔직히 말해서 요리에 대해선 쥐뿔도 몰라.
+exp_189,Travel & Dining,I'd like to check in under the name Kim.,김 이름으로 체크인 부탁드립니다.
+exp_190,Travel & Dining,"Honestly, I don't know the first thing about cooking.",솔직히 요리에 대해선 아무것도 몰라.
 exp_191,Communication & Requests,Let's get one thing straight.,한 가지는 확실히 하고 넘어가자.
 exp_192,Travel & Dining,Could use a cup of coffee right now.,지금 커피 한 잔 있으면 딱 좋겠다.
 exp_193,Work & Business,How's it coming along?,진행 중인 일 어떻게 돼가고 있어?
@@ -197,7 +197,7 @@ exp_195,Communication & Requests,Could you gift-wrap this for me?,선물 포장�
 exp_196,Opinions & Reactions,This looks promising.,이거 꽤 유망해 보여 (잘될 것 같아).
 exp_197,Social & Relationships,Make yourself at home.,집처럼 편하게 계세요.
 exp_198,Daily Conversation,His question caught me off guard.,그 사람 질문에 허를 찔려 당황했어.
-exp_199,Travel & Dining,I don't want to get stuck in rush-hour traffic on the way.,가는 길에 출퇴근 시간 교통체증에 갇히고 싶지 않아.
+exp_199,Travel & Dining,I don't want to get stuck in rush-hour traffic.,출퇴근 시간 교통체증에 갇히고 싶지 않아.
 exp_200,Communication & Requests,It keeps ringing.,신호는 계속 가는데 안 받아.
 exp_201,Daily Conversation,Before you know it.,"눈 깜짝할 사이에, 금방."
 exp_202,Travel & Dining,What's good here?,여기 뭐 잘해요? (추천 메뉴 질문)
@@ -312,8 +312,8 @@ exp_310,Opinions & Reactions,"To be honest, it wasn't great.",솔직히 말하�
 exp_311,Opinions & Reactions,"To be honest, I'm not sure.",솔직히 말하자면 잘 모르겠어.
 exp_312,Opinions & Reactions,"Now that I think about it, that makes sense.",생각해 보니까 그게 맞는 것 같아.
 exp_313,Opinions & Reactions,"Now that I think about it, I've been there before.",생각해 보니까 나 거기 가 본 적 있어.
-exp_314,Opinions & Reactions,"The more I think about it, the more confused I get.",생각하면 할수록 더 헷갈려.
-exp_315,Opinions & Reactions,"The more I think about it, the more it makes sense.",생각하면 할수록 더 말이 되네.
+exp_314,Opinions & Reactions,"The more I think about it, the worse it gets.",생각하면 할수록 상황이 더 꼬여만 가.
+exp_315,Opinions & Reactions,"The more I think about it, it makes sense.",생각하면 할수록 점점 말이 되네.
 exp_316,Feelings & Mindset,I can't stand this noise.,나 이 소음 도저히 못 참겠어.
 exp_317,Feelings & Mindset,I can't stand waiting.,나 기다리는 거 도저히 못 참겠어.
 exp_318,Feelings & Mindset,I can't stop thinking about it.,자꾸 그 생각이 멈추지 않아.
@@ -525,7 +525,7 @@ exp_523,Actions & Plans,Focus on your goals.,당신의 목표에 집중하세요
 exp_524,Daily Conversation,A caterpillar turns into a butterfly.,애벌레는 나비로 변해.
 exp_525,Actions & Plans,"You've got this, go for it.","넌 할 수 있어, 한번 해봐."
 exp_526,Daily Conversation,I kneeled down to look closer.,가까이서 보려고 무릎을 꿇었어.
-exp_527,Work & Business,Can you stop by my office when you're done with work?,일 끝나면 내 사무실에 잠깐 들러줄래?
+exp_527,Work & Business,Can you swing by my office right after work?,일 끝나고 바로 내 사무실에 잠깐 들러줄래?
 exp_528,Daily Conversation,I can pick you up at 8 if that's okay.,괜찮으면 8시에 데리러 갈게.
 exp_529,Travel & Dining,The plane is about to take off.,비행기가 곧 이륙할 거야.
 exp_530,Travel & Dining,Please go back to your seat.,자리로 돌아가 주세요.
@@ -541,8 +541,8 @@ exp_539,Daily Conversation,Let me sleep on it.,하룻밤 자고 생각해 볼게
 exp_540,Actions & Plans,I'll pay you back as soon as I can.,최대한 빨리 갚을게.
 exp_541,Feelings & Mindset,Everything will work out.,다 잘될 거야.
 exp_542,Work & Business,I really burned out from work.,일 때문에 완전 번아웃이었어.
-exp_543,Travel & Dining,I hope the car doesn't break down on the way to the airport.,공항 가는 길에 차가 고장 안 났으면 좋겠어.
-exp_544,Daily Conversation,I freaked out when I saw the spider in my room.,방에 거미 보고 기겁했어.
+exp_543,Travel & Dining,Let's hope the car doesn't break down on us.,가는 길에 차가 고장 안 나길 바라자.
+exp_544,Daily Conversation,I totally freaked out when I saw that spider.,그 거미를 보고 완전 기겁했어.
 exp_545,Social & Relationships,I've always looked up to my dad.,난 항상 아버지를 존경해 왔어.
 exp_546,Actions & Plans,Don't look down on others.,남을 업신여기지 마.
 exp_547,Daily Conversation,The heat was so intense that she passed out.,더위가 너무 심해서 그녀가 기절했어.
@@ -869,7 +869,7 @@ exp_867,Opinions & Reactions,"As far as I remember, it's next Friday.",내가 �
 exp_868,Opinions & Reactions,"As far as I'm concerned, it's a great opportunity.",내 생각에는 그건 아주 좋은 기회야.
 exp_869,Daily Conversation,"No matter what happens, you will do great.",무슨 일이 있더라도 넌 잘할 거야.
 exp_870,Social & Relationships,"No matter who you are, I'm on your side.",당신이 어떤 사람이든 난 당신 편이에요.
-exp_871,Feelings & Mindset,"I know it's a bad habit, but I can't help it.",나쁜 버릇인 거 알지만 안 할 수가 없어.
+exp_871,Feelings & Mindset,"I know it's a bad habit, I can't quit.",나쁜 버릇인 거 알지만 고칠 수가 없어.
 exp_872,Feelings & Mindset,I can't help thinking about it.,그 생각을 안 할 수가 없어.
 exp_873,Feelings & Mindset,I can't help but laugh.,웃지 않을 수가 없어.
 exp_874,Communication & Requests,Let me help you with it.,그거 내가 도와줄게.
@@ -894,7 +894,7 @@ exp_892,Daily Conversation,Do you have this in a different color?,이거 다른 
 exp_893,Daily Conversation,Do you have this in a smaller size?,이거 더 작은 사이즈 있나요?
 exp_894,Travel & Dining,Do you have chopsticks by any chance?,혹시 젓가락 있나요?
 exp_895,Communication & Requests,"I'm sorry to bother you, but could you help me?","죄송한데요, 혹시 저 좀 도와주실 수 있으세요?"
-exp_896,Communication & Requests,"I don't want to bother you, but could you please repeat that?",죄송한데 다시 한 번만 말씀해 주시겠어요?
+exp_896,Communication & Requests,"Sorry to bother you, could you repeat that?",죄송한데 방금 말씀하신 거 다시 한 번만 해 주시겠어요?
 exp_897,Travel & Dining,I'll go with the pasta.,전 파스타로 할게요.
 exp_898,Social & Relationships,Could you take a picture of us?,저희 사진 좀 찍어 주실래요?
 exp_899,Travel & Dining,Could you tell me where the bus stop is?,버스 정류장이 어딘지 알려 주실래요?
@@ -963,7 +963,7 @@ exp_961,Feelings & Mindset,I'm willing to take the risk.,나는 기꺼이 그 �
 exp_962,Idioms & Slang,I take it for granted that you'll be there.,나는 네가 거기에 있을 거라고 당연하게 생각해.
 exp_963,Feelings & Mindset,I feel better knowing that you are safe.,네가 안전하다는 걸 알게 되니 마음이 놓여.
 exp_964,Communication & Requests,Could you possibly help me with this?,혹시 이것 좀 도와주실 수 있나요?
-exp_965,Social & Relationships,The last thing I want to do is hurt your feelings.,네 감정을 상하게 하는 건 내가 절대 하고 싶지 않은 일이야.
+exp_965,Social & Relationships,The last thing I want is hurting your feelings.,네 감정을 상하게 하는 건 절대 하고 싶지 않아.
 exp_966,Social & Relationships,Don't bother waiting for me.,굳이 날 기다리지 않아도 돼.
 exp_967,Feelings & Mindset,It's clear to me you need some rest.,네가 휴식이 필요하다는 건 분명해 보여.
 exp_968,Opinions & Reactions,"As far as I know, he is not coming.","내가 아는 한, 그는 오지 않아."
@@ -1030,7 +1030,7 @@ exp_1028,Feelings & Mindset,You have every reason to be angry.,네가 화낼 만
 exp_1029,Feelings & Mindset,You have every right to be mad.,너는 화낼 충분한 권리가 있어.
 exp_1030,Opinions & Reactions,Why would I do such a thing?,내가 왜 그런 짓을 하겠어?
 exp_1031,Work & Business,I just found out that he quit his job.,그가 일을 그만뒀다는 걸 방금 알았어.
-exp_1032,Idioms & Slang,I got to the point where I couldn't take it anymore.,나는 더 이상 참을 수 없는 지경에 이르렀어.
+exp_1032,Idioms & Slang,I reached the point where I couldn't take more.,더 이상 참을 수 없는 지경에 이르렀어.
 exp_1033,Communication & Requests,I'd appreciate it if you could help me.,도와주시면 감사하겠습니다.
 exp_1034,Opinions & Reactions,How can you let this happen?,어떻게 이런 일이 일어나게 내버려 둘 수 있어?
 exp_1035,Opinions & Reactions,The worst part is that I lost my phone.,가장 최악인 것은 내 휴대폰을 잃어버렸다는 거야.
@@ -1088,614 +1088,614 @@ exp_1086,Actions & Plans,I stayed up all night watching a movie.,나는 밤새�
 exp_1087,Communication & Requests,I have no idea what you are talking about.,네가 무슨 말을 하는지 전혀 모르겠어.
 exp_1088,Travel & Dining,I don't feel like eating anything.,아무것도 먹고 싶은 기분이 아니야.
 exp_1089,Feelings & Mindset,I have trouble sleeping at night.,나는 밤에 잠을 자는 데 어려움을 겪고 있어.
-exp_1090,Communication & Requests,"I hate to be the bearer of bad news, but the event was postponed.","안 좋은 소식을 전하게 돼서 미안한데, 행사가 연기됐대."
-exp_1091,Actions & Plans,You'd be surprised how much money you save by packing your own lunch.,도시락을 직접 싸 다니면 돈을 얼마나 많이 아끼는지 놀랄 거야.
+exp_1090,Communication & Requests,"I hate to break it, but the event's postponed.","안 좋은 소식을 전해 미안한데, 행사가 연기됐대."
+exp_1091,Actions & Plans,You'd be surprised how much packing lunch saves you.,도시락을 싸 다니면 돈을 얼마나 아끼는지 놀랄 거야.
 exp_1092,Opinions & Reactions,It goes to show that preparation makes all the difference.,결국 준비가 모든 차이를 만든다는 걸 보여 주는 셈이지.
-exp_1093,Opinions & Reactions,"Now that you mention it, I did notice something slightly off earlier.","네가 말하고 보니, 아까 뭔가 살짝 이상한 걸 눈치채긴 했어."
-exp_1094,Communication & Requests,The last thing I want is to put anyone in an awkward position.,내가 가장 피하고 싶은 건 누군가를 난처한 입장에 놓이게 하는 거야.
-exp_1095,Idioms & Slang,Let's not make a mountain out of a molehill over a minor mistake.,사소한 실수 하나 가지고 일을 너무 크게 부풀리지 말자.
-exp_1096,Daily Conversation,I could have sworn I left my sunglasses right here on the counter.,내 선글라스를 바로 여기 조리대 위에 둔 게 틀림없는데.
-exp_1097,Opinions & Reactions,It's safe to assume the line will be out the door by noon.,정오쯤 되면 줄이 문밖까지 길게 늘어설 거라고 봐도 무방해.
-exp_1098,Daily Conversation,"Given how unpredictable the weather has been, we should have a backup plan.","요즘 날씨가 얼마나 변덕스러운지 생각하면, 대안을 마련해 두는 게 좋겠어."
-exp_1099,Idioms & Slang,"Better safe than sorry, so let's double-check the lock before we leave.",조심해서 나쁠 건 없으니까 나가기 전에 잠금장치 한 번 더 확인하자.
-exp_1100,Feelings & Mindset,I'm torn between taking the higher-paying offer and staying close to family.,연봉이 더 높은 제안을 받을지 가족 곁에 남을지 갈등하고 있어.
-exp_1101,Feelings & Mindset,I have mixed feelings about relocating to another city on such short notice.,이렇게 촉박하게 다른 도시로 이사 가는 것에 대해 만감이 교차해.
-exp_1102,Feelings & Mindset,Try not to take his blunt feedback to heart; he's under a lot of pressure.,그 사람의 직설적인 피드백을 너무 마음에 담아두지 마; 요즘 압박이 심해서 그래.
-exp_1103,Feelings & Mindset,It's such a huge weight off my shoulders to finally have that exam behind me.,드디어 그 시험을 끝내고 나니까 마음의 큰 짐을 덜어낸 기분이야.
-exp_1104,Feelings & Mindset,Don't dwell on things you can't change; focus on your next move.,"이미 바꿀 수 없는 일에 연연하지 말고, 다음 행동에 집중해."
-exp_1105,Feelings & Mindset,I can't help feeling a little uneasy whenever he goes quiet like that.,그가 저렇게 갑자기 말이 없어질 때마다 왠지 좀 불안한 마음이 들어.
-exp_1106,Feelings & Mindset,I'm completely overwhelmed by how much we still need to get done tonight.,오늘 밤까지 아직 끝내야 할 일이 너무 많아서 완전히 압도되는 기분이야.
-exp_1107,Feelings & Mindset,Nothing beats the satisfaction of finishing something you put off for weeks.,몇 주 동안 미뤄왔던 일을 마침내 끝냈을 때의 성취감만 한 게 없지.
-exp_1108,Feelings & Mindset,I had a gut feeling that something wasn't quite right from the start.,처음부터 뭔가 석연치 않다는 직감이 들었어.
-exp_1109,Feelings & Mindset,It took me a while to come to terms with how quickly everything changed.,모든 것이 얼마나 빨리 변했는지 받아들이는 데 시간이 좀 걸렸어.
+exp_1093,Opinions & Reactions,"Now that you mention it, something did feel off.","네가 말하고 보니, 뭔가 살짝 이상하긴 했어."
+exp_1094,Communication & Requests,The last thing I want is making things awkward.,내가 가장 피하고 싶은 건 상황을 어색하게 만드는 거야.
+exp_1095,Idioms & Slang,Let's not make a mountain out of a molehill.,작은 일 가지고 너무 크게 부풀리지 말자.
+exp_1096,Daily Conversation,I could have sworn I left my sunglasses here.,선글라스를 바로 여기에 둔 게 틀림없는데.
+exp_1097,Opinions & Reactions,It's safe to assume the line gets huge soon.,금방 줄이 엄청 길어질 거라고 봐도 무방해.
+exp_1098,Daily Conversation,"Given this unpredictable weather, we need a backup plan.",날씨가 이렇게 변덕스러우니 대안을 마련해 두는 게 좋겠어.
+exp_1099,Idioms & Slang,"Better safe than sorry, so let's double-check the lock.",조심해서 나쁠 건 없으니 잠금장치를 한 번 더 확인하자.
+exp_1100,Feelings & Mindset,I'm torn between higher pay and staying near family.,더 높은 연봉과 가족 곁에 남는 것 사이에서 갈등 중이야.
+exp_1101,Feelings & Mindset,I have mixed feelings about relocating on short notice.,이렇게 촉박하게 이사 가는 것에 대해 만감이 교차해.
+exp_1102,Feelings & Mindset,Try not to take his blunt feedback to heart.,그 사람의 직설적인 피드백을 너무 마음에 담아두지 마.
+exp_1103,Feelings & Mindset,Having that exam behind me feels so liberating.,그 시험을 끝내고 나니까 정말 홀가분해.
+exp_1104,Feelings & Mindset,Don't dwell on the past; focus on next steps.,지나간 일에 연연하지 말고 다음 단계에 집중해.
+exp_1105,Feelings & Mindset,I can't help feeling uneasy when he goes quiet.,그가 갑자기 말이 없어질 때마다 왠지 불안한 마음이 들어.
+exp_1106,Feelings & Mindset,I'm completely overwhelmed by tonight's massive workload.,오늘 밤까지 할 일이 너무 많아서 완전히 압도되는 기분이야.
+exp_1107,Feelings & Mindset,Nothing beats finally finishing a task you put off.,미뤄왔던 일을 마침내 끝냈을 때의 기분만 한 게 없지.
+exp_1108,Feelings & Mindset,I had a gut feeling something wasn't quite right.,처음부터 뭔가 석연치 않다는 직감이 들었어.
+exp_1109,Feelings & Mindset,It took time to come to terms with changes.,변화를 받아들이는 데 시간이 좀 걸렸어.
 exp_1110,Feelings & Mindset,I'm dreading Monday morning after taking a whole week off.,일주일 내내 쉬고 나서 월요일 아침을 맞이하려니 벌써부터 두렵네.
-exp_1111,Feelings & Mindset,You shouldn't be so hard on yourself when you're still learning the ropes.,아직 일을 배워가는 단계인데 스스로를 너무 몰아세우지 마.
-exp_1112,Feelings & Mindset,I'm relieved that we sorted out the misunderstanding before it escalated.,오해가 더 커지기 전에 잘 풀려서 정말 다행이야.
-exp_1113,Feelings & Mindset,There's nothing worse than lying awake at three in the morning overthinking.,새벽 세 시에 잠 못 이루고 온갖 생각에 빠지는 것만큼 최악인 건 없어.
+exp_1111,Feelings & Mindset,Don't be so hard on yourself while still learning.,아직 배워가는 중인데 스스로를 너무 몰아세우지 마.
+exp_1112,Feelings & Mindset,I'm relieved we cleared up that misunderstanding early on.,오해가 커지기 전에 일찍 풀려서 정말 다행이야.
+exp_1113,Feelings & Mindset,Nothing's worse than lying awake at three a.m. overthinking.,새벽 세 시에 잠 못 이루고 생각에 빠지는 게 최악이야.
 exp_1114,Feelings & Mindset,I'm cautiously optimistic about how the interview went this afternoon.,오늘 오후 면접이 어떻게 됐을지에 대해 조심스럽게 긍정적으로 보고 있어.
-exp_1115,Feelings & Mindset,Walking outside for twenty minutes really helps me clear my head.,밖에 나가서 20분 정도 걷는 게 머리를 식히는 데 정말 도움이 돼.
-exp_1116,Feelings & Mindset,I'm grateful for everyone who stuck by me when things got rough.,힘들었을 때 내 곁을 지켜준 모든 사람들에게 감사해.
-exp_1117,Feelings & Mindset,It caught me completely off guard when they announced the restructuring.,그들이 구조조정을 발표했을 때 나는 완전히 허를 찔린 기분이었어.
-exp_1118,Feelings & Mindset,I'm starting to second-guess whether signing a two-year lease was smart.,2년 계약을 체결한 게 현명한 선택이었는지 슬슬 의구심이 들기 시작해.
-exp_1119,Feelings & Mindset,Sometimes you just have to let go of perfection and ship what you have.,가끔은 완벽주의를 내려놓고 지금 가진 결과물을 그대로 내놓아야 할 때도 있어.
-exp_1120,Opinions & Reactions,"Come to think of it, nobody ever followed up on that email.","생각해 보니, 그 이메일에 대해 아무도 후속 연락을 안 했네."
-exp_1121,Opinions & Reactions,"To be completely honest, I'm a little skeptical about that timeline.","솔직히 말하자면, 그 일정에 대해서는 약간 회의적이야."
-exp_1122,Opinions & Reactions,"I see where you're coming from, but I still have a few reservations.","네가 왜 그렇게 말하는지는 이해하지만, 여전히 몇 가지 우려되는 점이 있어."
+exp_1115,Feelings & Mindset,Walking outside for twenty minutes clears my head completely.,밖에 나가서 20분 걸으면 머리가 완전히 맑아져.
+exp_1116,Feelings & Mindset,I'm grateful for everyone who stuck by my side.,내 곁을 지켜준 모든 사람들에게 감사해.
+exp_1117,Feelings & Mindset,The sudden restructuring announcement caught me completely off guard.,갑작스러운 구조조정 발표에 완전히 허를 찔렸어.
+exp_1118,Feelings & Mindset,I'm starting to second-guess signing that two-year lease.,2년 계약을 체결한 게 맞았나 슬슬 의구심이 들어.
+exp_1119,Feelings & Mindset,Sometimes you just have to let go of perfection.,가끔은 완벽주의를 내려놓아야 할 때도 있어.
+exp_1120,Opinions & Reactions,"Come to think of it, nobody replied to that.","생각해 보니, 거기에 아무도 답장을 안 했네."
+exp_1121,Opinions & Reactions,"To be completely honest, that timeline makes me skeptical.","솔직히 말하자면, 그 일정은 약간 회의적이야."
+exp_1122,Opinions & Reactions,"I see your point, yet I still have reservations.","네 말은 이해하지만, 여전히 몇 가지 우려되는 점이 있어."
 exp_1123,Opinions & Reactions,You took the words right out of my mouth.,내가 하려던 말을 네가 정확히 대신 해 줬네.
-exp_1124,Opinions & Reactions,I couldn't agree with you more on how we should prioritize this.,이걸 어떻게 우선순위에 둬야 하는지에 대해서는 네 말에 전적으로 동의해.
-exp_1125,Opinions & Reactions,"Now that you mention it, the numbers didn't quite add up earlier.","네가 말하고 보니, 아까 숫자가 딱 들어맞지 않긴 했어."
-exp_1126,Opinions & Reactions,"For what it's worth, I think you handled a tough situation with grace.","내 의견이 도움이 될지 모르겠지만, 어려운 상황을 정말 품위 있게 잘 대처했다고 생각해."
-exp_1127,Opinions & Reactions,I wouldn't go so far as to say it was a complete disaster.,그게 완전한 재앙이었다고까지 말하고 싶지는 않아.
+exp_1124,Opinions & Reactions,I couldn't agree more on how we prioritize this.,이걸 어떻게 우선순위에 둬야 하는지 전적으로 동의해.
+exp_1125,Opinions & Reactions,"Now that you mention it, those numbers didn't match.","네가 말하고 보니, 그 숫자들이 딱 맞지 않긴 했어."
+exp_1126,Opinions & Reactions,"For what it's worth, you handled that with grace.","내 말이 도움 될지 모르겠지만, 정말 품위 있게 잘 대처했어."
+exp_1127,Opinions & Reactions,I wouldn't go so far as calling it disaster.,그게 완전한 재앙이었다고까지 말하고 싶진 않아.
 exp_1128,Opinions & Reactions,There's no denying that remote work has reshaped office culture.,재택근무가 직장 문화를 바꿔 놓았다는 건 부인할 수 없는 사실이야.
-exp_1129,Opinions & Reactions,"As much as I hate to admit it, taking the longer route was actually faster.","인정하기 싫지만, 멀리 돌아가는 길을 택한 게 사실 더 빨랐어."
-exp_1130,Opinions & Reactions,"You have a valid point there, though I'm still not entirely convinced.","네 말에 일리가 있긴 하지만, 아직 완전히 설득되진 않았어."
-exp_1131,Opinions & Reactions,That begs the question of how we're going to cover the extra cost.,그렇게 되면 추가 비용을 어떻게 감당할 것인가 하는 의문이 남지.
-exp_1132,Opinions & Reactions,"At the end of the day, consistent effort matters more than talent.",결국에는 재능보다 꾸준한 노력이 더 중요해.
-exp_1133,Opinions & Reactions,"If you ask me, they're charging way too much for what you actually get.",내 생각엔 실제 제공하는 거에 비해 요금을 너무 과하게 받고 있어.
-exp_1134,Opinions & Reactions,It's safe to say that the product launch exceeded everyone's expectations.,이번 제품 출시가 모두의 기대를 뛰어넘었다고 말해도 무방할 것 같아.
-exp_1135,Opinions & Reactions,"On the one hand it saves time, but on the other hand it compromises quality.","한편으로는 시간을 절약해 주지만, 다른 한편으로는 품질이 떨어질 수 있어."
-exp_1136,Opinions & Reactions,"That's a fair assessment, especially considering how little time we had.",특히 우리에게 시간이 얼마나 없었는지를 고려하면 꽤 공정한 평가야.
-exp_1137,Opinions & Reactions,I'm inclined to agree with Sarah on keeping the scope realistic.,범위를 현실적으로 유지하자는 사라의 의견에 동의하는 편이야.
-exp_1138,Opinions & Reactions,"Don't take this personally, but the current layout feels a bit cluttered.","기분 나쁘게 듣진 말고, 현재 레이아웃은 약간 어수선한 느낌이 있어."
-exp_1139,Opinions & Reactions,"All things considered, we came out ahead despite the initial setbacks.","모든 걸 종합해 볼 때, 초기 난관에도 불구하고 결국 우리에게 유리하게 끝났어."
+exp_1129,Opinions & Reactions,"As much as I hate admitting it, you're right.",인정하기 싫지만 네 말이 맞아.
+exp_1130,Opinions & Reactions,"That's a valid point, though I'm not fully convinced.",일리가 있긴 하지만 아직 완전히 설득되진 않았어.
+exp_1131,Opinions & Reactions,That begs the question of how we pay for it.,그렇게 되면 비용을 어떻게 감당할지 의문이 남지.
+exp_1132,Opinions & Reactions,"At the end of the day, consistent effort wins.",결국에는 꾸준한 노력이 이기게 돼 있어.
+exp_1133,Opinions & Reactions,"If you ask me, they're charging way too much.",내 생각엔 요금을 너무 과하게 받고 있어.
+exp_1134,Opinions & Reactions,It's safe to say the launch exceeded our expectations.,이번 출시가 우리 기대를 뛰어넘었다고 봐도 무방해.
+exp_1135,Opinions & Reactions,"On the one hand it's fast, yet feels rushed.","한편으로는 빠르지만, 또 한편으로는 급조된 느낌이 들어."
+exp_1136,Opinions & Reactions,"That's a fair assessment, considering our tight schedule.",우리의 촉박한 일정을 고려하면 꽤 공정한 평가야.
+exp_1137,Opinions & Reactions,I'm inclined to agree with keeping the scope realistic.,범위를 현실적으로 유지하자는 의견에 동의하는 편이야.
+exp_1138,Opinions & Reactions,"Don't take this personally, but this layout feels cluttered.","기분 나쁘게 듣진 말고, 이 레이아웃은 좀 어수선해 보여."
+exp_1139,Opinions & Reactions,"All things considered, we came out ahead this quarter.","모든 걸 종합해 볼 때, 이번 분기는 잘 넘겼어."
 exp_1140,Opinions & Reactions,I wouldn't count on them lowering prices anytime soon.,그들이 조만간 가격을 내릴 거라고는 기대하지 않는 게 좋을 거야.
-exp_1141,Opinions & Reactions,What strikes me most is how calmly she handled all those questions.,가장 인상 깊었던 건 그녀가 그 많은 질문들을 얼마나 침착하게 다뤘는지야.
-exp_1142,Opinions & Reactions,"Looking back, I realize we probably rushed into that partnership too quickly.",돌이켜보면 우리가 그 파트너십을 너무 성급하게 결정했던 것 같아.
-exp_1143,Opinions & Reactions,That's easier said than done when you're working with a tight budget.,빠듯한 예산으로 일할 때는 말처럼 쉬운 일이 아니지.
-exp_1144,Opinions & Reactions,"I hate to say I told you so, but that shortcut always breaks something.","내가 그랬잖아라고 말하긴 싫지만, 그 편법은 항상 문제를 일으키더라."
-exp_1145,Opinions & Reactions,It goes without saying that clear communication prevents half of these delays.,명확한 소통이 이런 지연의 절반을 막아준다는 건 말할 필요도 없지.
-exp_1146,Opinions & Reactions,"Whether you like it or not, automation is changing every industry.",좋든 싫든 자동화는 모든 산업을 바꾸고 있어.
-exp_1147,Opinions & Reactions,I'm on the fence about upgrading right away instead of waiting for reviews.,후기를 기다리지 않고 바로 업그레이드할지 말지 아직 망설이고 있어.
+exp_1141,Opinions & Reactions,What strikes me most is how calm she stayed.,가장 인상 깊었던 건 그녀가 얼마나 침착했는지야.
+exp_1142,Opinions & Reactions,"Looking back, we probably rushed into that partnership.",돌이켜보면 우리가 그 파트너십을 너무 서둘렀던 것 같아.
+exp_1143,Opinions & Reactions,That's easier said than done on a tight budget.,빠듯한 예산으로 일할 때는 말처럼 쉬운 일이 아니지.
+exp_1144,Opinions & Reactions,"I hate saying I told you so, but look.","내가 그랬잖아라고 말하긴 싫지만, 이것 좀 봐."
+exp_1145,Opinions & Reactions,It goes without saying that clear communication prevents delays.,명확한 소통이 지연을 막아준다는 건 말할 필요도 없지.
+exp_1146,Opinions & Reactions,"Whether you like it or not, automation is here.",좋든 싫든 자동화는 이미 현실이 됐어.
+exp_1147,Opinions & Reactions,I'm still on the fence about upgrading right away.,바로 업그레이드할지 말지 아직 망설이고 있어.
 exp_1148,Opinions & Reactions,"In hindsight, skipping the rehearsal was definitely a mistake.",돌이켜 생각해보니 리허설을 건너뛴 건 분명히 실수였어.
-exp_1149,Opinions & Reactions,"To put it mildly, the transition was a lot bumpier than advertised.","완곡하게 표현하자면, 그 전환 과정은 홍보했던 것보다 훨씬 순탄치 않았어."
-exp_1150,Opinions & Reactions,"I'm not sold on the idea yet, so walk me through the pros and cons.",아직 그 아이디어에 완전히 납득이 안 되니까 장단점을 설명해 줘.
-exp_1151,Opinions & Reactions,"Surprisingly enough, the simplest solution turned out to be the most reliable.",놀랍게도 가장 단순한 해결책이 결국 가장 믿을 만한 것으로 드러났어.
-exp_1152,Opinions & Reactions,That makes all the difference when you're trying to win someone over.,누군가의 마음을 얻으려고 할 때 바로 그런 부분이 결정적인 차이를 만들지.
-exp_1153,Opinions & Reactions,There's a fine line between being confident and coming across as arrogant.,자신감 있는 것과 거만하게 보이는 것 사이에는 종이 한 장 차이야.
-exp_1154,Opinions & Reactions,"From my perspective, delaying the launch is better than shipping a buggy app.",내 관점에서는 버그가 있는 앱을 내놓는 것보다 출시를 늦추는 게 나아.
-exp_1155,Actions & Plans,I've been trying to get into the habit of stretching right after waking up.,일어나자마자 스트레칭하는 습관을 들이려고 노력하고 있어.
-exp_1156,Actions & Plans,"Whenever a deadline looms, I tend to procrastinate on the hardest part first.",마감이 다가올 때마다 나는 가장 어려운 부분부터 자꾸 미루는 경향이 있어.
-exp_1157,Actions & Plans,We ended up talking for nearly three hours over a quick cup of coffee.,잠깐 커피 한잔하자고 만났다가 결국 세 시간 가까이 수다를 떨었어.
-exp_1158,Actions & Plans,I still haven't gotten around to sorting through the boxes in the closet.,옷장 안에 있는 상자들을 아직도 정리할 엄두를 못 냈어.
-exp_1159,Actions & Plans,Make a point of backing up your photos before wiping your old phone.,예전 휴대폰을 초기화하기 전에 반드시 사진을 백업하도록 해.
-exp_1160,Actions & Plans,You'll get the hang of driving a manual car after a couple of afternoons.,수동 변속기 운전은 한두 번 오후에 연습해 보면 금방 감을 잡을 거야.
-exp_1161,Actions & Plans,I'm prone to overthinking small details whenever I write important emails.,중요한 이메일을 쓸 때마다 사소한 디테일까지 지나치게 고민하는 편이야.
-exp_1162,Actions & Plans,We usually take turns cooking dinner so neither of us burns out.,둘 다 지치지 않도록 보통 번갈아 가며 저녁을 요리해.
-exp_1163,Actions & Plans,I've been meaning to cut back on late-night snacking for months now.,야식을 좀 줄여야지 하고 마음먹은 지가 벌써 몇 달째야.
-exp_1164,Actions & Plans,It takes a conscious effort to put your phone away during meals.,식사 중에 휴대폰을 치워두려면 의식적인 노력이 필요해.
-exp_1165,Actions & Plans,I made a mental note to pick up laundry detergent on my way home.,집에 가는 길에 세탁 세제를 사야겠다고 머릿속으로 메모해 뒀어.
-exp_1166,Actions & Plans,She has a knack for turning awkward silences into warm conversations.,그녀는 어색한 침묵을 따뜻한 대화로 바꾸는 남다른 재주가 있어.
-exp_1167,Actions & Plans,"Once you fall out of a workout routine, it's tough to build momentum again.",한번 운동 루틴이 깨지면 다시 탄력을 붙이기가 쉽지 않아.
-exp_1168,Actions & Plans,I caught myself checking work messages even while I was on vacation.,휴가 중인데도 나도 모르게 업무 메시지를 확인하고 있는 걸 깨달았어.
-exp_1169,Actions & Plans,Let's go over the checklist one more time before locking up the house.,집 문을 잠그기 전에 체크리스트를 한 번만 더 훑어보자.
-exp_1170,Actions & Plans,He's been putting in extra hours every evening to finish his portfolio.,그는 포트폴리오를 완성하기 위해 매일 저녁 추가 시간을 쏟고 있어.
-exp_1171,Actions & Plans,Try breaking the project into bite-sized milestones instead of tackling it all at once.,한꺼번에 다 하려 하지 말고 프로젝트를 작은 단계별로 쪼개서 해 봐.
-exp_1172,Actions & Plans,I automatically reach for coffee the second I sit down at my desk.,책상에 앉자마자 나도 모르게 커피부터 찾게 돼.
-exp_1173,Actions & Plans,We should set aside thirty minutes every Sunday to plan out the week.,일주일 계획을 세우기 위해 매주 일요일 30분씩 시간을 따로 빼두는 게 좋겠어.
-exp_1174,Actions & Plans,Don't let minor distractions derail your focus when you're in the zone.,집중이 잘될 때 사소한 방해 요소 때문에 흐름이 끊기지 않게 해.
-exp_1175,Actions & Plans,I finally got around to canceling the subscriptions I barely even use.,거의 쓰지도 않는 구독 서비스들을 드디어 해지했어.
-exp_1176,Actions & Plans,He went out of his way to make sure every guest felt comfortable.,그는 모든 손님이 편하게 느낄 수 있도록 일부러 신경을 많이 써 줬어.
-exp_1177,Actions & Plans,Writing everything down helps keep errands from slipping through the cracks.,모든 걸 적어두면 해야 할 일들을 깜빡 놓치는 걸 막는 데 도움이 돼.
-exp_1178,Actions & Plans,It took months of daily practice before playing chords felt like second nature.,코드 잡는 게 자연스러운 습관처럼 느껴지기까지 몇 달 동안 매일 연습해야 했어.
-exp_1179,Idioms & Slang,Let's call it a day and pick things back up fresh tomorrow morning.,오늘은 이만 마무리하고 내일 아침에 개운하게 다시 이어서 하자.
-exp_1180,Idioms & Slang,I'm still trying to wrap my head around how fast that deal closed.,그 거래가 얼마나 빨리 성사됐는지 아직도 머릿속으로 정리가 안 돼.
-exp_1181,Idioms & Slang,Don't jump the gun before we get the signed agreement in writing.,서면으로 서명된 계약서를 받기 전까지는 섣불리 앞서 나가지 마.
-exp_1182,Idioms & Slang,"We're all in the same boat here, so let's pull together and solve it.",우리 모두 같은 처지니까 힘을 합쳐서 해결해 보자.
-exp_1183,Idioms & Slang,Take whatever you read on social media with a grain of salt.,소셜 미디어에서 읽는 건 뭐든 어느 정도 걸러서 받아들여.
-exp_1184,Idioms & Slang,You really hit the nail on the head with your diagnosis of the issue.,그 문제에 대한 네 진단이 정말 핵심을 정확히 짚었어.
-exp_1185,Idioms & Slang,I finally decided to bite the bullet and replace my aging laptop.,오래된 노트북을 바꾸기로 큰맘 먹고 결단을 내렸어.
-exp_1186,Idioms & Slang,It's back to square one now that the vendor pulled out at the last minute.,업체가 막판에 발을 빼는 바람에 원점으로 돌아가 버렸네.
-exp_1187,Idioms & Slang,Let's play it by ear this weekend and see how everyone's energy feels.,이번 주말엔 컨디션들을 보면서 상황에 맞춰 유동적으로 움직이자.
-exp_1188,Idioms & Slang,Cutting corners on testing almost always comes back to bite you later.,테스트를 대충 넘어가면 나중에는 거의 항상 부메랑이 되어 돌아오더라.
-exp_1189,Idioms & Slang,I'm willing to give him the benefit of the doubt since he's new here.,여기 온 지 얼마 안 됐으니까 이번 한 번은 좋게 믿어 주려고 해.
-exp_1190,Idioms & Slang,Someone accidentally spilled the beans before the surprise party even began.,깜짝 파티가 시작되기도 전에 누군가 실수로 비밀을 누설해 버렸어.
-exp_1191,Idioms & Slang,That neighborhood bakery is hands down the best spot for croissants.,그 동네 빵집은 크루아상 맛집으로는 단연 최고야.
-exp_1192,Idioms & Slang,Don't put all your eggs in one basket when you're interviewing.,면접을 볼 때는 한 곳에만 모든 기대를 걸지 말고 여러 군데 지원해.
-exp_1193,Idioms & Slang,That was a blessing in disguise because a much better role opened up.,훨씬 더 좋은 자리가 났으니까 그건 오히려 전화위복이었어.
-exp_1194,Idioms & Slang,"The ball is in their court now, so all we can do is wait.",이제 공은 저쪽 코트로 넘어갔으니 우리가 할 수 있는 건 기다리는 것뿐이야.
-exp_1195,Idioms & Slang,You're barking up the wrong tree if you think I approved that expense.,내가 그 지출을 승인했다고 생각한다면 완전히 짚어도 잘못 짚은 거야.
-exp_1196,Idioms & Slang,Let's not beat around the bush and address the elephant in the room.,빙빙 돌려 말하지 말고 모두가 피하고 있는 핵심 문제를 정면으로 다루자.
-exp_1197,Idioms & Slang,He pulled some strings to get us front-row tickets at the last second.,그가 막판에 인맥을 좀 써서 우리한테 맨 앞줄 티켓을 구해 줬어.
-exp_1198,Idioms & Slang,I had to learn the hard way not to skip reading the fine print.,작은 글씨로 된 약관을 건너뛰면 안 된다는 걸 직접 겪고 나서야 뼈저리게 배웠어.
-exp_1199,Idioms & Slang,She passed the interview with flying colors and got an offer the same day.,그녀는 면접을 훌륭하게 통과해서 당일에 바로 합격 제안을 받았어.
-exp_1200,Idioms & Slang,Just play devil's advocate for a minute; what if the launch flops?,"잠깐 반대 입장에서 생각해 보자면, 만약 출시가 실패하면 어떡할 건데?"
-exp_1201,Idioms & Slang,"After months of stalling, they finally got the ball rolling on construction.",몇 달 동안 질질 끌다가 드디어 공사를 본격적으로 시작했어.
-exp_1202,Idioms & Slang,Stop adding fuel to the fire when they're already arguing over nothing.,이미 별것도 아닌 일로 다투고 있는데 거기에 불을 지피지 마.
-exp_1203,Idioms & Slang,I'm running on fumes today after staying up until two fixing that bug.,어젯밤에 그 버그 고치느라 새벽 두 시까지 깨어 있어서 오늘 간신히 버티고 있어.
-exp_1204,Idioms & Slang,That promotion really came out of left field; nobody expected it so soon.,그 승진은 정말 뜻밖이었어; 그렇게 빨리 될 줄은 아무도 예상 못 했거든.
-exp_1205,Idioms & Slang,You're preaching to the choir; I've been saying the exact same thing.,당연한 말을 나한테 하네; 나도 똑같은 얘기를 계속 해왔어.
-exp_1206,Idioms & Slang,Let's sleep on the proposal overnight so we don't make a snap judgment.,성급한 판단을 내리지 않도록 그 제안은 하룻밤 자면서 곰곰이 생각해 보자.
+exp_1149,Opinions & Reactions,"To put it mildly, that transition was pretty bumpy.","완곡하게 표현하자면, 그 전환 과정이 꽤 순탄치 않았어."
+exp_1150,Opinions & Reactions,"I'm not sold yet, so explain the pros.",아직 완전히 납득이 안 되니까 장점부터 설명해 줘.
+exp_1151,Opinions & Reactions,"Surprisingly enough, the simplest solution proved most reliable.",놀랍게도 가장 단순한 해결책이 결국 가장 믿을 만했어.
+exp_1152,Opinions & Reactions,Attitude makes all the difference when winning people over.,사람 마음을 얻을 때는 태도가 결정적인 차이를 만들지.
+exp_1153,Opinions & Reactions,There's a fine line between confidence and arrogance.,자신감과 오만함 사이는 종이 한 장 차이야.
+exp_1154,Opinions & Reactions,"From my perspective, delaying beats shipping a buggy app.",내 관점에서는 버그 있는 앱을 내는 것보다 출시를 미루는 게 나아.
+exp_1155,Actions & Plans,I'm trying to get into stretching every single morning.,매일 아침 스트레칭하는 습관을 들이려고 노력하고 있어.
+exp_1156,Actions & Plans,"Whenever deadlines loom, I tend to put things off.",마감이 다가올 때마다 나는 자꾸 일을 미루는 경향이 있어.
+exp_1157,Actions & Plans,We ended up talking for nearly three solid hours.,결국 세 시간 가까이 내내 수다를 떨었어.
+exp_1158,Actions & Plans,I still haven't gotten around to cleaning the closet.,옷장 정리를 아직도 시작조차 못 했어.
+exp_1159,Actions & Plans,Make a point of backing up your photos tonight.,오늘 밤에 반드시 사진을 백업해 두도록 해.
+exp_1160,Actions & Plans,You'll get the hang of it after two tries.,두 번만 해 보면 금방 감을 잡을 거야.
+exp_1161,Actions & Plans,I'm prone to overthinking small details in emails.,이메일을 쓸 때 사소한 디테일을 지나치게 고민하는 편이야.
+exp_1162,Actions & Plans,We usually take turns cooking dinner on weeknights.,평일 저녁에는 보통 번갈아 가며 저녁을 요리해.
+exp_1163,Actions & Plans,I've been meaning to cut back on late snacks.,야식을 좀 줄여야지 하고 마음먹은 지 꽤 됐어.
+exp_1164,Actions & Plans,Putting your phone away at dinner takes real effort.,식사 중에 휴대폰을 치워두려면 의식적인 노력이 필요해.
+exp_1165,Actions & Plans,I made a mental note to grab laundry detergent.,세탁 세제를 사야겠다고 머릿속으로 메모해 뒀어.
+exp_1166,Actions & Plans,She has a knack for making everyone feel welcome.,그녀는 모두가 편안함을 느끼게 해 주는 남다른 재주가 있어.
+exp_1167,Actions & Plans,"Once routines break, it's tough building momentum again.",한번 루틴이 깨지면 다시 탄력을 붙이기가 쉽지 않아.
+exp_1168,Actions & Plans,I caught myself checking work messages during my vacation.,휴가 중인데도 나도 모르게 업무 메시지를 확인하고 있더라.
+exp_1169,Actions & Plans,Let's review the checklist once more before locking up.,문을 잠그기 전에 체크리스트를 한 번만 더 훑어보자.
+exp_1170,Actions & Plans,He's been putting in extra hours every single evening.,그는 매일 저녁 추가 근무 시간을 쏟고 있어.
+exp_1171,Actions & Plans,Break the project into smaller milestones instead of rushing.,서두르지 말고 프로젝트를 작은 단계별로 쪼개서 진행해 봐.
+exp_1172,Actions & Plans,I automatically reach for coffee first thing at work.,출근하자마자 나도 모르게 커피부터 찾게 돼.
+exp_1173,Actions & Plans,Let's set aside thirty minutes every Sunday to plan.,계획을 세우기 위해 매주 일요일 30분씩 시간을 빼두자.
+exp_1174,Actions & Plans,Don't let minor distractions derail your focus today.,오늘 사소한 방해 요소 때문에 집중력이 흐트러지지 않게 해.
+exp_1175,Actions & Plans,I finally canceled those subscriptions I barely even use.,거의 쓰지도 않는 구독 서비스들을 드디어 해지했어.
+exp_1176,Actions & Plans,He went out of his way to help everyone.,그는 모두를 도우려고 일부러 발 벗고 나서 줬어.
+exp_1177,Actions & Plans,Writing things down stops errands from slipping through cracks.,할 일을 적어두면 깜빡 놓치는 걸 막을 수 있어.
+exp_1178,Actions & Plans,"After months of practice, it feels like second nature.",몇 달 동안 연습했더니 이제는 몸에 완전히 배었어.
+exp_1179,Idioms & Slang,Let's call it a day and pick up tomorrow.,오늘은 이만 마무리하고 내일 다시 이어서 하자.
+exp_1180,Idioms & Slang,I'm still wrapping my head around how fast that closed.,그 거래가 얼마나 빨리 성사됐는지 아직도 정리가 안 돼.
+exp_1181,Idioms & Slang,Don't jump the gun before getting it in writing.,서면으로 확인받기 전까지는 섣불리 앞서 나가지 마.
+exp_1182,Idioms & Slang,"We're all in the same boat, so pull together.",우리 모두 같은 처지니까 힘을 합쳐 보자.
+exp_1183,Idioms & Slang,Take social media news with a grain of salt.,소셜 미디어 소식은 어느 정도 걸러서 받아들여.
+exp_1184,Idioms & Slang,You really hit the nail on the head there.,그 부분에서 정말 핵심을 정확히 짚었어.
+exp_1185,Idioms & Slang,I decided to bite the bullet and replace it.,큰맘 먹고 결단을 내려서 새것으로 바꾸기로 했어.
+exp_1186,Idioms & Slang,It's back to square one after the vendor quit.,업체가 발을 빼는 바람에 다시 원점으로 돌아갔네.
+exp_1187,Idioms & Slang,Let's play it by ear and see how things go.,상황을 보면서 유동적으로 맞춰서 움직이자.
+exp_1188,Idioms & Slang,Cutting corners almost always comes back to bite you.,대충 넘어가면 나중에는 거의 항상 부메랑이 되어 돌아오더라.
+exp_1189,Idioms & Slang,Let's give him the benefit of the doubt today.,오늘은 일단 그 사람을 좋게 믿어 주자.
+exp_1190,Idioms & Slang,Someone accidentally spilled the beans before the party started.,파티가 시작되기도 전에 누군가 실수로 비밀을 누설해 버렸어.
+exp_1191,Idioms & Slang,That bakery makes the best croissants hands down.,그 빵집 크루아상이 단연 최고야.
+exp_1192,Idioms & Slang,Don't put all your eggs in one basket here.,여기에만 모든 기대를 걸지 마.
+exp_1193,Idioms & Slang,That turned out to be a blessing in disguise.,그건 알고 보니 오히려 전화위복이었어.
+exp_1194,Idioms & Slang,"The ball's in their court now, so let's wait.",이제 공은 저쪽 코트로 넘어갔으니 기다려 보자.
+exp_1195,Idioms & Slang,You're barking up the wrong tree accusing me.,나를 의심하다니 완전히 짚어도 잘못 짚었어.
+exp_1196,Idioms & Slang,Stop avoiding it; let's address the elephant in room.,피하지 말고 모두가 아는 핵심 문제를 정면으로 다루자.
+exp_1197,Idioms & Slang,He pulled some strings to get front-row seats.,그가 인맥을 좀 써서 맨 앞줄 자리를 구해 줬어.
+exp_1198,Idioms & Slang,I learned the hard way to read fine print.,작은 약관도 꼭 읽어야 한다는 걸 호되게 겪고 배웠어.
+exp_1199,Idioms & Slang,She passed the interview with flying colors yesterday.,그녀는 어제 면접을 훌륭하게 통과했어.
+exp_1200,Idioms & Slang,"Playing devil's advocate, what happens if sales drop?","반대 입장에서 생각해 보면, 매출이 떨어지면 어떡할 건데?"
+exp_1201,Idioms & Slang,"After stalling for months, they got the ball rolling.",몇 달 끌다가 드디어 본격적으로 일을 시작했어.
+exp_1202,Idioms & Slang,Stop adding fuel to the fire during arguments.,다투는 도중에 불에 기름을 붓지 마.
+exp_1203,Idioms & Slang,I'm running on fumes after staying up until two.,새벽 두 시까지 안 잤더니 오늘 간신히 버티고 있어.
+exp_1204,Idioms & Slang,That sudden promotion really came out of left field.,그 갑작스러운 승진은 정말 뜻밖이었어.
+exp_1205,Idioms & Slang,You're preaching to the choir; I totally agree.,당연한 말을 나한테 하네; 나도 전적으로 동의해.
+exp_1206,Idioms & Slang,Let's sleep on it instead of making snap judgments.,성급히 판단하지 말고 하룻밤 자면서 곰곰이 생각해 보자.
 exp_1207,Idioms & Slang,He bent over backwards to accommodate our ridiculous schedule change.,우리가 터무니없이 일정을 바꿨는데도 그가 맞춰 주려고 정말 애를 많이 썼어.
-exp_1208,Idioms & Slang,It's a double-edged sword: more visibility also brings way more scrutiny.,그건 양날의 검이야. 주목을 많이 받을수록 감시와 비판도 훨씬 커지거든.
-exp_1209,Idioms & Slang,Don't throw in the towel just because the first prototype didn't work.,첫 번째 시제품이 잘 안 됐다고 해서 벌써 포기하지 마.
-exp_1210,Idioms & Slang,They're just testing the waters before committing to a full rollout.,본격적으로 전면 도입하기 전에 우선 반응부터 살짝 떠보는 중이야.
-exp_1211,Idioms & Slang,You have to draw the line somewhere before people take advantage of you.,남들이 너를 이용하기 전에 어디선가는 확실히 선을 그어야 해.
-exp_1212,Idioms & Slang,He completely missed the mark with that joke during the keynote.,기조연설 중에 던진 그 농담은 완전히 핀트가 어긋났어.
-exp_1213,Idioms & Slang,I'm glad we broke the ice right away instead of sitting in silence.,조용히 어색하게 앉아 있는 대신 바로 분위기를 풀어서 다행이야.
-exp_1214,Idioms & Slang,That software update opened a whole can of worms for the support team.,그 소프트웨어 업데이트 때문에 고객지원팀에 온갖 골칫거리가 한꺼번에 터졌어.
-exp_1215,Idioms & Slang,Keep your ear to the ground in case any openings come up on that team.,그 팀에 빈자리가 날지도 모르니까 동향을 잘 살피고 있어 봐.
-exp_1216,Idioms & Slang,"She has a lot on her plate right now, so let's not pile on more.",그녀가 지금 맡은 일이 너무 많으니까 더 얹어 주지 말자.
-exp_1217,Idioms & Slang,We dodged a bullet by double-checking the numbers before sending the invoice.,청구서를 보내기 전에 숫자를 한 번 더 확인한 덕분에 큰 위기를 모면했어.
-exp_1218,Idioms & Slang,The new policy is just a drop in the bucket compared to what's needed.,새 정책은 실제로 필요한 것에 비하면 새 발의 피에 불과해.
+exp_1208,Idioms & Slang,More visibility can be a double-edged sword sometimes.,주목을 많이 받는 건 때로는 양날의 검이 될 수 있어.
+exp_1209,Idioms & Slang,Don't throw in the towel after just one setback.,단 한 번의 실패 때문에 벌써 포기하지 마.
+exp_1210,Idioms & Slang,They're just testing the waters before a full launch.,전면 출시 전에 우선 반응부터 살짝 떠보는 중이야.
+exp_1211,Idioms & Slang,You have to draw the line before getting burned.,이용당하기 전에 확실히 선을 그어야 해.
+exp_1212,Idioms & Slang,That joke completely missed the mark during the keynote.,기조연설 중에 던진 그 농담은 완전히 핀트가 어긋났어.
+exp_1213,Idioms & Slang,I'm glad we broke the ice right away.,바로 분위기를 풀어서 다행이야.
+exp_1214,Idioms & Slang,That update opened a whole can of worms.,그 업데이트 때문에 온갖 골칫거리가 한꺼번에 터졌어.
+exp_1215,Idioms & Slang,Keep your ear to the ground for new openings.,새 빈자리가 나는지 동향을 잘 살피고 있어 봐.
+exp_1216,Idioms & Slang,She has plenty on her plate right now.,그녀는 지금 맡은 일이 너무 많아.
+exp_1217,Idioms & Slang,Checking those numbers early helped us dodge a bullet.,숫자를 미리 확인한 덕분에 큰 위기를 모면했어.
+exp_1218,Idioms & Slang,That budget is just a drop in the bucket.,그 예산은 실제로 필요한 것에 비하면 새 발의 피야.
 exp_1219,Idioms & Slang,I wouldn't touch that sketchy investment with a ten-foot pole.,그 수상한 투자 건에는 아예 근처에도 얼씬하고 싶지 않아.
-exp_1220,Idioms & Slang,"Every cloud has a silver lining, even if it's hard to see right now.","지금은 당장 보기 힘들더라도, 아무리 힘든 일에도 좋은 면은 있기 마련이야."
-exp_1221,Idioms & Slang,Let's cross that bridge when we come to it instead of panicking early.,미리 겁먹지 말고 막상 그 상황이 닥쳤을 때 그때 가서 해결하자.
-exp_1222,Idioms & Slang,You really went above and beyond to pull this event together on time.,제시간에 이 행사를 성사시키려고 정말 기대 이상으로 힘써 줬어.
-exp_1223,Work & Business,Let's touch base early next week once you've had time to review the deck.,발표 자료를 검토할 시간을 가지신 뒤 다음 주 초에 다시 연락해서 조율하시죠.
-exp_1224,Work & Business,Could you loop me in on that email thread so I have full context?,전체 맥락을 파악할 수 있게 그 이메일 스레드에 저도 참조로 넣어 주실래요?
-exp_1225,Work & Business,We may need to push back the launch date by a week to polish the UI.,UI를 다듬기 위해 출시일을 일주일 정도 미뤄야 할 것 같습니다.
-exp_1226,Work & Business,"I'm swamped with back-to-back meetings until four, so let's chat after.",4시까지 연달아 회의가 꽉 차서 정신이 없으니 그 이후에 이야기하죠.
-exp_1227,Work & Business,Let's iron out the remaining details before we sign off on the contract.,계약서에 최종 서명하기 전에 남은 세부 사항들을 조율합시다.
-exp_1228,Work & Business,I'll take ownership of the client onboarding deck for Friday's call.,금요일 통화에 쓸 고객 온보딩 자료는 제가 책임지고 맡겠습니다.
-exp_1229,Work & Business,Are we still on track to hit our quarterly targets by the end of the month?,이달 말까지 분기 목표를 달성할 수 있도록 일정대로 잘 진행되고 있나요?
-exp_1230,Work & Business,Let's not reinvent the wheel when we already have a proven template.,이미 검증된 템플릿이 있는데 굳이 처음부터 새로 만들지 맙시다.
-exp_1231,Work & Business,Could you give me a ballpark figure for what the vendor is quoting?,업체가 제시한 견적이 대략 어느 정도 금액인지 알려 주실 수 있나요?
-exp_1232,Work & Business,"That decision is above my pay grade, so let's escalate it to leadership.",그 결정은 제 권한 밖이라서 경영진에게 올려서 보고해야겠습니다.
-exp_1233,Work & Business,Let's divide and conquer so we can wrap up the audit before five.,5시 전에 감사를 마칠 수 있도록 각자 파트를 나눠서 처리합시다.
-exp_1234,Work & Business,She really stepped up to the plate when the project lead went on leave.,프로젝트 리드가 휴가를 갔을 때 그녀가 정말 훌륭하게 빈자리를 채워 줬어.
-exp_1235,Work & Business,"We're operating on a tight turnaround, so let's keep feedback concise.",마감 기한이 매우 촉박하므로 피드백은 간결하게 정리해서 줍시다.
-exp_1236,Work & Business,Let's run this draft by the legal team before publishing anything externally.,외부에 공개하기 전에 이 초안을 법무팀에 먼저 검토받아 봅시다.
-exp_1237,Work & Business,Can you walk me through how you arrived at those revenue projections?,그 매출 전망치를 어떻게 산출하셨는지 단계별로 설명해 주실 수 있나요?
-exp_1238,Work & Business,We need to streamline this approval process instead of chasing signatures.,일일이 서명 받으러 다니는 대신 이 승인 절차를 간소화할 필요가 있어요.
+exp_1220,Idioms & Slang,"Remember, every cloud has a silver lining eventually.",힘든 일 속에도 결국에는 좋은 면이 있기 마련이야.
+exp_1221,Idioms & Slang,Let's cross that bridge when we come to it.,미리 걱정하지 말고 막상 그 상황이 닥치면 그때 해결하자.
+exp_1222,Idioms & Slang,You went above and beyond pulling this together.,이 일을 성사시키려고 정말 기대 이상으로 힘써 줬어.
+exp_1223,Work & Business,Let's touch base early next week after your review.,검토하신 뒤 다음 주 초에 다시 연락해서 조율하시죠.
+exp_1224,Work & Business,Could you loop me in on that email thread?,그 이메일 스레드에 저도 참조로 넣어 주실래요?
+exp_1225,Work & Business,We may push back the launch by one week.,출시일을 일주일 정도 미뤄야 할 것 같습니다.
+exp_1226,Work & Business,I'm swamped with back-to-back meetings until four.,4시까지 연달아 회의가 꽉 차서 정신이 없어요.
+exp_1227,Work & Business,Let's iron out these remaining details before signing off.,최종 서명하기 전에 남은 세부 사항들을 조율합시다.
+exp_1228,Work & Business,I'll take ownership of the client onboarding deck.,고객 온보딩 자료는 제가 책임지고 맡겠습니다.
+exp_1229,Work & Business,Are we on track to hit our quarterly targets?,분기 목표를 달성할 수 있게 일정대로 잘 가고 있나요?
+exp_1230,Work & Business,Let's not reinvent the wheel with proven templates.,이미 검증된 템플릿이 있는데 굳이 처음부터 새로 만들지 맙시다.
+exp_1231,Work & Business,Could you give me a ballpark figure for this?,이거 대략 어느 정도 금액인지 알려 주실 수 있나요?
+exp_1232,Work & Business,"That decision is above my pay grade, unfortunately.",안타깝지만 그 결정은 제 권한 밖입니다.
+exp_1233,Work & Business,Let's divide and conquer to finish before five.,5시 전에 마칠 수 있도록 파트를 나눠서 처리합시다.
+exp_1234,Work & Business,She stepped up to the plate while he left.,그가 자리를 비운 동안 그녀가 훌륭하게 빈자리를 채웠어.
+exp_1235,Work & Business,"We're on a tight turnaround, so stay concise.",마감이 매우 촉박하니 요점만 간결하게 말합시다.
+exp_1236,Work & Business,Let's run this draft by legal before publishing.,공개하기 전에 이 초안을 법무팀에 먼저 검토받읍시다.
+exp_1237,Work & Business,Walk me through how you calculated these revenue projections.,이 매출 전망치를 어떻게 산출하셨는지 단계별로 설명해 주세요.
+exp_1238,Work & Business,We need to streamline this clunky approval process.,이 번거로운 승인 절차를 간소화할 필요가 있어요.
 exp_1239,Work & Business,Let's set clear expectations upfront so nobody is blindsided mid-project.,프로젝트 도중에 당황하는 사람이 없도록 처음부터 기대치를 명확히 설정합시다.
-exp_1240,Work & Business,Please keep me in the loop if the client requests any scope changes.,고객이 업무 범위 변경을 요청하면 저에게도 계속 상황을 공유해 주세요.
-exp_1241,Work & Business,I'll follow up with accounting tomorrow if the reimbursement hasn't cleared.,내일까지 비용 환급 처리가 안 되면 회계팀에 후속 문의를 해 보겠습니다.
-exp_1242,Work & Business,Let's take this offline so we don't derail the rest of the standup.,스탠드업 미팅의 나머지 흐름이 끊기지 않도록 이 건은 회의 후에 따로 논의하죠.
-exp_1243,Work & Business,Do you have the bandwidth to take on one more sprint task this week?,이번 주 스프린트 업무 하나를 더 맡으실 여유가 되시나요?
-exp_1244,Work & Business,We need to prioritize high-impact tasks instead of getting bogged down in busywork.,자잘한 잡무에 발목 잡히지 말고 임팩트가 큰 업무부터 우선순위를 둬야 합니다.
-exp_1245,Work & Business,Let's circle back on the hiring budget once Q3 numbers are finalized.,3분기 수치가 확정되면 채용 예산 건은 다시 논의하기로 하죠.
-exp_1246,Work & Business,I'll send out a calendar invite as soon as everyone confirms their availability.,모두가 가능한 시간을 확인해 주는 대로 바로 캘린더 초대를 보내드리겠습니다.
-exp_1247,Work & Business,Make sure every stakeholder signs off before we deploy to production.,운영 환경에 배포하기 전에 모든 이해관계자의 승인을 반드시 받도록 하세요.
-exp_1248,Work & Business,We're aiming for a quick win here to build momentum with the new client.,신규 고객과의 탄력을 붙이기 위해 여기서 빠른 성과를 내는 게 목표입니다.
-exp_1249,Work & Business,Could you share the slide deck ahead of time so we can prep questions?,질문을 미리 준비할 수 있게 발표 자료를 사전에 공유해 주실 수 있나요?
-exp_1250,Work & Business,He brings deep domain expertise to the table that our team really needs.,그는 우리 팀에 꼭 필요한 깊은 업계 전문성을 갖추고 있습니다.
-exp_1251,Work & Business,Let's flag any potential bottlenecks early rather than waiting until launch week.,출시 주간까지 기다리지 말고 잠재적인 병목 구간이 보이면 일찍 공유합시다.
-exp_1252,Work & Business,"I'm juggling three deliverables right now, so I'll need until Thursday.",지금 마감해야 할 산출물이 세 개나 겹쳐 있어서 목요일까지는 시간이 필요합니다.
-exp_1253,Work & Business,That's a classic case of scope creep; we need to stick to the original brief.,전형적인 업무 범위 확대 사례네요; 원래 기획안의 범위를 지켜야 합니다.
-exp_1254,Work & Business,Let's do a quick post-mortem to see what went well and what didn't.,무엇이 잘됐고 무엇이 아쉬웠는지 확인하기 위해 간단한 회고를 진행합시다.
-exp_1255,Work & Business,I'll draft a summary of our action items and drop it in the channel.,우리가 해야 할 일들의 요약본을 작성해서 채널에 올려 두겠습니다.
-exp_1256,Work & Business,We're still waiting on final sign-off from finance before issuing the PO.,발주서를 발행하기 전에 재무팀의 최종 승인을 아직 기다리고 있습니다.
-exp_1257,Work & Business,"He's out of office until Monday, so I'll cover his urgent tickets.",그분은 월요일까지 부재중이셔서 긴급 티켓은 제가 대신 처리할게요.
-exp_1258,Work & Business,Let's make sure we're aligned on the KPIs before kicking off the campaign.,캠페인을 시작하기 전에 핵심 성과 지표에 대해 서로 의견이 일치하는지 확인합시다.
-exp_1259,Work & Business,Could you clarify who has the final say on the pricing tier?,요금제 등급에 대한 최종 결정권자가 누구인지 명확히 해 주실 수 있나요?
-exp_1260,Work & Business,We had to pivot our strategy after user feedback showed low engagement.,사용자 피드백에서 참여도가 낮게 나타나 전략을 수정해야 했습니다.
-exp_1261,Work & Business,Let's keep our eye on the bottom line while exploring these new tools.,새로운 툴을 검토하면서도 최종 수익성에 미치는 영향은 계속 주시합시다.
-exp_1262,Work & Business,I appreciate you jumping in on short notice to help prep the demo.,촉박한 일정에도 데모 준비를 도우러 바로 합류해 주셔서 감사합니다.
-exp_1263,Work & Business,Can we schedule a fifteen-minute sync to unblock the API integration?,API 연동에서 막힌 부분을 풀기 위해 15분짜리 짧은 미팅을 잡을 수 있을까요?
-exp_1264,Work & Business,She has a proven track record of turning around underperforming teams.,그녀는 성과가 부진했던 팀을 반등시킨 검증된 실적을 보유하고 있습니다.
+exp_1240,Work & Business,Keep me in the loop if requirements change.,요구사항이 바뀌면 저에게도 계속 상황을 공유해 주세요.
+exp_1241,Work & Business,I'll follow up with accounting tomorrow about the refund.,내일 회계팀에 환급 처리 건으로 후속 문의를 해 보겠습니다.
+exp_1242,Work & Business,Let's take this offline after our daily standup.,데일리 스탠드업이 끝난 뒤에 이 건은 따로 논의하죠.
+exp_1243,Work & Business,Do you have the bandwidth for one more task?,업무 하나를 더 맡으실 여유가 되시나요?
+exp_1244,Work & Business,Focus on high-impact tasks instead of busywork today.,오늘은 자잘한 잡무 대신 임팩트가 큰 업무에 집중합시다.
+exp_1245,Work & Business,Let's circle back on hiring once numbers finalize.,수치가 확정되면 채용 건은 다시 논의하기로 하죠.
+exp_1246,Work & Business,I'll send a calendar invite once everyone confirms.,모두가 가능한 시간을 확인하는 대로 캘린더 초대를 보내드릴게요.
+exp_1247,Work & Business,Get every stakeholder's sign-off before deploying to production.,운영 환경에 배포하기 전에 모든 이해관계자의 승인을 받으세요.
+exp_1248,Work & Business,We need a quick win to build momentum.,탄력을 붙이기 위해 빠른 성과가 하나 필요해요.
+exp_1249,Work & Business,Share the slide deck early so we prep.,미리 준비할 수 있게 발표 자료를 사전에 공유해 주세요.
+exp_1250,Work & Business,He brings deep domain expertise to the table.,그는 팀에 꼭 필요한 깊은 업계 전문성을 갖추고 있어요.
+exp_1251,Work & Business,Let's flag potential bottlenecks before launch week arrives.,출시 주간이 오기 전에 잠재적인 병목 구간을 미리 공유합시다.
+exp_1252,Work & Business,"I'm juggling three deliverables, so wait until Thursday.",마감할 산출물이 세 개나 겹쳐서 목요일까지 기다려 주세요.
+exp_1253,Work & Business,That's classic scope creep; stick to the brief.,전형적인 업무 범위 확대네요; 원래 기획안의 범위를 지킵시다.
+exp_1254,Work & Business,Let's run a quick post-mortem on this launch.,이번 출시에 대해 간단한 회고를 진행합시다.
+exp_1255,Work & Business,I'll drop a summary of action items shortly.,우리가 해야 할 일들의 요약본을 곧 올려 두겠습니다.
+exp_1256,Work & Business,We're still waiting on final sign-off from finance.,재무팀의 최종 승인을 아직 기다리고 있습니다.
+exp_1257,Work & Business,"He's out of office, so I'll cover urgent tickets.",그분은 부재중이라 긴급 티켓은 제가 대신 처리할게요.
+exp_1258,Work & Business,Let's align on KPIs before kicking off Monday.,월요일에 시작하기 전에 핵심 성과 지표부터 맞춥시다.
+exp_1259,Work & Business,Clarify who has the final say on pricing.,요금제에 대한 최종 결정권자가 누구인지 명확히 해 주세요.
+exp_1260,Work & Business,We pivoted our strategy after seeing low engagement.,참여도가 낮게 나타나 전략을 수정했습니다.
+exp_1261,Work & Business,Keep an eye on the bottom line here.,여기서 최종 수익성에 미치는 영향을 계속 주시합시다.
+exp_1262,Work & Business,Thanks for jumping in on such short notice.,촉박한 일정에도 바로 합류해 주셔서 감사합니다.
+exp_1263,Work & Business,Can we schedule a quick sync to unblock this?,막힌 부분을 풀기 위해 짧은 미팅을 잡을 수 있을까요?
+exp_1264,Work & Business,She has a proven track record turning teams around.,그녀는 부진했던 팀을 반등시킨 검증된 실적을 갖고 있어요.
 exp_1265,Work & Business,Let's benchmark our onboarding flow against top competitors first.,먼저 주요 경쟁사들과 비교해서 우리 온보딩 흐름의 수준을 점검해 봅시다.
 exp_1266,Work & Business,I'd rather underpromise and overdeliver than miss a public commitment.,공개적으로 약속한 기한을 어기는 것보다는 차라리 보수적으로 약속하고 그 이상을 보여주고 싶어요.
-exp_1267,Work & Business,We need to document this workflow so new hires can ramp up faster.,신규 입사자들이 더 빨리 적응할 수 있도록 이 업무 흐름을 문서화해 두어야 합니다.
-exp_1268,Work & Business,"There's a steep learning curve at first, but it gets much smoother by week three.","처음에는 배워야 할 게 많지만, 3주 차쯤 되면 훨씬 수월해집니다."
-exp_1269,Work & Business,Let's double-check the numbers so we don't get caught off guard by the board.,이사회에서 허를 찔리지 않도록 수치를 한 번 더 꼼꼼히 확인합시다.
-exp_1270,Work & Business,I'm blocking off two hours this afternoon for deep work without notifications.,오늘 오후 두 시간은 알림을 끄고 집중 업무 시간으로 비워 두려고 합니다.
-exp_1271,Work & Business,Could you give me a quick status update before I head into the client call?,고객사와의 통화에 들어가기 전에 현재 진행 상황을 짧게 공유해 주실래요?
-exp_1272,Work & Business,We ended up renegotiating the terms to get more favorable payment milestones.,더 유리한 대금 지급 조건을 얻기 위해 결국 계약 조건을 재협상했습니다.
-exp_1273,Work & Business,Let's make sure the handoff is seamless before she transitions to the new role.,그녀가 새 직무로 이동하기 전에 인수인계가 매끄럽게 이루어지도록 합시다.
-exp_1274,Work & Business,It's only a matter of time before everyone finds out about the merger.,합병 소식이 모두에게 알려지는 건 시간문제일 뿐이야.
-exp_1275,Travel & Dining,"By the time we made it through security, boarding had already started.",우리가 보안 검색을 통과했을 때쯤에는 이미 탑승이 시작된 상태였어.
-exp_1276,Travel & Dining,Let's stick around for another twenty minutes to see if traffic clears up.,교통 체증이 좀 풀리는지 20분만 더 있다가 출발하자.
-exp_1277,Actions & Plans,"For the time being, let's stick with the current schedule until things stabilize.",상황이 안정될 때까지 당분간은 현재 일정을 그대로 유지하자.
-exp_1278,Actions & Plans,"Sooner or later, you're going to have to sit down and have that talk.",조만간 마주 앉아서 그 이야기를 꼭 해야만 할 거야.
-exp_1279,Actions & Plans,"Every once in a while, I like to completely unplug for an entire weekend.",가끔씩은 주말 내내 디지털 기기를 완전히 끄고 쉬는 걸 좋아해.
-exp_1280,Travel & Dining,We're cutting it pretty close if we want to catch the last express train.,마지막 급행열차를 타려면 시간이 꽤 빠듯하네.
-exp_1281,Work & Business,"In the long run, investing in preventive maintenance saves a lot of money.",장기적으로 보면 예방 정비에 투자하는 게 돈을 훨씬 많이 아껴 줘.
-exp_1282,Actions & Plans,"Nothing is set in stone yet, so we still have plenty of room to adjust.",아직 확정된 건 아무것도 없으니까 얼마든지 조정할 여지가 있어.
-exp_1283,Travel & Dining,"Pencil me in for Thursday afternoon, and I'll confirm once my flight lands.",목요일 오후로 임시 일정 잡아 두면 비행기 착륙하자마자 확정해 줄게.
-exp_1284,Work & Business,"From now on, let's build in an extra day as a buffer before deadlines.",앞으로는 마감일 전에 여유 기간으로 하루를 더 확보해 두자.
-exp_1285,Actions & Plans,I got so absorbed in editing the video that I completely lost track of time.,영상 편집에 너무 몰입한 나머지 시간 가는 줄을 완전히 잊어버렸어.
-exp_1286,Actions & Plans,Let's aim to wrap things up by four so we don't get stuck in rush hour.,퇴근 시간 교통체증에 걸리지 않도록 4시까지는 마무리하는 걸 목표로 하자.
-exp_1287,Actions & Plans,I'll swing by your place around six on my way back from the gym.,헬스장에서 돌아오는 길에 6시쯤 네 집에 잠깐 들를게.
-exp_1288,Actions & Plans,We might as well head out early rather than sitting around waiting.,빈둥거리며 기다리느니 차라리 일찍 출발하는 게 낫겠어.
-exp_1289,Actions & Plans,Let's play things day by day until we hear back from the doctor.,의사 선생님의 연락을 받을 때까지는 하루하루 상황을 보면서 대처하자.
-exp_1290,Daily Conversation,It feels like only yesterday that we moved into this neighborhood.,이 동네로 이사 온 게 엊그제 같은데 시간이 참 빠르네.
-exp_1291,Work & Business,The deadline snuck up on me faster than I expected this month.,이번 달 마감일이 생각보다 훨씬 빨리 다가왔네.
-exp_1292,Actions & Plans,Let's tentatively plan for next Saturday and lock it in by Wednesday.,일단 다음 주 토요일로 가볍게 계획해 두고 수요일까지 확정 짓자.
-exp_1293,Actions & Plans,"Once the semester wraps up, I'm going to take a solid week off.",학기가 끝나면 일주일 동안 제대로 푹 쉴 거야.
+exp_1267,Work & Business,Document this workflow so new hires ramp faster.,신규 입사자가 빨리 적응할 수 있게 업무 흐름을 문서화합시다.
+exp_1268,Work & Business,There's a steep learning curve at the start.,처음에는 배워야 할 게 상당히 많습니다.
+exp_1269,Work & Business,Double-check the numbers before facing the board tomorrow.,내일 이사회에 들어가기 전에 수치를 한 번 더 확인합시다.
+exp_1270,Work & Business,I'm blocking off two hours for deep work.,집중 업무를 위해 두 시간 동안 일정을 비워 두려고 합니다.
+exp_1271,Work & Business,Give me a quick update before my call.,통화에 들어가기 전에 현재 진행 상황을 짧게 공유해 주세요.
+exp_1272,Work & Business,We renegotiated terms for better payment milestones.,더 유리한 대금 지급 조건을 얻기 위해 계약 조건을 재협상했습니다.
+exp_1273,Work & Business,Make sure the handoff goes smoothly before leaving.,떠나기 전에 인수인계가 매끄럽게 이루어지도록 해 주세요.
+exp_1274,Work & Business,It's only a matter of time before everyone knows.,모두에게 알려지는 건 시간문제일 뿐이야.
+exp_1275,Travel & Dining,"By the time we arrived, boarding had started.",우리가 도착했을 때쯤에는 이미 탑승이 시작된 상태였어.
+exp_1276,Travel & Dining,Let's stick around until rush-hour traffic clears up.,출퇴근 교통체증이 좀 풀릴 때까지 조금만 더 있다 가자.
+exp_1277,Actions & Plans,"For the time being, keep the current schedule.",당분간은 현재 일정을 그대로 유지하자.
+exp_1278,Actions & Plans,"Sooner or later, we have to talk openly.",조만간 솔직하게 이야기를 나눠야만 할 거야.
+exp_1279,Actions & Plans,"Every once in a while, I unplug completely.",가끔씩은 디지털 기기를 완전히 끄고 쉬곤 해.
+exp_1280,Travel & Dining,We're cutting it pretty close for the train.,기차 타려면 시간이 꽤 빠듯하네.
+exp_1281,Work & Business,"In the long run, preventive maintenance saves money.",장기적으로 보면 예방 정비가 돈을 아껴 줘.
+exp_1282,Actions & Plans,"Nothing's set in stone, so we can adjust.",아직 확정된 건 아무것도 없으니 조정할 수 있어.
+exp_1283,Travel & Dining,Pencil me in for Thursday afternoon around three.,목요일 오후 3시쯤으로 임시 일정 잡아 둬.
+exp_1284,Work & Business,"From now on, build in an extra day.",앞으로는 여유 기간으로 하루를 더 확보해 두자.
+exp_1285,Actions & Plans,I got absorbed and completely lost track of time.,너무 몰입한 나머지 시간 가는 줄을 완전히 잊었어.
+exp_1286,Actions & Plans,Aim to wrap up by four before traffic hits.,막히기 전에 4시까지 마무리하는 걸 목표로 하자.
+exp_1287,Actions & Plans,I'll swing by your place around six tonight.,오늘 밤 6시쯤 네 집에 잠깐 들를게.
+exp_1288,Actions & Plans,We might as well head out early instead.,빈둥거리느니 차라리 일찍 출발하는 게 낫겠어.
+exp_1289,Actions & Plans,Let's take things day by day for now.,당분간은 하루하루 상황을 보면서 대처하자.
+exp_1290,Daily Conversation,It feels like only yesterday we moved here.,여기 이사 온 게 엊그제 같은데 시간이 참 빠르네.
+exp_1291,Work & Business,The deadline snuck up faster than I expected.,마감일이 생각보다 훨씬 빨리 다가왔네.
+exp_1292,Actions & Plans,"Let's tentatively aim for Saturday, lock by Wednesday.",일단 토요일로 가볍게 잡아 두고 수요일에 확정하자.
+exp_1293,Actions & Plans,"Once the semester ends, I'm taking a week off.",학기가 끝나면 일주일 동안 푹 쉴 거야.
 exp_1294,Actions & Plans,Make sure you give yourself enough breathing room between appointments.,일정과 일정 사이에 충분한 여유 시간을 두도록 해.
-exp_1295,Actions & Plans,"At this rate, we'll be lucky if we finish before midnight.",이 속도라면 자정 전에 끝내면 다행일 정도네.
-exp_1296,Travel & Dining,I've been putting off renewing my passport for way too long.,여권 갱신을 너무 오랫동안 미뤄왔어.
-exp_1297,Travel & Dining,Let's hold off on booking the hotel until everyone confirms their flights.,모두가 항공편을 확정할 때까지 호텔 예약은 잠깐 보류하자.
-exp_1298,Travel & Dining,Better late than never; I'm just glad we finally made this trip happen.,늦더라도 안 하는 것보단 낫지; 드디어 이 여행을 성사시켜서 기뻐.
-exp_1299,Actions & Plans,We should leave a cushion of at least thirty minutes for unexpected delays.,예상치 못한 지연에 대비해서 최소 30분은 여유를 두고 움직여야 해.
-exp_1300,Work & Business,I'll have a much clearer picture of my schedule by the end of the week.,이번 주 말쯤이면 내 일정이 훨씬 더 명확해질 거야.
-exp_1301,Daily Conversation,Let's make the most of the sunny weather before the cold front hits.,추위가 닥치기 전에 이 화창한 날씨를 최대한 만끽하자.
-exp_1302,Daily Conversation,It won't be long before the leaves start turning colors around here.,머지않아 이 주변 나뭇잎들도 단풍이 들기 시작할 거야.
-exp_1303,Social & Relationships,I'm counting down the days until our summer break finally kicks off.,여름 방학이 드디어 시작되는 날만 손꼽아 기다리고 있어.
-exp_1304,Social & Relationships,Try not to overcommit yourself this month with back-to-back social plans.,이번 달에는 연달아 약속을 너무 많이 잡아서 무리하지 않도록 해.
-exp_1305,Work & Business,"We ran short on time at the end, so we had to rush through the Q&A.",마지막에 시간이 부족해져서 질의응답을 급하게 진행해야 했어.
-exp_1306,Daily Conversation,"Before you know it, the whole year will have flown right by.",눈 깜짝할 사이에 올해도 어느새 다 지나가 버릴 거야.
-exp_1307,Work & Business,Let's sync up mid-week to make sure everything is still moving on schedule.,모든 게 여전히 일정대로 잘 진행되고 있는지 주중에 한 번 맞춰 보자.
-exp_1308,Actions & Plans,I'm hoping to knock out all my errands before lunch so my afternoon is free.,오후를 자유롭게 쓰려고 점심 전에 볼일들을 다 해치울 생각이야.
-exp_1309,Social & Relationships,I think we should sit down and clear the air before things get more awkward.,상황이 더 어색해지기 전에 마주 앉아서 오해를 푸는 게 좋을 것 같아.
-exp_1310,Social & Relationships,"Even though we don't always see eye to eye, I still value his perspective.","항상 의견이 일치하는 건 아니지만, 나는 여전히 그의 관점을 존중해."
-exp_1311,Social & Relationships,We slowly drifted apart after moving to opposite coasts for work.,직장 때문에 서로 정반대 지역으로 이사한 뒤로 자연스럽게 멀어졌어.
-exp_1312,Social & Relationships,Something about the way he phrased that comment rubbed me the wrong way.,그가 그 말을 표현한 방식이 어딘가 모르게 거슬렸어.
-exp_1313,Social & Relationships,I really appreciate you having my back during that tense conversation.,그 긴장감 넘치는 대화에서 내 편을 들어줘서 정말 고마워.
-exp_1314,Social & Relationships,Let's make a real effort to stay in touch more often this year.,올해는 정말 마음먹고 전보다 더 자주 연락하고 지내자.
-exp_1315,Social & Relationships,"I don't hold a grudge, even though his remark caught me off guard.",그 사람의 말이 좀 뜻밖이긴 했지만 마음에 담아두고 있진 않아.
-exp_1316,Social & Relationships,"It took us a couple of months to warm up to each other, and now we click.",서로 친해지는 데 두어 달 걸렸지만 지금은 죽이 아주 잘 맞아.
-exp_1317,Social & Relationships,I owe you a huge apology for flaking on dinner at the last minute.,"막판에 저녁 약속을 취소해 버려서 정말 미안해, 크게 사과할게."
-exp_1318,Social & Relationships,She goes out of her way to make newcomers feel right at home.,그녀는 새로 온 사람들이 금방 편해지도록 세심하게 잘 챙겨 줘.
-exp_1319,Social & Relationships,We hit it off right away because we share the same dry sense of humor.,건조한 유머 코드가 서로 잘 맞아서 만나자마자 금방 친해졌어.
-exp_1320,Social & Relationships,"I hate to say it, but he tends to take his closest friends for granted.","이런 말 하긴 싫지만, 그는 가장 가까운 친구들의 호의를 당연하게 여기는 경향이 있어."
-exp_1321,Social & Relationships,Give him some space right now; he just needs time to cool off.,지금은 좀 혼자 있게 내버려 둬; 화를 가라앉힐 시간이 필요할 뿐이야.
-exp_1322,Social & Relationships,I'm trying to set healthier boundaries without coming across as cold.,차갑게 보이지 않으면서도 더 건강한 선을 지키려고 노력 중이야.
-exp_1323,Social & Relationships,It meant the world to me that you showed up even with your packed schedule.,일정이 그렇게 빡빡한데도 와 준 게 나한테는 정말 큰 의미였어.
+exp_1295,Actions & Plans,"At this rate, we'll be lucky finishing before midnight.",이 속도라면 자정 전에 끝내면 다행이겠네.
+exp_1296,Travel & Dining,I've been putting off renewing my passport too long.,여권 갱신을 너무 오랫동안 미뤄왔어.
+exp_1297,Travel & Dining,Hold off booking the hotel until flights confirm.,항공편이 확정될 때까지 호텔 예약은 보류하자.
+exp_1298,Travel & Dining,Better late than never; we finally made it happen.,늦더라도 안 하는 것보단 낫지; 드디어 성사시켰네.
+exp_1299,Actions & Plans,Leave a thirty-minute cushion for any unexpected delays.,예상치 못한 지연에 대비해 30분 여유를 두자.
+exp_1300,Work & Business,I'll have a clearer picture by week's end.,이번 주 말쯤이면 일정이 훨씬 명확해질 거야.
+exp_1301,Daily Conversation,Let's make the most of this sunny weather today.,오늘 이 화창한 날씨를 최대한 만끽하자.
+exp_1302,Daily Conversation,"Before long, the leaves will start turning colors here.",머지않아 이곳 나뭇잎들도 단풍이 들기 시작할 거야.
+exp_1303,Social & Relationships,I'm counting down the days until summer break starts.,여름 방학이 시작되는 날만 손꼽아 기다리고 있어.
+exp_1304,Social & Relationships,Try not to overcommit yourself with back-to-back plans.,연달아 약속을 너무 많이 잡아 무리하지 않도록 해.
+exp_1305,Work & Business,We ran short on time and rushed the Q&A.,시간이 부족해져서 질의응답을 급하게 진행했어.
+exp_1306,Daily Conversation,"Before you know it, the whole year flies by.",눈 깜짝할 사이에 일 년이 어느새 다 지나가 버려.
+exp_1307,Work & Business,Let's sync mid-week to keep everything moving on schedule.,모두 일정대로 잘 진행되도록 주중에 한 번 맞춰 보자.
+exp_1308,Actions & Plans,I'm hoping to knock out errands before lunch.,점심 전에 볼일들을 다 해치울 생각이야.
+exp_1309,Social & Relationships,Let's sit down and clear the air right now.,지금 마주 앉아서 오해를 푸는 게 좋을 것 같아.
+exp_1310,Social & Relationships,"We don't always see eye to eye, I listen.",항상 의견이 일치하진 않아도 나는 끝까지 들어.
+exp_1311,Social & Relationships,We slowly drifted apart after moving to opposite coasts.,정반대 지역으로 이사한 뒤로 자연스럽게 멀어졌어.
+exp_1312,Social & Relationships,Something about how he phrased that rubbed me wrong.,그가 그 말을 표현한 방식이 어딘가 거슬렸어.
+exp_1313,Social & Relationships,I really appreciate you having my back out there.,그 상황에서 내 편을 들어줘서 정말 고마워.
+exp_1314,Social & Relationships,Let's make a real effort to stay in touch.,앞으로 정말 마음먹고 더 자주 연락하고 지내자.
+exp_1315,Social & Relationships,I don't hold a grudge over that remark.,그 말 때문에 마음에 앙금을 품고 있진 않아.
+exp_1316,Social & Relationships,"It took months warming up, and now we click.",친해지는 데 몇 달 걸렸지만 지금은 죽이 아주 잘 맞아.
+exp_1317,Social & Relationships,I owe you a huge apology for flaking last-minute.,"막판에 약속을 펑크 내서 정말 미안해, 크게 사과할게."
+exp_1318,Social & Relationships,She goes out of her way welcoming newcomers.,그녀는 새로 온 사람들이 편해지도록 세심하게 잘 챙겨 줘.
+exp_1319,Social & Relationships,We hit it off immediately over shared dry humor.,건조한 유머 코드가 맞아서 만나자마자 금방 친해졌어.
+exp_1320,Social & Relationships,He tends to take his closest friends for granted.,그는 가장 가까운 친구들의 호의를 당연하게 여기는 편이야.
+exp_1321,Social & Relationships,Give him space; he just needs time cooling off.,잠깐 혼자 두자; 화를 가라앉힐 시간이 필요할 뿐이야.
+exp_1322,Social & Relationships,I'm setting healthier boundaries without coming across as cold.,차갑게 보이지 않으면서도 더 건강한 선을 지키려고 노력 중이야.
+exp_1323,Social & Relationships,It meant the world that you showed up tonight.,오늘 밤 와 준 게 나한테는 정말 큰 의미였어.
 exp_1324,Social & Relationships,Let's not let a petty misunderstanding ruin years of friendship.,사소한 오해 하나 때문에 오랜 우정을 망치지 말자.
-exp_1325,Social & Relationships,She's the kind of person who always follows through on what she promises.,그녀는 자기가 한 약속은 언제나 끝까지 지키는 그런 사람이야.
-exp_1326,Social & Relationships,We've been playing phone tag all week trying to nail down a time to meet.,만날 시간 잡으려고 일주일 내내 서로 전화만 엇갈리고 있어.
-exp_1327,Social & Relationships,I didn't mean to leave you hanging; my phone died on the train.,일부러 연락 안 한 게 아니라 기차에서 휴대폰 배터리가 나가 버렸어.
-exp_1328,Social & Relationships,"You can always count on her to give you honest, unfiltered advice.",그녀에게서는 언제든 솔직하고 가감 없는 조언을 기대할 수 있어.
-exp_1329,Social & Relationships,It's refreshing to hang out with someone who doesn't take themselves too seriously.,스스로를 너무 심각하게 여기지 않는 사람과 어울리니까 기분이 상쾌하네.
-exp_1330,Social & Relationships,"I felt bad turning down the invitation, but I desperately needed a quiet night.","초대를 거절해서 미안하긴 했지만, 조용한 밤이 너무 절실했어."
-exp_1331,Social & Relationships,"Once trust is broken, it takes twice as long to rebuild it from scratch.",한번 신뢰가 깨지면 처음부터 다시 쌓는 데 두 배는 더 오래 걸려.
-exp_1332,Social & Relationships,They've been inseparable ever since they teamed up on that community project.,그 지역사회 프로젝트에서 호흡을 맞춘 뒤로 둘이 단짝처럼 붙어 다녀.
-exp_1333,Social & Relationships,I'm glad we finally buried the hatchet instead of holding onto old resentment.,옛날 앙금을 계속 품고 있는 대신 드디어 화해하게 돼서 다행이야.
-exp_1334,Social & Relationships,He has a habit of interrupting people before they finish their thought.,그는 상대방이 말을 끝맺기도 전에 중간에 끊는 버릇이 있어.
-exp_1335,Social & Relationships,Let's catch up properly over brunch instead of rushing through a text.,문자로 급하게 안부만 묻지 말고 브런치 먹으면서 제대로 밀린 얘기하자.
-exp_1336,Social & Relationships,She really brightened up the room the moment she walked through the door.,그녀가 문을 열고 들어서는 순간 방 안 분위기가 확 밝아졌어.
-exp_1337,Social & Relationships,I respect how gracefully he handled being put on the spot.,갑작스럽게 난처한 질문을 받았는데도 그가 얼마나 의연하게 대처했는지 존경스러워.
-exp_1338,Social & Relationships,Don't burn bridges at your old company; the industry is smaller than you think.,이전 회사와의 관계를 나쁘게 끝내지 마; 업계가 생각보다 훨씬 좁거든.
-exp_1339,Social & Relationships,I'm trying to be more present when I'm spending time with family.,가족들과 시간을 보낼 때는 휴대폰 보지 않고 그 순간에 더 집중하려고 노력 중이야.
-exp_1340,Social & Relationships,"It takes two to tango, so both sides share some blame for the fallout.","손바닥도 마주쳐야 소리가 나는 법이니, 틀어진 데에는 양쪽 다 책임이 있어."
-exp_1341,Social & Relationships,I didn't realize how much I missed having real face-to-face conversations.,직접 얼굴을 마주 보고 대화하는 걸 내가 얼마나 그리워했는지 몰랐어.
-exp_1342,Social & Relationships,He's always quick to lend an ear whenever someone is going through a rough patch.,누군가 힘든 시기를 겪고 있을 때 그는 언제든 기꺼이 이야기를 들어줘.
-exp_1343,Travel & Dining,I've been having a serious craving for spicy Thai noodles all week.,일주일 내내 매콤한 태국식 볶음면이 미친 듯이 먹고 싶었어.
-exp_1344,Travel & Dining,Could we get the dressing on the side instead of tossed into the salad?,드레싱을 샐러드에 버무리지 말고 따로 담아 주실 수 있나요?
-exp_1345,Travel & Dining,Let's just split the bill evenly so nobody has to sit there doing math.,누구 하나 계산기 두드리지 말고 그냥 똑같이 나눠서 내자.
-exp_1346,Travel & Dining,"I'm trying to cut back on caffeine after noon, so I'll go with herbal tea.",오후에는 카페인을 줄이려고 해서 허브티로 마실게요.
-exp_1347,Travel & Dining,Make sure you save some room for dessert because their cheesecake is famous.,여기 치즈케이크가 유명하니까 디저트 먹을 배는 꼭 남겨 둬.
-exp_1348,Travel & Dining,Could you ask the server to box up the leftovers for us to take home?,남은 음식 집으로 싸 갈 수 있게 포장 용기에 담아 달라고 직원분께 부탁할래?
-exp_1349,Travel & Dining,"I have a mild peanut allergy, so could you double-check the sauce ingredients?",약한 땅콩 알레르기가 있어서 소스 재료를 한 번만 더 확인해 주실 수 있나요?
-exp_1350,Travel & Dining,Let's grab a quick bite somewhere nearby before the show starts.,공연 시작하기 전에 근처 어딘가에서 간단하게 요기부터 하자.
-exp_1351,Travel & Dining,This round is on me since you picked up the tab last time we met.,지난번에 만났을 때 네가 계산했으니까 이번엔 내가 살게.
-exp_1352,Travel & Dining,Go easy on the chili oil if you're not used to intense heat.,강한 매운맛에 익숙하지 않다면 고추기름은 조금만 넣는 게 좋을 거야.
-exp_1353,Travel & Dining,Do you want to share a couple of appetizers instead of ordering separate mains?,각자 메인 요리를 시키는 대신 애피타이저 몇 개를 시켜서 나눠 먹을래?
-exp_1354,Travel & Dining,Is there any chance we could move to a booth away from the draft by the door?,출입문 쪽 외풍이 안 닿는 부스 자리로 옮길 수 있을까요?
-exp_1355,Travel & Dining,I'll have my steak medium-rare with mashed potatoes instead of fries.,"스테이크는 미디엄 레어로 주시고, 감자튀김 대신 으깬 감자로 바꿔 주세요."
-exp_1356,Travel & Dining,The espresso here has a really smooth finish without any bitter aftertaste.,여기 에스프레소는 쓴 뒷맛 없이 마무리가 정말 부드럽네.
-exp_1357,Travel & Dining,We'd better put our name on the waitlist now before the dinner rush hits.,저녁 손님이 몰리기 전에 지금 미리 대기자 명단에 이름을 올려두는 게 좋겠어.
-exp_1358,Travel & Dining,Could we get a few extra napkins and a pitcher of tap water for the table?,테이블에 냅킨 몇 장 더랑 시원한 물 한 병 갖다 주실 수 있나요?
-exp_1359,Travel & Dining,"Everything sounds amazing, so let's ask our server what they're known for.",메뉴가 다 맛있어 보이니까 직원분께 이 집 대표 메뉴가 뭔지 여쭤보자.
-exp_1360,Travel & Dining,I prefer my iced latte with oat milk and just a splash of vanilla.,저는 아이스 라떼에 오트 밀크로 바꾸고 바닐라 시럽만 살짝 넣어 마시는 걸 좋아해요.
-exp_1361,Travel & Dining,That broth is rich without feeling overly heavy on the stomach.,그 육수는 진하면서도 속이 너무 더부룩하지 않아서 딱 좋네.
-exp_1362,Travel & Dining,Let's tip a little extra since the server kept checking in on us all night.,직원분이 밤새 세심하게 잘 챙겨 줬으니 팁을 조금 더 넉넉하게 드리자.
-exp_1363,Travel & Dining,Are there any seasonal specials tonight that aren't printed on the main menu?,오늘 저녁 메뉴판에는 안 적혀 있는 계절 특선 메뉴가 따로 있나요?
-exp_1364,Travel & Dining,I'm stuffed; there's no way I can finish the rest of this plate.,배가 너무 불러서 접시에 남은 걸 도저히 다 못 먹겠어.
-exp_1365,Travel & Dining,"They bake their sourdough fresh every morning, and you can really taste it.",여기는 매일 아침 사워도우를 직접 굽는데 먹어보면 확실히 차이가 느껴져.
-exp_1366,Travel & Dining,Could we settle up whenever you get a chance? We're trying to catch a movie.,시간 되실 때 계산 좀 부탁드릴게요. 저희가 영화 시간에 맞춰 가야 해서요.
-exp_1367,Travel & Dining,"I'm not much of a sweet tooth, so I usually lean toward savory snacks.",단 걸 별로 안 즐기는 편이라 보통 짭짤한 간식을 더 선호해.
-exp_1368,Travel & Dining,Watch out; the skillet comes out sizzling hot straight from the oven.,조심해; 오븐에서 갓 나와서 철판이 지글지글 엄청 뜨거워.
-exp_1369,Travel & Dining,Let's grab a patio table since the evening breeze finally cooled things down.,저녁 바람이 불어서 이제 꽤 선선해졌으니 야외 테라스 자리에 앉자.
-exp_1370,Travel & Dining,Can I swap out the side salad for roasted vegetables instead?,사이드 샐러드 대신 구운 채소로 변경할 수 있나요?
-exp_1371,Travel & Dining,"It's a hidden gem tucked away down an alley, so you'd never spot it from the street.",골목 안쪽에 숨어 있는 맛집이라 큰길에서는 절대 눈에 안 띄는 곳이야.
-exp_1372,Travel & Dining,Let's order one more pot of green tea to linger a little longer.,조금 더 앉아서 이야기할 수 있게 녹차 한 주전자만 더 시키자.
-exp_1373,Travel & Dining,"The portion sizes here are huge, so one entree is plenty to split.",여기 양이 엄청 푸짐해서 메인 요리 하나만 시켜서 나눠 먹어도 충분해.
-exp_1374,Travel & Dining,"Excuse me, I think there was a mix-up; I ordered the iced americano, not hot.",실례지만 주문이 잘못 나온 것 같아요; 따뜻한 게 아니라 아이스 아메리카노를 시켰는데요.
-exp_1375,Travel & Dining,I always look forward to grabbing brunch here on lazy Sunday mornings.,느긋한 일요일 아침마다 여기 와서 브런치 먹는 시간이 늘 기다려져.
-exp_1376,Travel & Dining,Would you like us to leave the check together or split it onto two cards?,"계산서를 하나로 드릴까요, 아니면 카드 두 개로 나눠서 결제해 드릴까요?"
-exp_1377,Travel & Dining,We hit bumper-to-bumper traffic on the highway and barely made our flight.,고속도로에서 가다 서다 하는 극심한 정체를 만나서 비행기를 간신히 탔어.
-exp_1378,Travel & Dining,Make sure you leave plenty of buffer time for airport security during holidays.,연휴 기간에는 공항 보안 검색대에 걸리는 시간을 대비해 여유를 넉넉히 두고 가.
-exp_1379,Travel & Dining,"My connecting flight got delayed by three hours, so I'm stuck at the terminal.",환승편이 세 시간이나 연착돼서 터미널에 꼼짝없이 발이 묶였어.
-exp_1380,Travel & Dining,Take the next exit on the right and merge smoothly onto the expressway.,오른쪽 다음 출구로 빠져나간 뒤 고속도로로 부드럽게 합류하세요.
-exp_1381,Travel & Dining,Could you drop me off right by the main entrance so I don't have to lug my bags?,가방을 끌고 걸어가지 않아도 되게 정문 바로 앞에 내려 주실 수 있나요?
-exp_1382,Travel & Dining,We had to take a long detour because roadwork shut down two lanes.,도로 공사 때문에 2개 차선이 통제돼서 멀리 우회해야 했어.
-exp_1383,Travel & Dining,"If we head out before seven, we should make really good time on the freeway.",7시 전에 출발하면 고속도로가 안 막혀서 꽤 빨리 도착할 수 있을 거야.
-exp_1384,Travel & Dining,I'm still shaking off jet lag after flying across nine time zones yesterday.,어제 아홉 개 시간대를 건너 날아와서 아직도 시차 적응 때문에 몽롱해.
-exp_1385,Travel & Dining,Let's split a rideshare since we're both heading in the exact same direction.,둘 다 가는 방향이 완전히 같으니까 차량 호출 요금을 반씩 나눠 내자.
-exp_1386,Travel & Dining,Remember to get your parking ticket validated before heading back to the garage.,주차장으로 돌아가기 전에 반드시 주차 확인 도장을 받아 가세요.
-exp_1387,Travel & Dining,Is this the right platform for the express train heading downtown?,시내 방향으로 가는 급행열차를 타는 승강장이 여기가 맞나요?
-exp_1388,Travel & Dining,I always pack a light jacket in my carry-on because planes get freezing.,비행기 안이 엄청 추워지기 때문에 기내 수하물에는 항상 얇은 겉옷을 챙겨 타.
-exp_1389,Travel & Dining,Watch out for the speed trap right after you cross the bridge.,다리를 건너자마자 과속 단속 카메라가 있으니까 조심해.
-exp_1390,Travel & Dining,"The subway is running on a weekend schedule today, so expect longer waits.",오늘은 지하철이 주말 배차 간격으로 운행돼서 평소보다 대기 시간이 길어질 거야.
-exp_1391,Travel & Dining,Could we store our luggage at the front desk until our room is ready?,객실이 준비될 때까지 프런트 데스크에 짐을 좀 맡겨둘 수 있을까요?
-exp_1392,Travel & Dining,I prefer booking a direct flight even if it costs a bit more than a layover.,경유편보다 조금 더 비싸더라도 나는 직항편을 예약하는 걸 선호해.
-exp_1393,Travel & Dining,Make sure you pull over safely to the shoulder if you get a flat tire.,타이어가 펑크 나면 반드시 갓길에 안전하게 차를 세우도록 해.
-exp_1394,Travel & Dining,My daily commute takes about forty minutes door to door when trains run on time.,열차가 제시간에 오면 집에서 회사까지 출퇴근하는 데 약 40분 정도 걸려.
-exp_1395,Travel & Dining,Don't forget to download offline maps in case cell service drops in the mountains.,산간 지역에서 휴대폰 신호가 끊길 수 있으니 오프라인 지도를 꼭 미리 받아 둬.
-exp_1396,Travel & Dining,We got upgraded to a room overlooking the bay at no extra charge.,추가 요금 없이 바다가 내려다보이는 객실로 무료 업그레이드를 받았어.
-exp_1397,Travel & Dining,Let's check the departure board to see if the gate number changed.,탑승구 번호가 바뀌지 않았는지 출발 안내 전광판을 확인해 보자.
-exp_1398,Travel & Dining,Navigating a rental car in an unfamiliar city is stressful without GPS.,낯선 도시에서 GPS 없이 렌터카를 운전해서 길을 찾는 건 꽤 스트레스받는 일이야.
-exp_1399,Travel & Dining,You're supposed to tap your transit card both when boarding and exiting.,교통카드는 탈 때와 내릴 때 모두 태그해야 합니다.
-exp_1400,Travel & Dining,"If you sit on the left side of the plane, you'll catch a great view of the skyline.",비행기 왼쪽 좌석에 앉으면 도심 스카이라인이 정말 멋지게 보일 거예요.
-exp_1401,Travel & Dining,We narrowly avoided missing our connection by sprinting across Terminal B.,B 터미널을 가로질러 전력 질주한 덕분에 환승 비행기를 간신히 안 놓쳤어.
-exp_1402,Travel & Dining,Could you let me know what time airport shuttle service wraps up tonight?,오늘 밤 공항 셔틀버스 운행이 몇 시에 끝나는지 알려 주실 수 있나요?
-exp_1403,Travel & Dining,I'd rather take the scenic coastal route than sit in highway congestion.,고속도로 정체 속에 갇혀 있느니 경치 좋은 해안 도로를 타고 가는 게 낫겠어.
-exp_1404,Travel & Dining,Be sure to top off the gas tank before returning the rental car.,렌터카를 반납하기 전에 기름을 가득 채워 넣는 걸 잊지 마세요.
+exp_1325,Social & Relationships,She always follows through on every single promise.,그녀는 자기가 한 약속은 언제나 끝까지 지키는 사람이야.
+exp_1326,Social & Relationships,We've been playing phone tag all week long.,일주일 내내 서로 전화만 계속 엇갈리고 있어.
+exp_1327,Social & Relationships,Sorry for leaving you hanging; my phone died.,연락이 끊겨서 미안해; 휴대폰 배터리가 나가 버렸어.
+exp_1328,Social & Relationships,"You can count on her for honest, unfiltered advice.",그녀에게서는 언제든 솔직하고 가감 없는 조언을 들을 수 있어.
+exp_1329,Social & Relationships,It's refreshing hanging out with someone so easygoing.,이렇게 털털하고 편한 사람과 어울리니까 기분이 상쾌하네.
+exp_1330,Social & Relationships,"I felt bad declining, yet needed a quiet night.",거절해서 미안했지만 조용한 밤이 너무 절실했어.
+exp_1331,Social & Relationships,"Once trust breaks, rebuilding from scratch takes twice long.",한번 신뢰가 깨지면 처음부터 다시 쌓는 데 두 배 걸려.
+exp_1332,Social & Relationships,They've been inseparable since teaming up last spring.,지난봄에 호흡을 맞춘 뒤로 둘이 단짝처럼 붙어 다녀.
+exp_1333,Social & Relationships,I'm glad we finally buried the hatchet together.,묵은 앙금을 털고 드디어 서로 화해하게 돼서 다행이야.
+exp_1334,Social & Relationships,He keeps interrupting people before they finish talking.,그는 남들이 말을 끝맺기도 전에 자꾸 중간에 끊어.
+exp_1335,Social & Relationships,Let's catch up properly over brunch this Sunday.,이번 주 일요일에 브런치 먹으면서 제대로 밀린 얘기하자.
+exp_1336,Social & Relationships,She brightened the whole room walking through the door.,그녀가 문을 열고 들어서자 방 안 분위기가 확 밝아졌어.
+exp_1337,Social & Relationships,I respect how gracefully he handled being cornered.,난처한 상황에 몰렸는데도 의연하게 대처하는 모습이 존경스러워.
+exp_1338,Social & Relationships,Don't burn bridges; this industry is surprisingly small.,나쁘게 끝내지 마; 이 업계가 생각보다 훨씬 좁거든.
+exp_1339,Social & Relationships,I try staying fully present when visiting family.,가족들과 시간을 보낼 때는 그 순간에 온전히 집중하려고 해.
+exp_1340,Social & Relationships,It takes two to tango in any argument.,어떤 다툼이든 양쪽 다 책임이 있기 마련이야.
+exp_1341,Social & Relationships,I missed having real face-to-face conversations like this.,이렇게 직접 얼굴 보고 나누는 대화가 정말 그리웠어.
+exp_1342,Social & Relationships,He's always quick to lend an understanding ear.,그는 언제든 기꺼이 상대방 이야기를 잘 들어줘.
+exp_1343,Travel & Dining,I've had a serious craving for Thai noodles.,요즘 매콤한 태국식 볶음면이 미친 듯이 먹고 싶었어.
+exp_1344,Travel & Dining,Could we get the dressing on the side?,드레싱은 샐러드에 버무리지 말고 따로 담아 주시겠어요?
+exp_1345,Travel & Dining,Let's split the bill evenly without doing math.,계산기 두드리지 말고 그냥 똑같이 나눠서 내자.
+exp_1346,Travel & Dining,"I'm cutting caffeine after noon, so herbal tea please.",오후엔 카페인을 줄이고 있어서 허브티로 주세요.
+exp_1347,Travel & Dining,Save room for dessert; their cheesecake is famous.,여기 치즈케이크가 유명하니까 디저트 먹을 배는 남겨 둬.
+exp_1348,Travel & Dining,Could you ask them to box our leftovers?,남은 음식 포장 용기에 담아 달라고 부탁할래?
+exp_1349,Travel & Dining,I have a peanut allergy; could you double-check?,땅콩 알레르기가 있어서 재료 한 번만 더 확인해 주시겠어요?
+exp_1350,Travel & Dining,Let's grab a quick bite before the show.,공연 시작하기 전에 간단하게 요기부터 하자.
+exp_1351,Travel & Dining,This round's on me since you paid before.,지난번에 네가 냈으니까 이번엔 내가 살게.
+exp_1352,Travel & Dining,Go easy on chili oil if you dislike heat.,매운 걸 잘 못 먹으면 고추기름은 조금만 넣어.
+exp_1353,Travel & Dining,Want to share appetizers instead of separate mains?,각자 메인 시키는 대신 애피타이저를 나눠 먹을래?
+exp_1354,Travel & Dining,Could we move to a booth inside instead?,안쪽 부스 자리로 옮길 수 있을까요?
+exp_1355,Travel & Dining,Medium-rare steak with mashed potatoes instead of fries.,"스테이크는 미디엄 레어로, 감자튀김 대신 으깬 감자로 주세요."
+exp_1356,Travel & Dining,This espresso finishes smooth without any bitter aftertaste.,이 에스프레소는 쓴 뒷맛 없이 마무리가 정말 부드럽네.
+exp_1357,Travel & Dining,Let's join the waitlist before the dinner rush.,저녁 손님이 몰리기 전에 지금 미리 대기 명단에 올리자.
+exp_1358,Travel & Dining,Could we get extra napkins and tap water?,냅킨 몇 장 더랑 시원한 물 한 병 주실 수 있나요?
+exp_1359,Travel & Dining,Everything looks good; let's ask what they're famous for.,다 맛있어 보이니까 이 집 대표 메뉴가 뭔지 여쭤보자.
+exp_1360,Travel & Dining,Iced latte with oat milk and light vanilla.,아이스 라떼에 오트 밀크로 바꾸고 바닐라 시럽은 조금만 넣어 주세요.
+exp_1361,Travel & Dining,That broth feels rich without sitting too heavy.,그 육수는 진하면서도 속이 더부룩하지 않아서 딱 좋네.
+exp_1362,Travel & Dining,Let's tip extra since service was genuinely attentive.,직원분이 정말 세심하게 잘 챙겨 줬으니 팁을 조금 더 드리자.
+exp_1363,Travel & Dining,Are there seasonal specials off the main menu?,메뉴판에는 안 적혀 있는 계절 특선 메뉴가 따로 있나요?
+exp_1364,Travel & Dining,I'm completely stuffed; I can't finish another bite.,배가 너무 불러서 한 입도 더는 못 먹겠어.
+exp_1365,Travel & Dining,They bake sourdough fresh every single morning here.,여기는 매일 아침 사워도우를 직접 굽는대.
+exp_1366,Travel & Dining,Could we settle up? We're catching a movie.,계산 좀 부탁드릴게요. 저희가 영화 시간에 맞춰 가야 해서요.
+exp_1367,Travel & Dining,"I'm no sweet tooth, so I prefer savory snacks.",단 걸 별로 안 즐겨서 보통 짭짤한 간식을 더 좋아해.
+exp_1368,Travel & Dining,Watch out; that skillet comes out sizzling hot.,조심해; 그 철판 엄청 뜨겁게 지글거리며 나오네.
+exp_1369,Travel & Dining,Let's grab a patio table in this breeze.,바람이 선선하니 야외 테라스 자리에 앉자.
+exp_1370,Travel & Dining,Can I swap side salad for roasted veggies?,사이드 샐러드를 구운 채소로 변경할 수 있나요?
+exp_1371,Travel & Dining,It's a hidden gem tucked down an alley.,골목 안쪽에 숨어 있는 진짜 맛집이야.
+exp_1372,Travel & Dining,Let's order another pot of tea and linger.,조금 더 앉아서 이야기할 수 있게 차 한 주전자 더 시키자.
+exp_1373,Travel & Dining,Portions are huge here; one entree feeds two.,여기 양이 엄청 푸짐해서 메인 하나면 둘이 먹고도 남아.
+exp_1374,Travel & Dining,"Excuse me, I ordered iced americano, not hot.",실례지만 따뜻한 게 아니라 아이스 아메리카노를 시켰는데요.
+exp_1375,Travel & Dining,I always look forward to lazy Sunday brunch.,느긋한 일요일 아침마다 브런치 먹는 시간이 늘 기다려져.
+exp_1376,Travel & Dining,Would you prefer one check or split cards?,"계산서를 하나로 드릴까요, 아니면 카드로 나눠 결제해 드릴까요?"
+exp_1377,Travel & Dining,We hit bumper-to-bumper traffic and barely made it.,극심한 정체를 만나서 간신히 제시간에 도착했어.
+exp_1378,Travel & Dining,Leave extra buffer time for holiday airport security.,연휴 공항 보안 검색대에 대비해 여유 시간을 넉넉히 두세요.
+exp_1379,Travel & Dining,My connecting flight got delayed three hours today.,오늘 환승편이 세 시간이나 연착돼 버렸어.
+exp_1380,Travel & Dining,Take the next right and merge onto the expressway.,오른쪽 다음 출구로 빠져나간 뒤 고속도로로 합류하세요.
+exp_1381,Travel & Dining,Could you drop me right by the main entrance?,정문 바로 앞에 내려 주실 수 있나요?
+exp_1382,Travel & Dining,We took a detour because roadwork closed two lanes.,도로 공사로 2개 차선이 통제돼서 우회해야 했어.
+exp_1383,Travel & Dining,Heading out before seven saves so much commute time.,7시 전에 출발하면 이동 시간을 정말 많이 아낄 수 있어.
+exp_1384,Travel & Dining,I'm still shaking off jet lag from yesterday.,어제 비행 후유증으로 아직도 시차 적응 때문에 몽롱해.
+exp_1385,Travel & Dining,Let's split a rideshare since we're heading north.,둘 다 북쪽 같은 방향이니 차량 호출 요금을 나눠 내자.
+exp_1386,Travel & Dining,Get your parking ticket validated before leaving here.,여기서 나가기 전에 반드시 주차 확인 도장을 받아 가세요.
+exp_1387,Travel & Dining,Is this the express train platform heading downtown?,시내 방향으로 가는 급행열차 승강장이 여기가 맞나요?
+exp_1388,Travel & Dining,I always pack a light jacket for freezing flights.,비행기 안이 추워서 기내 가방엔 항상 얇은 겉옷을 챙겨.
+exp_1389,Travel & Dining,Watch out for speed cameras right past that bridge.,저 다리를 건너자마자 과속 단속 카메라가 있으니 조심해.
+exp_1390,Travel & Dining,"Subways run slower on weekend schedules, expect waits.",주말에는 지하철 배차 간격이 길어서 대기 시간이 꽤 있을 거야.
+exp_1391,Travel & Dining,Could we store our bags until our room's ready?,객실이 준비될 때까지 가방을 좀 맡겨둘 수 있을까요?
+exp_1392,Travel & Dining,I prefer nonstop flights even when costing slightly more.,조금 더 비싸더라도 나는 직항편을 예약하는 걸 선호해.
+exp_1393,Travel & Dining,Pull over safely onto the shoulder if tires blow.,타이어에 문제가 생기면 안전하게 갓길에 차를 세우세요.
+exp_1394,Travel & Dining,My daily commute takes forty minutes door to door.,집에서 회사까지 출퇴근하는 데 총 40분 정도 걸려.
+exp_1395,Travel & Dining,Download offline maps before cell service drops outside.,밖에서 신호가 끊기기 전에 오프라인 지도를 미리 받아 둬.
+exp_1396,Travel & Dining,We got upgraded to an ocean-view room free.,추가 요금 없이 바다가 보이는 객실로 무료 업그레이드됐어.
+exp_1397,Travel & Dining,Check the departure board in case our gate changed.,탑승구가 바뀌었을지 모르니 출발 안내 전광판을 확인해 보자.
+exp_1398,Travel & Dining,Driving in an unfamiliar city is stressful without GPS.,낯선 도시에서 GPS 없이 운전하는 건 꽤 스트레스받는 일이야.
+exp_1399,Travel & Dining,Tap your transit card both boarding and exiting.,교통카드는 탈 때와 내릴 때 모두 태그해야 합니다.
+exp_1400,Travel & Dining,Sit on the left side for amazing skyline views.,멋진 도심 스카이라인을 보려면 왼쪽 좌석에 앉으세요.
+exp_1401,Travel & Dining,We narrowly caught our connection by sprinting across terminals.,터미널을 전력 질주한 덕분에 환승 비행기를 간신히 탔어.
+exp_1402,Travel & Dining,What time does airport shuttle service stop tonight?,오늘 밤 공항 셔틀버스 운행이 몇 시에 끝나나요?
+exp_1403,Travel & Dining,I'd rather take scenic roads than sit in traffic.,교통체증에 갇혀 있느니 경치 좋은 길을 타고 가는 게 낫겠어.
+exp_1404,Travel & Dining,Top off the gas tank before returning rentals.,렌터카를 반납하기 전에 기름을 가득 채워 넣으세요.
 exp_1405,Travel & Dining,Heavy fog delayed incoming flights all morning along the coast.,짙은 안개 때문에 오늘 아침 내내 해안 지역 도착 항공편들이 줄줄이 지연됐어.
-exp_1406,Travel & Dining,Let's grab a window seat near the front so we can deplane faster.,더 빨리 내릴 수 있도록 앞쪽 창가 자리로 잡자.
-exp_1407,Travel & Dining,I always double-check my passport expiration date months before booking international trips.,해외여행을 예약하기 몇 달 전부터 항상 여권 만료일을 두 번씩 확인해.
-exp_1408,Travel & Dining,There's a transfer stop three stations ahead where you can switch to the green line.,세 정거장 앞에서 초록색 노선으로 갈아탈 수 있는 환승역이 나와요.
-exp_1409,Travel & Dining,Walking around a new city without an itinerary is half the fun of traveling.,일정표 없이 낯선 도시를 거닐어 보는 게 여행의 재미 중 절반이지.
-exp_1410,Travel & Dining,Keep your boarding pass handy until you clear customs on the other side.,도착해서 세관을 통과할 때까지 탑승권을 손에 닿기 쉬운 곳에 잘 챙겨 두세요.
-exp_1411,Travel & Dining,The train stalled between stations for fifteen minutes due to a signal issue.,신호 문제 때문에 열차가 역과 역 사이에서 15분 동안 멈춰 있었어.
-exp_1412,Travel & Dining,We booked an early-morning flight so we wouldn't lose half the day in transit.,이동하느라 하루의 절반을 날리지 않으려고 이른 아침 비행기를 예약했어.
-exp_1413,Communication & Requests,Would you happen to know if there's an ATM inside this building?,혹시 이 건물 안에 현금인출기가 있는지 아시나요?
-exp_1414,Communication & Requests,"I hate to impose on you, but could I borrow your charger for twenty minutes?","폐를 끼쳐 죄송하지만, 충전기 좀 20분만 빌릴 수 있을까요?"
-exp_1415,Communication & Requests,"If it's not too much trouble, could you forward that PDF before lunch?","너무 번거롭지 않으시다면, 점심 전에 그 PDF 파일 좀 전달해 주실 수 있을까요?"
-exp_1416,Communication & Requests,I was hoping you might have a minute to glance over my cover letter.,혹시 제 자기소개서를 잠깐만 훑어봐 주실 시간이 있으실까 해서요.
-exp_1417,Communication & Requests,Would you mind terribly if I switched seats so I can sit beside my mom?,어머니 옆자리에 앉을 수 있게 자리를 좀 바꿔도 괜찮으실까요?
-exp_1418,Communication & Requests,Do you think you could squeeze me in for a quick appointment on Friday?,금요일에 잠깐이라도 제 예약을 끼워 넣어 주실 수 있을까요?
-exp_1419,Communication & Requests,I'd really appreciate it if you could keep this news under wraps for now.,당분간은 이 소식을 비밀로 유지해 주시면 정말 감사하겠습니다.
-exp_1420,Communication & Requests,Is there any chance we could push our call back by half an hour?,혹시 통화 시간을 30분만 뒤로 미룰 수 있을까요?
-exp_1421,Communication & Requests,Please don't go out of your way on my account; whatever is easiest for you works.,제 때문에 굳이 무리하지 마세요; 가장 편하신 대로 하시면 됩니다.
-exp_1422,Communication & Requests,"I wouldn't ask unless it were urgent, so thank you for stepping in.","급한 일이 아니었으면 부탁드리지 않았을 텐데, 도와주셔서 정말 감사합니다."
-exp_1423,Communication & Requests,Could you do me a huge favor and water my plants while I'm out of town?,제가 출장 가 있는 동안 화분에 물 좀 주는 거 큰 부탁 하나만 들어주실 수 있나요?
-exp_1424,Communication & Requests,"By any chance, did anyone turn in a black umbrella at the lost and found?",혹시 분실물 보관소에 검정색 우산 들어온 게 있나요?
-exp_1425,Communication & Requests,"Let me know if I'm overstepping, but I'd love to offer one small suggestion.","제가 선을 넘는 거라면 말씀해 주세요, 다만 작은 제안 하나만 드리고 싶어서요."
-exp_1426,Communication & Requests,Thank you so much for bearing with me while I get everything set up.,제가 모든 준비를 마칠 때까지 기다려 주셔서 정말 감사합니다.
-exp_1427,Communication & Requests,Would it be possible to get an itemized receipt for expense reimbursement?,비용 처리를 위해 세부 내역이 적힌 영수증을 받을 수 있을까요?
-exp_1428,Communication & Requests,Could you spare a few minutes after class to walk me through that problem?,수업 끝나고 몇 분만 시간 내주셔서 그 문제 푸는 법 좀 알려 주실 수 있나요?
-exp_1429,Communication & Requests,I'd be more than happy to return the favor whenever you need a hand.,도움이 필요하실 때면 언제든 기꺼이 저도 보답해 드릴게요.
-exp_1430,Communication & Requests,Would you be open to trying a slightly different approach on this?,이 부분에 대해서 조금 다른 방식을 시도해 보시는 건 어떠신가요?
-exp_1431,Communication & Requests,"Excuse me, could I trouble you to snap a quick photo of our group?","실례지만, 저희 단체 사진 한 장만 찍어 주시길 부탁드려도 될까요?"
-exp_1432,Communication & Requests,Please feel free to reach out anytime if anything in the contract looks unclear.,계약서 내용 중에 불분명한 부분이 있으면 언제든 편하게 연락해 주세요.
-exp_1433,Communication & Requests,I hope I'm not catching you in the middle of something important right now.,지금 중요한 일을 하시는 도중에 방해해 드린 게 아니었으면 좋겠네요.
-exp_1434,Communication & Requests,Could I ask you to keep an eye on my bag while I run to the restroom?,화장실에 잠깐 다녀오는 동안 제 가방 좀 봐주실 수 있을까요?
-exp_1435,Communication & Requests,Would you mind giving me a heads-up a day ahead if the plans shift?,계획이 바뀌면 하루 전쯤에 미리 귀띔해 주실 수 있을까요?
-exp_1436,Communication & Requests,"I hate to trouble you again, but the link you sent seems to have expired.","또 번거롭게 해 드려 죄송하지만, 보내주신 링크가 만료된 것 같아요."
-exp_1437,Communication & Requests,Could we possibly reschedule for early next week when both of us are freer?,둘 다 좀 더 한가한 다음 주 초로 일정을 다시 잡을 수 있을까요?
-exp_1438,Communication & Requests,Take all the time you need; there's no rush whatsoever on my end.,필요하신 만큼 충분히 시간을 가지세요; 제 쪽에서는 전혀 급할 게 없어요.
-exp_1439,Communication & Requests,Would you prefer that I send the files in a zip folder or individually?,"파일을 압축 폴더로 보내드리는 게 나을까요, 아니면 개별 파일로 드릴까요?"
-exp_1440,Communication & Requests,"If you don't mind my asking, how did you end up getting into that field?","실례가 안 된다면 여쭤봐도 될까요, 어떻게 그 분야로 진출하게 되셨나요?"
-exp_1441,Communication & Requests,Could you kindly confirm whether you received my attachment without issues?,제가 첨부한 파일을 문제없이 잘 받으셨는지 확인 부탁드려도 될까요?
-exp_1442,Communication & Requests,Please let me know what works best on your end and I'll make it work.,편하신 시간이나 방법을 알려 주시면 거기에 맞춰서 진행하겠습니다.
-exp_1443,Communication & Requests,"I'm sorry to put you on the spot, but we need an answer before five.","갑작스럽게 여쭤봐서 죄송하지만, 5시 전까지는 답변이 필요합니다."
-exp_1444,Communication & Requests,Could you turn the music down just a notch while I'm on a phone call?,제가 통화하는 동안 음악 소리만 살짝 줄여 주실 수 있을까요?
-exp_1445,Communication & Requests,Feel free to help yourself to anything in the fridge while you're visiting.,머무시는 동안 냉장고에 있는 건 뭐든 편하게 꺼내 드세요.
-exp_1446,Communication & Requests,Would you be willing to trade Friday's shift for Saturday morning instead?,금요일 근무를 토요일 오전 근무와 맞바꾸실 의향이 있으신가요?
-exp_1447,Communication & Requests,Thank you in advance for taking the time to look into this for us.,바쁘신 와중에도 저희를 위해 이 사안을 살펴봐 주셔서 미리 감사드립니다.
-exp_1448,Communication & Requests,"I'd hate to inconvenience you, so let me know if another day is easier.","불편을 끼쳐 드리고 싶지 않으니, 다른 날이 더 편하시면 말씀해 주세요."
+exp_1406,Travel & Dining,Let's pick front seats so we deplane much faster.,더 빨리 내릴 수 있도록 앞쪽 좌석으로 잡자.
+exp_1407,Travel & Dining,Check your passport expiration months before international trips.,해외여행 몇 달 전부터 여권 만료일을 꼭 확인해 둬.
+exp_1408,Travel & Dining,Transfer to the green line three stops ahead.,세 정거장 앞에서 초록색 노선으로 갈아타세요.
+exp_1409,Travel & Dining,Wandering without an itinerary makes traveling way better.,일정표 없이 걸어 다니는 게 여행을 훨씬 즐겁게 만들어 줘.
+exp_1410,Travel & Dining,Keep your boarding pass handy until clearing customs.,세관을 통과할 때까지 탑승권을 손에 닿기 쉽게 챙겨 두세요.
+exp_1411,Travel & Dining,The train stalled fifteen minutes from signal trouble.,신호 문제 때문에 열차가 15분 동안 멈춰 있었어.
+exp_1412,Travel & Dining,We booked early flights to avoid wasting all day.,하루를 다 날리지 않으려고 이른 아침 비행기를 예약했어.
+exp_1413,Communication & Requests,Would you know if an ATM is inside?,혹시 건물 안에 현금인출기가 있는지 아시나요?
+exp_1414,Communication & Requests,"Hate to impose, could I borrow your charger?","폐를 끼쳐 죄송한데, 충전기 좀 잠깐 빌릴 수 있을까요?"
+exp_1415,Communication & Requests,"If it's no trouble, forward that PDF before lunch?",번거롭지 않으시다면 점심 전에 그 PDF 파일 좀 전달해 주실래요?
+exp_1416,Communication & Requests,Could you spare a minute reviewing my cover letter?,제 자기소개서를 잠깐만 훑어봐 주실 시간이 있으실까요?
+exp_1417,Communication & Requests,Would you mind switching seats so I sit beside mom?,어머니 옆에 앉을 수 있게 자리 좀 바꿔 주실 수 있나요?
+exp_1418,Communication & Requests,Could you squeeze me in quickly this Friday?,이번 금요일에 잠깐이라도 제 예약을 끼워 넣어 주실 수 있나요?
+exp_1419,Communication & Requests,Please keep this exciting news under wraps for now.,당분간은 이 좋은 소식을 비밀로 유지해 주시기 바랍니다.
+exp_1420,Communication & Requests,Any chance we push our call back thirty minutes?,혹시 통화 시간을 30분만 뒤로 미룰 수 있을까요?
+exp_1421,Communication & Requests,Please don't trouble yourself; whatever works easiest is fine.,제 때문에 굳이 무리하지 마세요; 편하신 대로 하시면 됩니다.
+exp_1422,Communication & Requests,I wouldn't ask unless urgent; thanks for stepping in.,급하지 않았으면 부탁 안 했을 텐데 도와주셔서 감사합니다.
+exp_1423,Communication & Requests,Could you water my plants while I'm away?,제가 출장 가 있는 동안 화분에 물 좀 주실 수 있나요?
+exp_1424,Communication & Requests,Did anyone turn in a black umbrella here?,혹시 여기에 검정색 우산 들어온 게 있나요?
+exp_1425,Communication & Requests,"Stop me if I'm overstepping, I have a suggestion.","선을 넘는 거라면 말씀해 주세요, 제안 하나만 드릴게요."
+exp_1426,Communication & Requests,Thanks so much for bearing with me setting up.,준비 마칠 때까지 기다려 주셔서 정말 감사합니다.
+exp_1427,Communication & Requests,Could I get an itemized receipt for reimbursement?,비용 처리를 위해 세부 내역이 적힌 영수증을 받을 수 있을까요?
+exp_1428,Communication & Requests,Could you walk me through that problem after class?,수업 끝나고 그 문제 푸는 법 좀 알려 주실 수 있나요?
+exp_1429,Communication & Requests,I'd gladly return the favor whenever you need help.,도움이 필요하실 때면 언제든 기꺼이 보답해 드릴게요.
+exp_1430,Communication & Requests,Are you open to trying a different approach?,조금 다른 방식을 시도해 보시는 건 어떠신가요?
+exp_1431,Communication & Requests,"Excuse me, could you snap a quick group photo?",실례지만 저희 단체 사진 한 장만 찍어 주실 수 있나요?
+exp_1432,Communication & Requests,Reach out anytime if anything looks unclear here.,내용 중에 불분명한 부분이 있으면 언제든 연락해 주세요.
+exp_1433,Communication & Requests,Hope I'm not catching you mid-task right now.,지금 중요한 일을 하시는 도중에 방해한 게 아니었으면 좋겠네요.
+exp_1434,Communication & Requests,Could you watch my bag for two minutes?,잠깐 다녀오는 동안 제 가방 좀 2분만 봐주실 수 있나요?
+exp_1435,Communication & Requests,Mind giving me a heads-up if plans shift?,계획이 바뀌면 미리 귀띔해 주실 수 있을까요?
+exp_1436,Communication & Requests,"Sorry to bother again, that link seems expired.",또 번거롭게 해 드려 죄송하지만 그 링크가 만료된 것 같아요.
+exp_1437,Communication & Requests,Could we reschedule for early next week instead?,다음 주 초로 일정을 다시 잡을 수 있을까요?
+exp_1438,Communication & Requests,Take your time; there's no rush on my end.,천천히 하세요; 제 쪽에서는 전혀 급할 게 없어요.
+exp_1439,Communication & Requests,Should I send files zipped or individually instead?,"파일을 압축해서 보내드릴까요, 아니면 개별 파일로 드릴까요?"
+exp_1440,Communication & Requests,"If you don't mind asking, how'd you start?",실례가 안 된다면 어떻게 처음 시작하게 되셨는지 여쭤봐도 될까요?
+exp_1441,Communication & Requests,Could you kindly confirm my attachment arrived safely?,첨부 파일이 문제없이 잘 도착했는지 확인해 주실래요?
+exp_1442,Communication & Requests,Let me know what works best for you.,가장 편하신 시간이나 방법을 알려 주세요.
+exp_1443,Communication & Requests,"Sorry putting you on the spot, answer by five.",갑작스러워 죄송하지만 5시 전까지는 답변이 필요합니다.
+exp_1444,Communication & Requests,Could you turn music down while I'm calling?,통화하는 동안 음악 소리만 살짝 줄여 주실래요?
+exp_1445,Communication & Requests,Feel free grabbing anything from the fridge anytime.,냉장고에 있는 건 언제든 편하게 꺼내 드세요.
+exp_1446,Communication & Requests,Could you trade Friday's shift for Saturday morning?,금요일 근무를 토요일 오전 근무와 바꾸실 수 있을까요?
+exp_1447,Communication & Requests,Thanks in advance for looking into this quickly.,이 사안을 빠르게 살펴봐 주셔서 미리 감사드립니다.
+exp_1448,Communication & Requests,Let me know if another day works easier.,다른 날이 더 편하시면 언제든 말씀해 주세요.
 exp_1449,Communication & Requests,Could you clarify whether parking is complimentary for event guests?,행사 방문객에게 주차가 무료로 제공되는지 확인해 주실 수 있나요?
-exp_1450,Communication & Requests,You're welcome to tag along with us if your evening plans fall through.,저녁 약속이 취소되면 언제든 저희랑 같이 가셔도 환영이에요.
-exp_1451,Communication & Requests,Please accept my apologies for the delay in getting back to you.,답변이 늦어진 점에 대해 진심으로 사과드립니다.
-exp_1452,Communication & Requests,You're breaking up a little bit; could you repeat that last sentence?,목소리가 조금 끊겨서 들리는데 마지막 문장 다시 한 번 말씀해 주시겠어요?
-exp_1453,Communication & Requests,Let me put you on speaker for a moment so the rest of the team can hear.,나머지 팀원들도 들을 수 있게 잠깐 스피커폰으로 바꿀게요.
-exp_1454,Communication & Requests,"Before we wrap up, let's make sure we're completely on the same page.","마무리하기 전에, 우리 모두가 내용을 완전히 똑같이 이해했는지 확인합시다."
-exp_1455,Communication & Requests,What I'm trying to get at is that we need a much clearer handoff.,제가 말씀드리고자 하는 핵심은 훨씬 더 명확한 인수인계가 필요하다는 겁니다.
-exp_1456,Communication & Requests,I didn't mean for my message to come across as harsh or dismissive.,제 메시지가 까칠하거나 무시하는 것처럼 들리게 하려던 의도는 아니었어요.
-exp_1457,Communication & Requests,Could you elaborate a bit on what you meant by that earlier remark?,아까 하신 말씀이 정확히 어떤 의미였는지 조금 더 자세히 설명해 주실 수 있나요?
+exp_1450,Communication & Requests,You're welcome to tag along if plans fall through.,약속이 취소되면 언제든 저희랑 같이 가셔도 돼요.
+exp_1451,Communication & Requests,Please accept my apologies for replying so late.,답변이 너무 늦어진 점에 대해 진심으로 사과드립니다.
+exp_1452,Communication & Requests,You're breaking up slightly; repeat that last sentence?,목소리가 살짝 끊기는데 마지막 문장 다시 말씀해 주시겠어요?
+exp_1453,Communication & Requests,Let me put you on speaker for everyone.,다 같이 들을 수 있게 잠깐 스피커폰으로 바꿀게요.
+exp_1454,Communication & Requests,"Before wrapping up, let's confirm we're on one page.",마무리하기 전에 모두 똑같이 이해했는지 확인합시다.
+exp_1455,Communication & Requests,What I'm getting at is needing clearer handoffs.,제가 말하려는 핵심은 더 명확한 인수인계가 필요하다는 거예요.
+exp_1456,Communication & Requests,I never meant for my message sounding harsh.,제 메시지가 까칠하게 들리게 하려던 의도는 전혀 없었어요.
+exp_1457,Communication & Requests,Could you elaborate slightly on that earlier remark?,아까 하신 말씀에 대해 조금 더 자세히 설명해 주실래요?
 exp_1458,Communication & Requests,Let me rephrase that so there's zero room for misinterpretation.,오해의 여지가 전혀 없도록 말을 다시 바꿔서 설명해 드릴게요.
-exp_1459,Communication & Requests,You completely took my words out of context during that discussion.,그 논의 중에 당신이 내 말을 앞뒤 맥락 다 자르고 완전히 왜곡해서 받아들였어.
-exp_1460,Communication & Requests,"I hate to cut you off, but we only have five minutes left in this room.","말씀 끊어서 죄송하지만, 이 회의실 사용 시간이 5분밖에 안 남았습니다."
-exp_1461,Communication & Requests,Feel free to chime in whenever you have a thought to add.,덧붙이고 싶은 생각이 있으실 때마다 언제든 편하게 말씀해 주세요.
-exp_1462,Communication & Requests,Stop beating around the bush and just tell me straight what happened.,빙빙 돌려 말하지 말고 무슨 일이 있었는지 그냥 솔직하게 바로 말해 줘.
-exp_1463,Communication & Requests,I'm having a hard time putting what I feel into words right now.,지금 내가 느끼는 감정을 말로 정확히 표현하기가 참 어렵네.
-exp_1464,Communication & Requests,"Just to clarify, are we still aiming to wrap up revisions by noon?","확실히 해 두자면, 수정 작업은 여전히 정오까지 마치는 걸 목표로 하고 있는 거죠?"
-exp_1465,Communication & Requests,I think we got our wires crossed about which coffee shop we meant.,우리가 어느 카페를 말한 건지 서로 착각해서 엇갈린 것 같아.
-exp_1466,Communication & Requests,"If you read between the lines, it's obvious they're hesitant to commit.",행간을 읽어 보면 그들이 확답을 내리는 걸 망설이고 있다는 게 분명해.
-exp_1467,Communication & Requests,Let's table this topic until we have hard numbers in front of us.,정확한 수치를 확보할 때까지 이 주제는 잠시 보류해 둡시다.
-exp_1468,Communication & Requests,I'd much rather talk this over in person than go back and forth over text.,문자로 계속 주고받느니 차라리 직접 만나서 차분히 이야기하고 싶어.
-exp_1469,Communication & Requests,"Don't quote me on this, but I heard they're opening a downtown branch.","내가 한 말이라고 옮기진 말고, 시내에 새 지점을 연다는 얘기를 들었어."
-exp_1470,Communication & Requests,Give me a quick heads-up if anything changes before tomorrow morning.,내일 아침 전에 바뀌는 게 있으면 미리 짧게라도 알려 줘.
-exp_1471,Communication & Requests,"Sorry, I didn't quite catch that; there's a lot of background noise here.","죄송해요, 주변 소음이 너무 커서 방금 말씀하신 걸 잘 못 들었어요."
-exp_1472,Communication & Requests,Let me jump in here for a second before we move on to the next item.,다음 안건으로 넘어가기 전에 여기서 잠깐만 말씀 좀 보탤게요.
-exp_1473,Communication & Requests,I think you might have gotten the wrong impression from my earlier email.,아까 제가 보낸 이메일에서 오해가 조금 생기신 것 같아요.
-exp_1474,Communication & Requests,Could you spell that out for me so I make sure I get the name right?,이름을 정확히 적을 수 있게 철자를 하나씩 불러 주실 수 있나요?
-exp_1475,Communication & Requests,Let's recap what we agreed on so nobody walks away with different notes.,서로 다르게 적어 가는 일이 없도록 합의한 내용을 다시 한 번 요약합시다.
-exp_1476,Communication & Requests,"To make a long story short, we ended up taking the earlier train home.","긴 이야기를 짧게 줄이자면, 결국 더 이른 기차를 타고 집에 왔어."
-exp_1477,Communication & Requests,"I hear what you're saying, yet I think we're talking past each other.","무슨 말씀인지는 알겠는데, 우리가 서로 핀트가 어긋난 얘기를 하는 것 같아요."
-exp_1478,Communication & Requests,Speak up a bit if you can; your mic sounds like it's muffled.,가능하면 조금만 크게 말씀해 주실래요; 마이크 소리가 먹먹하게 들려요.
-exp_1479,Communication & Requests,Just ping me on chat whenever you're ready to review the mockup together.,시안을 같이 검토할 준비가 되시면 채팅으로 언제든 메시지 주세요.
-exp_1480,Communication & Requests,I wanted to follow up in case my previous message got buried in your inbox.,제 이전 메시지가 받은편지함에 묻혔을까 봐 다시 한 번 연락드렸습니다.
-exp_1481,Communication & Requests,"That wasn't the best choice of words on my part, and I apologize.",그 부분에서 제 단어 선택이 적절하지 못했던 점 사과드립니다.
-exp_1482,Communication & Requests,Let's not leave anything up to guesswork when writing the instructions.,안내문을 작성할 때 읽는 사람이 추측해야 하는 부분이 없도록 명확히 씁시다.
-exp_1483,Communication & Requests,He tends to sugarcoat bad news instead of giving direct feedback.,그는 직설적인 피드백을 주기보다 나쁜 소식을 좋게 포장해서 말하는 경향이 있어.
-exp_1484,Communication & Requests,"Are we talking about the same spreadsheet, or did you open an older copy?","우리 같은 스프레드시트 보고 있는 거 맞나요, 아니면 예전 사본을 여신 건가요?"
-exp_1485,Communication & Requests,I appreciate how candid you've been with me throughout this process.,이 과정 내내 저에게 솔직하게 터놓고 말씀해 주셔서 감사하게 생각합니다.
-exp_1486,Communication & Requests,Let's keep the conversation focused on solutions rather than pointing fingers.,서로 탓하기보다는 해결책을 찾는 쪽으로 대화를 집중합시다.
-exp_1487,Communication & Requests,Could you send that in writing so I have something concrete to reference?,나중에 확실하게 참고할 수 있도록 그 내용을 문서나 메일로 보내 주실래요?
-exp_1488,Communication & Requests,It sounded like you were on mute for the first ten seconds of your intro.,인사 말씀 시작하신 처음 10초 동안은 음소거 상태였던 것 같아요.
-exp_1489,Communication & Requests,Don't hesitate to interrupt me if I start throwing around too much jargon.,제가 전문 용어를 너무 많이 쓰기 시작하면 주저하지 말고 바로 말씀해 주세요.
-exp_1490,Communication & Requests,"Once you break down the problem step by step, it's much easier to explain.",문제를 단계별로 쪼개서 정리하면 설명하기가 훨씬 쉬워져.
-exp_1491,Communication & Requests,Let me bounce an idea off you and see what your gut reaction is.,아이디어 하나를 던져 볼 테니까 솔직한 첫인상이 어떤지 말해 줘.
-exp_1492,Communication & Requests,Make sure your tone stays constructive even when delivering tough feedback.,까다로운 피드백을 전달할 때도 어조는 건설적으로 유지하도록 신경 써.
-exp_1493,Communication & Requests,We must have talked past each other because I thought we chose option B.,우리가 서로 다르게 이해했나 봐요. 저는 B안을 고른 줄 알았거든요.
+exp_1459,Communication & Requests,You completely took my earlier words out of context.,아까 내 말을 앞뒤 맥락 다 자르고 완전히 왜곡해서 받아들였어.
+exp_1460,Communication & Requests,"Hate cutting you off, five minutes remain here.",말씀 끊어 죄송하지만 회의실 사용 시간이 5분 남았습니다.
+exp_1461,Communication & Requests,Feel free to chime in whenever thoughts strike.,좋은 생각이 떠오를 때마다 언제든 편하게 말씀해 주세요.
+exp_1462,Communication & Requests,Stop beating around the bush; tell me straight.,빙빙 돌려 말하지 말고 솔직하게 바로 말해 줘.
+exp_1463,Communication & Requests,I'm struggling to put my feelings into words.,내 감정을 말로 정확히 표현하기가 참 어렵네.
+exp_1464,Communication & Requests,"Just to clarify, are revisions due by noon?","확실히 해 두자면, 수정 작업은 정오까지가 마감인 거죠?"
+exp_1465,Communication & Requests,We clearly got our wires crossed on locations.,우리가 어느 장소인지 서로 착각해서 엇갈린 게 분명해.
+exp_1466,Communication & Requests,"Reading between the lines, they seem hesitant committing.",행간을 읽어 보면 저쪽이 확답을 망설이고 있는 것 같아.
+exp_1467,Communication & Requests,Let's table this topic until hard numbers arrive.,정확한 수치가 나올 때까지 이 주제는 잠시 보류합시다.
+exp_1468,Communication & Requests,I'd rather talk in person than over text.,문자로 주고받느니 차라리 직접 만나서 이야기하고 싶어.
+exp_1469,Communication & Requests,"Don't quote me, they might open downtown.","내가 한 말이라고 옮기진 말고, 시내에 새 지점을 낼 수도 있대."
+exp_1470,Communication & Requests,Give me a heads-up if anything changes tomorrow.,내일 바뀌는 게 있으면 미리 짧게라도 알려 줘.
+exp_1471,Communication & Requests,"Sorry, I missed that over all this noise.","죄송해요, 주변 소음이 너무 커서 방금 말씀하신 걸 놓쳤어요."
+exp_1472,Communication & Requests,Let me jump in quickly before moving ahead.,다음으로 넘어가기 전에 여기서 잠깐만 말씀 보탤게요.
+exp_1473,Communication & Requests,You might have gotten the wrong impression earlier.,아까 제 말에서 오해가 조금 생기신 것 같아요.
+exp_1474,Communication & Requests,Could you spell that name out for accuracy?,정확하게 적을 수 있게 이름 철자를 불러 주실 수 있나요?
+exp_1475,Communication & Requests,Let's recap agreements so nobody misses key details.,아무도 핵심 내용을 놓치지 않도록 합의한 사항을 요약합시다.
+exp_1476,Communication & Requests,"Long story short, we took an earlier train.",긴 이야기를 줄이자면 결국 더 이른 기차를 타고 왔어.
+exp_1477,Communication & Requests,"I hear you, yet we're talking past each other.",무슨 말인지는 알겠는데 우리가 서로 핀트가 어긋나게 말하고 있어.
+exp_1478,Communication & Requests,Speak up slightly; your mic sounds pretty muffled.,조금만 크게 말씀해 주세요; 마이크 소리가 꽤 먹먹하게 들려요.
+exp_1479,Communication & Requests,Ping me anytime once ready to review together.,같이 검토할 준비가 되시면 언제든 채팅으로 메시지 주세요.
+exp_1480,Communication & Requests,Just following up in case my email got buried.,이전 메일이 묻혔을까 봐 확인차 다시 연락드렸습니다.
+exp_1481,Communication & Requests,That wasn't my best choice of words; sorry.,제 단어 선택이 적절하지 못했던 점 사과드립니다.
+exp_1482,Communication & Requests,Don't leave anything to guesswork in these instructions.,안내문을 쓸 때 추측해야 하는 모호한 부분을 남기지 맙시다.
+exp_1483,Communication & Requests,He tends to sugarcoat bad news over honesty.,그는 솔직한 피드백 대신 나쁜 소식을 좋게 포장하는 경향이 있어.
+exp_1484,Communication & Requests,Are we looking at the exact same spreadsheet?,우리 지금 똑같은 스프레드시트를 보고 있는 게 맞나요?
+exp_1485,Communication & Requests,I genuinely appreciate how candid you've been lately.,최근 저에게 솔직하게 터놓고 말씀해 주셔서 정말 감사해요.
+exp_1486,Communication & Requests,"Keep the conversation focused on solutions, not blame.",서로 탓하지 말고 해결책을 찾는 쪽으로 대화를 집중합시다.
+exp_1487,Communication & Requests,Could you send that in writing for reference?,나중에 참고할 수 있도록 그 내용을 문서나 메일로 보내 주실래요?
+exp_1488,Communication & Requests,You sounded muted during the first ten seconds.,처음 10초 동안 음소거 상태였던 것처럼 안 들렸어요.
+exp_1489,Communication & Requests,Feel free interrupting if I use heavy jargon.,제가 전문 용어를 너무 많이 쓰면 편하게 바로 말씀해 주세요.
+exp_1490,Communication & Requests,Breaking the problem down makes explaining much easier.,문제를 단계별로 쪼개면 설명하기가 훨씬 쉬워져.
+exp_1491,Communication & Requests,Let me bounce this quick idea off you.,아이디어 하나만 던져 볼 테니 솔직한 생각 좀 말해 줘.
+exp_1492,Communication & Requests,Keep your tone constructive when giving tough feedback.,까다로운 피드백을 줄 때도 어조는 건설적으로 유지하세요.
+exp_1493,Communication & Requests,We talked past each other on option B.,B안에 대해서 우리가 서로 다르게 이해하고 있었나 봐요.
 exp_1494,Communication & Requests,She's great at distilling complex technical concepts into plain English.,그녀는 복잡한 기술 개념을 누구나 알아듣기 쉬운 일상 영어로 풀어내는 데 뛰어나.
-exp_1495,Communication & Requests,Let's hold off on texting him back until we know the full story.,전체 자초지종을 알기 전까지는 그에게 답장하는 걸 잠깐 미루자.
-exp_1496,Communication & Requests,Sorry to talk over you; please go ahead and finish your point.,말씀 겹쳐서 죄송합니다; 계속 하시던 말씀 마저 해 주세요.
-exp_1497,Communication & Requests,"Wait a second, let me jot that down before I forget it.","잠깐만요, 잊어버리기 전에 방금 하신 말씀 좀 적어 둘게요."
-exp_1498,Communication & Requests,"If anything sounds off in the translation, please call it out right away.",번역에서 어색하게 들리는 부분이 있으면 바로바로 지적해 주세요.
-exp_1499,Communication & Requests,I'll give you a call once I'm off the train so we don't drop signal.,통화가 끊기지 않게 기차에서 내리자마자 전화 걸게.
+exp_1495,Communication & Requests,Hold off texting back until we know more.,자초지종을 다 알기 전까지는 답장을 잠깐 미루자.
+exp_1496,Communication & Requests,Sorry talking over you; finish your point first.,말씀 겹쳐서 죄송해요; 하시던 말씀 마저 끝내 주세요.
+exp_1497,Communication & Requests,"Hold on, let me jot that down quickly.","잠깐만요, 잊기 전에 방금 하신 말씀 좀 적어 둘게요."
+exp_1498,Communication & Requests,Call out anything sounding off in this translation.,번역에서 어색하게 들리는 부분이 있으면 바로 지적해 주세요.
+exp_1499,Communication & Requests,I'll call once I'm off the crowded train.,기차에서 내리자마자 바로 전화할게.
 exp_1500,Communication & Requests,Let's make sure we communicate expectations clearly from day one.,첫날부터 서로 기대하는 바를 명확하게 소통하고 시작합시다.
-exp_1501,Questions & Inquiries,Do you happen to know whether the pharmacy stays open past nine on Sundays?,혹시 일요일에도 약국이 9시 이후까지 여는지 아시나요?
-exp_1502,Questions & Inquiries,Would you happen to remember which folder we saved the signed contracts in?,혹시 서명된 계약서를 어느 폴더에 저장해 두었는지 기억나시나요?
-exp_1503,Questions & Inquiries,Have you heard anything yet about when the final decision will be announced?,최종 결정이 언제 발표될지에 대해 아직 들으신 소식이 있나요?
-exp_1504,Questions & Inquiries,Could you let me know how much notice they require before canceling a membership?,멤버십을 해지하려면 며칠 전에 미리 통보해야 하는지 알려 주실 수 있나요?
-exp_1505,Questions & Inquiries,Do you have any idea why the system logged everyone out all of a sudden?,시스템이 왜 갑자기 모든 사용자를 로그아웃시켰는지 짐작 가는 게 있나요?
-exp_1506,Questions & Inquiries,Would you mind telling me where you picked up that ergonomic desk chair?,그 인체공학적 책상 의자를 어디서 구매하셨는지 여쭤봐도 될까요?
-exp_1507,Questions & Inquiries,Do you know off the top of your head how many seats the conference room holds?,회의실에 몇 명까지 앉을 수 있는지 당장 기억나시나요?
-exp_1508,Questions & Inquiries,Is there any chance you could check whether the parcel was delivered next door?,혹시 택배가 옆집으로 잘못 배송된 건 아닌지 확인해 보실 수 있을까요?
-exp_1509,Questions & Inquiries,Can you tell me whether breakfast is included in the standard room rate?,일반 객실 요금에 조식이 포함되어 있는지 말씀해 주실 수 있나요?
-exp_1510,Questions & Inquiries,Do you happen to know if there's an express train that skips the local stops?,완행역을 건너뛰고 바로 가는 급행열차가 있는지 혹시 아시나요?
-exp_1511,Questions & Inquiries,Any idea who's supposed to approve reimbursement requests over five hundred dollars?,500달러가 넘는 비용 환급 요청은 누가 승인해야 하는지 아시나요?
-exp_1512,Questions & Inquiries,Would you know if they offer a student discount when you show a valid ID?,유효한 학생증을 보여 주면 학생 할인을 해 주는지 알고 계신가요?
-exp_1513,Questions & Inquiries,Have you by any chance run into Maya since she moved to the Boston office?,혹시 마야가 보스턴 지사로 옮긴 뒤로 마주친 적 있나요?
-exp_1514,Questions & Inquiries,Could you check which terminal our return flight departs from on Sunday?,일요일에 돌아오는 비행기가 몇 번 터미널에서 출발하는지 확인해 주실래요?
-exp_1515,Questions & Inquiries,Do you know whether we need to bring printed tickets or if mobile passes work?,"종이 티켓을 출력해 가야 하는지, 아니면 모바일 패스만으로도 되는지 아시나요?"
-exp_1516,Questions & Inquiries,Is there any way to find out how long the waitlist usually moves on Fridays?,금요일에는 보통 대기 줄이 얼마나 빨리 빠지는지 알 수 있는 방법이 있을까요?
-exp_1517,Questions & Inquiries,Do you happen to recall what the contractor quoted us for repainting the hallway?,복도 페인트칠 견적으로 시공업체가 얼마를 불렀는지 기억나세요?
-exp_1518,Questions & Inquiries,Could you confirm whether this parking garage validates tickets after six?,6시 이후에도 이 주차장에서 주차권 할인이 적용되는지 확인해 주시겠어요?
-exp_1519,Questions & Inquiries,Do you have any clue what sparked that sudden shift in their pricing policy?,그쪽 가격 정책이 갑자기 왜 바뀌었는지 실마리라도 알고 있나요?
-exp_1520,Questions & Inquiries,Would you happen to have a spare HDMI adapter I could borrow for this presentation?,혹시 이번 발표 동안 빌릴 수 있는 여분의 HDMI 어댑터를 가지고 계신가요?
-exp_1521,Questions & Inquiries,Can you remind me what time the museum closes on weekday evenings?,박물관이 평일 저녁 몇 시에 문을 닫는지 다시 한 번 알려 주실래요?
-exp_1522,Questions & Inquiries,Do you know if anyone else from our department is planning to attend the summit?,우리 부서에서 그 서밋에 참석할 계획인 사람이 또 있는지 아세요?
-exp_1523,Questions & Inquiries,Could you tell me how long it takes for the refund to reflect on my statement?,환불 금액이 카드 명세서에 반영되기까지 얼마나 걸리는지 알려 주시겠어요?
-exp_1524,Questions & Inquiries,Have you figured out yet whether the noise is coming from the radiator or the pipes?,그 소음이 라디에이터에서 나는 건지 배관에서 나는 건지 아직 파악했나요?
-exp_1525,Questions & Inquiries,Is there someone at the front desk who handles lost property inquiries?,프런트 데스크에 분실물 문의를 담당하는 분이 따로 계신가요?
-exp_1526,Questions & Inquiries,Are you saying that we have to redo the entire layout from scratch?,지금 말씀하시는 건 전체 레이아웃을 처음부터 다시 짜야 한다는 뜻인가요?
-exp_1527,Questions & Inquiries,What exactly did you mean earlier when you called the schedule ambitious?,아까 일정이 꽤 야심 차다고 하셨을 때 정확히 어떤 의미로 말씀하신 건가요?
-exp_1528,Questions & Inquiries,Did I hear you right that the client asked for another round of revisions?,고객사가 수정을 한 차례 더 요청했다고 제가 제대로 들은 게 맞나요?
-exp_1529,Questions & Inquiries,So what you're getting at is that we shouldn't launch until next quarter?,그러니까 요점은 다음 분기까지 출시를 미뤄야 한다는 말씀이신가요?
-exp_1530,Questions & Inquiries,"Just to make sure I followed correctly, does step three happen before approval?","제가 제대로 이해했는지 확인차 여쭙는데, 3단계가 승인 전에 이루어지나요?"
-exp_1531,Questions & Inquiries,"Wait, are we talking about gross revenue or net profit after expenses?","잠깐만요, 지금 우리가 얘기하는 게 총매출인가요, 아니면 비용을 뺀 순이익인가요?"
-exp_1532,Questions & Inquiries,Could you clarify whether that deadline applies to the draft or the final copy?,그 마감일이 초안 기준인지 최종본 기준인지 명확히 해 주실 수 있나요?
-exp_1533,Questions & Inquiries,Are you implying that the delay was caused by our side rather than the vendor?,그 지연이 업체 쪽이 아니라 우리 쪽 때문에 생겼다고 암시하시는 건가요?
-exp_1534,Questions & Inquiries,"Am I missing something here, or did the total jump by twenty percent?","내가 뭔가 놓치고 있는 건가요, 아니면 총액이 20퍼센트나 뛴 건가요?"
-exp_1535,Questions & Inquiries,"When you say by end of day, do you mean five o'clock sharp or midnight?","오늘 안으로라고 하실 때 정각 5시를 말씀하시는 건가요, 아니면 자정까지인가요?"
-exp_1536,Questions & Inquiries,"Does that rule apply across the board, or are remote staff exempt?","그 규정이 예외 없이 모두에게 적용되나요, 아니면 재택근무자는 제외되나요?"
-exp_1537,Questions & Inquiries,Could you walk me through what changed between version two and this file?,버전 2와 이 파일 사이에 어떤 점이 달라졌는지 하나씩 짚어 주실 수 있나요?
-exp_1538,Questions & Inquiries,Are those numbers based on actual sales or just early projections?,"그 수치는 실제 판매량 기준인가요, 아니면 초기 예상치일 뿐인가요?"
-exp_1539,Questions & Inquiries,"Wait, did he turn down the offer outright, or is he still negotiating?","잠깐, 그 사람이 제안을 단칼에 거절했나요, 아니면 아직 협상 중인가요?"
-exp_1540,Questions & Inquiries,How is this approach different from what we tried last autumn?,이 방식이 지난가을에 우리가 시도했던 것과 어떻게 다른가요?
-exp_1541,Questions & Inquiries,"Should I take that as a hard no, or is there still room for compromise?","그걸 완전한 거절로 받아들여야 할까요, 아니면 타협할 여지가 남아 있나요?"
-exp_1542,Questions & Inquiries,Which specific clause in the agreement are they pushing back against?,계약서에서 저쪽이 특히 반대하고 있는 조항이 정확히 어느 부분인가요?
-exp_1543,Questions & Inquiries,Are you under the impression that everyone already received the memo?,모두가 이미 그 공지를 받았다고 생각하고 계신 건가요?
-exp_1544,Questions & Inquiries,"When he mentioned cutting back, was he referring to travel or headcount?","그가 비용을 줄이자고 했을 때 출장비를 말한 건가요, 인력을 말한 건가요?"
-exp_1545,Questions & Inquiries,"Does 'optional' in this email mean nobody attends, or is it secretly expected?","이 이메일에서 '선택 사항'이라는 게 아무도 안 간다는 뜻인가요, 아니면 은근히 참석을 바라는 건가요?"
-exp_1546,Questions & Inquiries,Are we supposed to submit one combined report or separate ones per region?,"하나로 합친 보고서를 내야 하나요, 아니면 지역별로 따로 제출해야 하나요?"
-exp_1547,Questions & Inquiries,What gives you the impression that they're ready to sign this week?,그들이 이번 주에 서명할 준비가 됐다는 인상을 어디서 받으신 건가요?
-exp_1548,Questions & Inquiries,Could you point to the exact part of the instructions that felt confusing?,안내문에서 정확히 어느 부분이 헷갈리게 느껴졌는지 짚어 주실 수 있나요?
-exp_1549,Questions & Inquiries,"So in plain terms, does this update cost extra or come bundled?","쉽게 말해서 이 업데이트는 추가 비용이 드나요, 아니면 기본 포함인가요?"
-exp_1550,Questions & Inquiries,"Did you mean next Tuesday as in four days from now, or the Tuesday after?","다음 주 화요일이라고 하신 게 나흘 뒤를 말한 건가요, 그다음 주 화요일인가요?"
+exp_1501,Questions & Inquiries,Does the pharmacy stay open past nine Sundays?,일요일에도 약국이 9시 이후까지 여는지 아시나요?
+exp_1502,Questions & Inquiries,Which folder did we save those signed contracts?,서명된 계약서를 어느 폴더에 저장해 두었는지 기억나세요?
+exp_1503,Questions & Inquiries,Have you heard when the decision gets announced?,최종 결정이 언제 발표될지 들으신 소식이 있나요?
+exp_1504,Questions & Inquiries,How much notice do they require before canceling?,해지하려면 며칠 전에 미리 통보해야 하나요?
+exp_1505,Questions & Inquiries,Any idea why the system logged everyone out?,시스템이 왜 모두를 로그아웃시켰는지 짐작 가는 게 있나요?
+exp_1506,Questions & Inquiries,Mind telling me where you bought that chair?,그 의자를 어디서 구매하셨는지 여쭤봐도 될까요?
+exp_1507,Questions & Inquiries,Do you know how many that room seats?,그 회의실에 몇 명까지 앉을 수 있는지 아시나요?
+exp_1508,Questions & Inquiries,Could you check if it landed next door?,옆집으로 잘못 배송된 건 아닌지 확인해 보실 수 있을까요?
+exp_1509,Questions & Inquiries,Is breakfast included in the standard room rate?,일반 객실 요금에 조식이 포함되어 있나요?
+exp_1510,Questions & Inquiries,Is there an express train skipping local stops?,완행역을 건너뛰고 바로 가는 급행열차가 있나요?
+exp_1511,Questions & Inquiries,Who approves reimbursement requests over five hundred dollars?,500달러가 넘는 비용 환급 요청은 누가 승인하나요?
+exp_1512,Questions & Inquiries,Do they offer student discounts with valid ID?,학생증을 보여 주면 학생 할인을 해 주나요?
+exp_1513,Questions & Inquiries,Have you run into Maya since she moved?,마야가 이사 간 뒤로 마주친 적이 있나요?
+exp_1514,Questions & Inquiries,Which terminal does our return flight depart from?,돌아오는 비행기가 몇 번 터미널에서 출발하나요?
+exp_1515,Questions & Inquiries,Do we need printed tickets or mobile passes?,"종이 티켓이 필요한가요, 아니면 모바일 패스도 되나요?"
+exp_1516,Questions & Inquiries,How fast does the waitlist move on Fridays?,금요일에는 보통 대기 줄이 얼마나 빨리 빠지나요?
+exp_1517,Questions & Inquiries,Remember what the contractor quoted for painting hallways?,복도 페인트칠 견적으로 얼마를 불렀는지 기억나세요?
+exp_1518,Questions & Inquiries,Does this parking garage validate tickets after six?,6시 이후에도 이 주차장에서 주차권 할인이 적용되나요?
+exp_1519,Questions & Inquiries,What sparked that sudden shift in pricing policy?,가격 정책이 갑자기 바뀐 이유가 뭔가요?
+exp_1520,Questions & Inquiries,Do you have a spare HDMI adapter handy?,혹시 여분의 HDMI 어댑터를 가지고 계신가요?
+exp_1521,Questions & Inquiries,What time does the museum close on weekdays?,박물관이 평일 몇 시에 문을 닫는지 알려 주실래요?
+exp_1522,Questions & Inquiries,Is anyone else from our team attending tomorrow?,우리 팀에서 내일 행사에 참석하는 분이 또 있나요?
+exp_1523,Questions & Inquiries,How long until the refund hits my card?,환불 금액이 카드에 반영되기까지 얼마나 걸리나요?
+exp_1524,Questions & Inquiries,Is that noise coming from pipes or radiators?,"그 소음이 배관에서 나는 건가요, 라디에이터에서 나는 건가요?"
+exp_1525,Questions & Inquiries,Who handles lost property inquiries at front desk?,프런트 데스크에서 분실물 문의는 누가 담당하나요?
+exp_1526,Questions & Inquiries,Are we redoing the entire layout from scratch?,전체 레이아웃을 처음부터 다시 짜야 하는 건가요?
+exp_1527,Questions & Inquiries,What did you mean calling the schedule ambitious?,일정이 야심 차다고 하셨을 때 정확히 어떤 의미였나요?
+exp_1528,Questions & Inquiries,Did the client ask for another revision round?,고객사가 수정을 한 차례 더 요청한 게 맞나요?
+exp_1529,Questions & Inquiries,Are you saying we delay until next quarter?,다음 분기까지 출시를 미뤄야 한다는 말씀이신가요?
+exp_1530,Questions & Inquiries,"Just confirming, does step three happen before approval?","확인차 여쭙는데, 3단계가 승인 전에 이루어지나요?"
+exp_1531,Questions & Inquiries,"Wait, are we talking gross revenue or net?","잠깐만요, 지금 얘기하는 게 총매출인가요 순수익인가요?"
+exp_1532,Questions & Inquiries,Does that deadline cover drafts or final copies?,그 마감일이 초안 기준인가요 최종본 기준인가요?
+exp_1533,Questions & Inquiries,Are you saying our side caused this delay?,우리 쪽 때문에 지연이 생겼다고 말씀하시는 건가요?
+exp_1534,Questions & Inquiries,"Am I missing something, or did costs jump?","내가 뭔가 놓친 건가요, 아니면 비용이 확 뛴 건가요?"
+exp_1535,Questions & Inquiries,"By end of day, do you mean five?",오늘 안으로라고 하실 때 5시를 말씀하시는 건가요?
+exp_1536,Questions & Inquiries,Does that rule apply to remote staff too?,그 규정이 재택근무 직원들에게도 동일하게 적용되나요?
+exp_1537,Questions & Inquiries,Could you walk me through what actually changed?,실제로 어떤 점이 달라졌는지 하나씩 짚어 주실 수 있나요?
+exp_1538,Questions & Inquiries,Are these numbers actual sales or early projections?,이 수치는 실제 판매량인가요 초기 예상치인가요?
+exp_1539,Questions & Inquiries,"Did he refuse outright, or is he negotiating?","그 사람이 단칼에 거절했나요, 아니면 아직 협상 중인가요?"
+exp_1540,Questions & Inquiries,How does this differ from last fall's approach?,이 방식이 지난가을에 시도했던 것과 어떻게 다른가요?
+exp_1541,Questions & Inquiries,"Is that a hard no, or room left?","완전한 거절인가요, 아니면 타협할 여지가 남아 있나요?"
+exp_1542,Questions & Inquiries,Which exact clause are they pushing back against?,저쪽이 특히 반대하고 있는 조항이 정확히 어느 부분인가요?
+exp_1543,Questions & Inquiries,Did everyone already receive that memo by email?,모두가 이미 그 공지를 이메일로 받았나요?
+exp_1544,Questions & Inquiries,"When cutting back, did he mean travel budgets?",비용을 줄이자고 했을 때 출장비를 말한 건가요?
+exp_1545,Questions & Inquiries,"Does 'optional' mean skipping it, or secretly expected?",'선택 사항'이라는 게 안 가도 된다는 뜻인가요 은근히 바라는 건가요?
+exp_1546,Questions & Inquiries,Should we submit one report or separate ones?,"보고서를 하나로 내야 하나요, 따로 제출해야 하나요?"
+exp_1547,Questions & Inquiries,What makes you think they'll sign this week?,그들이 이번 주에 서명할 거라고 생각하시는 이유가 뭔가요?
+exp_1548,Questions & Inquiries,Which exact part of the instructions felt confusing?,안내문에서 정확히 어느 부분이 헷갈리게 느껴졌나요?
+exp_1549,Questions & Inquiries,Does this update cost extra or come bundled?,이 업데이트는 추가 비용이 드나요 기본 포함인가요?
+exp_1550,Questions & Inquiries,Did you mean this Tuesday or next Tuesday?,이번 주 화요일을 말한 건가요 다음 주 화요일인가요?
 exp_1551,Questions & Inquiries,How come nobody brought up the compatibility issue during testing?,어째서 테스트하는 동안에는 아무도 호환성 문제를 언급하지 않았던 거죠?
-exp_1552,Questions & Inquiries,What made you decide to pivot away from your original business model?,원래 비즈니스 모델에서 방향을 전환하기로 결심한 계기가 무엇이었나요?
-exp_1553,Questions & Inquiries,What's keeping us from automating the repetitive part of this report?,이 보고서에서 반복적인 부분을 자동화하는 걸 가로막고 있는 게 뭔가요?
-exp_1554,Questions & Inquiries,"Why is it that whenever we're in a rush, every traffic light turns red?",왜 우리가 급할 때마다 신호등이란 신호등은 전부 빨간불로 바뀌는 걸까요?
-exp_1555,Questions & Inquiries,What makes you think the landlord would agree to a month-to-month lease?,집주인이 월 단위 계약을 수락할 거라고 생각하시는 이유가 뭔가요?
+exp_1552,Questions & Inquiries,What made you pivot away from that model?,원래 모델에서 방향을 전환하기로 결심한 계기가 뭔가요?
+exp_1553,Questions & Inquiries,What's stopping us from automating this repetitive report?,이 반복적인 보고서를 자동화하는 걸 가로막는 게 뭔가요?
+exp_1554,Questions & Inquiries,Why does every light turn red when rushing?,왜 급할 때마다 신호등이란 신호등은 다 빨간불로 바뀔까요?
+exp_1555,Questions & Inquiries,Why would the landlord accept month-to-month terms?,집주인이 왜 월 단위 계약을 수락할 거라고 생각하세요?
 exp_1556,Questions & Inquiries,How come they're charging a convenience fee for paying online?,왜 온라인으로 결제하는데 편의 수수료를 따로 받는 거죠?
-exp_1557,Questions & Inquiries,What prompted such a drastic change in the syllabus halfway through the term?,학기 중간에 강의 계획서를 그렇게 대폭 수정하게 된 이유가 뭔가요?
-exp_1558,Questions & Inquiries,Why would anyone pay double just to get two-day shipping on a mug?,머그잔 하나 이틀 만에 받으려고 배송비를 두 배나 내는 사람이 왜 있을까요?
-exp_1559,Questions & Inquiries,Since when did the gym require advance reservations just to use the pool?,헬스장 수영장을 이용하는 데 언제부터 사전 예약이 필수가 된 거죠?
-exp_1560,Questions & Inquiries,What's behind the sudden spike in customer support tickets since Monday?,월요일 이후로 고객 지원 문의가 갑자기 급증한 배경이 뭔가요?
-exp_1561,Questions & Inquiries,How did you end up landing an interview with a team that wasn't even hiring?,채용 공고도 안 낸 팀과 어떻게 면접까지 보게 되신 거예요?
-exp_1562,Questions & Inquiries,What's stopping you from pitching that idea directly to the director?,그 아이디어를 디렉터에게 직접 제안하는 걸 망설이게 만드는 게 뭔가요?
-exp_1563,Questions & Inquiries,Why do you suppose he left the meeting ten minutes before it wrapped up?,그가 회의가 끝나기 10분 전에 자리를 뜬 이유가 뭐라고 생각하세요?
-exp_1564,Questions & Inquiries,How come this branch gets way more foot traffic than the one on Oak Street?,어떻게 이 지점이 오크 스트리트 지점보다 유동 인구가 훨씬 더 많은 걸까요?
-exp_1565,Questions & Inquiries,What convinced you that moving closer to work was worth the higher rent?,월세가 더 비싸더라도 직장 근처로 이사할 가치가 있다고 확신하게 된 이유가 뭔가요?
-exp_1566,Questions & Inquiries,Why on earth did they schedule maintenance right during peak checkout hours?,대체 왜 하필 결제가 가장 몰리는 시간대에 점검 일정을 잡은 걸까요?
-exp_1567,Questions & Inquiries,What led you to suspect that the invoice had been billed twice?,그 청구서가 이중 청구됐다고 의심하게 된 단서가 무엇이었나요?
-exp_1568,Questions & Inquiries,How come none of the local bakeries carry rye bread anymore?,어째서 요즘 동네 빵집들에서는 더 이상 호밀빵을 팔지 않는 걸까요?
-exp_1569,Questions & Inquiries,What's the reasoning behind splitting the training into four short sessions?,교육을 네 개의 짧은 세션으로 나누어 진행하기로 한 배경이 무엇인가요?
-exp_1570,Questions & Inquiries,Why would they keep a feature around if barely anyone clicks on it?,거의 아무도 클릭하지 않는 기능을 굳이 계속 유지하는 이유가 뭘까요?
-exp_1571,Questions & Inquiries,How did you manage to stay so calm when the projector died mid-pitch?,발표 도중에 프로젝터가 꺼졌는데 어떻게 그렇게 침착함을 유지하셨어요?
-exp_1572,Questions & Inquiries,What makes this neighborhood feel so much livelier than it did five years ago?,5년 전보다 이 동네가 훨씬 더 활기차게 느껴지는 이유가 무엇일까요?
-exp_1573,Questions & Inquiries,How come the battery drains twice as fast whenever I turn on location services?,위치 서비스를 켤 때마다 배터리가 왜 두 배나 빨리 닳는 거죠?
-exp_1574,Questions & Inquiries,What drove you to switch careers after spending eight years in finance?,금융권에서 8년이나 일하고 나서 직종을 바꾸게 만든 동기가 무엇이었나요?
-exp_1575,Questions & Inquiries,Why is it always harder to admit a small mistake than a major one?,왜 큰 실수보다 사소한 실수를 인정하는 게 항상 더 어려운 걸까요?
-exp_1576,Questions & Inquiries,What would you do differently if you were standing in my shoes right now?,지금 제 입장이라면 어떻게 다르게 행동하시겠어요?
-exp_1577,Questions & Inquiries,Would it make more sense to fix the existing roof or replace it altogether?,"기존 지붕을 수리하는 게 나을까요, 아니면 아예 통째로 교체하는 게 합리적일까요?"
-exp_1578,Questions & Inquiries,Suppose we push the deadline back a week; how would that affect delivery?,"마감일을 일주일 미룬다고 가정하면, 납품 일정에는 어떤 영향을 미칠까요?"
-exp_1579,Questions & Inquiries,How likely is it that the committee will approve an exception for us?,위원회가 우리에게 예외를 승인해 줄 가능성이 얼마나 될까요?
-exp_1580,Questions & Inquiries,What's the worst-case scenario if we hold off on signing until Monday?,월요일까지 서명을 보류했을 때 발생할 수 있는 최악의 시나리오는 뭔가요?
-exp_1581,Questions & Inquiries,Which option gives us more flexibility if demand drops next quarter?,다음 분기에 수요가 줄어들 경우 어느 선택지가 더 유연하게 대처할 수 있나요?
-exp_1582,Questions & Inquiries,"If you had to choose between a higher base salary and equity, which wins?",더 높은 기본급과 스톡옵션 중에서 하나만 골라야 한다면 어느 쪽을 택하시겠어요?
-exp_1583,Questions & Inquiries,Is it worth paying extra for travel insurance on a short domestic trip?,짧은 국내 여행인데도 추가 비용을 내고 여행자 보험에 들 만한 가치가 있을까요?
-exp_1584,Questions & Inquiries,What happens if neither candidate accepts the offer by Friday's cutoff?,금요일 마감 시한까지 두 후보자 모두 제안을 수락하지 않으면 어떻게 되나요?
-exp_1585,Questions & Inquiries,Would we be better off taking the train instead of dealing with airport lines?,공항 대기 줄에서 고생하느니 차라리 기차를 타는 편이 더 나을까요?
-exp_1586,Questions & Inquiries,How would our customers react if we switched to an annual-only plan?,우리가 연간 결제 요금제만 운영하도록 바꾼다면 고객들이 어떻게 반응할까요?
-exp_1587,Questions & Inquiries,At what point does repairing an old appliance stop making financial sense?,오래된 가전제품을 고쳐 쓰는 게 어느 시점부터는 경제적으로 손해가 될까요?
-exp_1588,Questions & Inquiries,"If we combine both teams for this sprint, who takes charge of QA?",이번 스프린트에서 두 팀을 합친다면 QA는 누가 맡게 되나요?
-exp_1589,Questions & Inquiries,Could we test the new format on a small group before rolling it out widely?,전면 도입하기 전에 소규모 그룹을 대상으로 새 형식을 먼저 시험해 볼 수 있을까요?
-exp_1590,Questions & Inquiries,What criteria should we weigh most heavily when comparing these three vendors?,이 세 업체를 비교할 때 어떤 기준에 가장 큰 비중을 두어야 할까요?
-exp_1591,Questions & Inquiries,Would you rather have a longer commute with a yard or live downtown?,"출퇴근이 길더라도 마당 있는 집에 사는 게 나으세요, 아니면 도심에 사는 게 나으세요?"
-exp_1592,Questions & Inquiries,How much risk are we actually taking on if we skip a formal pilot?,정식 시범 운영을 건너뛰면 실제로 우리가 떠안게 되는 리스크가 얼마나 되나요?
-exp_1593,Questions & Inquiries,"If the weather turns nasty on Saturday, what's our indoor Plan B?",토요일에 날씨가 궂어지면 실내로 옮길 플랜 B는 무엇인가요?
-exp_1594,Questions & Inquiries,Do you think bringing in a freelancer would take enough pressure off the team?,프리랜서를 한 명 투입하면 팀의 부담이 충분히 줄어들 거라고 생각하시나요?
-exp_1595,Questions & Inquiries,Where do we draw the line between helpful reminders and micromanaging?,유용한 리마인더와 지나친 간섭 사이의 경계를 어디로 잡아야 할까요?
-exp_1596,Questions & Inquiries,What trade-offs are we accepting if we prioritize speed over polish?,완성도보다 속도를 우선시한다면 우리가 감수해야 할 트레이드오프는 무엇인가요?
-exp_1597,Questions & Inquiries,Should we lock in the current interest rate now or wait for the next announcement?,"지금 현재 금리로 확정 짓는 게 나을까요, 아니면 다음 발표까지 기다려 볼까요?"
-exp_1598,Questions & Inquiries,"If you could automate just one chore out of your week, which would it be?",일주일 집안일 중 딱 하나만 자동화할 수 있다면 무엇을 고르시겠어요?
-exp_1599,Questions & Inquiries,How soon would we see a return if we invested in upgrading the warehouse software?,창고 관리 소프트웨어를 업그레이드하는 데 투자하면 얼마나 빨리 효과를 볼 수 있을까요?
-exp_1600,Questions & Inquiries,What would it take to get everyone on board before next month's kickoff?,다음 달 킥오프 전까지 모두가 동의하게 만들려면 무엇이 필요할까요?
-exp_1601,Questions & Inquiries,Have you had a chance to look over the updated proposal I sent yesterday?,어제 보내드린 수정 기획안을 훑어보실 시간이 있으셨나요?
-exp_1602,Questions & Inquiries,Who has the final say on whether this campaign goes live on Monday?,이 캠페인을 월요일에 공개할지 여부에 대한 최종 결정권은 누구에게 있나요?
-exp_1603,Questions & Inquiries,What's the realistic turnaround time for getting legal feedback on a contract?,계약서에 대한 법무팀 피드백을 받는 데 현실적으로 어느 정도 시간이 걸리나요?
-exp_1604,Questions & Inquiries,Are there any remaining blockers keeping us from merging this release?,이번 배포 버전을 병합하는 데 아직 막고 있는 장애 요소가 남아 있나요?
-exp_1605,Questions & Inquiries,Who else needs to be looped in before we finalize the vendor shortlist?,최종 후보 업체 목록을 확정하기 전에 추가로 공유받아야 할 분이 또 있나요?
-exp_1606,Questions & Inquiries,What are the main takeaways you want leadership to remember from this deck?,경영진이 이 발표 자료에서 꼭 기억해 주길 바라는 핵심 포인트가 뭔가요?
-exp_1607,Questions & Inquiries,How are we tracking against the budget we set at the start of Q2?,2분기 시작할 때 세운 예산 대비 현재 집행 상황이 어떻게 진행되고 있나요?
-exp_1608,Questions & Inquiries,Did anyone volunteer to take notes and circulate action items after this call?,이번 회의 후에 회의록을 작성하고 실행 항목을 공유해 주실 분이 계신가요?
-exp_1609,Questions & Inquiries,Which tasks can we safely deprioritize so the team isn't stretched too thin?,팀이 과부하 걸리지 않도록 우선순위를 안전하게 뒤로 미룰 수 있는 업무가 뭔가요?
-exp_1610,Questions & Inquiries,Have we gotten confirmation from IT that the new laptops shipped on time?,새 노트북이 제때 발송됐다는 확인을 IT팀으로부터 받았나요?
-exp_1611,Questions & Inquiries,How does this new workflow affect folks working across different time zones?,이 새로운 업무 방식이 서로 다른 시간대에서 일하는 팀원들에게는 어떤 영향을 주나요?
-exp_1612,Questions & Inquiries,What metrics are we using to measure whether the onboarding redesign worked?,온보딩 개편이 성공했는지 측정하기 위해 어떤 지표를 사용하고 있나요?
-exp_1613,Questions & Inquiries,Could we trim the agenda down so we finish ten minutes before the hour?,정각 10분 전에 마칠 수 있도록 안건을 조금 줄여서 진행할 수 있을까요?
-exp_1614,Questions & Inquiries,Who's covering for Dan while he's out on paternity leave next month?,다음 달에 댄이 육아휴직을 쓰는 동안 그 업무는 누가 대신 맡게 되나요?
-exp_1615,Questions & Inquiries,"Has the client signed off on the revised scope, or are they still reviewing?","고객사가 수정된 업무 범위에 승인했나요, 아니면 아직 검토 중인가요?"
-exp_1616,Questions & Inquiries,What kind of support do you need from our side to hit Friday's milestone?,금요일 마일스톤을 달성하려면 저희 쪽에서 어떤 지원을 해 드려야 할까요?
-exp_1617,Questions & Inquiries,Are we duplicating work that the analytics team already pulled last week?,데이터 분석팀이 지난주에 이미 뽑아 놓은 작업을 우리가 중복해서 하고 있는 건 아닐까요?
-exp_1618,Questions & Inquiries,How open is the stakeholder group to shifting the rollout into two phases?,이해관계자 그룹이 도입 일정을 2단계로 나누는 방안에 대해 얼마나 열려 있나요?
-exp_1619,Questions & Inquiries,Where did we land on the question of offering weekend customer support?,주말 고객 지원을 제공할지 말지에 대한 논의는 결국 어떻게 결론이 났나요?
-exp_1620,Questions & Inquiries,Is there a template from last year's annual report that we can borrow from?,작년 연차 보고서에서 참고해서 가져다 쓸 만한 템플릿이 있나요?
-exp_1621,Questions & Inquiries,How much lead time does the print shop need for five hundred brochures?,브로셔 500부를 인쇄하려면 인쇄소에 최소 며칠 전에 주문을 넣어야 하나요?
-exp_1622,Questions & Inquiries,What kind of questions came up most often during the beta user interviews?,베타 사용자 인터뷰 중에 가장 자주 나왔던 질문들이 어떤 거였나요?
-exp_1623,Questions & Inquiries,Do we have enough runway in the schedule to absorb a two-day delay?,일정상 이틀 정도 지연되더라도 흡수할 만한 여유가 충분히 있나요?
-exp_1624,Questions & Inquiries,Who should I reach out to if I run into permissions issues on the shared drive?,공유 드라이브에서 권한 문제가 생기면 누구에게 연락해야 하나요?
-exp_1625,Questions & Inquiries,Did the last client survey reveal any blind spots we hadn't noticed before?,지난 고객 설문조사에서 우리가 미처 몰랐던 사각지대가 드러난 게 있었나요?
-exp_1626,Questions & Inquiries,What's our contingency plan if the live demo runs into Wi-Fi trouble?,라이브 시연 도중에 와이파이 문제가 생기면 대안 계획은 무엇인가요?
-exp_1627,Questions & Inquiries,Are we aligned on what 'done' looks like for this phase of the build?,이번 개발 단계에서 '완료'의 기준이 무엇인지 서로 의견이 일치하고 있나요?
-exp_1628,Questions & Inquiries,How frequently should we send progress snapshots to keep the client reassured?,고객이 안심할 수 있도록 진행 상황 요약을 얼마나 자주 보내는 게 좋을까요?
-exp_1629,Questions & Inquiries,Can we consolidate these three weekly check-ins into a single async update?,매주 하는 이 세 개의 미팅을 하나의 비동기 업데이트로 통합할 수 있을까요?
-exp_1630,Questions & Inquiries,What skills are we still missing on the roster for the Q4 expansion?,4분기 확장을 위해 현재 팀 구성에서 아직 부족한 역량이 무엇인가요?
-exp_1631,Questions & Inquiries,How far in advance do we need to reserve the venue to get our preferred date?,원하는 날짜를 잡으려면 최소 얼마나 미리 행사장을 예약해야 하나요?
-exp_1632,Questions & Inquiries,When is the earliest we could realistically get everyone in the same room?,현실적으로 모두가 한자리에 모일 수 있는 가장 빠른 시점이 언제일까요?
-exp_1633,Questions & Inquiries,How long does it typically take before the paint fumes completely air out?,페인트 냄새가 완전히 빠지는 데 보통 시간이 얼마나 걸리나요?
-exp_1634,Questions & Inquiries,Will there be enough time between sessions to grab lunch without rushing?,세션 사이에 허둥지둥하지 않고 점심을 먹을 만큼 시간이 충분할까요?
-exp_1635,Questions & Inquiries,What time does rush hour usually start thinning out on Friday evenings?,금요일 저녁에는 보통 몇 시쯤부터 퇴근길 정체가 풀리기 시작하나요?
-exp_1636,Questions & Inquiries,"How early should we show up at the theater if seating is first-come, first-served?",선착순 자유석이라면 극장에 얼마나 일찍 도착해야 좋은 자리를 잡을까요?
-exp_1637,Questions & Inquiries,Do you know roughly how often the airport express bus runs after midnight?,자정 이후에도 공항 리무진 버스가 대략 몇 분 간격으로 다니는지 아세요?
+exp_1557,Questions & Inquiries,What prompted changing the syllabus mid-semester like that?,학기 중간에 강의 계획서를 그렇게 바꾼 이유가 뭔가요?
+exp_1558,Questions & Inquiries,Why pay double just for two-day shipping here?,이틀 만에 받으려고 배송비를 두 배나 왜 내나요?
+exp_1559,Questions & Inquiries,Since when does the pool require advance reservations?,수영장을 이용하는 데 언제부터 사전 예약이 필요해졌죠?
+exp_1560,Questions & Inquiries,What's behind this sudden spike in support tickets?,고객 지원 문의가 갑자기 급증한 배경이 뭔가요?
+exp_1561,Questions & Inquiries,How did you land an interview without openings?,채용 공고도 없는 팀과 어떻게 면접까지 보게 되셨어요?
+exp_1562,Questions & Inquiries,What's holding you back from pitching the director?,디렉터에게 직접 제안하는 걸 망설이게 만드는 게 뭔가요?
+exp_1563,Questions & Inquiries,Why did he leave ten minutes before ending?,그가 끝나기 10분 전에 자리를 뜬 이유가 뭘까요?
+exp_1564,Questions & Inquiries,How come this branch gets way more traffic?,어떻게 이 지점이 유동 인구가 훨씬 더 많은 걸까요?
+exp_1565,Questions & Inquiries,What convinced you living downtown justifies higher rent?,월세가 더 비싸도 도심에 살 가치가 있다고 확신한 이유가 뭔가요?
+exp_1566,Questions & Inquiries,Why schedule maintenance right during peak checkout hours?,대체 왜 결제가 가장 몰리는 시간대에 점검을 잡은 걸까요?
+exp_1567,Questions & Inquiries,What made you suspect we got billed twice?,이중 청구됐다고 의심하게 된 단서가 무엇이었나요?
+exp_1568,Questions & Inquiries,How come local bakeries stopped carrying rye bread?,어째서 동네 빵집들에서 더 이상 호밀빵을 안 파는 걸까요?
+exp_1569,Questions & Inquiries,Why split this training into four short sessions?,이 교육을 네 개의 짧은 세션으로 나눈 이유가 무엇인가요?
+exp_1570,Questions & Inquiries,Why keep a feature barely anyone clicks on?,거의 아무도 클릭하지 않는 기능을 굳이 계속 유지하는 이유가 뭘까요?
+exp_1571,Questions & Inquiries,How did you stay calm when slides died?,슬라이드가 꺼졌는데 어떻게 그렇게 침착함을 유지하셨어요?
+exp_1572,Questions & Inquiries,What makes this neighborhood feel so much livelier?,이 동네가 전보다 훨씬 활기차게 느껴지는 이유가 무엇일까요?
+exp_1573,Questions & Inquiries,How come my battery drains faster using GPS?,GPS를 켤 때마다 배터리가 왜 이렇게 빨리 닳는 거죠?
+exp_1574,Questions & Inquiries,What drove your career switch after eight years?,8년이나 일하고 나서 직종을 바꾸게 된 동기가 뭔가요?
+exp_1575,Questions & Inquiries,Why is admitting small mistakes often much harder?,왜 사소한 실수를 인정하는 게 훨씬 더 어려운 걸까요?
+exp_1576,Questions & Inquiries,What would you do differently in my shoes?,제 입장이라면 어떻게 다르게 행동하시겠어요?
+exp_1577,Questions & Inquiries,Should we repair the roof or replace it?,지붕을 수리하는 게 나을까요 아예 교체하는 게 나을까요?
+exp_1578,Questions & Inquiries,"If we delay a week, what breaks downstream?",일주일 미루면 뒷단계 일정에 어떤 문제가 생길까요?
+exp_1579,Questions & Inquiries,How likely will the committee approve an exception?,위원회가 예외를 승인해 줄 가능성이 얼마나 될까요?
+exp_1580,Questions & Inquiries,What's the worst-case scenario if we wait Monday?,월요일까지 기다렸을 때 최악의 시나리오는 뭔가요?
+exp_1581,Questions & Inquiries,Which option offers more flexibility if demand drops?,수요가 줄어들 경우 어느 선택지가 더 유연하게 대처할 수 있나요?
+exp_1582,Questions & Inquiries,Would you rather take higher salary or equity?,더 높은 연봉과 스톡옵션 중에 어느 쪽을 택하시겠어요?
+exp_1583,Questions & Inquiries,Is travel insurance worth buying for domestic flights?,국내선 비행인데 여행자 보험을 들 만한 가치가 있을까요?
+exp_1584,Questions & Inquiries,What happens if nobody accepts before Friday's cutoff?,금요일 마감 시한까지 아무도 수락하지 않으면 어떻게 되나요?
+exp_1585,Questions & Inquiries,Would taking the train beat dealing with airports?,공항에서 고생하느니 기차를 타는 편이 더 나을까요?
+exp_1586,Questions & Inquiries,How would customers react to an annual-only plan?,연간 결제 요금제만 운영하면 고객들이 어떻게 반응할까요?
+exp_1587,Questions & Inquiries,When does repairing an old appliance stop making sense?,오래된 가전을 고쳐 쓰는 게 언제부터 손해가 될까요?
+exp_1588,Questions & Inquiries,"If both teams merge, who handles QA testing?",두 팀을 합친다면 QA 테스트는 누가 맡게 되나요?
+exp_1589,Questions & Inquiries,Can we pilot this format with five users?,다섯 명을 대상으로 새 형식을 먼저 시험해 볼 수 있을까요?
+exp_1590,Questions & Inquiries,Which criteria matter most comparing these three vendors?,이 세 업체를 비교할 때 어떤 기준이 가장 중요할까요?
+exp_1591,Questions & Inquiries,Prefer a longer commute or living downtown?,출퇴근이 길어도 마당 있는 집이 좋으세요 도심이 좋으세요?
+exp_1592,Questions & Inquiries,How much risk comes from skipping our pilot?,시범 운영을 건너뛰면 우리가 떠안는 리스크가 얼마나 되나요?
+exp_1593,Questions & Inquiries,"If Saturday rains out, what's our Plan B?",토요일에 비가 오면 대안 계획은 무엇인가요?
+exp_1594,Questions & Inquiries,Would hiring a freelancer relieve enough team pressure?,프리랜서를 한 명 투입하면 팀 부담이 충분히 줄어들까요?
+exp_1595,Questions & Inquiries,Where's the line between reminding and micromanaging?,리마인더와 지나친 간섭 사이의 경계가 어디일까요?
+exp_1596,Questions & Inquiries,What trade-offs come from prioritizing speed over polish?,완성도보다 속도를 우선시하면 어떤 트레이드오프가 따르나요?
+exp_1597,Questions & Inquiries,Should we lock this rate now or wait?,지금 금리로 확정 짓는 게 나을까요 기다려 볼까요?
+exp_1598,Questions & Inquiries,Which weekly chore would you automate first today?,일주일 집안일 중 딱 하나만 자동화한다면 뭘 고르시겠어요?
+exp_1599,Questions & Inquiries,How soon would upgrading warehouse software pay off?,창고 소프트웨어를 업그레이드하면 얼마나 빨리 본전을 뽑을까요?
+exp_1600,Questions & Inquiries,What's needed to get everyone aligned before kickoff?,킥오프 전까지 모두가 동의하게 만들려면 무엇이 필요할까요?
+exp_1601,Questions & Inquiries,Did you look over the proposal sent yesterday?,어제 보내드린 기획안을 살펴보실 시간이 있으셨나요?
+exp_1602,Questions & Inquiries,Who makes the final call on Monday's launch?,월요일 출시 여부에 대한 최종 결정권은 누구에게 있나요?
+exp_1603,Questions & Inquiries,What's the realistic turnaround for legal contract reviews?,계약서 법무 검토에 현실적으로 시간이 얼마나 걸리나요?
+exp_1604,Questions & Inquiries,Are any blockers stopping us from merging today?,오늘 병합하는 데 막고 있는 장애 요소가 남아 있나요?
+exp_1605,Questions & Inquiries,Who else needs looping in before finalizing vendors?,업체 목록을 확정하기 전에 누가 추가로 공유받아야 하나요?
+exp_1606,Questions & Inquiries,What key takeaways should leadership remember from here?,경영진이 여기서 꼭 기억해 주길 바라는 핵심이 뭔가요?
+exp_1607,Questions & Inquiries,How are we tracking against our Q2 budget?,2분기 예산 대비 현재 집행 상황이 어떻게 진행되고 있나요?
+exp_1608,Questions & Inquiries,Did anyone volunteer to circulate notes after this?,회의 후에 회의록 공유해 주시기로 한 분 계신가요?
+exp_1609,Questions & Inquiries,Which tasks can we safely push to next week?,다음 주로 안전하게 미룰 수 있는 업무가 뭔가요?
+exp_1610,Questions & Inquiries,Did IT confirm those new laptops shipped yet?,새 노트북이 발송됐다는 확인을 IT팀에서 받았나요?
+exp_1611,Questions & Inquiries,How does this impact folks across time zones?,이게 다른 시간대에서 일하는 팀원들에게 어떤 영향을 주나요?
+exp_1612,Questions & Inquiries,Which metrics prove the onboarding redesign actually worked?,온보딩 개편이 성공했는지 어떤 지표로 측정하나요?
+exp_1613,Questions & Inquiries,Can we trim the agenda to finish early?,일찍 마칠 수 있게 안건을 조금 줄여서 진행할 수 있을까요?
+exp_1614,Questions & Inquiries,Who's covering Dan's workload during paternity leave?,댄이 육아휴직을 쓰는 동안 그 업무는 누가 대신 맡나요?
+exp_1615,Questions & Inquiries,Did the client sign off on revised scope?,고객사가 수정된 업무 범위에 승인했나요?
+exp_1616,Questions & Inquiries,What support do you need for Friday's milestone?,금요일 마일스톤을 위해 저희 쪽에서 어떤 지원을 해 드릴까요?
+exp_1617,Questions & Inquiries,Are we duplicating analytics work pulled last week?,지난주에 이미 뽑아 놓은 분석 작업을 중복하고 있는 건 아닐까요?
+exp_1618,Questions & Inquiries,Are stakeholders open to a two-phase rollout?,이해관계자들이 2단계로 나누어 도입하는 방안에 열려 있나요?
+exp_1619,Questions & Inquiries,Where did we land on weekend customer support?,주말 고객 지원 여부에 대한 논의는 어떻게 결론 났나요?
+exp_1620,Questions & Inquiries,Can we borrow templates from last year's report?,작년 보고서에서 템플릿을 가져다 쓸 수 있을까요?
+exp_1621,Questions & Inquiries,How much lead time do printers need here?,인쇄소에 최소 며칠 전에 주문을 넣어야 하나요?
+exp_1622,Questions & Inquiries,Which questions came up most during beta interviews?,베타 인터뷰 중에 가장 자주 나왔던 질문이 뭐였나요?
+exp_1623,Questions & Inquiries,Can our schedule absorb a two-day delay comfortably?,일정상 이틀 정도 지연되어도 무리 없이 감당할 수 있나요?
+exp_1624,Questions & Inquiries,Who handles permissions issues on the shared drive?,공유 드라이브 권한 문제가 생기면 누구에게 연락해야 하나요?
+exp_1625,Questions & Inquiries,Did that client survey uncover any blind spots?,고객 설문조사에서 우리가 몰랐던 사각지대가 드러났나요?
+exp_1626,Questions & Inquiries,What's Plan B if demo Wi-Fi drops out?,시연 도중에 와이파이가 끊기면 대안 계획이 무엇인가요?
+exp_1627,Questions & Inquiries,Are we aligned on what 'done' means here?,여기서 '완료'의 기준이 무엇인지 서로 의견이 일치하나요?
+exp_1628,Questions & Inquiries,How often should we send client progress snapshots?,고객에게 진행 상황 요약을 얼마나 자주 보내는 게 좋을까요?
+exp_1629,Questions & Inquiries,Can we replace three meetings with async updates?,미팅 세 개를 하나의 비동기 업데이트로 대체할 수 있을까요?
+exp_1630,Questions & Inquiries,Which key skills are missing before Q4 expansion?,4분기 확장 전에 현재 팀에서 부족한 역량이 무엇인가요?
+exp_1631,Questions & Inquiries,How early must we book the main venue?,원하는 날짜를 잡으려면 최소 얼마나 미리 행사장을 예약해야 하나요?
+exp_1632,Questions & Inquiries,When can we realistically get everyone together next?,현실적으로 모두가 한자리에 모일 수 있는 가장 빠른 날이 언제인가요?
+exp_1633,Questions & Inquiries,How long before those paint fumes air out?,페인트 냄새가 빠지는 데 보통 시간이 얼마나 걸리나요?
+exp_1634,Questions & Inquiries,Will there be enough time for lunch today?,오늘 점심을 먹을 만큼 시간이 충분할까요?
+exp_1635,Questions & Inquiries,When does Friday evening rush hour thin out?,금요일 저녁 퇴근길 정체가 보통 몇 시쯤 풀리나요?
+exp_1636,Questions & Inquiries,How early should we arrive for general seating?,자유석이라면 얼마나 일찍 도착해야 좋은 자리를 잡을까요?
+exp_1637,Questions & Inquiries,How often does the airport bus run past midnight?,자정 이후에도 공항 버스가 대략 몇 분 간격으로 다니나요?
 exp_1638,Questions & Inquiries,When does the early-bird registration discount officially expire?,얼리버드 사전 등록 할인이 공식적으로 언제 마감되나요?
-exp_1639,Questions & Inquiries,How much buffer should we add for picking up rental gear at the lodge?,산장에서 장비를 대여하는 데 여유 시간을 얼마나 더 잡아야 할까요?
-exp_1640,Questions & Inquiries,"Is next Wednesday morning wide open for you, or do you have standing calls?","다음 주 수요일 오전은 비어 있으신가요, 아니면 정기 회의가 있으신가요?"
-exp_1641,Questions & Inquiries,How long before the lease renewal do we have to let the management office know?,임대 계약 갱신 전 며칠까지 관리사무소에 의사를 알려야 하나요?
+exp_1639,Questions & Inquiries,How much buffer should we add for rentals?,장비를 대여하는 데 여유 시간을 얼마나 더 잡아야 할까요?
+exp_1640,Questions & Inquiries,Is next Wednesday morning open for a call?,다음 주 수요일 오전은 통화 가능하신가요?
+exp_1641,Questions & Inquiries,When must we confirm our upcoming lease renewal?,임대 계약 갱신 전 며칠까지 의사를 알려야 하나요?
 exp_1642,Questions & Inquiries,What's the cutoff time for placing same-day grocery delivery orders?,당일 식료품 배송 주문의 마감 시각이 몇 시인가요?
-exp_1643,Questions & Inquiries,Are we looking at days or weeks before the replacement part arrives?,"교체 부품이 도착하는 데 며칠 정도 걸릴까요, 아니면 몇 주가 걸릴까요?"
-exp_1644,Questions & Inquiries,Does the bakery usually sell out of cinnamon rolls before ten in the morning?,그 빵집은 보통 오전 10시 전에 시나몬 롤이 다 팔려 버리나요?
-exp_1645,Questions & Inquiries,Which days of the week tend to be least crowded at the DMV?,차량등록사업소(DMV)가 주중에 어느 요일에 가장 덜 붐비는 편인가요?
-exp_1646,Questions & Inquiries,How long will the bridge lane closures stay in effect overnight?,다리 차선 통제가 밤사이 몇 시까지 계속 적용되나요?
-exp_1647,Questions & Inquiries,Can we aim to wrap up setup by five so the crew gets a proper dinner break?,스태프들이 제대로 저녁을 먹을 수 있게 5시까지 세팅을 마치는 걸 목표로 할까요?
-exp_1648,Questions & Inquiries,When do they start accepting reservations for the holiday tasting menu?,연말 특선 코스 메뉴 예약은 언제부터 받기 시작하나요?
-exp_1649,Questions & Inquiries,How many days does it usually take for international shipping to clear customs?,해외 배송 물품이 세관을 통과하는 데 보통 며칠이나 걸리나요?
-exp_1650,Questions & Inquiries,Should we stagger our arrival times so everyone isn't waiting at the curb?,다들 길가에서 한꺼번에 기다리지 않게 도착 시간을 조금씩 나누는 게 좋을까요?
-exp_1651,Questions & Inquiries,By what date do you need a finalized headcount for the catering order?,케이터링 주문을 위해 최종 인원수를 며칠까지 확정해 드려야 하나요?
-exp_1652,Questions & Inquiries,How late can we check out without getting charged for an extra half-day?,반나절 추가 요금이 안 붙으려면 늦어도 몇 시까지 체크아웃해야 하나요?
-exp_1653,Questions & Inquiries,Does the ferry run on a reduced schedule whenever winds pick up?,바람이 세지면 페리가 감편 운행으로 바뀌나요?
-exp_1654,Questions & Inquiries,How soon after submitting the application can we expect a confirmation email?,신청서를 제출한 뒤 얼마나 지나야 확인 이메일을 받을 수 있나요?
-exp_1655,Questions & Inquiries,When would be the least disruptive window to restart the office router?,사무실 공유기를 재부팅할 때 업무 방해가 가장 적은 시간대가 언제일까요?
-exp_1656,Questions & Inquiries,How have you been holding up since your whole department went through that reorg?,부서 전체가 조직 개편을 겪은 뒤로 요즘 어떻게 지내고 있어요?
-exp_1657,Questions & Inquiries,What's been keeping you busy outside of work over the past few weeks?,최근 몇 주 동안 일 말고 개인적으로는 어떤 일로 바쁘게 지냈어요?
-exp_1658,Questions & Inquiries,Do you ever feel like taking a whole month off just to live somewhere quiet?,아무것도 안 하고 조용한 곳에 가서 한 달만 푹 쉬고 싶다는 생각 해 본 적 있어요?
-exp_1659,Questions & Inquiries,"If you could redo one career decision from five years ago, what would it be?",5년 전 커리어 결정 중 딱 하나를 다시 선택할 수 있다면 무엇을 바꾸고 싶으세요?
-exp_1660,Questions & Inquiries,What's one small habit you picked up this year that actually stuck?,올해 들인 작은 습관 중에서 실제로 지금까지 꾸준히 이어진 게 뭐예요?
-exp_1661,Questions & Inquiries,How do you usually unwind after a week where everything feels nonstop?,일주일 내내 쉴 틈 없이 바빴을 때 보통 어떻게 스트레스를 풀어요?
-exp_1662,Questions & Inquiries,Have you stayed close with anyone from your very first job out of college?,대학 졸업 후 첫 직장에서 만난 사람들 중에 아직도 가깝게 지내는 사람이 있나요?
-exp_1663,Questions & Inquiries,What surprised you most about living in a big city compared to growing up?,자란 곳과 비교했을 때 대도시에 살면서 가장 의외였던 점이 뭐였어요?
-exp_1664,Questions & Inquiries,When was the last time a book or movie genuinely changed how you saw something?,최근에 책이나 영화 때문에 어떤 시각이 진심으로 바뀌었던 적이 언제였나요?
-exp_1665,Questions & Inquiries,How do you tell when someone is being polite versus genuinely interested?,상대방이 그냥 예의상 그러는 건지 진심으로 관심이 있는 건지 어떻게 구분하세요?
-exp_1666,Questions & Inquiries,What's something people assume is easy about your job that's actually exhausting?,사람들이 네 직업에 대해 쉽다고 착각하지만 실제로는 엄청 진 빠지는 게 뭐야?
-exp_1667,Questions & Inquiries,Have you ever talked yourself out of a great opportunity just out of nerves?,단지 긴장되고 두려워서 좋은 기회를 스스로 포기해 버린 적이 있나요?
-exp_1668,Questions & Inquiries,What kind of friend are you when someone close to you is going through a breakup?,가까운 친구가 이별을 겪고 있을 때 너는 어떤 스타일로 챙겨 주는 편이야?
-exp_1669,Questions & Inquiries,Is there a family recipe you've been trying to recreate from memory lately?,요즘 기억을 더듬어서 다시 만들어 보려고 애쓰고 있는 집안 음식 레시피가 있나요?
-exp_1670,Questions & Inquiries,How long does it usually take you to feel comfortable in a brand-new group?,완전히 새로운 모임에 들어갔을 때 편해지기까지 보통 시간이 얼마나 걸려요?
-exp_1671,Questions & Inquiries,What's the best piece of advice someone gave you when you were completely stuck?,완전히 막막했을 때 누군가 해 준 조언 중 가장 도움이 됐던 말이 뭐예요?
-exp_1672,Questions & Inquiries,Do you prefer celebrating milestones with a big crowd or a quiet dinner?,"기념일을 축하할 때 여러 사람과 시끌벅적하게 보내는 게 좋아요, 아니면 조용한 저녁 식사가 좋아요?"
-exp_1673,Questions & Inquiries,Have you noticed yourself becoming more like your parents as you get older?,나이가 들수록 점점 부모님을 닮아간다고 느낀 적이 있나요?
-exp_1674,Questions & Inquiries,What makes a house feel like an actual home to you rather than just a rental?,단순히 세 들어 사는 집이 아니라 진짜 '내 집'처럼 느껴지게 만드는 요소가 뭐라고 생각해요?
-exp_1675,Questions & Inquiries,How do you politely bow out of plans when you realize your social battery is empty?,사람 만날 에너지가 바닥났다는 걸 깨달았을 때 약속에서 어떻게 정중하게 빠지나요?
-exp_1676,Questions & Inquiries,What's a hobby you dropped years ago that you secretly miss doing?,몇 년 전에 그만뒀지만 속으로는 은근히 다시 하고 싶은 취미가 있나요?
-exp_1677,Questions & Inquiries,Who in your life is the person you text first when you get unexpected good news?,예상치 못한 좋은 소식이 생겼을 때 가장 먼저 문자 보내는 사람이 누구예요?
-exp_1678,Questions & Inquiries,Do you find it harder to ask for help or to turn someone down?,"남에게 도움을 요청하는 게 더 어려우세요, 아니면 남의 부탁을 거절하는 게 더 어려우세요?"
-exp_1679,Questions & Inquiries,What's one thing you used to stress over constantly that doesn't faze you now?,예전에는 늘 스트레스받았지만 지금은 전혀 신경 쓰이지 않는 일이 뭐가 있나요?
-exp_1680,Questions & Inquiries,"If we dropped everything and took a road trip tomorrow, where would you drive?",만약 내일 다 내려놓고 훌쩍 자동차 여행을 떠난다면 어디로 운전해서 가고 싶어요?
-exp_1681,Questions & Inquiries,What's the catch with that zero-percent financing offer on the banner?,배너에 나온 무이자 할부 혜택에 숨겨진 조건이나 함정이 있나요?
-exp_1682,Questions & Inquiries,Is there a workaround in case the payment portal rejects international cards?,결제 페이지에서 해외 카드를 거부할 경우 우회할 수 있는 다른 방법이 있나요?
-exp_1683,Questions & Inquiries,What happens if our connecting flight gets canceled due to severe weather?,악천후로 인해 환승 항공편이 결항되면 어떤 조치가 취해지나요?
-exp_1684,Questions & Inquiries,How do I know whether accidental water damage is covered under this warranty?,우발적인 침수 손상이 이 보증 기간 안에 포함되는지 어떻게 확인할 수 있나요?
-exp_1685,Questions & Inquiries,"Does the security deposit get refunded automatically, or do I need to file a form?","보증금은 자동으로 환불되나요, 아니면 따로 양식을 작성해서 신청해야 하나요?"
-exp_1686,Questions & Inquiries,Why won't the voucher code apply even though everything in my cart qualifies?,장바구니에 담긴 상품이 다 조건에 맞는데도 할인 코드가 왜 적용이 안 되는 거죠?
-exp_1687,Questions & Inquiries,Where do I go to contest a parking ticket that was issued in error?,잘못 발부된 주차 딱지에 대해 이의 제기를 하려면 어디로 가야 하나요?
-exp_1688,Questions & Inquiries,Can I switch my ticket to a standby list for an earlier departure at the gate?,탑승구에서 내 티켓을 더 이른 출발편 대기자 명단으로 변경할 수 있나요?
-exp_1689,Questions & Inquiries,Is it cheaper to buy a multi-day transit pass or pay per ride with tap-to-pay?,"다일권 교통 패스를 사는 게 쌀까요, 아니면 탈 때마다 카드로 찍고 내는 게 쌀까요?"
-exp_1690,Questions & Inquiries,What documentation does customs ask for if I'm carrying prescription medication?,처방약을 소지하고 입국할 때 세관에서 어떤 서류를 요구하나요?
-exp_1691,Questions & Inquiries,How can I tell whether a suspicious text from my bank is actually legitimate?,은행에서 온 것 같은 의심스러운 문자가 진짜인지 아닌지 어떻게 구별하나요?
-exp_1692,Questions & Inquiries,Will canceling my subscription today cut off access immediately or at billing end?,"오늘 구독을 해지하면 이용 권한이 즉시 끊기나요, 아니면 결제 주기 끝날 때까지 유지되나요?"
-exp_1693,Questions & Inquiries,Do they offer free loaner bikes while your car is in the shop for service?,차가 정비소에 들어가 있는 동안 무료로 빌려주는 대차나 자전거 서비스가 있나요?
-exp_1694,Questions & Inquiries,What's the baggage weight limit before overweight fees kick in on domestic flights?,국내선에서 초과 수하물 요금이 붙기 직전의 최대 무게 제한이 몇 킬로그램인가요?
-exp_1695,Questions & Inquiries,Could you check if that item is sitting in the back stockroom even though the shelf is empty?,진열대는 비어 있는데 창고 안쪽에 재고가 남아 있는지 확인해 주실 수 있나요?
-exp_1696,Questions & Inquiries,How do you reset the smart thermostat when the screen freezes up completely?,스마트 온도조절기 화면이 완전히 멈춰 버렸을 때는 어떻게 초기화하나요?
-exp_1697,Questions & Inquiries,"Are utilities like water and trash bundled into the rent, or billed separately?","수도세나 쓰레기 처리비 같은 공과금이 월세에 포함인가요, 아니면 별도 청구되나요?"
-exp_1698,Questions & Inquiries,Which insurance plan actually makes sense if I barely visit the doctor all year?,일 년 내내 병원에 거의 안 간다면 어떤 보험 플랜을 고르는 게 실제로 가장 합리적일까요?
-exp_1699,Questions & Inquiries,"Does this cafe allow laptops during lunch hours, or is it table-service only?","이 카페는 점심시간에도 노트북 사용이 가능한가요, 아니면 식사 손님 전용인가요?"
-exp_1700,Questions & Inquiries,What's the fastest way to reach a live representative instead of an automated menu?,자동 응답 메뉴 말고 실제 상담원과 가장 빨리 연결하는 방법이 뭔가요?
+exp_1643,Questions & Inquiries,Are replacement parts arriving in days or weeks?,"교체 부품이 도착하는 데 며칠 걸릴까요, 몇 주 걸릴까요?"
+exp_1644,Questions & Inquiries,Do cinnamon rolls usually sell out before ten?,그 빵집은 보통 10시 전에 시나몬 롤이 다 팔리나요?
+exp_1645,Questions & Inquiries,Which weekdays are least crowded at the DMV?,차량등록사업소가 주중에 어느 요일에 가장 덜 붐비나요?
+exp_1646,Questions & Inquiries,How long do overnight bridge closures stay active?,밤사이 다리 차선 통제가 몇 시까지 계속되나요?
+exp_1647,Questions & Inquiries,Can we finish setup by five for dinner?,저녁 식사할 수 있게 5시까지 세팅을 마칠까요?
+exp_1648,Questions & Inquiries,When do holiday tasting menu bookings open up?,연말 특선 코스 메뉴 예약은 언제부터 열리나요?
+exp_1649,Questions & Inquiries,How long does international shipping take clearing customs?,해외 배송 물품이 세관을 통과하는 데 보통 며칠 걸리나요?
+exp_1650,Questions & Inquiries,Should we stagger arrivals so nobody waits outside?,밖에서 기다리지 않게 도착 시간을 조금씩 나눌까요?
+exp_1651,Questions & Inquiries,When do you need our final catering headcount?,케이터링 최종 인원수를 며칠까지 알려 드려야 하나요?
+exp_1652,Questions & Inquiries,How late can we check out without fees?,추가 요금이 안 붙으려면 늦어도 몇 시까지 체크아웃해야 하나요?
+exp_1653,Questions & Inquiries,Does the ferry run slower during high winds?,바람이 세지면 페리가 감편 운행으로 바뀌나요?
+exp_1654,Questions & Inquiries,How soon after applying do confirmation emails arrive?,신청서를 낸 뒤 얼마나 지나야 확인 이메일이 오나요?
+exp_1655,Questions & Inquiries,When's the quietest window to reboot the router?,공유기를 재부팅할 때 업무 방해가 가장 적은 시간대가 언제인가요?
+exp_1656,Questions & Inquiries,How have you held up since the reorg?,조직 개편을 겪은 뒤로 요즘 어떻게 지내고 있어요?
+exp_1657,Questions & Inquiries,What's kept you busy outside work this month?,이번 달에는 일 말고 개인적으로 어떤 일로 바빴어요?
+exp_1658,Questions & Inquiries,Ever feel like escaping somewhere quiet for a month?,조용한 곳에 가서 한 달만 푹 쉬고 싶다는 생각 해 본 적 있어요?
+exp_1659,Questions & Inquiries,Which past career move would you redo today?,과거 커리어 결정 중 딱 하나를 바꾼다면 뭘 바꾸고 싶으세요?
+exp_1660,Questions & Inquiries,What small habit you started actually stuck around?,올해 들인 작은 습관 중에서 실제로 꾸준히 이어진 게 뭐예요?
+exp_1661,Questions & Inquiries,How do you unwind after nonstop work weeks?,쉴 틈 없이 바빴던 주가 끝나면 보통 어떻게 스트레스를 풀어요?
+exp_1662,Questions & Inquiries,Still keep in touch with college job friends?,대학 시절 첫 직장 동료들 중에 아직도 연락하는 사람이 있나요?
+exp_1663,Questions & Inquiries,What surprised you most about big city life?,대도시에 살면서 가장 의외였던 점이 뭐였어요?
+exp_1664,Questions & Inquiries,What book or film genuinely changed your perspective?,최근에 책이나 영화 때문에 시각이 바뀐 적이 있나요?
+exp_1665,Questions & Inquiries,How can you tell genuine interest from politeness?,그냥 예의상 그러는 건지 진심으로 관심 있는 건지 어떻게 알아요?
+exp_1666,Questions & Inquiries,What part of your job secretly drains you?,네 직업에서 남들이 생각하는 것보다 실제로 가장 진 빠지는 게 뭐야?
+exp_1667,Questions & Inquiries,Ever talked yourself out of a great opportunity?,긴장되고 두려워서 좋은 기회를 스스로 포기해 본 적이 있나요?
+exp_1668,Questions & Inquiries,How do you support friends going through breakups?,친구가 이별을 겪고 있을 때 너는 어떤 식으로 챙겨 줘?
+exp_1669,Questions & Inquiries,What family recipe have you tried recreating lately?,요즘 기억을 더듬어 다시 만들어 보려고 하는 집안 음식 레시피가 있나요?
+exp_1670,Questions & Inquiries,How quickly do you warm up to groups?,새로운 모임에 들어갔을 때 편해지기까지 보통 얼마나 걸려요?
+exp_1671,Questions & Inquiries,What's the best advice you got when stuck?,막막했을 때 누군가 해 준 조언 중 가장 도움이 됐던 말이 뭐예요?
+exp_1672,Questions & Inquiries,Prefer celebrating milestones big or quiet dinners?,기념일엔 여럿이 시끌벅적하게 보내는 게 좋아요 조용한 식사가 좋아요?
+exp_1673,Questions & Inquiries,Do you catch yourself acting like your parents?,나이가 들수록 문득 부모님과 똑같이 행동한다고 느낀 적 있나요?
+exp_1674,Questions & Inquiries,What actually makes a house feel like home?,단순한 집이 아니라 진짜 '내 집'처럼 느껴지게 만드는 요소가 뭔가요?
+exp_1675,Questions & Inquiries,How do you bow out when socially drained?,사람 만날 에너지가 바닥났을 때 약속에서 어떻게 정중하게 빠지나요?
+exp_1676,Questions & Inquiries,What old hobby do you secretly miss doing?,예전에 그만뒀지만 속으로 은근히 다시 하고 싶은 취미가 있나요?
+exp_1677,Questions & Inquiries,Who do you text first with good news?,좋은 소식이 생겼을 때 가장 먼저 문자 보내는 사람이 누구예요?
+exp_1678,Questions & Inquiries,Is asking for help harder than saying no?,도움을 요청하는 게 더 어려우세요 거절하는 게 더 어려우세요?
+exp_1679,Questions & Inquiries,What used to stress you that doesn't anymore?,예전에는 늘 스트레스받았지만 지금은 전혀 신경 안 쓰이는 게 뭐예요?
+exp_1680,Questions & Inquiries,"If we took off tomorrow, where would we drive?",만약 내일 훌쩍 여행을 떠난다면 어디로 운전해서 가고 싶어요?
+exp_1681,Questions & Inquiries,What's the catch with this zero-percent financing?,이 무이자 할부 혜택에 숨겨진 조건이나 함정이 있나요?
+exp_1682,Questions & Inquiries,Any workaround if checkout rejects international cards?,결제 페이지에서 해외 카드를 거부할 때 우회할 방법이 있나요?
+exp_1683,Questions & Inquiries,What happens if weather cancels our connecting flight?,악천후로 환승 항공편이 결항되면 어떤 조치가 취해지나요?
+exp_1684,Questions & Inquiries,Does this warranty cover accidental water damage too?,우발적인 침수 손상도 이 보증 기간 안에 포함되나요?
+exp_1685,Questions & Inquiries,Do security deposits refund automatically after move-out?,"퇴거 후 보증금은 자동으로 환불되나요, 따로 신청해야 하나요?"
+exp_1686,Questions & Inquiries,Why won't my promo code apply at checkout?,결제할 때 할인 코드가 왜 적용이 안 되는 거죠?
+exp_1687,Questions & Inquiries,Where can I contest an unfair parking ticket?,부당한 주차 딱지에 대해 이의 제기를 하려면 어디로 가야 하나요?
+exp_1688,Questions & Inquiries,Can I switch standby for an earlier flight?,더 이른 출발편 대기자 명단으로 변경할 수 있나요?
+exp_1689,Questions & Inquiries,Is a transit pass cheaper than paying individually?,교통 패스를 사는 게 매번 따로 결제하는 것보다 싼가요?
+exp_1690,Questions & Inquiries,What documents does customs require for prescription meds?,처방약을 소지할 때 세관에서 어떤 서류를 요구하나요?
+exp_1691,Questions & Inquiries,How do you spot fake bank text scams?,은행을 사칭한 사기 문자를 어떻게 구별하나요?
+exp_1692,Questions & Inquiries,Will canceling today cut access right away?,오늘 구독을 해지하면 이용 권한이 즉시 끊기나요?
+exp_1693,Questions & Inquiries,Do repair shops offer free loaners during service?,정비소에 들어가 있는 동안 무료 대차 서비스를 제공하나요?
+exp_1694,Questions & Inquiries,What's the baggage weight limit on domestic flights?,국내선 위탁 수하물 최대 무게 제한이 몇 킬로그램인가요?
+exp_1695,Questions & Inquiries,Could you check stock in the back room?,창고 안쪽에 재고가 남아 있는지 확인해 주실 수 있나요?
+exp_1696,Questions & Inquiries,How do you reset a frozen smart thermostat?,스마트 온도조절기 화면이 멈춰 버렸을 때는 어떻게 초기화하나요?
+exp_1697,Questions & Inquiries,Are water and trash bundled into monthly rent?,수도세와 쓰레기 처리비가 월세에 포함되어 있나요?
+exp_1698,Questions & Inquiries,Which insurance plan fits best if you're rarely sick?,병원에 거의 안 간다면 어떤 보험 플랜이 가장 합리적일까요?
+exp_1699,Questions & Inquiries,Does this cafe allow laptops during lunch hours?,이 카페는 점심시간에도 노트북 사용이 가능한가요?
+exp_1700,Questions & Inquiries,What's the fastest way to reach a live agent?,실제 상담원과 가장 빨리 연결하는 방법이 뭔가요?

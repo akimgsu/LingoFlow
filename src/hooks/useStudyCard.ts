@@ -4,8 +4,26 @@ import { Expression, StudySessionStats } from '../types';
 import { playExpressionAudio, stopExpressionAudio, delay } from '../utils/audioPlayer';
 import { useProgress } from '../contexts/ProgressContext';
 
-const AUTO_REVIEW_REPEAT_GAP_MS = 1000;
+const AUTO_REVIEW_MIN_SHADOWING_PAUSE_MS = 1800;
+const AUTO_REVIEW_MAX_SHADOWING_PAUSE_MS = 4500;
+const AUTO_REVIEW_BASE_PAUSE_MS = 1100;
+const AUTO_REVIEW_MS_PER_WORD = 200;
 const AUTO_REVIEW_KOREAN_PAUSE_MS = 4000;
+
+/**
+ * Scales the pause between the two English playbacks by word count so learners
+ * have time to shadow longer sentences before hearing the repeat.
+ */
+function getShadowingPauseMs(text: string): number {
+  const wordCount = text.trim().split(/\s+/).filter(Boolean).length;
+  return Math.min(
+    AUTO_REVIEW_MAX_SHADOWING_PAUSE_MS,
+    Math.max(
+      AUTO_REVIEW_MIN_SHADOWING_PAUSE_MS,
+      AUTO_REVIEW_BASE_PAUSE_MS + wordCount * AUTO_REVIEW_MS_PER_WORD,
+    ),
+  );
+}
 
 export function useStudyCard(expressions: Expression[]) {
   const { addXp, markMastered } = useProgress();
@@ -177,8 +195,8 @@ export function useStudyCard(expressions: Expression[]) {
         return 'stopped';
       }
 
-      // 2) Brief pause, then speak English again
-      await delay(AUTO_REVIEW_REPEAT_GAP_MS);
+      // 2) Wait long enough to shadow the sentence, then speak English again
+      await delay(getShadowingPauseMs(expression.english));
 
       if (!autoReviewActiveRef.current) {
         return 'stopped';
