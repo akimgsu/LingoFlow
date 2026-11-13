@@ -30,18 +30,42 @@ async function getElevenLabsApiKey() {
   }
 }
 
-// 2. Parse CSV file helper
+// 2. Parse RFC-4180 CSV line helper (supports quoted fields containing commas)
+function parseCSVLine(line) {
+  const fields = [];
+  let current = '';
+  let inQuotes = false;
+
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+    if (ch === '"') {
+      if (inQuotes && line[i + 1] === '"') {
+        current += '"';
+        i++;
+      } else {
+        inQuotes = !inQuotes;
+      }
+    } else if (ch === ',' && !inQuotes) {
+      fields.push(current.trim());
+      current = '';
+    } else {
+      current += ch;
+    }
+  }
+  fields.push(current.trim());
+  return fields;
+}
+
 function loadExpressionsFromCSV(csvPath) {
   const fileContent = fs.readFileSync(csvPath, 'utf8');
-  const lines = fileContent.split('\n').map(l => l.trim()).filter(l => l.length > 0);
-  
+  const lines = fileContent.split(/\r?\n/).map(l => l.trim()).filter(l => l.length > 0);
+
   if (lines.length <= 1) return [];
 
-  const headers = lines[0].split(',').map(h => h.trim());
   const expressions = [];
 
   for (let i = 1; i < lines.length; i++) {
-    const row = lines[i].split(',').map(c => c.trim());
+    const row = parseCSVLine(lines[i]);
     if (row.length >= 4) {
       expressions.push({
         id: row[0],

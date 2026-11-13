@@ -38,6 +38,16 @@ export default function FlashCard({
   const cardWidth = Math.min(width - 36, 500);
   const cardHeight = isLandscape ? Math.min(height - 120, 380) : 380;
 
+  const getDynamicTextStyle = (text: string) => {
+    if (text.length > 85) {
+      return { fontSize: 19, lineHeight: 28 };
+    }
+    if (text.length > 55) {
+      return { fontSize: 21, lineHeight: 30 };
+    }
+    return { fontSize: 24, lineHeight: 34 };
+  };
+
   return (
     <View style={[styles.container, { width: cardWidth, height: cardHeight }]}>
       {/* ── Front Side ─────────────────────────── */}
@@ -52,7 +62,7 @@ export default function FlashCard({
           <View style={styles.badge}>
             <Text style={styles.badgeText}>{frontLabel}</Text>
           </View>
-          <Text style={styles.mainText}>{frontText}</Text>
+          <Text style={[styles.mainText, getDynamicTextStyle(frontText)]}>{frontText}</Text>
           <View style={styles.hintRow}>
             <Ionicons name="swap-horizontal" size={14} color={COLORS.textDim} style={{ marginRight: 4 }} />
             <Text style={styles.hintText}>
@@ -86,7 +96,7 @@ export default function FlashCard({
           <View style={[styles.badge, styles.badgeBack]}>
             <Text style={[styles.badgeText, { color: COLORS.accentPurple }]}>{backLabel}</Text>
           </View>
-          <Text style={[styles.mainText, styles.backText]}>{backText}</Text>
+          <Text style={[styles.mainText, styles.backText, getDynamicTextStyle(backText)]}>{backText}</Text>
           <View style={styles.hintRow}>
             <Ionicons name="swap-horizontal" size={14} color={COLORS.textDim} style={{ marginRight: 4 }} />
             <Text style={styles.hintText}>Tap to flip back</Text>

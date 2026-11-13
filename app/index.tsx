@@ -8,7 +8,7 @@ import { Ionicons, FontAwesome5 } from '@expo/vector-icons';
 import { Redirect, useRouter } from 'expo-router';
 import { useAuth } from '../src/contexts/AuthContext';
 import { useProgress } from '../src/contexts/ProgressContext';
-import { CATEGORIES } from '../src/constants/categories';
+import { CATEGORIES, TOTAL_EXPRESSIONS } from '../src/constants/categories';
 import CategoryCard from '../src/components/CategoryCard';
 import { COLORS, RADIUS, SHADOW } from '../src/constants/theme';
 
@@ -104,8 +104,22 @@ export default function HomeScreen() {
 
       {/* ── Section Title ─────────────────────────────────── */}
       <View style={styles.sectionHeader}>
-        <Text style={styles.sectionTitle}>Topics & Categories</Text>
-        <Text style={styles.sectionSub}>Select a category to practice flashcards</Text>
+        <View style={styles.sectionHeaderTop}>
+          <View style={{ flex: 1 }}>
+            <Text style={styles.sectionTitle}>Topics & Categories</Text>
+            <Text style={styles.sectionSub}>
+              {TOTAL_EXPRESSIONS.toLocaleString()} essential English patterns across {CATEGORIES.length} topics
+            </Text>
+          </View>
+          <TouchableOpacity
+            style={styles.studyAllBtn}
+            onPress={() => router.push({ pathname: '/study', params: { shuffle: '1' } })}
+            activeOpacity={0.8}
+          >
+            <Ionicons name="shuffle" size={14} color={COLORS.accentPurple} />
+            <Text style={styles.studyAllText}>Mix All</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
@@ -278,6 +292,28 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingTop: 8,
     paddingBottom: 10,
+  },
+  sectionHeaderTop: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 12,
+  },
+  studyAllBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: COLORS.bgCard,
+    borderWidth: 1,
+    borderColor: COLORS.borderAccent,
+    paddingVertical: 7,
+    paddingHorizontal: 12,
+    borderRadius: RADIUS.full,
+    gap: 5,
+  },
+  studyAllText: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: COLORS.accentPurple,
   },
   sectionTitle: {
     fontSize: 20,

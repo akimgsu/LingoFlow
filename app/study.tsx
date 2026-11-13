@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import {
   View, Text, StyleSheet, TouchableOpacity,
   SafeAreaView, StatusBar, Platform, Modal,
@@ -9,17 +9,34 @@ import { useStudyCard } from '../src/hooks/useStudyCard';
 import FlashCard from '../src/components/FlashCard';
 import { COLORS, RADIUS, SHADOW } from '../src/constants/theme';
 import allExpressions from '../src/data/expressions.json';
+import { Expression } from '../src/types';
+
+function shuffleExpressions(items: Expression[]): Expression[] {
+  const copy = [...items];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
 
 export default function StudyScreen() {
   const router = useRouter();
-  const { categoryId } = useLocalSearchParams<{ categoryId?: string }>();
+  const { categoryId, shuffle } = useLocalSearchParams<{ categoryId?: string; shuffle?: string }>();
   const [showCompletionModal, setShowCompletionModal] = useState(false);
+  const [isShuffled, setIsShuffled] = useState(shuffle === '1');
+  const [shuffleSeed, setShuffleSeed] = useState(0);
 
-  // Filter expressions by selected category
-  const filteredExpressions = categoryId
-    ? allExpressions.filter((e) => e.category === categoryId)
-    : allExpressions;
-  const list = filteredExpressions.length > 0 ? filteredExpressions : allExpressions;
+  // Filter expressions by selected category and optionally shuffle
+  const list = useMemo(() => {
+    const typed = allExpressions as Expression[];
+    const filtered = categoryId
+      ? typed.filter((e) => e.category === categoryId)
+      : typed;
+    const base = filtered.length > 0 ? filtered : typed;
+    return isShuffled ? shuffleExpressions(base) : base;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [categoryId, isShuffled, shuffleSeed]);
 
   const {
     currentExpression,
@@ -71,6 +88,16 @@ export default function StudyScreen() {
 
   const handleRestart = () => {
     setShowCompletionModal(false);
+    if (isShuffled) {
+      setShuffleSeed((s) => s + 1);
+    }
+    resetSession();
+  };
+
+  const handleToggleShuffle = () => {
+    if (isAutoReviewing) return;
+    setIsShuffled((prev) => !prev);
+    setShuffleSeed((s) => s + 1);
     resetSession();
   };
 
@@ -106,6 +133,14 @@ export default function StudyScreen() {
 
         {/* ── Category & Mode Pill ─────────────────────── */}
         <View style={styles.modeRow}>
+          {currentExpression?.category ? (
+            <View style={styles.categoryBadge}>
+              <Text style={styles.categoryBadgeText} numberOfLines={1}>
+                {currentExpression.category}
+              </Text>
+            </View>
+          ) : null}
+
           <TouchableOpacity
             style={[
               styles.quizToggle,
@@ -141,6 +176,24 @@ export default function StudyScreen() {
                   ? 'Quiz Mode · 한국어 먼저'
                   : 'Standard · English First'}
             </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={[
+              styles.shuffleBtn,
+              isShuffled && styles.shuffleBtnActive,
+              isAutoReviewing && styles.quizToggleDisabled,
+            ]}
+            onPress={handleToggleShuffle}
+            activeOpacity={0.8}
+            disabled={isAutoReviewing}
+            accessibilityLabel={isShuffled ? 'Disable shuffle' : 'Shuffle cards'}
+          >
+            <Ionicons
+              name="shuffle"
+              size={15}
+              color={isShuffled ? COLORS.accentPurple : COLORS.textSecondary}
+            />
           </TouchableOpacity>
         </View>
 
@@ -325,13 +378,47 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: COLORS.textSecondary,
     fontWeight: '700',
-    minWidth: 40,
+    minWidth: 68,
     textAlign: 'right',
+    flexShrink: 0,
   },
 
   /* Mode row */
   modeRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    gap: 8,
     marginBottom: 16,
+  },
+  categoryBadge: {
+    backgroundColor: COLORS.bgCard,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+    paddingVertical: 6,
+    paddingHorizontal: 10,
+    borderRadius: RADIUS.full,
+    maxWidth: 220,
+  },
+  categoryBadgeText: {
+    fontSize: 11,
+    fontWeight: '700',
+    color: COLORS.accentIndigo,
+  },
+  shuffleBtn: {
+    width: 32,
+    height: 32,
+    borderRadius: RADIUS.full,
+    backgroundColor: COLORS.bgCard,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  shuffleBtnActive: {
+    borderColor: COLORS.primary,
+    backgroundColor: '#1E1438',
   },
   quizToggle: {
     flexDirection: 'row',

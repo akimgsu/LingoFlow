@@ -36,6 +36,7 @@ export const COLORS = {
   accentTime: '#E879F9',
   accentActions: '#38BDF8',
   accentCommunication: '#FB7185',
+  accentQuestions: '#2DD4BF',
   accentBusiness: '#10B981',
 
   // Functional Status Colors

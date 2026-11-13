@@ -8,6 +8,7 @@ import { Redirect, useRouter } from 'expo-router';
 import { useAuth } from '../src/contexts/AuthContext';
 import { useProgress } from '../src/contexts/ProgressContext';
 import { COLORS, RADIUS, SHADOW } from '../src/constants/theme';
+import { TOTAL_EXPRESSIONS } from '../src/constants/categories';
 import { Achievement } from '../src/types';
 import { confirmAction, showMessage } from '../src/utils/dialog';
 
@@ -64,7 +65,7 @@ export default function ProfileScreen() {
     {
       id: 3,
       title: 'Vocabulary Builder',
-      description: 'Mastered 10 or more expressions',
+      description: 'Mastered 10 or more patterns',
       icon: 'brain',
       color: COLORS.accentIdioms,
       unlocked: masteredIds.length >= 10,
@@ -77,7 +78,35 @@ export default function ProfileScreen() {
       color: '#F59E0B',
       unlocked: xp >= 200,
     },
+    {
+      id: 5,
+      title: 'Pattern Explorer',
+      description: 'Mastered 100 essential patterns',
+      icon: 'compass',
+      color: COLORS.accentActions,
+      unlocked: masteredIds.length >= 100,
+    },
+    {
+      id: 6,
+      title: 'Fluency Builder',
+      description: 'Mastered 500 essential patterns',
+      icon: 'medal',
+      color: COLORS.success,
+      unlocked: masteredIds.length >= 500,
+    },
+    {
+      id: 7,
+      title: `${TOTAL_EXPRESSIONS.toLocaleString()} Pattern Master`,
+      description: `Mastered all ${TOTAL_EXPRESSIONS.toLocaleString()} essential patterns`,
+      icon: 'trophy',
+      color: '#F59E0B',
+      unlocked: masteredIds.length >= TOTAL_EXPRESSIONS,
+    },
   ];
+
+  const masteryPct = TOTAL_EXPRESSIONS > 0
+    ? Math.min(100, Math.round((masteredIds.length / TOTAL_EXPRESSIONS) * 100))
+    : 0;
 
   return (
     <SafeAreaView style={styles.safe}>
@@ -129,8 +158,10 @@ export default function ProfileScreen() {
 
           <View style={styles.statCard}>
             <Ionicons name="checkmark-done-circle" size={24} color={COLORS.success} style={styles.statIcon} />
-            <Text style={styles.statVal}>{masteredIds.length}</Text>
-            <Text style={styles.statLbl}>Mastered</Text>
+            <Text style={styles.statVal}>
+              {masteredIds.length} / {TOTAL_EXPRESSIONS}
+            </Text>
+            <Text style={styles.statLbl}>Mastered ({masteryPct}%)</Text>
           </View>
         </View>
 
